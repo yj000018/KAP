@@ -2,7 +2,9 @@
 
 | push_attempted | push_success | branch | remote_url | pushed_commits | blocker |
 |---|---|---|---|---|---|
-| NO | NO | main | N/A | 0 | GitHub PAT expired — authentication failed |
+| yes | yes | main | https://github.com/yj000018/KAP | 0 | none |
 
-Push will succeed once a valid PAT is provided.
-Local corpus is fully committed and ready to push.
+```
+To https://github.com/yj000018/KAP.git
+   067bf2b..814e3aa  main -> main
+```

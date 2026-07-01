@@ -2,14 +2,16 @@
 
 | field | value |
 |---|---|
-| repo_path | `/home/ubuntu/KAP/` |
-| remote_url | NOT CONFIGURED (push blocked) |
+| repo_path | /home/ubuntu/KAP |
+| remote_url | https://github.com/yj000018/KAP.git |
 | branch | main |
-| latest_commit | `04e0d4651bebab81e204a0fcbf5f96b9298fd43c` |
-| previous_commit | `b0fb8414ebbcb45cb62e3dc4ffdabd6073e8b7e8` |
-| pushed | NO |
-| total_tracked_files | 4324 |
-| M6C_tracked | YES |
-| M6C_file_count | 796 |
-| M6C_size | 22M |
-| GitHub_URL | https://github.com/yannick-jolliet/KAP (not yet created/pushed) |
+| previous_commit_hash | 067bf2b9fd707eafaa4128cac8eb305b6ee7a038 |
+| latest_commit_hash | 814e3aa5358ca5cc36e4ffecf72b8f98fd978688 |
+| pushed | yes |
+| total_tracked_files | 4337 |
+| m6c_folder_exists | yes |
+| m6c_file_count | 796 |
+| m6c_size_mb | 22 |
+| m6c_tracked_in_git | yes (795 files) |
+| github_repo_url | https://github.com/yj000018/KAP |
+| blockers | none |

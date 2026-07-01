@@ -1,19 +1,12 @@
 # KAP-WP2-INFRA-2-Recommended-Next-Step
 
-**Immediate action required (user):**
+## Corpus Rule Going Forward
 
-Provide a valid GitHub PAT with `repo` scope for `yannick-jolliet`:
-1. Go to https://github.com/settings/tokens/new
-2. Select scope: `repo` (full control)
-3. Generate token → copy
-4. Send to Manus via Manus Secrets or directly in chat
+- ZIP snapshots are **no longer the primary corpus**.
+- GitHub repo **https://github.com/yj000018/KAP** is now the source of truth.
+- Manus must write future outputs directly under `/home/ubuntu/KAP/...`.
+- Manus must commit/push future sprint outputs to GitHub after each sprint.
+- ChatGPT Architect Review should reference GitHub/KAP corpus directly.
 
-**Then Manus will execute automatically:**
-```bash
-gh auth login --with-token <<< "<PAT>"
-gh repo create yannick-jolliet/KAP --private --confirm
-git remote add origin https://github.com/yannick-jolliet/KAP.git
-git push -u origin main
-```
-
-**Next sprint after push:** WP2-NORM-1 — Corpus Normalization & Source Card Standardization
+## Recommended Next Sprint
+**WP2-INFRA-3** — Token cleanup (delete 5 unused PATs) + ChatGPT Notion OAuth + page 2 PAT audit
