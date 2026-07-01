@@ -1,0 +1,35 @@
+{
+  "sprint": "WP2-M8C",
+  "generated": "2026-07-01T23:39:11",
+  "total_tasks_accessible": 2000,
+  "endpoints": [
+    {
+      "endpoint": "GET /v2/task.list",
+      "status": 200,
+      "auth": "x-manus-api-key",
+      "returns_session_list": true,
+      "pagination": "last_id cursor"
+    },
+    {
+      "endpoint": "GET /v2/task.listMessages",
+      "status": "TBD",
+      "auth": "x-manus-api-key",
+      "returns_messages": true
+    },
+    {
+      "endpoint": "POST /v2/task.list",
+      "status": 405,
+      "limitation": "Method not allowed"
+    },
+    {
+      "endpoint": "GET /v1/sessions",
+      "status": 404,
+      "limitation": "Does not exist"
+    },
+    {
+      "endpoint": "GET /v2/knowledge",
+      "status": 404,
+      "limitation": "Does not exist"
+    }
+  ]
+}
