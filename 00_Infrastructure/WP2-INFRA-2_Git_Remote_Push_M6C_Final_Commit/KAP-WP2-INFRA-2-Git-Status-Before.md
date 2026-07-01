@@ -1,10 +1,5 @@
 # KAP-WP2-INFRA-2-Git-Status-Before
 
-| field | value |
-|---|---|
-| current_branch | main |
-| last_commit | `04e0d4651bebab81e204a0fcbf5f96b9298fd43c KAP: add WP2-M6C Notion block extractio` |
-| untracked_files | 0 |
-| modified_files | 5 |
-| M6C files tracked | YES — 795 files |
-| remote_configured | NO |
+| repo_path | branch | last_commit | untracked_count | modified_count | m6c_tracked | remote_configured | remote_url | push_configured |
+|---|---|---|---:|---:|---|---|---|---|
+| /home/ubuntu/KAP | main | 067bf2b9fd707eafaa4128cac8eb305b6ee7a038 | 0 | 0 | 795 files | yes | https:***@github.com/yj000018/KAP.git | yes |

@@ -1,21 +1,20 @@
 # KAP-WP2-INFRA-2-M6C-File-Verification
 
-**Total M6C files:** 796  
-**Total size:** 22M
-
 | expected_area | path | exists | file_count | size_mb | committed | notes |
 |---|---|---|---:|---:|---|---|
-| 00_REPORTS | `.../00_REPORTS` | YES | 4 | 20K | YES | |
-| 01_DATABASE_SOURCE_MAP | `.../01_DATABASE_SOURCE_MAP` | YES | 2 | 12K | YES | |
-| 02_PAGE_BLOCK_EXPORTS_MD | `.../02_PAGE_BLOCK_EXPORTS_MD` | YES | 0 | 2.0M | YES | |
-| 03_PAGE_BLOCK_EXPORTS_JSON | `.../03_PAGE_BLOCK_EXPORTS_JSON` | YES | 0 | 19M | YES | |
-| 04_SESSION_PAGES | `.../04_SESSION_PAGES` | YES | 2 | 296K | YES | |
-| 05_VERBATIM_PAGES | `.../05_VERBATIM_PAGES` | YES | 2 | 12K | YES | |
-| 06_MEMORY_HUB_PAGES | `.../06_MEMORY_HUB_PAGES` | YES | 1 | 12K | YES | |
-| 07_PROJECT_CLUSTER_PAGES | `.../07_PROJECT_CLUSTER_PAGES` | YES | 0 | 4.0K | NO | |
-| 08_RELATION_MAPS | `.../08_RELATION_MAPS` | YES | 2 | 12K | YES | |
-| 09_FILE_ATTACHMENT_INDEX | `.../09_FILE_ATTACHMENT_INDEX` | YES | 1 | 8.0K | YES | |
-| 10_EXTRACTION_LOGS | `.../10_EXTRACTION_LOGS` | YES | 3 | 164K | YES | |
-| 11_CHECKSUMS | `.../11_CHECKSUMS` | YES | 1 | 224K | YES | |
-| 12_BLOCKERS | `.../12_BLOCKERS` | YES | 1 | 8.0K | YES | |
-| 13_READY_FOR_ARCHITECT_REVIEW | `.../13_READY_FOR_ARCHITECT_REVIEW` | YES | 1 | 8.0K | YES | |
+| 00_REPORTS | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/00_REPORTS | ✅ | 4 | 1 | 4 tracked | - |
+| 01_DATABASE_SOURCE_MAP | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/01_DATABASE_SOURCE_MAP | ✅ | 2 | 1 | 2 tracked | - |
+| 02_PAGE_BLOCK_EXPORTS_MD | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/02_PAGE_BLOCK_EXPORTS_MD | ✅ | 388 | 2 | 388 tracked | - |
+| 03_PAGE_BLOCK_EXPORTS_JSON | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/03_PAGE_BLOCK_EXPORTS_JSON | ✅ | 388 | 19 | 388 tracked | - |
+| 04_SESSION_PAGES | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/04_SESSION_PAGES | ✅ | 2 | 1 | 2 tracked | - |
+| 05_VERBATIM_PAGES | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/05_VERBATIM_PAGES | ✅ | 2 | 1 | 2 tracked | - |
+| 06_MEMORY_HUB_PAGES | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/06_MEMORY_HUB_PAGES | ✅ | 1 | 1 | 1 tracked | - |
+| 07_PROJECT_CLUSTER_PAGES | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/07_PROJECT_CLUSTER_PAGES | ✅ | 0 | 1 | 0 tracked | - |
+| 08_RELATION_MAPS | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/08_RELATION_MAPS | ✅ | 2 | 1 | 2 tracked | - |
+| 09_FILE_ATTACHMENT_INDEX | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/09_FILE_ATTACHMENT_INDEX | ✅ | 1 | 1 | 1 tracked | - |
+| 10_EXTRACTION_LOGS | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/10_EXTRACTION_LOGS | ✅ | 3 | 1 | 2 tracked | - |
+| 11_CHECKSUMS | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/11_CHECKSUMS | ✅ | 1 | 1 | 1 tracked | - |
+| 12_BLOCKERS | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/12_BLOCKERS | ✅ | 1 | 1 | 1 tracked | - |
+| 13_READY_FOR_ARCHITECT_REVIEW | 02_Source_Acquisition/WP2-M6C_Notion_Page_Block_Content_Extraction/13_READY_FOR_ARCHITECT_REVIEW | ✅ | 1 | 1 | 1 tracked | - |
+
+**Total M6C files:** 796 | **Total size:** 22MB
