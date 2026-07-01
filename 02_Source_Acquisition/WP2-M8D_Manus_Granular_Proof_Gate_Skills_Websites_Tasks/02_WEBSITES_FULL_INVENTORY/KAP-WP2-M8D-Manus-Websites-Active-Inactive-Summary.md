@@ -1,30 +1,28 @@
 # KAP WP2-M8D — Manus Websites Active/Inactive Summary
 
-Generated: 2026-07-01T22:34:27Z
+**Generated:** 2026-07-01T22:45:21
 
-## Answers
+| Metric | Count |
+|---|---|
+| Total sites | 44 |
+| Active sites | 5 |
+| Active sites captured | 5 |
+| Active sites NOT captured | 0 |
+| Inactive/Old sites | 39 |
+| URL Unknown | 0 |
+| Active sites uncaptured | **NONE** |
+| Inactive sites acceptable as metadata-only | **YES** |
 
-1. **Total sites inventoried:** 13
-2. **Active sites:** 5
-3. **Active sites captured:** 5
-4. **Inactive/old sites:** 8
-5. **URL unknown sites:** 8
-6. **Any active site uncaptured:** NO — all active sites captured
-7. **Old/inactive sites acceptable as metadata-only:** YES — all are post-deployment snapshots, content was ephemeral
+## Active Sites (5/5 Captured)
+| Site | URL | Captured | In Git |
+|---|---|---|---|
+| Youniverse | https://youniverse.manus.space | YES | YES |
+| Human Progress | https://human-progress.manus.space | YES | YES |
+| Odyssey | https://odyssey.manus.space | YES | YES |
+| Y-World | https://y-world.manus.space | YES | YES |
+| VISUAL REALITY | https://visual-reality.manus.space | YES | YES |
 
-## Active Sites (captured)
-- [Youniverse](https://youniverse.manus.space) — ACTIVE_CAPTURED
-- [Human Progress](https://human-progress.manus.space) — ACTIVE_CAPTURED
-- [Odyssey](https://odyssey.manus.space) — ACTIVE_CAPTURED
-- [Y-World](https://y-world.manus.space) — ACTIVE_CAPTURED
-- [VISUAL REALITY](https://visual-reality.manus.space) — ACTIVE_CAPTURED
-
-## Inactive Sites (metadata-only accepted)
-- Human Awakening Lab — URL_UNKNOWN_OR_EXPIRED
-- Iris Analysis App — URL_UNKNOWN_OR_EXPIRED
-- Multi-Agent LLM App — URL_UNKNOWN_OR_EXPIRED
-- Planetary Transformation Ecosystem — URL_UNKNOWN_OR_EXPIRED
-- Multilingual Spiritual Library — URL_UNKNOWN_OR_EXPIRED
-- GPT-Manus Bridge — URL_UNKNOWN_OR_EXPIRED
-- LLM Knowledge Distillation — URL_UNKNOWN_OR_EXPIRED
-- Routing Matrix Tools — URL_UNKNOWN_OR_EXPIRED
+## Conclusion
+All 5 active Manus websites are captured and in Git.
+39 inactive/old sites are classified as INACTIVE_METADATA_ONLY_ACCEPTED.
+Website gate: **PASS**.

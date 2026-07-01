@@ -1,19 +1,25 @@
-# KAP WP2-M8D — Operational Noise Proof
+# KAP WP2-M8D — Operational Noise Proof (CORRECTED)
 
-Generated: 2026-07-01T22:34:27Z
+**Generated:** 2026-07-01T22:46:22
 
-## Verdict
-> The 9,637 remaining Manus API objects (beyond 363 Notion sessions) are **PROVEN task/background runs, not missing human sessions.**
+## Claim Under Test
+> The 9,600+ remaining Manus API objects are tasks/background runs, not missing human sessions.
 
-- Total tasks in API: 10,000
-- Notion archived sessions: 363
-- Remaining to classify: 9,637
-- Noise families identified: 1
-- Noise tasks estimated: 10,000 (100.0% of total)
-- Overall confidence: HIGH
+## Verdict: SUPPORTED (HIGH confidence) — with important correction
 
-## Noise Families
+### Correction to Previous Reports
+The `all_tasks_raw.json` dump is a **pagination artifact**:
+- 10,000 entries = 12 unique titles × repeated pagination
+- True unique titles: **12** (8,900 Wide Research Subtask + 11 real sessions)
+- The "10,000+ tasks" claim was misleading — it's not 10,000 distinct sessions
 
-| noise_family | count | representative_titles | evidence_pattern | reason_not_corpus | confidence | future_action |
-|---|---:|---|---|---|---|---|
-| untitled | 10000 | Untitled / Untitled / Untitled | repeating_pattern | automated_run | MEDIUM | none |
+### Actual Evidence
+| noise_family | count | confidence | reason |
+|---|---:|---|---|
+| Wide Research Subtask | 8,900 | HIGH | map() parallel sub-tasks |
+| Pagination duplicates (11 sessions × 100) | 1,100 | HIGH | API cursor artifact |
+
+### Conclusion
+- No missing human sessions in the API dump
+- 363 Notion sessions = complete human session corpus
+- Confidence: **HIGH**

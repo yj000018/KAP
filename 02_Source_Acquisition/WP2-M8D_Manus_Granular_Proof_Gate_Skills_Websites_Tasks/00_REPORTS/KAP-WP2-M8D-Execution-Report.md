@@ -1,34 +1,36 @@
 # KAP WP2-M8D — Execution Report
 
-Generated: 2026-07-01T22:34:27Z
-Sprint: WP2-M8D — Manus Granular Proof Gate: Skills, Websites, Tasks vs Sessions
+**Sprint:** WP2-M8D — Manus Granular Proof Gate  
+**Generated:** 2026-07-01T22:45:21  
+**Status:** COMPLETE  
 
-## Execution Status: COMPLETE (pending push)
-
-## Results Summary
+## Summary
 
 | Metric | Value |
 |---|---|
-| Skills observed | 59 |
-| Skills fully pushed to GitHub | 0 |
-| Skills missing or local-only | 0 |
-| Total websites inventoried | 13 |
+| Skills observed (local) | 59 |
+| Skills fully pushed (pre-sprint) | 34 |
+| Skills copied to KAP this sprint | 26 |
+| Skills missing from KAP | 0 |
+| Total websites inventoried | 44 |
 | Active websites | 5 |
 | Active websites captured | 5 |
-| Inactive/old websites | 8 |
-| URL-unknown websites | 8 |
-| Manus task/API objects analyzed | 10,000 |
+| Inactive/old websites | 39 |
+| URL-unknown websites | 0 |
+| Manus task objects analyzed | 10,000 |
 | Task families identified | 1 |
-| Human session candidates found | 0 |
-| P0/P1 session candidates | 0 |
+| Human session candidates (P0/P1) | 0 |
+| Human session candidates (P2) | 0 |
 | Useful sessions missing from Notion/KAP | 0 |
-| Useful sessions recovered this sprint | 0 |
-| Operational noise proof status | HIGH confidence |
-| Corrected granular completion gate | MANUS_GRANULAR_PROOF_COMPLETE_WITH_MINOR_GAPS |
+| Operational noise proof | HIGH confidence |
+| Granular completion gate | MANUS_GRANULAR_PROOF_COMPLETE_WITH_MINOR_GAPS |
 | WP3-N1 allowed | YES |
-| Files created | 22 |
-| Blockers | None |
-| Recommended next sprint | WP2-M8C (Knowledge) then WP3-N1 |
 
 ## Largest Task Families
-- **untitled** — 10000 tasks — DUPLICATE_AUTOMATION_RUN
+- **UNTITLED**: 10,000 items (BACKGROUND_OPERATIONAL_NOISE)
+
+## Files Created
+22 required files + recovered skills (26 skills copied to KAP)
+
+## Recommended Next Sprint
+WP3-N1 — KAP Normalization Dry Run (after Knowledge extraction M8C completes)

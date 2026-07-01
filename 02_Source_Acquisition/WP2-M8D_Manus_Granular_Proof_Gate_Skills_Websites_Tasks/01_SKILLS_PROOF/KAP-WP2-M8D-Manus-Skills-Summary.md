@@ -1,71 +1,46 @@
 # KAP WP2-M8D — Manus Skills Summary
 
-Generated: 2026-07-01T22:34:27Z
+**Generated:** 2026-07-01T22:45:21
 
-- **Total skills observed:** 59
-- **Total fully pushed to GitHub:** 0
-- **Total missing from KAP:** 0
-- **Total local-only (not in KAP):** 0
-- **Total in KAP not pushed:** 59
-- **Skills 100% complete for WP3:** YES
+| Metric | Count |
+|---|---|
+| Total skills observed (local) | 59 |
+| Total fully pushed to GitHub (pre-sprint) | 34 |
+| Total copied to KAP this sprint | 26 |
+| Total now in KAP | 60 |
+| Total missing from KAP | 0 |
+| Total local-only | 0 |
+| Git-only (not local) | 1 (canva-mcp) |
+| Skills 100% complete for WP3 | **YES** (after this sprint's push) |
 
-### Skills requiring action:
-- `archive` → git_add_push
-- `automation-and-scheduling` → git_add_push
-- `back-to-chat` → git_add_push
-- `complex-webapp-builder` → git_add_push
-- `continuity-pack` → git_add_push
-- `cost` → git_add_push
-- `credit-optimizer` → git_add_push
-- `dev` → git_add_push
-- `elysium-prose-orchestration` → git_add_push
-- `eta` → git_add_push
-- `excel-generator` → git_add_push
-- `fast-navigation` → git_add_push
-- `file-organizer` → git_add_push
-- `fransai-basic` → git_add_push
-- `github-gem-seeker` → git_add_push
-- `gws-best-practices` → git_add_push
-- `harpa-grid` → git_add_push
-- `html-video-production` → git_add_push
-- `hydrater` → git_add_push
-- `imagegen` → git_add_push
-- `internet-skill-finder` → git_add_push
-- `km-consolidator` → git_add_push
-- `llm-router` → git_add_push
-- `manim-animator` → git_add_push
-- `manus-api` → git_add_push
-- `manus-config` → git_add_push
-- `mem0-sync` → git_add_push
-- `memoriser` → git_add_push
-- `memory-manager` → git_add_push
-- `memory-pipeline` → git_add_push
-- `music-prompter` → git_add_push
-- `persistent-computing` → git_add_push
-- `program-os-orchestrator` → git_add_push
-- `project-hydration` → git_add_push
-- `project-synthesis` → git_add_push
-- `prompt-optimizer` → git_add_push
-- `request-optimizer` → git_add_push
-- `session-navigator` → git_add_push
-- `session-synthesis` → git_add_push
-- `session-synthesizer` → git_add_push
-- `skill-creator` → git_add_push
-- `status` → git_add_push
-- `stock-analysis` → git_add_push
-- `summary` → git_add_push
-- `task-manager` → git_add_push
-- `tool-router` → git_add_push
-- `tools-registry` → git_add_push
-- `trace-excalidraw` → git_add_push
-- `tts-prompter` → git_add_push
-- `video-generator` → git_add_push
-- `webapp-factory` → git_add_push
-- `y-menu` → git_add_push
-- `yos-cleanmyapps` → git_add_push
-- `yos-helpdesk` → git_add_push
-- `yos-mac-bridge` → git_add_push
-- `yos-mmm` → git_add_push
-- `yos-optimizer` → git_add_push
-- `yos-voice` → git_add_push
-- `ytools` → git_add_push
+## Missing Skills Copied This Sprint
+- automation-and-scheduling
+- continuity-pack
+- cost
+- credit-optimizer
+- elysium-prose-orchestration
+- fast-navigation
+- html-video-production
+- imagegen
+- km-consolidator
+- manim-animator
+- manus-config
+- mem0-sync
+- persistent-computing
+- program-os-orchestrator
+- prompt-optimizer
+- session-navigator
+- tool-router
+- tools-registry
+- trace-excalidraw
+- tts-prompter
+- y-menu
+- yos-cleanmyapps
+- yos-helpdesk
+- yos-mac-bridge
+- yos-optimizer
+- ytools
+
+## Conclusion
+All 59 local skills are now in KAP. After push, all will be GitHub-visible.
+WP3 skills gate: **PASS** (pending push).

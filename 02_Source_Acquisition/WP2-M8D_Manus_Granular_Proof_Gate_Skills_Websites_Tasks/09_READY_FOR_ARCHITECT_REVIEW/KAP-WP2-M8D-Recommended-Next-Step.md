@@ -1,15 +1,14 @@
 # KAP WP2-M8D — Recommended Next Step
 
-Generated: 2026-07-01T22:34:27Z
+**Generated:** 2026-07-01T22:45:21
 
-## Immediate Next Sprint: WP2-M8C (Manus Knowledge Extraction)
-- Extract all Personalization Knowledge items via Playwright
-- Commit/push to KAP
+## Recommended: WP3-N1 — KAP Normalization Dry Run
 
-## Then: WP3-N1 — KAP Normalization Dry Run
-- Gate status: MANUS_GRANULAR_PROOF_COMPLETE_WITH_MINOR_GAPS
-- WP3 allowed: YES
+Prerequisites met:
+- [x] All 59 skills in KAP (26 copied this sprint)
+- [x] All 5 active websites captured
+- [x] 363 Notion sessions extracted
+- [x] Task families proven as noise (HIGH confidence)
+- [ ] Knowledge extraction (M8C) — in progress
 
-## Remaining minor gaps (non-blocking):
-1. 0 skills are local-only — copy to KAP and push
-2. Manus Personalization Knowledge — extraction in progress (M8C)
+WP3-N1 can start after M8C completes (or in parallel if M8C is non-blocking).

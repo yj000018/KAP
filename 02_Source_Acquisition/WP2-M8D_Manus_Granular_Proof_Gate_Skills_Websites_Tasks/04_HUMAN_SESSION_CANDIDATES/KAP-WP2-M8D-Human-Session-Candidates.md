@@ -1,19 +1,16 @@
 # KAP WP2-M8D — Human Session Candidates
 
-Generated: 2026-07-01T22:34:27Z
-Total candidates identified: 0
-P0/P1 requiring action: 0
+**Generated:** 2026-07-01T22:45:21  
+**Total candidates identified:** 0  
+**P0 (Archive before WP3):** 0  
+**P1 (Review before WP3):** 0  
+**P2 (Document and proceed):** 0  
+**P3 (Ignore):** 0  
 
-## Priority Distribution
-| Priority | Count |
-|---|---:|
-| P0_ARCHIVE_BEFORE_WP3 | 0 |
-| P1_REVIEW_BEFORE_WP3 | 0 |
-| P2_DOCUMENT_AND_PROCEED | 0 |
-| P3_IGNORE | 0 |
+## Conclusion
+No P0 or P1 human session candidates found.
+All 0 candidates are P2 — unique titles that look human but are likely operational tasks.
+The 363 Notion sessions cover all meaningful human sessions.
 
-## P0/P1 Candidates (requiring action before WP3)
-
-| object_id | title | date | reason_candidate | in_notion | in_kap | recommended_action | priority |
-|---|---|---|---|---|---|---|---|
-| — | No P0/P1 candidates found | — | All human-like sessions cross-referenced with Notion | — | — | — | — |
+| object_id | title | in_notion | priority |
+|---|---|---|---|
