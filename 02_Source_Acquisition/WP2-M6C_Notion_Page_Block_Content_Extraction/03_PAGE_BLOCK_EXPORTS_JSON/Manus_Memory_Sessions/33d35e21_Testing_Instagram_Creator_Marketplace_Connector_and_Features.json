@@ -1,0 +1,1435 @@
+{
+  "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a",
+  "title": "Testing Instagram Creator Marketplace Connector and Features",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "short",
+    "Language": "en",
+    "Subthemes": "MCP connectors, Meta API, authentication requirements, feature exploration",
+    "Project": "UNKNOWN",
+    "UID": "j9cSPPx9xjFd156thfS53Q",
+    "Date": "2026-03-18",
+    "Themes": "API testing, connector evaluation, Instagram Creator Marketplace",
+    "Archived": "True",
+    "Depth": "standard",
+    "Title": "Testing Instagram Creator Marketplace Connector and Features"
+  },
+  "blocks_count": 31,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "8425799b-0d45-48c4-895b-0a5062ad6992",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cfc3da66-e091-486d-8ec8-e67196acf569",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User requested testing and demonstration of the Instagram Creator Marketplace MCP connector. Assistant explored the connector's capabilities, attempted live queries, and discovered that a linked Instagram Business Account is required for functionality. Despite authentication limitations, successfully documented the connector's schema and filtering capabilities in a structured brief.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User requested testing and demonstration of the Instagram Creator Marketplace MCP connector. Assistant explored the connector's capabilities, attempted live queries, and discovered that a linked Instagram Business Account is required for functionality. Despite authentication limitations, successfully documented the connector's schema and filtering capabilities in a structured brief.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ebad55df-3985-4a89-a38b-d732a113f388",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a7c08a11-182b-49cd-9cf3-0a62d9647b4f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User wanted to understand and test the Instagram Creator Marketplace connector functionality, specifically requesting live data examples and a capabilities overview.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User wanted to understand and test the Instagram Creator Marketplace connector functionality, specifically requesting live data examples and a capabilities overview.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b0781237-281d-467b-8ffa-c174e21b444d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "765e6a29-8c74-4071-ae11-f3fd0fb6b937",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Explored MCP connector tools, tested list_pages and creator search functions, documented API response structures, identified authentication requirements, and compiled a capability brief despite access limitations.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Explored MCP connector tools, tested list_pages and creator search functions, documented API response structures, identified authentication requirements, and compiled a capability brief despite access limitations.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b4b7df95-bc60-494e-bae0-ff430f22ceee",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c51e9b70-419a-46ac-b3d9-65f54fafcbf2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[capability_brief]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[capability_brief]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Instagram Creator Marketplace Connector Brief — Structured documentation of connector capabilities, filtering options, and implementation requirements",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Instagram Creator Marketplace Connector Brief — Structured documentation of connector capabilities, filtering options, and implementation requirements",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "11211a97-f4f9-4d70-b928-2e1242a5ed19",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2151353f-db6d-451d-9137-59a9633ef689",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Proceeded with schema exploration despite authentication limitations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Proceeded with schema exploration despite authentication limitations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "08f6f0e7-cc3b-44d2-862e-38f505f72300",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Documented capabilities based on API structure rather than live data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Documented capabilities based on API structure rather than live data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f9dbe83c-1f5d-4e3f-a0a2-579b39ec55f1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "63126563-a0e9-4910-9865-c86f824c27ab",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ab0e43fb-d03e-41a4-a95c-9b6fc357949d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Schema introspection provided valuable capability insights",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Schema introspection provided valuable capability insights",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "191af80a-dda8-4455-ba5c-027bfa70ae80",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Clear identification of authentication requirements",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Clear identification of authentication requirements",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a02e1e85-4559-4f9e-806b-eb06472b1b78",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "745b158c-0d17-4632-b161-71dd7452b72a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Cannot demonstrate live data without proper Instagram Business Account linking",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Cannot demonstrate live data without proper Instagram Business Account linking",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fd602c70-8fda-4441-b297-0e15da8d8e22",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5b3e932d-3817-42e2-8b03-c2da991a60db",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Meta enforces strict page_id requirements for creator search",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Meta enforces strict page_id requirements for creator search",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "64405c94-c5bd-4ca9-8589-a3590aecab92",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Connector has extensive demographic and interest filtering capabilities",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Connector has extensive demographic and interest filtering capabilities",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0aa93661-5717-408f-a5e9-1c534fb58b7d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "486e7def-0e6f-4f46-8744-9724d67c1559",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "No Instagram Business Account linked to Meta session",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "No Instagram Business Account linked to Meta session",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31c773ab-78a4-4495-bf33-2b8272a5948a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API requires valid page_id for all creator search operations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "API requires valid page_id for all creator search operations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "59d0ecfa-8fd4-4e10-afe5-ac5d94f59b9d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "09ffb2c8-38d4-44f3-b7a6-ad17b062612e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should we link an Instagram Business Account for full testing?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should we link an Instagram Business Account for full testing?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "510be37c-0e21-42fb-8fd8-0de7ae427c04",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What specific creator search use cases are most relevant?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What specific creator search use cases are most relevant?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9aabc1f5-f010-405f-ae33-64006c8faa64",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cccf52ab-3d06-4ba6-bd94-66531191881e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Link Instagram Business Account if full testing desired",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Link Instagram Business Account if full testing desired",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a499b7b2-afed-4a6c-8995-68cc435aa192",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Review capability brief for implementation planning",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Review capability brief for implementation planning",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6b6cde4f-dbd5-4114-97d5-139b9c00525b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bcf9f14a-c18e-482a-a4f0-5e12d0dcba66",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-815c-ab7a-ed653943437a"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "j9cSPPx9xjFd156thfS53Q",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "j9cSPPx9xjFd156thfS53Q",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0108",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0108",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nUser requested testing and demonstration of the Instagram Creator Marketplace MCP connector. Assistant explored the connector's capabilities, attempted live queries, and discovered that a linked Instagram Business Account is required for functionality. Despite authentication limitations, successfully documented the connector's schema and filtering capabilities in a structured brief.\n\n\n## Context & Intent\n\nUser wanted to understand and test the Instagram Creator Marketplace connector functionality, specifically requesting live data examples and a capabilities overview.\n\n\n## What Was Done\n\nExplored MCP connector tools, tested list_pages and creator search functions, documented API response structures, identified authentication requirements, and compiled a capability brief despite access limitations.\n\n\n## Outputs Produced\n\n- [capability_brief] Instagram Creator Marketplace Connector Brief — Structured documentation of connector capabilities, filtering options, and implementation requirements\n\n## Key Decisions & Validations\n\n- Proceeded with schema exploration despite authentication limitations\n- Documented capabilities based on API structure rather than live data\n\n## Lessons Learned\n\nWorked well:\n\n- Schema introspection provided valuable capability insights\n- Clear identification of authentication requirements\nFailed / suboptimal:\n\n- Cannot demonstrate live data without proper Instagram Business Account linking\nDiscoveries:\n\n- Meta enforces strict page_id requirements for creator search\n- Connector has extensive demographic and interest filtering capabilities\n\n## Challenges & Blockers\n\n- No Instagram Business Account linked to Meta session\n- API requires valid page_id for all creator search operations\n\n## Open Questions\n\n- Should we link an Instagram Business Account for full testing?\n- What specific creator search use cases are most relevant?\n\n## Next Steps\n\n- Link Instagram Business Account if full testing desired\n- Review capability brief for implementation planning\n---\nUID: j9cSPPx9xjFd156thfS53Q | Model: claude-sonnet-4-20250514 | Cost: $0.0108\n"
+}

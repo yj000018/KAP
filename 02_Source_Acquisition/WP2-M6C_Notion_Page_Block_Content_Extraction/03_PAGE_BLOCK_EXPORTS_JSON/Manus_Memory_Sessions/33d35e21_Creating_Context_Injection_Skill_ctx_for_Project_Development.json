@@ -1,0 +1,1345 @@
+{
+  "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79",
+  "title": "Creating Context Injection Skill (@ctx) for Project Development",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "short",
+    "Language": "mixed",
+    "Subthemes": "project context injection, dev tool integration, git analysis, stack detection",
+    "Project": "yOS",
+    "UID": "lMztvgu67W1kF6KjuyVgna",
+    "Date": "2026-03-30",
+    "Themes": "skill development, context automation, development workflow",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Creating Context Injection Skill (@ctx) for Project Development"
+  },
+  "blocks_count": 27,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "aaec7fad-7f02-429a-86e4-cd12f8c3e88f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "038f45e7-5247-4ddf-bcd7-0b850792bdff",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User requested creation of a @ctx skill to automatically inject project context into development workflows. Manus analyzed the requirements and created a skill that collects project name, stack, recent files, URL, database schema, and last task summary. The implementation includes a Python script for context collection and structured injection into the @dev skill to eliminate repetitive context setup.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User requested creation of a @ctx skill to automatically inject project context into development workflows. Manus analyzed the requirements and created a skill that collects project name, stack, recent files, URL, database schema, and last task summary. The implementation includes a Python script for context collection and structured injection into the @dev skill to eliminate repetitive context setup.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f8bda140-60fb-46a9-8e55-bdb21db0c03f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ce244f89-3dde-4e43-87f7-e7608a3c7eec",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Streamline development workflow by automatically injecting project context when working outside of project sessions, particularly for iOS usage and free chat sessions where context needs to be repeatedly provided to @dev.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Streamline development workflow by automatically injecting project context when working outside of project sessions, particularly for iOS usage and free chat sessions where context needs to be repeatedly provided to @dev.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4891d3f4-978f-4010-9f9f-ec8c8ab7c592",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "193f73ba-1fef-47a5-a36b-7a3840ae8a06",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Created the @ctx skill with automated context collection including Python script for gathering project state, git history, stack detection, and database schema extraction. Implemented structured context block formatting for seamless integration with @dev workflow.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Created the @ctx skill with automated context collection including Python script for gathering project state, git history, stack detection, and database schema extraction. Implemented structured context block formatting for seamless integration with @dev workflow.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fb88fb61-25d0-4be8-9288-e0fb29334cec",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b6a2572a-3eea-40f2-8c34-b94edb5c8d1a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[skill]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[skill]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " @ctx — Automated project context injection skill with ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " @ctx — Automated project context injection skill with ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "SKILL.md",
+              "link": {
+                "url": "http://skill.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SKILL.md",
+            "href": "http://skill.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " documentation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " documentation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3a7c8c8e-e0ef-493f-b244-874682ef2156",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " collect_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " collect_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "context.py",
+              "link": {
+                "url": "http://context.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "context.py",
+            "href": "http://context.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Python script for automatic project state collection and context formatting",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Python script for automatic project state collection and context formatting",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "692fd5cd-93f6-42bd-b1dd-c9f121aeaf3b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6f374736-06ca-4a28-9029-a2d6f45878c5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Focus on autonomous context collection without user prompts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Focus on autonomous context collection without user prompts",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8535df2f-9d9d-42d7-9ad6-7a2afe713f7f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Structure output as [PROJECT CONTEXT] block for @dev injection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Structure output as [PROJECT CONTEXT] block for @dev injection",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4b7356f4-5f8b-4a8e-8c30-0ad9f3ba2fd6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Support both standalone @ctx and combined @ctx @dev usage",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Support both standalone @ctx and combined @ctx @dev usage",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e69cb8c7-5495-40d7-8c7d-d87c14924c6f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Include 48-hour git history for recent changes tracking",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Include 48-hour git history for recent changes tracking",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d0c41ac0-07b5-4f1b-aa8a-23c423780db6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f2202e05-2ee7-4a0e-85f6-56fa3c1225b7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "354369c9-89e0-4e62-9351-3d68a527e780",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Clear skill requirements led to direct implementation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Clear skill requirements led to direct implementation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "565c4260-ef4b-42ed-8648-48dee0c77364",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Structured planning with resource table",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Structured planning with resource table",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "16930946-430d-47e2-8c94-0585aa94cec2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive context collection approach",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comprehensive context collection approach",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "22f6a871-958e-4fd1-832f-ec2fa8aa84ae",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9403697b-aa00-4c82-bf9d-e0805df1fd21",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context injection can significantly reduce repetitive setup in development workflows",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context injection can significantly reduce repetitive setup in development workflows",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ac9fd51f-2587-409e-85cb-952f818c41ac",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "201ae10a-885d-443d-9963-364c48964778",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test the @ctx skill in various project environments",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test the @ctx skill in various project environments",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e8b8676e-412e-48c2-863f-b6416d18e81d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Validate integration with @dev workflow",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Validate integration with @dev workflow",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b166847f-2ca6-4b99-8a33-9b05d9138400",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Consider extending context collection for other development tools",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Consider extending context collection for other development tools",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e164cfe9-d200-441a-b854-3b1d15d3de36",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e81c2110-a432-4911-9f6a-49e9382aa48f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-811c-a4c2-d358e8318e79"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "lMztvgu67W1kF6KjuyVgna",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "lMztvgu67W1kF6KjuyVgna",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0138",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0138",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nUser requested creation of a @ctx skill to automatically inject project context into development workflows. Manus analyzed the requirements and created a skill that collects project name, stack, recent files, URL, database schema, and last task summary. The implementation includes a Python script for context collection and structured injection into the @dev skill to eliminate repetitive context setup.\n\n\n## Context & Intent\n\nStreamline development workflow by automatically injecting project context when working outside of project sessions, particularly for iOS usage and free chat sessions where context needs to be repeatedly provided to @dev.\n\n\n## What Was Done\n\nCreated the @ctx skill with automated context collection including Python script for gathering project state, git history, stack detection, and database schema extraction. Implemented structured context block formatting for seamless integration with @dev workflow.\n\n\n## Outputs Produced\n\n- [skill] @ctx — Automated project context injection skill with SKILL.md documentation\n- [script] collect_context.py — Python script for automatic project state collection and context formatting\n\n## Key Decisions & Validations\n\n- Focus on autonomous context collection without user prompts\n- Structure output as [PROJECT CONTEXT] block for @dev injection\n- Support both standalone @ctx and combined @ctx @dev usage\n- Include 48-hour git history for recent changes tracking\n\n## Lessons Learned\n\nWorked well:\n\n- Clear skill requirements led to direct implementation\n- Structured planning with resource table\n- Comprehensive context collection approach\nDiscoveries:\n\n- Context injection can significantly reduce repetitive setup in development workflows\n\n## Next Steps\n\n- Test the @ctx skill in various project environments\n- Validate integration with @dev workflow\n- Consider extending context collection for other development tools\n---\nUID: lMztvgu67W1kF6KjuyVgna | Model: claude-sonnet-4-20250514 | Cost: $0.0138\n"
+}

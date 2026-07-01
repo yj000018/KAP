@@ -1,0 +1,2102 @@
+{
+  "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39",
+  "title": "ANANDAZ Home Automation Cockpit MVP Development",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "long",
+    "Language": "mixed",
+    "Subthemes": "Next.js Development, React Three Fiber, Gaussian Splat Rendering, Home Assistant Integration, File Upload Pipeline, 3D Model Viewer",
+    "Project": "DOMUS",
+    "UID": "oyxDQppkB8EeX1Zkv2JA9h",
+    "Date": "2026-03-14",
+    "Themes": "Home Automation, 3D Visualization, Spatial Computing, UI Development",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "ANANDAZ Home Automation Cockpit MVP Development"
+  },
+  "blocks_count": 45,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "a8dade1e-15a7-493e-8f98-d16314608f26",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6a325f41-ec38-44ac-994d-898616810984",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complete development of ANANDAZ Spatial Twin MVP v1, a home automation cockpit with 3D visualization capabilities. Built from scratch using Next.js, React Three Fiber, and SQLite with Home Assistant integration. Successfully created a functional cockpit with mini-map, 3D viewer, control panels, and timeline. Resolved critical file upload pipeline issues and integrated Gaussian Splat rendering for Richie 3D scans.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complete development of ANANDAZ Spatial Twin MVP v1, a home automation cockpit with 3D visualization capabilities. Built from scratch using Next.js, React Three Fiber, and SQLite with Home Assistant integration. Successfully created a functional cockpit with mini-map, 3D viewer, control panels, and timeline. Resolved critical file upload pipeline issues and integrated Gaussian Splat rendering for Richie 3D scans.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0889511d-d814-4141-99cb-eeaedc09449c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "21155ff8-ed71-4766-90d1-0e137ca130cf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Development of a comprehensive home automation dashboard that combines spatial visualization with control capabilities for the ANANDAZ chalet project. The goal was to create a tactical cockpit interface that could display 3D room models while providing Home Assistant control functionality.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Development of a comprehensive home automation dashboard that combines spatial visualization with control capabilities for the ANANDAZ chalet project. The goal was to create a tactical cockpit interface that could display 3D room models while providing Home Assistant control functionality.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7a5a26ad-c6b7-4ca8-80a4-5a2b92fa4087",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0f3a7c40-eb8a-426e-bde6-8308caa1cad3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built complete home automation cockpit with: mini-map schematic SVG (4 spaces), 3D viewer with React Three Fiber, viewpoint selector (7 viewpoints), Home Assistant control panel with mock statuses, persistent timeline in localStorage, responsive 3-column desktop and 4-tab mobile layout. Resolved upload pipeline connectivity issues by creating reactive roomModelStore. Added Gaussian Splat renderer support for Richie 3D exports. Restructured navigation with bottom toolbar.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built complete home automation cockpit with: mini-map schematic SVG (4 spaces), 3D viewer with React Three Fiber, viewpoint selector (7 viewpoints), Home Assistant control panel with mock statuses, persistent timeline in localStorage, responsive 3-column desktop and 4-tab mobile layout. Resolved upload pipeline connectivity issues by creating reactive roomModelStore. Added Gaussian Splat renderer support for Richie 3D exports. Restructured navigation with bottom toolbar.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3f9ab716-766c-44c7-9525-a31ef579a0ab",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "78a020a6-b136-4205-a854-b7c70c5f002f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[application]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[application]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ANANDAZ Spatial Twin MVP v1 — Complete home automation cockpit with 3D visualization",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ANANDAZ Spatial Twin MVP v1 — Complete home automation cockpit with 3D visualization",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5b05ed9d-4f43-4c7c-8070-c648debc1b6a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[component]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[component]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " roomModelStore — Reactive store connecting uploaded 3D models to viewer",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " roomModelStore — Reactive store connecting uploaded 3D models to viewer",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "57005cbe-dae9-4af7-806e-f0cdacfc2cc1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[component]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[component]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " SplatViewer — Gaussian Splat renderer for Luma/Richie 3D scans",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " SplatViewer — Gaussian Splat renderer for Luma/Richie 3D scans",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e2096e89-287d-42cb-b11f-6710d46347c7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[ui]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[ui]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Tactical Dark Cockpit Design — Complete UI system with Barlow Condensed + DM Mono typography",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Tactical Dark Cockpit Design — Complete UI system with Barlow Condensed + DM Mono typography",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8c095de7-d6de-4415-b80b-a7d4f2cd2f2c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5c884193-50cb-4793-a9a8-0b3a3e6b150b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Used React Three Fiber over plain Three.js for better React integration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Used React Three Fiber over plain Three.js for better React integration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f1618748-17a9-4e3b-9f9e-616f866363a8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implemented dual rendering system: standard glTF via R3F and Gaussian Splats via dedicated library",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implemented dual rendering system: standard glTF via R3F and Gaussian Splats via dedicated library",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fe47282d-610f-4ea7-8b19-29cc80aa2818",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Created reactive store pattern for model state management instead of static config",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Created reactive store pattern for model state management instead of static config",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "07c5a9ee-0725-4fc6-a4fa-b961743181b0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chose bottom toolbar navigation for better mobile UX",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Chose bottom toolbar navigation for better mobile UX",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "68a2d35e-1c1c-461b-ba68-67388ecaa565",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "495eec4c-a6ac-4812-9c14-2bc454c6f057",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "560fdbca-c42b-4fe3-b8ea-401c80ec2d4c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Modular component architecture enabled quick feature additions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Modular component architecture enabled quick feature additions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "02e482c5-a1d3-4084-9a7b-d8f2f204e973",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Blob URL approach for local file handling works seamlessly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Blob URL approach for local file handling works seamlessly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fb2d18f1-3e87-4e3e-95a9-3da3c721b4d8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Reactive store pattern solved state synchronization between upload and viewer",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Reactive store pattern solved state synchronization between upload and viewer",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2424a774-69de-408d-a9aa-c717a52a076c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9fc9a53a-3af6-4830-9393-d65708f4f2f4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial upload pipeline simulated processing without connecting to viewer",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial upload pipeline simulated processing without connecting to viewer",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "13b43744-5574-43ab-9d55-ef624cfb4812",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "LumaAI library incompatible with local blob URLs - required different renderer",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "LumaAI library incompatible with local blob URLs - required different renderer",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "33dd3e29-ee4b-45e3-81ff-463968fbd153",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Static config approach prevented dynamic model loading",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Static config approach prevented dynamic model loading",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5bdeb60e-5870-4118-a67f-5e012fd67539",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "89127e85-1e43-461b-8c55-f0a8cb92cc36",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Gaussian Splat files require specialized rendering different from standard 3D models",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Gaussian Splat files require specialized rendering different from standard 3D models",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9deafb25-3b3f-4e14-a9af-3d363e14d191",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "File format detection crucial for routing to appropriate rendering engine",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "File format detection crucial for routing to appropriate rendering engine",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "417893fb-eb15-43f2-92e4-234d222a7453",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus notification bar requires responsive padding adjustments",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus notification bar requires responsive padding adjustments",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8140495f-5f06-47ce-9fd4-f4aa70f20624",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a69f0387-029a-4eae-8885-8d19f69a5c42",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "LumaAI web library only supports cloud URLs, not local files",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "LumaAI web library only supports cloud URLs, not local files",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "94882c5e-4f71-4cc8-81ed-eb3fa7d9b8ba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Upload pipeline complexity with file type detection and routing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Upload pipeline complexity with file type detection and routing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8e21d2b3-e5a0-4194-bf69-9180a3d32cf5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Account billing limitation affecting development environment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Account billing limitation affecting development environment",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ae71f4c4-09ab-4499-827c-82bd6d0ce2c7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f161a2bc-14ba-41be-84e3-4026603a7e1b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What exact format does Richie export - .splat, .ply, or .glb with embedded splat data?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What exact format does Richie export - .splat, .ply, or .glb with embedded splat data?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e41d341b-dd18-4b76-a2dc-ba3f6b30d191",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should implement IndexedDB for persistent model storage between sessions?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should implement IndexedDB for persistent model storage between sessions?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5764ee81-6295-428a-a833-5c1ed88f03b4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to optimize Gaussian Splat loading times (currently 10-30s for large files)?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to optimize Gaussian Splat loading times (currently 10-30s for large files)?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f7a675d2-c704-4c0f-9b9b-026caaa06522",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e8f3419f-2772-4917-a6d0-449a85c09b0e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Connect real Home Assistant API with live polling",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Connect real Home Assistant API with live polling",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d932d8d2-cdb4-44a9-9594-706a42d40310",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add configuration panel for viewpoints and scenes editing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add configuration panel for viewpoints and scenes editing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7d147ae3-6640-41f0-baf6-a8d5cee70fca",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement IndexedDB persistence for uploaded models",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement IndexedDB persistence for uploaded models",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3ca6daa1-f0c8-4fad-8d2b-0a240e08f45c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add progress indicators for 3D model loading",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add progress indicators for 3D model loading",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f667b051-f5bd-46ec-9776-37d41929c3b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test with actual Richie export files to confirm format compatibility",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test with actual Richie export files to confirm format compatibility",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d264b678-5873-4e89-9468-c6fb02f7b942",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d9cf5a6e-07c8-4eb6-b035-e7a34382b628",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81fd-a89b-ec87d245dc39"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "oyxDQppkB8EeX1Zkv2JA9h",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "oyxDQppkB8EeX1Zkv2JA9h",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0254",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0254",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nComplete development of ANANDAZ Spatial Twin MVP v1, a home automation cockpit with 3D visualization capabilities. Built from scratch using Next.js, React Three Fiber, and SQLite with Home Assistant integration. Successfully created a functional cockpit with mini-map, 3D viewer, control panels, and timeline. Resolved critical file upload pipeline issues and integrated Gaussian Splat rendering for Richie 3D scans.\n\n\n## Context & Intent\n\nDevelopment of a comprehensive home automation dashboard that combines spatial visualization with control capabilities for the ANANDAZ chalet project. The goal was to create a tactical cockpit interface that could display 3D room models while providing Home Assistant control functionality.\n\n\n## What Was Done\n\nBuilt complete home automation cockpit with: mini-map schematic SVG (4 spaces), 3D viewer with React Three Fiber, viewpoint selector (7 viewpoints), Home Assistant control panel with mock statuses, persistent timeline in localStorage, responsive 3-column desktop and 4-tab mobile layout. Resolved upload pipeline connectivity issues by creating reactive roomModelStore. Added Gaussian Splat renderer support for Richie 3D exports. Restructured navigation with bottom toolbar.\n\n\n## Outputs Produced\n\n- [application] ANANDAZ Spatial Twin MVP v1 — Complete home automation cockpit with 3D visualization\n- [component] roomModelStore — Reactive store connecting uploaded 3D models to viewer\n- [component] SplatViewer — Gaussian Splat renderer for Luma/Richie 3D scans\n- [ui] Tactical Dark Cockpit Design — Complete UI system with Barlow Condensed + DM Mono typography\n\n## Key Decisions & Validations\n\n- Used React Three Fiber over plain Three.js for better React integration\n- Implemented dual rendering system: standard glTF via R3F and Gaussian Splats via dedicated library\n- Created reactive store pattern for model state management instead of static config\n- Chose bottom toolbar navigation for better mobile UX\n\n## Lessons Learned\n\nWorked well:\n\n- Modular component architecture enabled quick feature additions\n- Blob URL approach for local file handling works seamlessly\n- Reactive store pattern solved state synchronization between upload and viewer\nFailed / suboptimal:\n\n- Initial upload pipeline simulated processing without connecting to viewer\n- LumaAI library incompatible with local blob URLs - required different renderer\n- Static config approach prevented dynamic model loading\nDiscoveries:\n\n- Gaussian Splat files require specialized rendering different from standard 3D models\n- File format detection crucial for routing to appropriate rendering engine\n- Manus notification bar requires responsive padding adjustments\n\n## Challenges & Blockers\n\n- LumaAI web library only supports cloud URLs, not local files\n- Upload pipeline complexity with file type detection and routing\n- Account billing limitation affecting development environment\n\n## Open Questions\n\n- What exact format does Richie export - .splat, .ply, or .glb with embedded splat data?\n- Should implement IndexedDB for persistent model storage between sessions?\n- How to optimize Gaussian Splat loading times (currently 10-30s for large files)?\n\n## Next Steps\n\n- Connect real Home Assistant API with live polling\n- Add configuration panel for viewpoints and scenes editing\n- Implement IndexedDB persistence for uploaded models\n- Add progress indicators for 3D model loading\n- Test with actual Richie export files to confirm format compatibility\n---\nUID: oyxDQppkB8EeX1Zkv2JA9h | Model: claude-sonnet-4-20250514 | Cost: $0.0254\n"
+}

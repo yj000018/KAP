@@ -1,0 +1,2455 @@
+{
+  "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0",
+  "title": "Universal Selector Architecture - Multi-Session Archive System",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "xl",
+    "Language": "mixed",
+    "Subthemes": "universal-selector, api-integration, dual-layer-caching, batch-operations, manus-api, 1password-secrets, notion-integration, web-interface",
+    "Project": "yOS",
+    "UID": "wx6nbeK4q95AJMe67mKCGu",
+    "Date": "2026-03-03",
+    "Themes": "architecture, system-design, automation, data-infrastructure",
+    "Archived": "True",
+    "Depth": "landmark",
+    "Title": "Universal Selector Architecture - Multi-Session Archive System"
+  },
+  "blocks_count": 51,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2bfc9e58-2f6a-44f6-9450-262ea1574234",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fd680f8c-e915-4220-aad8-c995ee4a1674",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Solved the fundamental problem of batch session management by architecting and implementing a Universal Selector system. Started with the inability to archive multiple sessions efficiently, diagnosed API limitations, and evolved into a complete dual-layer architecture (fast local cache + authoritative Notion backend). Discovered and integrated the real Manus API, implemented 1Password secrets management across all services, and delivered both conversational and web UI modes for universal entity selection and batch operations.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Solved the fundamental problem of batch session management by architecting and implementing a Universal Selector system. Started with the inability to archive multiple sessions efficiently, diagnosed API limitations, and evolved into a complete dual-layer architecture (fast local cache + authoritative Notion backend). Discovered and integrated the real Manus API, implemented 1Password secrets management across all services, and delivered both conversational and web UI modes for universal entity selection and batch operations.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c3867115-6b94-4758-be8a-ee4baed19547",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2e550fea-5fa3-4a3d-a811-2c36e0e3573c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User needed a way to efficiently archive multiple Manus sessions to Notion but discovered the lack of native batch selection capabilities. The goal was to create a universal, reusable selector that could work across different entity types (sessions, themes, projects, files) with both conversational and visual interfaces.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User needed a way to efficiently archive multiple Manus sessions to Notion but discovered the lack of native batch selection capabilities. The goal was to create a universal, reusable selector that could work across different entity types (sessions, themes, projects, files) with both conversational and visual interfaces.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8e4c36cf-6739-4b2c-acb9-4f795b2262b5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "44c367ac-e08d-4732-b734-cba4173d84d1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built a complete Universal Selector system with conversational and web modes, integrated the real Manus API with proper authentication, created a dual-layer caching architecture (JSON cache + Notion backend), established 1Password secrets management across 24+ services, and delivered a functional web interface with filtering, sorting, and batch actions.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built a complete Universal Selector system with conversational and web modes, integrated the real Manus API with proper authentication, created a dual-layer caching architecture (JSON cache + Notion backend), established 1Password secrets management across 24+ services, and delivered a functional web interface with filtering, sorting, and batch actions.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "950f730a-92b9-45da-a47b-9ee647c0a56d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "da9d0e7d-3f7e-4dd5-affa-424e3f98ed44",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[system]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[system]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Universal Selector Engine — Complete selector system with conversational and web modes for batch entity operations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Universal Selector Engine — Complete selector system with conversational and web modes for batch entity operations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "53428e62-f169-4157-8c9f-b3d77cb05146",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[infrastructure]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[infrastructure]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 1Password Secrets Bootstrap — Automated secrets management across 24+ services with persistent inter-session storage",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " 1Password Secrets Bootstrap — Automated secrets management across 24+ services with persistent inter-session storage",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "27094963-a38e-4882-a830-29b7e7e30435",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[integration]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[integration]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Manus API Adapter — Direct API integration with proper authentication for session listing and management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Manus API Adapter — Direct API integration with proper authentication for session listing and management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "673634f1-92cb-4f60-a397-dd8565c7b41f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[web-app]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[web-app]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Interactive Session Selector — Web interface with sorting, filtering, search, and batch action capabilities",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Interactive Session Selector — Web interface with sorting, filtering, search, and batch action capabilities",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bac701b5-a965-4d1b-b93f-79878abd5585",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[architecture]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[architecture]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Dual-Layer Data Strategy — Fast local cache + authoritative Notion backend with bidirectional sync",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Dual-Layer Data Strategy — Fast local cache + authoritative Notion backend with bidirectional sync",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c1172b51-cec4-44a1-bef2-4642cdf60661",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "88934d36-3331-46a7-bd8c-f5185a16bcb2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Rejected browser scraping in favor of direct API integration for performance and reliability",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Rejected browser scraping in favor of direct API integration for performance and reliability",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2c3053fc-5bbd-49c5-b97f-6f7ab1902c50",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chose dual-layer architecture (local cache + Notion) over single slow backend to balance speed and data richness",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Chose dual-layer architecture (local cache + Notion) over single slow backend to balance speed and data richness",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "44b21413-c66b-487f-9de4-21db2e9ff983",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implemented universal selector pattern to avoid rebuilding similar functionality for different entity types",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implemented universal selector pattern to avoid rebuilding similar functionality for different entity types",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "24ef3c7a-0803-430a-9d50-5a8319971a79",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Established 1Password as the centralized secrets store with automated bootstrap across sessions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Established 1Password as the centralized secrets store with automated bootstrap across sessions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "054b64f5-7c5d-48c8-b464-af54be90a181",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built both conversational (universal compatibility) and web UI (rich interaction) modes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built both conversational (universal compatibility) and web UI (rich interaction) modes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5d48df3e-6705-45ad-a648-fa514cbd94bd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "83abf112-598d-4f5d-a33a-9a944f4c12a7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b7c1bdbb-fb3f-4b99-8621-ca0000d235bf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Direct API integration with proper authentication provides reliable 200ms response times",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Direct API integration with proper authentication provides reliable 200ms response times",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b925181d-a90d-428b-8819-001deb436688",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Dual-layer caching architecture balances immediate responsiveness with authoritative data storage",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Dual-layer caching architecture balances immediate responsiveness with authoritative data storage",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eab4d98f-4375-4c63-82d1-903d95f4e027",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Universal selector pattern enables reuse across different entity types and actions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Universal selector pattern enables reuse across different entity types and actions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "adc3aa7d-4d88-416f-bf78-d7afbe5807bf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1Password Service Account provides robust cross-session secrets management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "1Password Service Account provides robust cross-session secrets management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7b06f36e-1366-4866-a4ff-8f82f25c4131",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9e82f8f5-46a6-4569-ad14-d2f515fd6e47",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial assumption that Manus API wasn't accessible - it exists and works well with proper authentication",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial assumption that Manus API wasn't accessible - it exists and works well with proper authentication",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9f962415-3f48-4e93-b57b-79c77f637844",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Browser scraping approach was unnecessarily complex and slow compared to direct API calls",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Browser scraping approach was unnecessarily complex and slow compared to direct API calls",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a29fc246-613a-4aa8-a77e-ff9ba987153f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Single-layer Notion backend was too slow (3-9s) for interactive operations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Single-layer Notion backend was too slow (3-9s) for interactive operations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "928771fd-0ab7-40fa-80f8-72b477f8400b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "14b78d4f-54d5-48eb-8ec1-807a9453a2e5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus API exists at ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus API exists at ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "api.manus.ai/v1/tasks",
+              "link": {
+                "url": "http://api.manus.ai/v1/tasks"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "api.manus.ai/v1/tasks",
+            "href": "http://api.manus.ai/v1/tasks"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " with proper authentication requirements",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " with proper authentication requirements",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "418452b2-41d4-4665-8711-8f3c1a8a8415",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Local JSON caching provides <50ms response times while maintaining data persistence",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Local JSON caching provides <50ms response times while maintaining data persistence",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "773a2ef2-b5fd-489c-9507-272a7979ae80",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1Password Service Account can manage 24+ service credentials with proper CLI integration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "1Password Service Account can manage 24+ service credentials with proper CLI integration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bb75afe6-81d0-43cc-a4e0-21b42f1d4230",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Web interface deployment within Manus sandbox enables rich UI without external hosting",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Web interface deployment within Manus sandbox enables rich UI without external hosting",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "730e5d1c-4eed-4923-bb72-842f22ec4048",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d98b58b9-68f5-44fa-a948-834b65d0a9af",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial inability to locate working Manus API endpoints and authentication methods",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial inability to locate working Manus API endpoints and authentication methods",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a9745727-ea00-4d7f-9c98-1e3ca6292900",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Missing API key initially required discovery and proper storage in secrets management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Missing API key initially required discovery and proper storage in secrets management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3b3ae58e-77f4-4060-9505-b2c5c4ec5425",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Flask web server CORS and timeout issues required multiple iterations to resolve",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Flask web server CORS and timeout issues required multiple iterations to resolve",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e1390c78-0817-4b9f-93f2-b1c8ad4c7713",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Balancing speed requirements with data authority and manual editability",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Balancing speed requirements with data authority and manual editability",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "64670009-bc3d-4b6c-89a3-16a120d78b12",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f83d016c-1e47-4f59-88dd-ac0417d9f02b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should the web interface be deployed permanently on ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should the web interface be deployed permanently on ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " for persistent URL access?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " for persistent URL access?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "58bc644b-882a-4d6a-8d64-c1005d349b3a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to handle automatic sync frequency between local cache and Notion backend?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to handle automatic sync frequency between local cache and Notion backend?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "64c457ed-c206-47a8-87c7-41c38d8f4540",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What other entity types beyond sessions would benefit from the universal selector pattern?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What other entity types beyond sessions would benefit from the universal selector pattern?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "06db64c2-77f6-4c8e-bd0d-e5b2c203f187",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to extend batch operations beyond archive to include tagging, linking, and analysis?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to extend batch operations beyond archive to include tagging, linking, and analysis?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "db7ceb0c-1b20-435a-b17a-5a06636bc49e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "72ac85a7-22ef-47bf-88bb-558384afce58",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Deploy web interface permanently if persistent access is needed",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Deploy web interface permanently if persistent access is needed",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "85300c9a-b844-4a80-80cf-93ee20dc4015",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Extend universal selector to support themes, projects, and files",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Extend universal selector to support themes, projects, and files",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "482dcb61-5a13-42cf-a41d-f315bcdabbdf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement automatic cache-Notion sync scheduling",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement automatic cache-Notion sync scheduling",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "68a01c51-d5bd-4c82-9bac-4946a4e1e860",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add more batch operation handlers (analyze, tag, link, synthesize)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add more batch operation handlers (analyze, tag, link, synthesize)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5e984ce7-46d6-41b0-bab4-e05f6a9488be",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create adapters for other data sources (Todoist, Asana, filesystem)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create adapters for other data sources (Todoist, Asana, filesystem)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b207363c-06ff-4d56-9f55-9dd7d4676516",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "181e9af6-dd48-4bd4-975e-64898126ef1f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-819d-a45f-f2728d9e62d0"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "wx6nbeK4q95AJMe67mKCGu",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "wx6nbeK4q95AJMe67mKCGu",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0577",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0577",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nSolved the fundamental problem of batch session management by architecting and implementing a Universal Selector system. Started with the inability to archive multiple sessions efficiently, diagnosed API limitations, and evolved into a complete dual-layer architecture (fast local cache + authoritative Notion backend). Discovered and integrated the real Manus API, implemented 1Password secrets management across all services, and delivered both conversational and web UI modes for universal entity selection and batch operations.\n\n\n## Context & Intent\n\nUser needed a way to efficiently archive multiple Manus sessions to Notion but discovered the lack of native batch selection capabilities. The goal was to create a universal, reusable selector that could work across different entity types (sessions, themes, projects, files) with both conversational and visual interfaces.\n\n\n## What Was Done\n\nBuilt a complete Universal Selector system with conversational and web modes, integrated the real Manus API with proper authentication, created a dual-layer caching architecture (JSON cache + Notion backend), established 1Password secrets management across 24+ services, and delivered a functional web interface with filtering, sorting, and batch actions.\n\n\n## Outputs Produced\n\n- [system] Universal Selector Engine — Complete selector system with conversational and web modes for batch entity operations\n- [infrastructure] 1Password Secrets Bootstrap — Automated secrets management across 24+ services with persistent inter-session storage\n- [integration] Manus API Adapter — Direct API integration with proper authentication for session listing and management\n- [web-app] Interactive Session Selector — Web interface with sorting, filtering, search, and batch action capabilities\n- [architecture] Dual-Layer Data Strategy — Fast local cache + authoritative Notion backend with bidirectional sync\n\n## Key Decisions & Validations\n\n- Rejected browser scraping in favor of direct API integration for performance and reliability\n- Chose dual-layer architecture (local cache + Notion) over single slow backend to balance speed and data richness\n- Implemented universal selector pattern to avoid rebuilding similar functionality for different entity types\n- Established 1Password as the centralized secrets store with automated bootstrap across sessions\n- Built both conversational (universal compatibility) and web UI (rich interaction) modes\n\n## Lessons Learned\n\nWorked well:\n\n- Direct API integration with proper authentication provides reliable 200ms response times\n- Dual-layer caching architecture balances immediate responsiveness with authoritative data storage\n- Universal selector pattern enables reuse across different entity types and actions\n- 1Password Service Account provides robust cross-session secrets management\nFailed / suboptimal:\n\n- Initial assumption that Manus API wasn't accessible - it exists and works well with proper authentication\n- Browser scraping approach was unnecessarily complex and slow compared to direct API calls\n- Single-layer Notion backend was too slow (3-9s) for interactive operations\nDiscoveries:\n\n- Manus API exists at api.manus.ai/v1/tasks with proper authentication requirements\n- Local JSON caching provides <50ms response times while maintaining data persistence\n- 1Password Service Account can manage 24+ service credentials with proper CLI integration\n- Web interface deployment within Manus sandbox enables rich UI without external hosting\n\n## Challenges & Blockers\n\n- Initial inability to locate working Manus API endpoints and authentication methods\n- Missing API key initially required discovery and proper storage in secrets management\n- Flask web server CORS and timeout issues required multiple iterations to resolve\n- Balancing speed requirements with data authority and manual editability\n\n## Open Questions\n\n- Should the web interface be deployed permanently on Fly.io for persistent URL access?\n- How to handle automatic sync frequency between local cache and Notion backend?\n- What other entity types beyond sessions would benefit from the universal selector pattern?\n- How to extend batch operations beyond archive to include tagging, linking, and analysis?\n\n## Next Steps\n\n- Deploy web interface permanently if persistent access is needed\n- Extend universal selector to support themes, projects, and files\n- Implement automatic cache-Notion sync scheduling\n- Add more batch operation handlers (analyze, tag, link, synthesize)\n- Create adapters for other data sources (Todoist, Asana, filesystem)\n---\nUID: wx6nbeK4q95AJMe67mKCGu | Model: claude-sonnet-4-20250514 | Cost: $0.0577\n"
+}

@@ -1,0 +1,1788 @@
+{
+  "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41",
+  "title": "Testing Playwright MCP Connector and Web Automation Features",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "short",
+    "Language": "en",
+    "Subthemes": "playwright capabilities, javascript execution, data extraction, screenshot capture",
+    "Project": "yOS",
+    "UID": "ioCQWM8EkX7cNs5WNUN1fR",
+    "Date": "2025-12-29",
+    "Themes": "browser automation, web scraping, tool testing, MCP connector",
+    "Archived": "True",
+    "Depth": "standard",
+    "Title": "Testing Playwright MCP Connector and Web Automation Features"
+  },
+  "blocks_count": 37,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "c2bc4860-2a1c-4454-91b5-9aa00995f542",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e06d3a3e-12e6-4546-a9ae-cdfeb8d2b763",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Testing session for Playwright MCP connector demonstrating 22 browser automation tools. Successfully navigated websites, extracted structured data from Hacker News (top 5 stories), captured screenshots, and executed custom JavaScript. All core features validated including navigation, interaction, and data extraction capabilities.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Testing session for Playwright MCP connector demonstrating 22 browser automation tools. Successfully navigated websites, extracted structured data from Hacker News (top 5 stories), captured screenshots, and executed custom JavaScript. All core features validated including navigation, interaction, and data extraction capabilities.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f3fa9d7d-2724-4e00-b9a6-cd2a67126a8b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "80109c9d-8d3a-4d7a-b36c-4a15680575c0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User requested testing of Playwright connector to understand its capabilities and see practical demonstrations of data fetching",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User requested testing of Playwright connector to understand its capabilities and see practical demonstrations of data fetching",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a0489b4f-7b4b-4571-a195-af97175b51de",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9b6b3ca5-1f0b-478b-8cbc-1470599921d2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Installed and configured Playwright MCP server, tested 22 available tools, navigated to multiple websites (",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Installed and configured Playwright MCP server, tested 22 available tools, navigated to multiple websites (",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "example.com",
+              "link": {
+                "url": "http://example.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "example.com",
+            "href": "http://example.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", Hacker News), extracted structured data using JavaScript, captured screenshots, and demonstrated tab management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", Hacker News), extracted structured data using JavaScript, captured screenshots, and demonstrated tab management",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "113203b7-f4c6-402a-a4a9-d5cd9ce3e8a6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c7601c7c-6061-4f41-9855-185fa55a97ad",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[data]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[data]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " hacker_news_stories — Top 5 Hacker News article titles and URLs extracted via JavaScript",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " hacker_news_stories — Top 5 Hacker News article titles and URLs extracted via JavaScript",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a2e1d416-61a0-4c1f-ae74-872b26bc9f57",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[screenshot]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[screenshot]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " example_com_screenshot — Full-page screenshot of ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " example_com_screenshot — Full-page screenshot of ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "example.com",
+              "link": {
+                "url": "http://example.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "example.com",
+            "href": "http://example.com/"
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b4d3eebc-cbc2-491d-b945-402221270f83",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[report]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[report]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " test_report — Comprehensive documentation of connector capabilities and test results",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " test_report — Comprehensive documentation of connector capabilities and test results",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4ea97ccb-712e-4e23-b6d2-aa8c0a427e4e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2d3457ba-f3db-4193-b93c-56f621148b69",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Proceeded with testing despite initial browser installation delay",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Proceeded with testing despite initial browser installation delay",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3ba01371-3188-423a-ac59-f25cd9411696",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Used Hacker News as primary data extraction target",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Used Hacker News as primary data extraction target",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "75ce57ff-fe16-40ec-b8e2-2a6e9753ec8b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Demonstrated both basic navigation and advanced JavaScript execution",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Demonstrated both basic navigation and advanced JavaScript execution",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a84cbb5e-c050-4380-9bea-068d24471ae9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4981bd96-9a21-4465-9dad-5159598fe950",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "03e38fec-970d-4d1a-8e72-022d89b36233",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "All 22 Playwright tools functional",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "All 22 Playwright tools functional",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c2790b0d-d3dd-4b31-a604-29945cadf263",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "JavaScript execution works seamlessly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "JavaScript execution works seamlessly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f270e7d3-7644-432c-8d53-5f48c84adb69",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Screenshot capture successful",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Screenshot capture successful",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0b59b304-082c-41ed-b063-6e40db83ff84",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Data extraction reliable",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Data extraction reliable",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8847dc18-bf5b-4922-8228-1f5e3cebbfd1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4d5f381c-a70a-4690-832c-89af75dab60f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial browser installation took longer than expected",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial browser installation took longer than expected",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8050feda-fbc8-494e-ab94-fc8e0d9f2cb7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "88ae609b-ba88-4347-813c-5e07ff73bb18",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Playwright MCP provides comprehensive web automation suite",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Playwright MCP provides comprehensive web automation suite",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a6ffd395-8077-4dc7-a384-ad2bb869745f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Custom JavaScript execution enables flexible data extraction",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Custom JavaScript execution enables flexible data extraction",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ea908265-00ee-45ea-848f-e3a306a00ec7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Multiple tab management capabilities available",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Multiple tab management capabilities available",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4c1c3696-80ee-4438-847b-d0a9f3ba007a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c549406e-3914-4dd7-920e-e7455b00ea21",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial browser installation delay",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial browser installation delay",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ed0b1bc3-4fa2-4052-899f-65841f7c04d7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a4ee1bfe-c728-4e27-9ea7-cfbe62fca469",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Performance optimization for large-scale scraping",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Performance optimization for large-scale scraping",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e6db2e6c-c037-40c0-9cac-92d1fae48f07",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integration patterns with other MCP connectors",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integration patterns with other MCP connectors",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "77816251-9ed7-4f1f-8795-d8097909e556",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1aa4cb2f-0528-49c7-828f-9527cfc26063",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integrate Playwright connector into broader yOS automation workflows",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integrate Playwright connector into broader yOS automation workflows",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "08b8c6c8-bca2-4bd1-a03b-86db6fb4f492",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Explore advanced features like network monitoring and console logging",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Explore advanced features like network monitoring and console logging",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5f1bb7dd-ba1d-4139-9315-e3d68b819434",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test connector with more complex web applications",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test connector with more complex web applications",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bfc8fb17-5d71-4d22-8f38-93e2dcee38b1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d5d2fe2e-ef28-4fc7-a57b-5df312035ffe",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813b-a9c3-ca2bea9eeb41"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ioCQWM8EkX7cNs5WNUN1fR",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "ioCQWM8EkX7cNs5WNUN1fR",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0126",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0126",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nTesting session for Playwright MCP connector demonstrating 22 browser automation tools. Successfully navigated websites, extracted structured data from Hacker News (top 5 stories), captured screenshots, and executed custom JavaScript. All core features validated including navigation, interaction, and data extraction capabilities.\n\n\n## Context & Intent\n\nUser requested testing of Playwright connector to understand its capabilities and see practical demonstrations of data fetching\n\n\n## What Was Done\n\nInstalled and configured Playwright MCP server, tested 22 available tools, navigated to multiple websites (example.com, Hacker News), extracted structured data using JavaScript, captured screenshots, and demonstrated tab management\n\n\n## Outputs Produced\n\n- [data] hacker_news_stories — Top 5 Hacker News article titles and URLs extracted via JavaScript\n- [screenshot] example_com_screenshot — Full-page screenshot of example.com\n- [report] test_report — Comprehensive documentation of connector capabilities and test results\n\n## Key Decisions & Validations\n\n- Proceeded with testing despite initial browser installation delay\n- Used Hacker News as primary data extraction target\n- Demonstrated both basic navigation and advanced JavaScript execution\n\n## Lessons Learned\n\nWorked well:\n\n- All 22 Playwright tools functional\n- JavaScript execution works seamlessly\n- Screenshot capture successful\n- Data extraction reliable\nFailed / suboptimal:\n\n- Initial browser installation took longer than expected\nDiscoveries:\n\n- Playwright MCP provides comprehensive web automation suite\n- Custom JavaScript execution enables flexible data extraction\n- Multiple tab management capabilities available\n\n## Challenges & Blockers\n\n- Initial browser installation delay\n\n## Open Questions\n\n- Performance optimization for large-scale scraping\n- Integration patterns with other MCP connectors\n\n## Next Steps\n\n- Integrate Playwright connector into broader yOS automation workflows\n- Explore advanced features like network monitoring and console logging\n- Test connector with more complex web applications\n---\nUID: ioCQWM8EkX7cNs5WNUN1fR | Model: claude-sonnet-4-20250514 | Cost: $0.0126\n"
+}

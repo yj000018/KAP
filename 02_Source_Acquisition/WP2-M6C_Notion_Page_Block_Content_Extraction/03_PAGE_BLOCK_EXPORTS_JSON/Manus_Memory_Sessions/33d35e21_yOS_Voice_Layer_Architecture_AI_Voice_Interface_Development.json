@@ -1,0 +1,2542 @@
+{
+  "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668",
+  "title": "yOS Voice Layer Architecture & AI Voice Interface Development",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "xl",
+    "Language": "mixed",
+    "Subthemes": "Tampermonkey Script, Hume AI TTS, Browser Speech Recognition, Real-time Response Detection, Settings Panel UI",
+    "Project": "yOS",
+    "UID": "jrtiZy3ZJLmME2xF1c9t4G",
+    "Date": "2026-02-05",
+    "Themes": "Voice Interface, Browser Extension Development, AI Integration, DOM Manipulation, Speech API",
+    "Archived": "True",
+    "Depth": "landmark",
+    "Title": "yOS Voice Layer Architecture & AI Voice Interface Development"
+  },
+  "blocks_count": 55,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "9d26f900-b235-43cc-9cc8-f278204c6ab4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f87668e3-6613-44fc-8409-7361f90d4782",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Intensive development session creating yOS Voice Layer, a sophisticated Tampermonkey script enabling voice conversations with Manus AI. Started as simple voice interface concept but evolved into complex DOM manipulation system with streaming response detection, dual TTS providers (Hume AI + Browser TTS), and full settings panel. Overcame major technical challenges including DOM selector issues, infinite loops, streaming text detection, and variable scoping bugs through systematic debugging.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Intensive development session creating yOS Voice Layer, a sophisticated Tampermonkey script enabling voice conversations with Manus AI. Started as simple voice interface concept but evolved into complex DOM manipulation system with streaming response detection, dual TTS providers (Hume AI + Browser TTS), and full settings panel. Overcame major technical challenges including DOM selector issues, infinite loops, streaming text detection, and variable scoping bugs through systematic debugging.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f8e61217-7228-4d96-acda-2c50e035a3a4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5ec2169c-1383-45b3-b9d6-f7cd2ed61c45",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick wanted to create a voice interface for Manus conversations similar to ChatGPT/Gemini voice modes. Initial attempt at separate web app abandoned due to API limitations, leading to Tampermonkey injection approach as only viable solution for real-time DOM integration.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick wanted to create a voice interface for Manus conversations similar to ChatGPT/Gemini voice modes. Initial attempt at separate web app abandoned due to API limitations, leading to Tampermonkey injection approach as only viable solution for real-time DOM integration.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "acf91a8a-138f-4b79-b640-08d26e4468cb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0da794b2-0f12-41f3-b39c-697ea35b6593",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Developed complete yOS Voice Layer v3.1.0 with voice recognition, response detection, text-to-speech synthesis, settings panel, auto-restart functionality, and dual TTS providers. Debugged through 15+ versions fixing DOM selectors, streaming detection, infinite loops, variable scoping, and empty response filtering.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Developed complete yOS Voice Layer v3.1.0 with voice recognition, response detection, text-to-speech synthesis, settings panel, auto-restart functionality, and dual TTS providers. Debugged through 15+ versions fixing DOM selectors, streaming detection, infinite loops, variable scoping, and empty response filtering.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "34ac9e18-8e0d-4abd-aa42-43e0e22a761d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e0abf9f6-d287-4238-b1bf-6250b2f97953",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[Tampermonkey Script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[Tampermonkey Script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yOS Voice Layer v3.1.0 — Complete voice interface with Hume AI and Browser TTS support",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yOS Voice Layer v3.1.0 — Complete voice interface with Hume AI and Browser TTS support",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3cd632c9-771b-4465-b2ce-b93332bc02f0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[Settings Panel]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[Settings Panel]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Voice Configuration UI — Floating panel with voice, speed, language, and provider controls",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Voice Configuration UI — Floating panel with voice, speed, language, and provider controls",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4106c2f1-bfd8-40ab-b19e-8252574be650",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[Documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[Documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Delivery Package — Complete docs including setup, testing, and changelog",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Delivery Package — Complete docs including setup, testing, and changelog",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "66f65626-fbe5-414d-9abd-60a8a24b3787",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[Debugging Methodology]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[Debugging Methodology]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " DOM Detection System — Reusable approach for real-time response detection in streaming interfaces",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " DOM Detection System — Reusable approach for real-time response detection in streaming interfaces",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d2510c38-46a1-4819-b107-de24e89dcfc2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1260c3b0-c3ad-4eb5-ae3d-f70fd7549d21",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Abandoned web app approach in favor of Tampermonkey injection for DOM access",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Abandoned web app approach in favor of Tampermonkey injection for DOM access",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ddfc83c1-7efd-4f2b-a8ec-a4f2a24b593f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implemented dual TTS provider system (Hume AI premium + Browser TTS free)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implemented dual TTS provider system (Hume AI premium + Browser TTS free)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e748b0ab-7dbb-477a-96ab-0d9309f0257e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Used message counting and content stability detection for streaming responses",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Used message counting and content stability detection for streaming responses",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "47f33545-82c7-4830-98a3-cc84e596fc5f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Added auto-restart microphone functionality for continuous conversation flow",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Added auto-restart microphone functionality for continuous conversation flow",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c396115b-93fc-49f0-9f5b-90468c1dca66",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implemented telegraphic summarization to reduce verbose responses for voice",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implemented telegraphic summarization to reduce verbose responses for voice",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e64a1a2c-ff87-40c4-b766-f7aa93c7ffa9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4472240b-837d-467e-ba2c-917e773d6500",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1693c670-6941-4664-9977-d1e51bd73440",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Systematic debugging approach with console logs and iterative fixes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Systematic debugging approach with console logs and iterative fixes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0b7f7f5a-e8de-4a96-96c6-9d5edcb472e2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "DOM mutation observation for real-time response detection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "DOM mutation observation for real-time response detection",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1e1f44c2-ac50-43ee-b430-2fc83fcbc98c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Dual provider architecture allowing fallback options",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Dual provider architecture allowing fallback options",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b6b4730f-464f-46a6-a9c2-34436f6d6557",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Text stability detection for handling streaming responses",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Text stability detection for handling streaming responses",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8416d4f8-1a5d-4de5-bfca-96cda93cb316",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Parent element filtering to distinguish user vs assistant messages",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Parent element filtering to distinguish user vs assistant messages",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0ef86b1f-8f37-4964-ad6e-f2d32984d64e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "72e3b86c-b76c-4b9e-8c7d-d60890a3c342",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial web app approach failed due to cross-origin API limitations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial web app approach failed due to cross-origin API limitations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9eb2cfd1-644a-4e4b-9a00-84b8cce06d2f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Multiple DOM selector approaches failed before finding correct span/div structure",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Multiple DOM selector approaches failed before finding correct span/div structure",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "344c9552-8637-4f4b-adc8-2a00d36bd0bd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Variable scoping bugs with parent references in async loops",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Variable scoping bugs with parent references in async loops",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f604fbc0-2f67-49e9-a5fe-397372335091",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Infinite loops from unhandled edge cases in stability detection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Infinite loops from unhandled edge cases in stability detection",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "95882068-f933-4837-8b76-5916388d2102",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Over-aggressive text filtering causing empty summaries",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Over-aggressive text filtering causing empty summaries",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "28f55565-d446-4947-b72d-19d2b69ae26b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b38228cf-fa25-4699-b84f-53279033a420",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus uses different DOM structures for user (span) vs assistant (div) messages",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus uses different DOM structures for user (span) vs assistant (div) messages",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "92d590fe-1072-417f-b7a4-077c40023714",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Streaming responses require stability detection rather than immediate processing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Streaming responses require stability detection rather than immediate processing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1ad76309-95bb-4375-aa9e-4079f8485e12",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Browser TTS provides viable free alternative to premium AI voice services",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Browser TTS provides viable free alternative to premium AI voice services",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4bdb7e2b-bfef-44e0-bfbd-725384ff95b5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Settings persistence in Tampermonkey requires careful localStorage management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Settings persistence in Tampermonkey requires careful localStorage management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5d8eecd3-2202-4815-962a-435d44083f39",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Real-time DOM injection requires multiple fallback selector strategies",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Real-time DOM injection requires multiple fallback selector strategies",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "95952c0b-2994-4aa9-a5c5-2142b897fcea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "483ab322-0e91-4aac-821d-c271466090b5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "DOM structure detection took multiple iterations to identify correct selectors",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "DOM structure detection took multiple iterations to identify correct selectors",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2eaaee21-2c87-457a-8d0a-d065b131b7ba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Streaming response handling caused infinite loops and false detections",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Streaming response handling caused infinite loops and false detections",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "56e11752-5875-4fef-b2ab-0272eeed2e34",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Variable scoping bugs in asynchronous loops required careful state management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Variable scoping bugs in asynchronous loops required careful state management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35332519-f1b6-49cb-b7ac-6dae8ba4d1a0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "macOS interference with audio playback through automatic subtitle panels",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "macOS interference with audio playback through automatic subtitle panels",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4e191697-45a1-45e1-aeef-ab567b046aed",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Balancing response speed vs accuracy in stability detection timing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Balancing response speed vs accuracy in stability detection timing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "409218ec-2229-4766-aa67-b302df84786f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2d4ab2f6-5161-4e86-9850-84f491e1c02d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Will the dual TTS system handle all edge cases in production use?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Will the dual TTS system handle all edge cases in production use?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2cac6e5b-d135-4be4-9956-9515ab652471",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How will the system perform with longer conversations and memory usage?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How will the system perform with longer conversations and memory usage?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5ffedaab-9e8a-4a37-948d-c1aab4df6edc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Can the DOM detection system be made more resilient to Manus UI changes?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Can the DOM detection system be made more resilient to Manus UI changes?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6b5c6f8e-a0cf-41d4-906d-f754831d7863",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should we add more TTS providers like ElevenLabs or OpenAI TTS?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should we add more TTS providers like ElevenLabs or OpenAI TTS?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9b0bdf7d-e4b1-4bcb-855d-b3f61f8719ca",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "be70fb34-24e9-46a3-9ec0-534b5e9200d9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test v3.1.0 comprehensively with both TTS providers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test v3.1.0 comprehensively with both TTS providers",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "34fc2208-dc80-4205-8f7a-03ce7dcfd9b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Monitor for any remaining edge cases or stability issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Monitor for any remaining edge cases or stability issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "29ab31c4-fadf-46af-a181-b22a837b65a3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Consider adding additional TTS provider integrations if needed",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Consider adding additional TTS provider integrations if needed",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "99a93f7a-fa26-474b-b127-c04395c95d1c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Evaluate performance optimization for longer conversation sessions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Evaluate performance optimization for longer conversation sessions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8a3a4fc7-57e4-49e0-a5e4-fc6bdf1121da",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Document the debugging methodology as reusable skill for future projects",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Document the debugging methodology as reusable skill for future projects",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6c3efc07-998a-4b0d-a5fc-c444b805662f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f47c394f-0146-4cf2-85a0-06a75574780e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e4-b510-d78f6ca80668"
+      },
+      "created_time": "2026-04-09T08:40:00.000Z",
+      "last_edited_time": "2026-04-09T08:40:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "jrtiZy3ZJLmME2xF1c9t4G",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "jrtiZy3ZJLmME2xF1c9t4G",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0896",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0896",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nIntensive development session creating yOS Voice Layer, a sophisticated Tampermonkey script enabling voice conversations with Manus AI. Started as simple voice interface concept but evolved into complex DOM manipulation system with streaming response detection, dual TTS providers (Hume AI + Browser TTS), and full settings panel. Overcame major technical challenges including DOM selector issues, infinite loops, streaming text detection, and variable scoping bugs through systematic debugging.\n\n\n## Context & Intent\n\nYannick wanted to create a voice interface for Manus conversations similar to ChatGPT/Gemini voice modes. Initial attempt at separate web app abandoned due to API limitations, leading to Tampermonkey injection approach as only viable solution for real-time DOM integration.\n\n\n## What Was Done\n\nDeveloped complete yOS Voice Layer v3.1.0 with voice recognition, response detection, text-to-speech synthesis, settings panel, auto-restart functionality, and dual TTS providers. Debugged through 15+ versions fixing DOM selectors, streaming detection, infinite loops, variable scoping, and empty response filtering.\n\n\n## Outputs Produced\n\n- [Tampermonkey Script] yOS Voice Layer v3.1.0 — Complete voice interface with Hume AI and Browser TTS support\n- [Settings Panel] Voice Configuration UI — Floating panel with voice, speed, language, and provider controls\n- [Documentation] Delivery Package — Complete docs including setup, testing, and changelog\n- [Debugging Methodology] DOM Detection System — Reusable approach for real-time response detection in streaming interfaces\n\n## Key Decisions & Validations\n\n- Abandoned web app approach in favor of Tampermonkey injection for DOM access\n- Implemented dual TTS provider system (Hume AI premium + Browser TTS free)\n- Used message counting and content stability detection for streaming responses\n- Added auto-restart microphone functionality for continuous conversation flow\n- Implemented telegraphic summarization to reduce verbose responses for voice\n\n## Lessons Learned\n\nWorked well:\n\n- Systematic debugging approach with console logs and iterative fixes\n- DOM mutation observation for real-time response detection\n- Dual provider architecture allowing fallback options\n- Text stability detection for handling streaming responses\n- Parent element filtering to distinguish user vs assistant messages\nFailed / suboptimal:\n\n- Initial web app approach failed due to cross-origin API limitations\n- Multiple DOM selector approaches failed before finding correct span/div structure\n- Variable scoping bugs with parent references in async loops\n- Infinite loops from unhandled edge cases in stability detection\n- Over-aggressive text filtering causing empty summaries\nDiscoveries:\n\n- Manus uses different DOM structures for user (span) vs assistant (div) messages\n- Streaming responses require stability detection rather than immediate processing\n- Browser TTS provides viable free alternative to premium AI voice services\n- Settings persistence in Tampermonkey requires careful localStorage management\n- Real-time DOM injection requires multiple fallback selector strategies\n\n## Challenges & Blockers\n\n- DOM structure detection took multiple iterations to identify correct selectors\n- Streaming response handling caused infinite loops and false detections\n- Variable scoping bugs in asynchronous loops required careful state management\n- macOS interference with audio playback through automatic subtitle panels\n- Balancing response speed vs accuracy in stability detection timing\n\n## Open Questions\n\n- Will the dual TTS system handle all edge cases in production use?\n- How will the system perform with longer conversations and memory usage?\n- Can the DOM detection system be made more resilient to Manus UI changes?\n- Should we add more TTS providers like ElevenLabs or OpenAI TTS?\n\n## Next Steps\n\n- Test v3.1.0 comprehensively with both TTS providers\n- Monitor for any remaining edge cases or stability issues\n- Consider adding additional TTS provider integrations if needed\n- Evaluate performance optimization for longer conversation sessions\n- Document the debugging methodology as reusable skill for future projects\n---\nUID: jrtiZy3ZJLmME2xF1c9t4G | Model: claude-sonnet-4-20250514 | Cost: $0.0896\n"
+}

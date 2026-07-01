@@ -1,0 +1,2339 @@
+{
+  "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813",
+  "title": "Creation of Manus-Notion Memory Management System",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "long",
+    "Language": "mixed",
+    "Subthemes": "reverse engineering, Notion integration, MCP servers, token economics, persistent memory, skill development, conversation archiving",
+    "Project": "yOS",
+    "UID": "fwTMN5rFtFC00wq2Hfa0ya",
+    "Date": "2026-01-31",
+    "Themes": "memory management, system architecture, AI agent functionality, knowledge organization, automation",
+    "Archived": "True",
+    "Depth": "landmark",
+    "Title": "Creation of Manus-Notion Memory Management System"
+  },
+  "blocks_count": 50,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "031c91b6-c93b-4b9e-983d-51f5c13e8cb6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "128e5d19-521f-4b1d-8381-7f44d7405ba1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick sought to understand Manus's internal architecture (LLM backend, external API access, token costs, memory management) then collaborated with Manus to design and build a comprehensive memory management system using Notion. The system includes conversation archiving, project tracking, explicit knowledge storage, and intelligent cross-linking with automated workflows. A custom memory-manager skill was created to enable simple commands for memory operations, and the system was successfully tested with the conversation archival feature.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick sought to understand Manus's internal architecture (LLM backend, external API access, token costs, memory management) then collaborated with Manus to design and build a comprehensive memory management system using Notion. The system includes conversation archiving, project tracking, explicit knowledge storage, and intelligent cross-linking with automated workflows. A custom memory-manager skill was created to enable simple commands for memory operations, and the system was successfully tested with the conversation archival feature.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1a924642-22e9-4a68-bf79-288eef80c868",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "68525ee2-5d9a-4b85-8173-48f52f79ceff",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick wanted to reverse-engineer Manus's functionality to understand token costs and memory limitations, then address the lack of persistent memory between sessions by creating a structured knowledge management system integrated with Notion.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick wanted to reverse-engineer Manus's functionality to understand token costs and memory limitations, then address the lack of persistent memory between sessions by creating a structured knowledge management system integrated with Notion.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e0187f71-dcce-4792-9c56-e45a3876bfa6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "90cd9685-f3f6-4dbe-b408-820ff5753c6a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Conducted reverse engineering Q&A about Manus architecture, designed a 5-tier memory system (Conversations, Projects, Explicit Knowledge, Preferences, Session Summaries), created complete Notion database structure with yOS project, developed automated workflows, built custom memory-manager skill with simple commands, and successfully tested conversation archiving functionality.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Conducted reverse engineering Q&A about Manus architecture, designed a 5-tier memory system (Conversations, Projects, Explicit Knowledge, Preferences, Session Summaries), created complete Notion database structure with yOS project, developed automated workflows, built custom memory-manager skill with simple commands, and successfully tested conversation archiving functionality.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "de87a42a-ddd9-4cb2-aca0-51668af39a27",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7ae31a0e-826a-4786-95df-6a073d1d77a7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[notion_database]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[notion_database]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Manus Memory Hub — Complete memory management system with 5 database types and intelligent cross-linking",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Manus Memory Hub — Complete memory management system with 5 database types and intelligent cross-linking",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "552d968e-bf63-430f-ade0-78a67c6b4adc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[notion_page]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[notion_page]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yOS Project — Structured project page for Yannick's cognitive operating system",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yOS Project — Structured project page for Yannick's cognitive operating system",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8625bafe-1f3f-4547-8738-999e1a48de54",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[skill]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[skill]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " memory-manager — Custom Manus skill enabling memory commands like archive, store, search, load context",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " memory-manager — Custom Manus skill enabling memory commands like archive, store, search, load context",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6b06adff-440d-4e31-9bfd-8a1053c497e7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " User Guide — Complete guide explaining system usage with examples and best practices",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " User Guide — Complete guide explaining system usage with examples and best practices",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fd98f997-875f-4284-b914-8270b4434c9c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[conversation_archive]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[conversation_archive]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Archived Session — Structured archive of the current conversation with TOC, summaries, and transcription",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Archived Session — Structured archive of the current conversation with TOC, summaries, and transcription",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8a2071e8-e648-48e3-bee0-1ff057e2930d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ef19171c-c835-4eca-92f4-7a0bad468795",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Archiving on-demand rather than automatic",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Archiving on-demand rather than automatic",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7bf5e959-a7a6-4ea1-a045-e1a07b0335dd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Dual format: synthesis/resume + chaptered transcription with TOC",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Dual format: synthesis/resume + chaptered transcription with TOC",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "97be3f01-4d47-4215-8585-44d0faaeb873",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "yOS as initial project focus",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "yOS as initial project focus",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7bd959c1-9850-4cc6-8003-fa8f9c8c0d93",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Specific Notion workspace creation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Specific Notion workspace creation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ce5423a2-fb0a-4244-aa2e-1f02b011ad0d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Include smart features: contextual intelligence, insights, templates, multi-tool integration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Include smart features: contextual intelligence, insights, templates, multi-tool integration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e916a0a9-5057-4d14-b58c-427b79f28452",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Exclude collaborative features and RAG/graphs for Phase 2",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Exclude collaborative features and RAG/graphs for Phase 2",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e15916e8-a314-42dd-84d8-812925041e98",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create custom skill for enhanced Manus interface",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create custom skill for enhanced Manus interface",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "13c211da-eea5-4d27-ba98-2ad24336fb12",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "816c8774-f5f6-4e9f-aa7b-05097ff8acc1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d5dbc43e-0d9a-46f9-9129-07fa14fa327b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MCP Notion server integration worked seamlessly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MCP Notion server integration worked seamlessly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a1697b9c-a7db-4127-b9a7-848992ad5405",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Custom skill architecture enables powerful interface extensions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Custom skill architecture enables powerful interface extensions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d02aa7ae-8820-484f-b14d-a5afdd6a0cac",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Conversation archiving with structured analysis proved immediately valuable",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Conversation archiving with structured analysis proved immediately valuable",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "81e86b63-2036-4a0f-ae85-9913e0de1946",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Modular system design allows for future enhancements",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Modular system design allows for future enhancements",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0b5fc4c7-8dec-4849-95ac-af32c338683a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1aea3afe-628a-479a-9c5d-6b94397bc958",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial API connection had temporary issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial API connection had temporary issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "43946e3c-6774-4ba5-8b01-de2d1e2e0fc8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Memory limitations between sessions confirmed as significant constraint",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Memory limitations between sessions confirmed as significant constraint",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7c341ce9-5b53-4888-a5b8-853fe51d4370",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "67e957d4-90a1-4880-8748-7c9b6a9664d9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus uses ~200k token window (250-330 pages A4 equivalent)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus uses ~200k token window (250-330 pages A4 equivalent)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f799f1cb-14d7-4c17-b84a-8e3c07d3bf72",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "External LLM calls cost API credits rather than Manus tokens",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "External LLM calls cost API credits rather than Manus tokens",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2ee4fed9-fef9-4815-82ba-cd1372655ea3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Skills can significantly enhance Manus interface with custom commands",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Skills can significantly enhance Manus interface with custom commands",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "18349dcd-55af-4914-b898-92c8e41a6b15",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion MCP server provides comprehensive database manipulation capabilities",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion MCP server provides comprehensive database manipulation capabilities",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7ab5e80b-df5e-441d-9ad6-f40e5751e142",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "83844aed-b93d-484c-a85d-293178606836",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "No automatic persistent memory between Manus sessions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "No automatic persistent memory between Manus sessions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e167e01f-9c6c-4f03-8fea-2d0fe76b3a17",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complex balance between automation and user control",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complex balance between automation and user control",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "df85c7e6-31bb-4a0c-b29f-07ef934011b7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Token window limitations for very long conversations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Token window limitations for very long conversations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "af02c3cb-b7c7-4256-9b8b-c4865fed1bae",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ab44e8c3-15d1-4ff8-ba22-a24bcc3fcdb0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to optimize token usage for very long sessions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to optimize token usage for very long sessions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0cc31a1b-2e4d-4f09-a1fc-c358f95c013a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Best practices for memory system maintenance over time",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Best practices for memory system maintenance over time",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9cb0921f-a258-495c-ba66-77c4deb0ba41",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integration priorities among multiple MCP servers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integration priorities among multiple MCP servers",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1d338872-c2e3-429f-ab93-d3aa09dfa807",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8aa8adb8-2acb-4098-9dfa-c89b4910ed49",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Deploy and use the memory-manager skill regularly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Deploy and use the memory-manager skill regularly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cb4ed92b-872a-49e6-8d36-4d5f36282c5f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Populate yOS project with detailed context and objectives",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Populate yOS project with detailed context and objectives",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3f0261ff-9516-454a-814a-2f7bfad741c3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test other memory commands (store, search, load context)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test other memory commands (store, search, load context)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d6656edb-44e4-4c25-b7ee-4bf3746c8d16",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Consider Phase 2 features like RAG and knowledge graphs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Consider Phase 2 features like RAG and knowledge graphs",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "157dc16d-a6aa-4b9f-98dc-a180d84cb162",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Explore additional automation workflows",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Explore additional automation workflows",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8d4dd678-3496-4001-bd1a-c4738e9c3902",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7c6b4538-2ce8-4f23-9cc7-5b02620ad564",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8100-8c12-eb63f7738813"
+      },
+      "created_time": "2026-04-09T08:38:00.000Z",
+      "last_edited_time": "2026-04-09T08:38:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "fwTMN5rFtFC00wq2Hfa0ya",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "fwTMN5rFtFC00wq2Hfa0ya",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0374",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0374",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick sought to understand Manus's internal architecture (LLM backend, external API access, token costs, memory management) then collaborated with Manus to design and build a comprehensive memory management system using Notion. The system includes conversation archiving, project tracking, explicit knowledge storage, and intelligent cross-linking with automated workflows. A custom memory-manager skill was created to enable simple commands for memory operations, and the system was successfully tested with the conversation archival feature.\n\n\n## Context & Intent\n\nYannick wanted to reverse-engineer Manus's functionality to understand token costs and memory limitations, then address the lack of persistent memory between sessions by creating a structured knowledge management system integrated with Notion.\n\n\n## What Was Done\n\nConducted reverse engineering Q&A about Manus architecture, designed a 5-tier memory system (Conversations, Projects, Explicit Knowledge, Preferences, Session Summaries), created complete Notion database structure with yOS project, developed automated workflows, built custom memory-manager skill with simple commands, and successfully tested conversation archiving functionality.\n\n\n## Outputs Produced\n\n- [notion_database] Manus Memory Hub — Complete memory management system with 5 database types and intelligent cross-linking\n- [notion_page] yOS Project — Structured project page for Yannick's cognitive operating system\n- [skill] memory-manager — Custom Manus skill enabling memory commands like archive, store, search, load context\n- [documentation] User Guide — Complete guide explaining system usage with examples and best practices\n- [conversation_archive] Archived Session — Structured archive of the current conversation with TOC, summaries, and transcription\n\n## Key Decisions & Validations\n\n- Archiving on-demand rather than automatic\n- Dual format: synthesis/resume + chaptered transcription with TOC\n- yOS as initial project focus\n- Specific Notion workspace creation\n- Include smart features: contextual intelligence, insights, templates, multi-tool integration\n- Exclude collaborative features and RAG/graphs for Phase 2\n- Create custom skill for enhanced Manus interface\n\n## Lessons Learned\n\nWorked well:\n\n- MCP Notion server integration worked seamlessly\n- Custom skill architecture enables powerful interface extensions\n- Conversation archiving with structured analysis proved immediately valuable\n- Modular system design allows for future enhancements\nFailed / suboptimal:\n\n- Initial API connection had temporary issues\n- Memory limitations between sessions confirmed as significant constraint\nDiscoveries:\n\n- Manus uses ~200k token window (250-330 pages A4 equivalent)\n- External LLM calls cost API credits rather than Manus tokens\n- Skills can significantly enhance Manus interface with custom commands\n- Notion MCP server provides comprehensive database manipulation capabilities\n\n## Challenges & Blockers\n\n- No automatic persistent memory between Manus sessions\n- Complex balance between automation and user control\n- Token window limitations for very long conversations\n\n## Open Questions\n\n- How to optimize token usage for very long sessions\n- Best practices for memory system maintenance over time\n- Integration priorities among multiple MCP servers\n\n## Next Steps\n\n- Deploy and use the memory-manager skill regularly\n- Populate yOS project with detailed context and objectives\n- Test other memory commands (store, search, load context)\n- Consider Phase 2 features like RAG and knowledge graphs\n- Explore additional automation workflows\n---\nUID: fwTMN5rFtFC00wq2Hfa0ya | Model: claude-sonnet-4-20250514 | Cost: $0.0374\n"
+}

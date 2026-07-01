@@ -1,0 +1,2305 @@
+{
+  "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871",
+  "title": "Building Real-Time Crypto News Dashboard with Live Market Data",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "medium",
+    "Language": "en",
+    "Subthemes": "api_integration, react_development, financial_applications, news_aggregation, market_analysis",
+    "Project": "UNKNOWN",
+    "UID": "wMEhD9bZivhTv6jfQwxDDD",
+    "Date": "2025-09-26",
+    "Themes": "web_development, cryptocurrency, dashboard_creation, real_time_data",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Building Real-Time Crypto News Dashboard with Live Market Data"
+  },
+  "blocks_count": 50,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "83b76946-9a0d-40dc-a08e-b6bb9f495897",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "de7bdc27-7099-4f06-b183-bd444beef29b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User requested development of a comprehensive cryptocurrency dashboard featuring top news, key weekly events, price charts for BTC/ETH/XRP/SOL, and expert reviews. Manus built a React.js dashboard with CoinGecko API integration, real news feeds, and professional UI. Initial version had simulated data, then was updated to use RSS feeds and real market data, with final iteration addressing news display issues and ensuring current market conditions are reflected.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User requested development of a comprehensive cryptocurrency dashboard featuring top news, key weekly events, price charts for BTC/ETH/XRP/SOL, and expert reviews. Manus built a React.js dashboard with CoinGecko API integration, real news feeds, and professional UI. Initial version had simulated data, then was updated to use RSS feeds and real market data, with final iteration addressing news display issues and ensuring current market conditions are reflected.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bc0385de-46be-4495-8079-bb34454c11e2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ed622ded-ea34-4a1e-91bf-4f3f0e57a0fd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User wanted a professional crypto trading dashboard to track news, prices, and expert analysis for major cryptocurrencies. Focus was on real-time data with impact predictions and comprehensive market intelligence.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User wanted a professional crypto trading dashboard to track news, prices, and expert analysis for major cryptocurrencies. Focus was on real-time data with impact predictions and comprehensive market intelligence.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f11bb068-ad65-4ca2-a9e4-b418dc31a8df",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fb9b79d1-61d5-44dc-ade3-ef9a322a89cb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built a complete React.js cryptocurrency dashboard with multiple sections: news feed with sentiment analysis, weekly key events, interactive price charts for 4 cryptocurrencies, coin-specific analysis tabs, and expert reviews from real market analysts. Integrated CoinGecko API for live prices and implemented RSS feed parsing for authentic news content.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built a complete React.js cryptocurrency dashboard with multiple sections: news feed with sentiment analysis, weekly key events, interactive price charts for 4 cryptocurrencies, coin-specific analysis tabs, and expert reviews from real market analysts. Integrated CoinGecko API for live prices and implemented RSS feed parsing for authentic news content.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f5382815-aee5-4e56-bb18-a7dfd35aac9d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d70f050f-9890-4479-a163-cd40b137b0d3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[web_application]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[web_application]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Crypto News Dashboard — React.js dashboard with real-time crypto data, news feeds, price charts, and expert analysis",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Crypto News Dashboard — React.js dashboard with real-time crypto data, news feeds, price charts, and expert analysis",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7baaf079-899a-4cfb-8e99-7fd5e66c8858",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[technical_specifications]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[technical_specifications]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " App Requirements — Detailed specs for dashboard features and data sources",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " App Requirements — Detailed specs for dashboard features and data sources",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "226397dc-60e2-48d4-9c8b-b661a6e94d23",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[development_prompt]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[development_prompt]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Replit Implementation Guide — Comprehensive prompt for building the dashboard",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Replit Implementation Guide — Comprehensive prompt for building the dashboard",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "51cebc80-6775-4bed-8b84-fff340955cef",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4ae10c7e-9777-4345-9cdb-83c6be3e8a4d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Use React.js with modern dark theme for financial applications",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Use React.js with modern dark theme for financial applications",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "afc027c3-245c-4c44-99de-92c2479cfc25",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integrate CoinGecko API for reliable real-time price data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integrate CoinGecko API for reliable real-time price data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3733d35f-bb78-4a49-841f-fe3fcbded638",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement RSS feed parsing to replace mock news data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement RSS feed parsing to replace mock news data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "40e95338-4fe2-4fd6-bf27-2a192b315be9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Focus on 4 main cryptocurrencies: BTC, ETH, XRP, SOL",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Focus on 4 main cryptocurrencies: BTC, ETH, XRP, SOL",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4afed2b0-7ae0-4c09-aec8-502713ae3f7c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Include real expert profiles and market predictions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Include real expert profiles and market predictions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eb34dc60-4a9f-4c31-b01c-03af1c5c1e90",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add sentiment analysis and impact predictions for news",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add sentiment analysis and impact predictions for news",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8eaab95e-f4a1-4d80-aa95-d4f27939c039",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e9112a0b-9a78-42ca-ab60-5cdbfa134de1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "564f98d3-c9bf-4f4b-8be7-7a64d8285ef1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CoinGecko API integration provided reliable real-time price data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "CoinGecko API integration provided reliable real-time price data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6bd2a375-9037-4bbb-ba2f-9f66cd490a55",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "React component structure allowed modular development",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "React component structure allowed modular development",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c8a5a042-0bf2-4209-993e-7a50a534e763",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Professional dark theme enhanced user experience for financial data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Professional dark theme enhanced user experience for financial data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fd2154d6-3d84-4fbc-bcbd-5aca8ef912d8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tab-based navigation improved content organization",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tab-based navigation improved content organization",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cc1c8be2-bf9b-4868-a013-eeb2d27f1d00",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2dd8da61-2574-4742-b092-87e5cb8f79d0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial RSS feed integration blocked by CORS policies",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial RSS feed integration blocked by CORS policies",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "78201317-6343-4501-97b4-717369eb5b9a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "First version relied too heavily on simulated data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "First version relied too heavily on simulated data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "296cd7a4-b2aa-445a-a61f-2f9993288a9f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "News display required multiple iterations to get working properly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "News display required multiple iterations to get working properly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "481f7aaa-6513-4688-988d-544daddeb075",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "47da6beb-72d7-4449-8b45-e41604efbc6a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "RSS feeds from major crypto publications can be directly parsed",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "RSS feeds from major crypto publications can be directly parsed",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c74e3048-9381-4d9d-a853-8e2f9a9de32b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Real-time market sentiment can be effectively calculated from news keywords",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Real-time market sentiment can be effectively calculated from news keywords",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "71cd1fe9-2e9a-4a51-b694-bd140749cd94",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Professional crypto dashboards need both technical and fundamental analysis",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Professional crypto dashboards need both technical and fundamental analysis",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e1428ffc-a8ab-40c9-ab39-d02e4df8a512",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Market data freshness is critical for user trust",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Market data freshness is critical for user trust",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "246bd1ae-74b9-4dce-b213-2769bb8cdd78",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cc11ae7a-99fa-4dfd-812f-3bb47aec4686",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CORS policies blocking direct RSS feed access from browser",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "CORS policies blocking direct RSS feed access from browser",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3bc2c3c2-7d5a-4698-8eaf-7036c3084782",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Ensuring all data sources provide current rather than stale information",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Ensuring all data sources provide current rather than stale information",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cf2c37db-3fd1-4f2a-9de6-bf59d4bbb76d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Balancing real-time updates with API rate limits",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Balancing real-time updates with API rate limits",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "892cca52-3cfc-40f3-8f59-aa1a7878e026",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "News display not showing initially due to data fetching issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "News display not showing initially due to data fetching issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fb037844-e606-4552-8450-cccc8f699764",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0b32fce5-b0a2-42a8-83c0-fb448eae0496",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to implement WebSocket connections for truly real-time price updates",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to implement WebSocket connections for truly real-time price updates",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6b3ecc51-7dc2-458b-abc5-493827c639d8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Best practices for handling API failures and fallback data sources",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Best practices for handling API failures and fallback data sources",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5bdfc24a-9551-4667-8827-b7282e0f0648",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to scale news aggregation across more cryptocurrency sources",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to scale news aggregation across more cryptocurrency sources",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d1baf529-f694-489f-8345-0aeb919df63b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Whether to add portfolio tracking features for individual users",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Whether to add portfolio tracking features for individual users",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cdc5e8f1-4d43-4d97-867a-0a7297ab52b7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5e21ef8b-72f3-4f48-91be-3f2eca3628bf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Deploy dashboard to public URL using Replit publish feature",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Deploy dashboard to public URL using Replit publish feature",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6f796d29-ca19-4b82-a322-37be9b0d6552",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Monitor API usage and implement caching for better performance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Monitor API usage and implement caching for better performance",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4203775a-35b7-4f5a-bff8-83aa8c936f3b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add more cryptocurrency pairs based on user feedback",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add more cryptocurrency pairs based on user feedback",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6bbbe435-c9f3-4637-8031-02e0f80339f3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Consider implementing user authentication for personalized features",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Consider implementing user authentication for personalized features",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "047d2efb-386a-49ea-8d85-8bf612d43082",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test dashboard performance under high-frequency data updates",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test dashboard performance under high-frequency data updates",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "84ab204f-03be-4805-85f3-619e32108a4b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "134fc305-4e14-4a40-99b8-ae64f710045e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-818c-817b-f3f8cd524871"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "wMEhD9bZivhTv6jfQwxDDD",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "wMEhD9bZivhTv6jfQwxDDD",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0271",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0271",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nUser requested development of a comprehensive cryptocurrency dashboard featuring top news, key weekly events, price charts for BTC/ETH/XRP/SOL, and expert reviews. Manus built a React.js dashboard with CoinGecko API integration, real news feeds, and professional UI. Initial version had simulated data, then was updated to use RSS feeds and real market data, with final iteration addressing news display issues and ensuring current market conditions are reflected.\n\n\n## Context & Intent\n\nUser wanted a professional crypto trading dashboard to track news, prices, and expert analysis for major cryptocurrencies. Focus was on real-time data with impact predictions and comprehensive market intelligence.\n\n\n## What Was Done\n\nBuilt a complete React.js cryptocurrency dashboard with multiple sections: news feed with sentiment analysis, weekly key events, interactive price charts for 4 cryptocurrencies, coin-specific analysis tabs, and expert reviews from real market analysts. Integrated CoinGecko API for live prices and implemented RSS feed parsing for authentic news content.\n\n\n## Outputs Produced\n\n- [web_application] Crypto News Dashboard — React.js dashboard with real-time crypto data, news feeds, price charts, and expert analysis\n- [technical_specifications] App Requirements — Detailed specs for dashboard features and data sources\n- [development_prompt] Replit Implementation Guide — Comprehensive prompt for building the dashboard\n\n## Key Decisions & Validations\n\n- Use React.js with modern dark theme for financial applications\n- Integrate CoinGecko API for reliable real-time price data\n- Implement RSS feed parsing to replace mock news data\n- Focus on 4 main cryptocurrencies: BTC, ETH, XRP, SOL\n- Include real expert profiles and market predictions\n- Add sentiment analysis and impact predictions for news\n\n## Lessons Learned\n\nWorked well:\n\n- CoinGecko API integration provided reliable real-time price data\n- React component structure allowed modular development\n- Professional dark theme enhanced user experience for financial data\n- Tab-based navigation improved content organization\nFailed / suboptimal:\n\n- Initial RSS feed integration blocked by CORS policies\n- First version relied too heavily on simulated data\n- News display required multiple iterations to get working properly\nDiscoveries:\n\n- RSS feeds from major crypto publications can be directly parsed\n- Real-time market sentiment can be effectively calculated from news keywords\n- Professional crypto dashboards need both technical and fundamental analysis\n- Market data freshness is critical for user trust\n\n## Challenges & Blockers\n\n- CORS policies blocking direct RSS feed access from browser\n- Ensuring all data sources provide current rather than stale information\n- Balancing real-time updates with API rate limits\n- News display not showing initially due to data fetching issues\n\n## Open Questions\n\n- How to implement WebSocket connections for truly real-time price updates\n- Best practices for handling API failures and fallback data sources\n- How to scale news aggregation across more cryptocurrency sources\n- Whether to add portfolio tracking features for individual users\n\n## Next Steps\n\n- Deploy dashboard to public URL using Replit publish feature\n- Monitor API usage and implement caching for better performance\n- Add more cryptocurrency pairs based on user feedback\n- Consider implementing user authentication for personalized features\n- Test dashboard performance under high-frequency data updates\n---\nUID: wMEhD9bZivhTv6jfQwxDDD | Model: claude-sonnet-4-20250514 | Cost: $0.0271\n"
+}

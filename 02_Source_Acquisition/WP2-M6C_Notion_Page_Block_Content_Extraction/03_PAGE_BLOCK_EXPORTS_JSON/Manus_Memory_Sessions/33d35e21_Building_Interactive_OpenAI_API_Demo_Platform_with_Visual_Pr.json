@@ -1,0 +1,2332 @@
+{
+  "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b",
+  "title": "Building Interactive OpenAI API Demo Platform with Visual Progress",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "xl",
+    "Language": "en",
+    "Subthemes": "Flask Development, React Frontend, Progress Indicators, Error Handling, iOS Implementation, API Integration",
+    "Project": "UNKNOWN",
+    "UID": "iPBNAVMJ4tfeJaHmYVWibR",
+    "Date": "2026-02-02",
+    "Themes": "Web Development, OpenAI API, User Interface, Testing",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Building Interactive OpenAI API Demo Platform with Visual Progress"
+  },
+  "blocks_count": 47,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "4eca6438-9b51-464b-a457-6073cbe90e8b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "427567c1-ac3c-4dd3-a421-74a6704ba6d6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick requested help creating and testing OpenAI API demo scripts, which evolved into building a comprehensive web platform. The session covered creating advanced Python demos, implementing iOS solutions, converting the project to a permanent website with International Typographic Style design, fixing routing and API errors, and finally adding visual progress indicators to improve user experience during script execution.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick requested help creating and testing OpenAI API demo scripts, which evolved into building a comprehensive web platform. The session covered creating advanced Python demos, implementing iOS solutions, converting the project to a permanent website with International Typographic Style design, fixing routing and API errors, and finally adding visual progress indicators to improve user experience during script execution.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8827e433-28ab-4c05-a46f-d9cb7b371d8f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "369094a8-9cdd-42dc-85dd-1aee20b314bc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User wanted to test OpenAI API capabilities and create demo scripts, then progressively requested more complex implementations including iOS compatibility and a permanent web platform",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User wanted to test OpenAI API capabilities and create demo scripts, then progressively requested more complex implementations including iOS compatibility and a permanent web platform",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e902c32f-f8b3-4863-a9a1-7b0e59afa715",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0602b27b-da75-44fa-81c8-d5d112f69c8f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Created Python demo scripts, iOS implementation guides, built Flask web server, developed full-stack web application with React frontend and Express backend using International Typographic Style design, implemented comprehensive testing, fixed routing errors and API issues, added visual progress indicators",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Created Python demo scripts, iOS implementation guides, built Flask web server, developed full-stack web application with React frontend and Express backend using International Typographic Style design, implemented comprehensive testing, fixed routing errors and API issues, added visual progress indicators",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d64eefe5-1aa8-475a-95e2-4cc2a5a08d3e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d091d82d-b7dc-44a2-9d0a-d86c726a79fb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " openai_api_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " openai_api_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "demo.py",
+              "link": {
+                "url": "http://demo.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "demo.py",
+            "href": "http://demo.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Basic OpenAI API demonstration script",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Basic OpenAI API demonstration script",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "af957e3f-65ae-4886-8e22-bd6c646cb8db",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " openai_advanced_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " openai_advanced_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "demo.py",
+              "link": {
+                "url": "http://demo.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "demo.py",
+            "href": "http://demo.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Advanced multi-feature OpenAI API demo",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Advanced multi-feature OpenAI API demo",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5f010b0c-6cee-4c50-a1c3-2374f62f6a74",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " openai_capability_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " openai_capability_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "tests.py",
+              "link": {
+                "url": "http://tests.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "tests.py",
+            "href": "http://tests.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Specialized capability testing script",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Specialized capability testing script",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0d9cbffd-a4b0-4e65-8172-04f986fccdfa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[guide]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[guide]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " iOS Implementation Guides — Complete guides for native iOS and web-based approaches",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " iOS Implementation Guides — Complete guides for native iOS and web-based approaches",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8dd37db2-b6b1-44e4-af72-03c5baccfb57",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[web_app]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[web_app]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " OpenAI Demo Platform — Full-stack web application with International Typographic Style design",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " OpenAI Demo Platform — Full-stack web application with International Typographic Style design",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "348cb783-c69e-4bc6-b8a3-dc780cb22809",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[component]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[component]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Progress Indicator — Visual progress bar with estimated completion time",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Progress Indicator — Visual progress bar with estimated completion time",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2eb3014c-5b29-465b-a858-684dfee79692",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "01272f2a-2d3e-4828-8cb0-f479a6cb334a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chose web-based over native iOS for broader compatibility",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Chose web-based over native iOS for broader compatibility",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "246e85cf-0b0f-4c2d-8346-fafe971a8e8c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implemented International Typographic Style design system",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implemented International Typographic Style design system",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8b0a700f-63ae-4733-9de4-0fee093a30e4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Used Flask for backend with tRPC for API layer",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Used Flask for backend with tRPC for API layer",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "25267059-af3a-420e-9380-826636348640",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Added progress indicators to improve perceived performance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Added progress indicators to improve perceived performance",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bb6167d1-2e2f-44cc-a688-4c4b512c44d3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5b15538b-ed0f-45cb-a75e-06fd417d7dfd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "273d1da9-fe9b-477f-a873-6eda2da19fc2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Web-based approach provided cross-platform compatibility",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Web-based approach provided cross-platform compatibility",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1c5dd482-9921-475d-9a43-c1096cb391c7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "International Typographic Style created distinctive, professional appearance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "International Typographic Style created distinctive, professional appearance",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "530ab3c0-1f7b-4eb1-a5d4-af466903217a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Progress indicators significantly improved user experience",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Progress indicators significantly improved user experience",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c64a1e47-fdb9-4418-afb1-13ff89a5a784",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive testing prevented major deployment issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comprehensive testing prevented major deployment issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4c847c32-344d-4f10-87a5-5d71dce047a0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5384f3a6-9ab4-4118-bad6-8799ea910eb3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial routing configuration caused 404 errors",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial routing configuration caused 404 errors",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "07925c81-545c-478c-962b-c892d8bef391",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Python 3.13 compatibility issues required downgrade to 3.11",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Python 3.13 compatibility issues required downgrade to 3.11",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ad310ecf-a4e2-46b0-8f33-db05a88f4d25",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API error handling needed improvement for better user feedback",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "API error handling needed improvement for better user feedback",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "33d3f8ce-6f4d-4105-9b40-46e3e7715455",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "43e271b6-9bae-429d-b717-a383f863b6e8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "HTML error pages returned as JSON caused parsing errors",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "HTML error pages returned as JSON caused parsing errors",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5ad94384-71fd-4e11-bbac-18e8e42ccfad",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Visual feedback during long operations is crucial for user retention",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Visual feedback during long operations is crucial for user retention",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eb5c5dc5-e1c4-4c77-b4ca-2e3b11a46f1a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Clean environment setup prevents module conflicts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Clean environment setup prevents module conflicts",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e9088ac3-3e34-4a9c-801c-674bdc6ae9a0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "496c2fe4-9bd1-40c9-95db-d0d04f8a2ed4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Python version compatibility issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Python version compatibility issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "59ec860f-ac6a-4a4d-a18f-716972e78268",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API endpoint routing errors",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "API endpoint routing errors",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "32f4bbd7-4ddb-48aa-82b9-aa51351b2f3a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "JSON parsing errors from HTML responses",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "JSON parsing errors from HTML responses",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5616c8ba-ec59-48aa-bb2a-93ad457b76ab",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Long script execution times without user feedback",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Long script execution times without user feedback",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f9fc2dea-5d5b-453e-a186-52dc83ab270b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2e6ffc27-9d50-452a-b8c3-a702e5178ca2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should implement user API key input for live demos?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should implement user API key input for live demos?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f540893e-ebd5-4c79-a91e-6c6dd14d30b0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Need syntax highlighting for better code readability?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Need syntax highlighting for better code readability?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "934877f3-629e-4120-95be-732bf784b2f0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Would code playground with live editing add value?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Would code playground with live editing add value?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ccbeaec9-aec6-4d78-b120-9491dc3ea45a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c942c6ee-073f-48f2-811b-fe7014e9aa19",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add syntax highlighting with Prism.js",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add syntax highlighting with Prism.js",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d41ea8b4-ddc3-41e0-b7c4-96b3bf9d5391",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement code copy-to-clipboard buttons",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement code copy-to-clipboard buttons",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0ef94d67-1069-4813-9e7c-a4a00025f7ba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create interactive code playground for user experimentation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create interactive code playground for user experimentation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "40e14df8-ddc1-4f76-95d2-80b32e6c49fb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2fa86b85-675e-4037-9e96-5cd522273f26",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81ff-8d84-d39ddc41a99b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "iPBNAVMJ4tfeJaHmYVWibR",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "iPBNAVMJ4tfeJaHmYVWibR",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0299",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0299",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick requested help creating and testing OpenAI API demo scripts, which evolved into building a comprehensive web platform. The session covered creating advanced Python demos, implementing iOS solutions, converting the project to a permanent website with International Typographic Style design, fixing routing and API errors, and finally adding visual progress indicators to improve user experience during script execution.\n\n\n## Context & Intent\n\nUser wanted to test OpenAI API capabilities and create demo scripts, then progressively requested more complex implementations including iOS compatibility and a permanent web platform\n\n\n## What Was Done\n\nCreated Python demo scripts, iOS implementation guides, built Flask web server, developed full-stack web application with React frontend and Express backend using International Typographic Style design, implemented comprehensive testing, fixed routing errors and API issues, added visual progress indicators\n\n\n## Outputs Produced\n\n- [script] openai_api_demo.py — Basic OpenAI API demonstration script\n- [script] openai_advanced_demo.py — Advanced multi-feature OpenAI API demo\n- [script] openai_capability_tests.py — Specialized capability testing script\n- [guide] iOS Implementation Guides — Complete guides for native iOS and web-based approaches\n- [web_app] OpenAI Demo Platform — Full-stack web application with International Typographic Style design\n- [component] Progress Indicator — Visual progress bar with estimated completion time\n\n## Key Decisions & Validations\n\n- Chose web-based over native iOS for broader compatibility\n- Implemented International Typographic Style design system\n- Used Flask for backend with tRPC for API layer\n- Added progress indicators to improve perceived performance\n\n## Lessons Learned\n\nWorked well:\n\n- Web-based approach provided cross-platform compatibility\n- International Typographic Style created distinctive, professional appearance\n- Progress indicators significantly improved user experience\n- Comprehensive testing prevented major deployment issues\nFailed / suboptimal:\n\n- Initial routing configuration caused 404 errors\n- Python 3.13 compatibility issues required downgrade to 3.11\n- API error handling needed improvement for better user feedback\nDiscoveries:\n\n- HTML error pages returned as JSON caused parsing errors\n- Visual feedback during long operations is crucial for user retention\n- Clean environment setup prevents module conflicts\n\n## Challenges & Blockers\n\n- Python version compatibility issues\n- API endpoint routing errors\n- JSON parsing errors from HTML responses\n- Long script execution times without user feedback\n\n## Open Questions\n\n- Should implement user API key input for live demos?\n- Need syntax highlighting for better code readability?\n- Would code playground with live editing add value?\n\n## Next Steps\n\n- Add syntax highlighting with Prism.js\n- Implement code copy-to-clipboard buttons\n- Create interactive code playground for user experimentation\n---\nUID: iPBNAVMJ4tfeJaHmYVWibR | Model: claude-sonnet-4-20250514 | Cost: $0.0299\n"
+}

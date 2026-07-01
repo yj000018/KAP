@@ -1,0 +1,2 @@
+# Next Step
+ACQUIRE_NOTION_MEMORY_HUB

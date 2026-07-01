@@ -1,0 +1,4285 @@
+{
+  "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5",
+  "title": "LMP v2: Unified Multi-LLM Extraction Pipeline + Cross-Session Synthesis System",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-06-21",
+  "edited": "2026-06-21",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "long",
+    "Language": "mixed",
+    "Subthemes": "Playwright browser automation, adapter pattern implementation, ChatGPT ZIP export, Gemini Takeout processing, Grok scraping, Claude API interception, cross-LLM clustering, session card generation, project taxonomy, verbatim collapsing",
+    "Project": "yOS",
+    "UID": "vXs1WpNeEuH8ZJ4ybDExws",
+    "Date": "2026-04-07",
+    "Themes": "LLM conversation extraction, cross-session knowledge synthesis, progressive context accumulation, unified pipeline architecture, multi-LLM integration, Notion archiving, MCP protocol investigation, Zapier integration debugging",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "LMP v2: Unified Multi-LLM Extraction Pipeline + Cross-Session Synthesis System"
+  },
+  "blocks_count": 69,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "8a24684e-4859-4d22-ab12-b25f41ed527a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b3b9977d-1c64-438b-9592-32af9e4d9e71",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick proposed a temporary progressive synthesis system: group related Manus sessions into projects, extract essence from each session, merge summaries into project system prompt to build accumulated context. Manus delivered complete LMP v2 implementation with unified lmp_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick proposed a temporary progressive synthesis system: group related Manus sessions into projects, extract essence from each session, merge summaries into project system prompt to build accumulated context. Manus delivered complete LMP v2 implementation with unified lmp_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "run.py",
+              "link": {
+                "url": "http://run.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "run.py",
+            "href": "http://run.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " script, 5 LLM-specific adapters (ChatGPT, Gemini, Grok, Claude, Perplexity), cross-LLM clustering capability, and completed Notion archiving of all 325 Manus sessions with verbatim sections. Investigated Zapier MCP for potential LLM extraction but diagnosed configuration error and confirmed Zapier has no access to LLM conversations. System now ready for desktop execution to ingest multi-LLM history.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " script, 5 LLM-specific adapters (ChatGPT, Gemini, Grok, Claude, Perplexity), cross-LLM clustering capability, and completed Notion archiving of all 325 Manus sessions with verbatim sections. Investigated Zapier MCP for potential LLM extraction but diagnosed configuration error and confirmed Zapier has no access to LLM conversations. System now ready for desktop execution to ingest multi-LLM history.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "52b337ab-2b69-4a29-b22e-557318dc73f9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "55645a30-3f68-4a4d-93bc-ffe2ba7cdbaf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick wanted a quick interim solution to aggregate inter-session knowledge before full memory system is ready. Initial concept: create Manus project containing related sessions, use skill to extract essence from each session, progressively merge summaries into project system prompt so new sessions inherit accumulated context instead of starting from zero. This evolved into request for unified pipeline to extract, synthesize, and cluster conversations from all LLMs (Manus, ChatGPT, Gemini, Grok, Claude, Perplexity) into unified knowledge base.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick wanted a quick interim solution to aggregate inter-session knowledge before full memory system is ready. Initial concept: create Manus project containing related sessions, use skill to extract essence from each session, progressively merge summaries into project system prompt so new sessions inherit accumulated context instead of starting from zero. This evolved into request for unified pipeline to extract, synthesize, and cluster conversations from all LLMs (Manus, ChatGPT, Gemini, Grok, Claude, Perplexity) into unified knowledge base.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "43b5b8f8-0506-49b0-a9f6-d49a4ea42e5a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1660e623-f913-4ef6-8859-64bf678f8371",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus identified 13 failed Notion uploads were false errors due to response parsing bug. Re-uploaded all 13 sessions successfully completing 325/325 Manus session archive. Ran verbatim update on 278 pages with collapsed sections. Built complete LMP v2 unified pipeline with lmp_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus identified 13 failed Notion uploads were false errors due to response parsing bug. Re-uploaded all 13 sessions successfully completing 325/325 Manus session archive. Ran verbatim update on 278 pages with collapsed sections. Built complete LMP v2 unified pipeline with lmp_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "run.py",
+              "link": {
+                "url": "http://run.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "run.py",
+            "href": "http://run.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " orchestrator script supporting --status, --llm, --input, --playwright, --instructions, --cluster-all commands. Implemented 5 LLM-specific adapters: chatgpt_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " orchestrator script supporting --status, --llm, --input, --playwright, --instructions, --cluster-all commands. Implemented 5 LLM-specific adapters: chatgpt_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "adapter.py",
+              "link": {
+                "url": "http://adapter.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "adapter.py",
+            "href": "http://adapter.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (ZIP JSON parsing), gemini_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (ZIP JSON parsing), gemini_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "adapter.py",
+              "link": {
+                "url": "http://adapter.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "adapter.py",
+            "href": "http://adapter.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (Takeout processing), grok_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (Takeout processing), grok_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "playwright.py",
+              "link": {
+                "url": "http://playwright.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "playwright.py",
+            "href": "http://playwright.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (browser automation), claude_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (browser automation), claude_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "playwright.py",
+              "link": {
+                "url": "http://playwright.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "playwright.py",
+            "href": "http://playwright.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (API token interception), perplexity_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (API token interception), perplexity_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "playwright.py",
+              "link": {
+                "url": "http://playwright.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "playwright.py",
+            "href": "http://playwright.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (hybrid approach). Created 06_cross_llm_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (hybrid approach). Created 06_cross_llm_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "cluster.py",
+              "link": {
+                "url": "http://cluster.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "cluster.py",
+            "href": "http://cluster.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " to merge sessions from all LLMs into existing 7-project taxonomy. Updated skill documentation in ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " to merge sessions from all LLMs into existing 7-project taxonomy. Updated skill documentation in ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "SKILL.md",
+              "link": {
+                "url": "http://skill.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SKILL.md",
+            "href": "http://skill.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " and LLM_EXTRACTION_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " and LLM_EXTRACTION_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "METHODS.md",
+              "link": {
+                "url": "http://methods.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "METHODS.md",
+            "href": "http://methods.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ". Investigated Zapier MCP at user request - diagnosed misconfigured JWT token as URL, confirmed zero configured actions, verified Zapier cannot access LLM conversations, concluded direct methods remain correct approach.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ". Investigated Zapier MCP at user request - diagnosed misconfigured JWT token as URL, confirmed zero configured actions, verified Zapier cannot access LLM conversations, concluded direct methods remain correct approach.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1b594134-0ada-4c31-a1db-29904378e5fa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ee838e7c-6985-48c6-a16f-86fcc49e6731",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " lmp_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " lmp_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "run.py",
+              "link": {
+                "url": "http://run.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "run.py",
+            "href": "http://run.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Unified orchestrator for multi-LLM extraction pipeline with status checks, per-LLM execution, clustering, and instruction display",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Unified orchestrator for multi-LLM extraction pipeline with status checks, per-LLM execution, clustering, and instruction display",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0b0c1e47-0663-409f-94de-15828ff92ed1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[adapter]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[adapter]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " chatgpt_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " chatgpt_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "adapter.py",
+              "link": {
+                "url": "http://adapter.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "adapter.py",
+            "href": "http://adapter.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — ChatGPT ZIP export conversations.json parser",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — ChatGPT ZIP export conversations.json parser",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2cf73712-8123-4c0b-a5ab-05154c3bbcf4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[adapter]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[adapter]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " gemini_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " gemini_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "adapter.py",
+              "link": {
+                "url": "http://adapter.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "adapter.py",
+            "href": "http://adapter.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Google Takeout Gemini activity JSON processor",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Google Takeout Gemini activity JSON processor",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fbd7174d-7f6a-48c7-aee5-370728355a44",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[adapter]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[adapter]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " grok_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " grok_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "playwright.py",
+              "link": {
+                "url": "http://playwright.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "playwright.py",
+            "href": "http://playwright.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Playwright browser automation for Grok conversation scraping",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Playwright browser automation for Grok conversation scraping",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "645ca6bb-5840-4e86-b20c-27b4ca020107",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[adapter]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[adapter]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " claude_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " claude_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "playwright.py",
+              "link": {
+                "url": "http://playwright.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "playwright.py",
+            "href": "http://playwright.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Claude.ai",
+              "link": {
+                "url": "http://claude.ai/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Claude.ai",
+            "href": "http://claude.ai/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " API bearer token interception and conversation extraction",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " API bearer token interception and conversation extraction",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "97ae52e8-0c66-41a4-9a80-a3ff86f2880a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[adapter]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[adapter]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " perplexity_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " perplexity_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "playwright.py",
+              "link": {
+                "url": "http://playwright.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "playwright.py",
+            "href": "http://playwright.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Perplexity hybrid Playwright/API extraction adapter",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Perplexity hybrid Playwright/API extraction adapter",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9065910e-6708-4ecd-ad97-50d8149491ee",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 06_cross_llm_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " 06_cross_llm_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "cluster.py",
+              "link": {
+                "url": "http://cluster.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "cluster.py",
+            "href": "http://cluster.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Cross-LLM session clustering into unified project taxonomy with state persistence",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Cross-LLM session clustering into unified project taxonomy with state persistence",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31754411-92e7-408a-bf6e-9e89a1a45a52",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " LLM_EXTRACTION_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " LLM_EXTRACTION_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "METHODS.md",
+              "link": {
+                "url": "http://methods.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "METHODS.md",
+            "href": "http://methods.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Complete extraction methodology documentation for each LLM platform",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Complete extraction methodology documentation for each LLM platform",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cd28791d-9f1d-48eb-813b-7fc126cd7450",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "SKILL.md",
+              "link": {
+                "url": "http://skill.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SKILL.md",
+            "href": "http://skill.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " updates — Updated skill documentation with LMP v2 capabilities and usage patterns",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " updates — Updated skill documentation with LMP v2 capabilities and usage patterns",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ec822fb2-2271-47fd-b15f-04a0ff9ef5ad",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[archive]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[archive]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Notion complete archive — 325/325 Manus sessions archived with verbatim sections, 278 updated with collapsed format",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Notion complete archive — 325/325 Manus sessions archived with verbatim sections, 278 updated with collapsed format",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2f9a3fa1-17e2-4d74-ac82-eb47d603a2fa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[state]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[state]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " cross_llm_assignments.json — Persistent state for cross-LLM session-to-project assignments",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " cross_llm_assignments.json — Persistent state for cross-LLM session-to-project assignments",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b1efd7f2-28dd-4bca-9364-d47e7d1e0fb6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5dff3057-34bd-4777-8e71-3261441070a8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Adopted progressive synthesis approach: extract essence from each session, merge into project system prompt for accumulated context inheritance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Adopted progressive synthesis approach: extract essence from each session, merge into project system prompt for accumulated context inheritance",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3a5c584d-fc51-487d-8dde-1f6bbac89781",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built unified lmp_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built unified lmp_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "run.py",
+              "link": {
+                "url": "http://run.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "run.py",
+            "href": "http://run.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " orchestrator instead of separate scripts per LLM",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " orchestrator instead of separate scripts per LLM",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "000cff89-d37d-497f-9371-df2b49993704",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Used adapter pattern with 5 LLM-specific implementations (ChatGPT ZIP, Gemini Takeout, Grok Playwright, Claude API intercept, Perplexity hybrid)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Used adapter pattern with 5 LLM-specific implementations (ChatGPT ZIP, Gemini Takeout, Grok Playwright, Claude API intercept, Perplexity hybrid)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fa7545f7-c484-48c7-92ff-957b65ed680b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Confirmed Zapier MCP not viable for LLM extraction - no access to conversation data, direct methods remain correct",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Confirmed Zapier MCP not viable for LLM extraction - no access to conversation data, direct methods remain correct",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4f58f152-81a1-4798-90f7-2ec79ef9fc2d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integrated cross-LLM clustering into existing 7-project taxonomy (yOS, eia, DOMUS, ONE, VISUAL_REALITY, GEN5, ODYSSEY)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integrated cross-LLM clustering into existing 7-project taxonomy (yOS, eia, DOMUS, ONE, VISUAL_REALITY, GEN5, ODYSSEY)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b3351773-020d-496b-b938-c32b1a4d9713",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Deferred actual multi-LLM extraction execution until on desktop with browser access",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Deferred actual multi-LLM extraction execution until on desktop with browser access",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5bd94a01-d242-4583-ad48-c38c731f90d7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fixed 13 failed Notion uploads - was false error from response parsing, not actual failure",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fixed 13 failed Notion uploads - was false error from response parsing, not actual failure",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "451371a7-8358-4184-9b65-fbf47573e4c9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Completed verbatim collapsing on 278 Notion pages for cleaner presentation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Completed verbatim collapsing on 278 Notion pages for cleaner presentation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7aa5a1e0-c324-486e-ad49-7f225fca16a3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8e80bb57-020a-4279-b2e4-673140b2afb0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "86706e96-5a41-4e92-b9af-a239d22835f9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Unified orchestrator pattern with adapter plugins scales cleanly across LLMs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Unified orchestrator pattern with adapter plugins scales cleanly across LLMs",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a53161fa-27b5-472b-83be-c78458d8185b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Playwright browser automation works for LLMs without export APIs (Grok, Claude fallback)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Playwright browser automation works for LLMs without export APIs (Grok, Claude fallback)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f3f1f177-9b3f-4429-a8be-cff6cdd912b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API token interception via DevTools viable for authenticated endpoints (Claude)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "API token interception via DevTools viable for authenticated endpoints (Claude)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7d6a6f83-f31a-4557-b3eb-790227d76120",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Progressive system prompt enrichment clever interim solution before full memory system",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Progressive system prompt enrichment clever interim solution before full memory system",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e0e899ea-86b2-4ac6-b4bc-11571c452726",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Cross-LLM clustering can reuse existing project taxonomy without major refactor",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Cross-LLM clustering can reuse existing project taxonomy without major refactor",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8838534f-68b6-499a-b67b-2407e32cda53",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "False error diagnosis prevented waste - 13 sessions were actually uploaded successfully",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "False error diagnosis prevented waste - 13 sessions were actually uploaded successfully",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9108dce1-acdc-4ee1-b94f-52e68fdb59d8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "10d4fbd2-82f1-4d7a-92a4-3425c64bf1a5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Zapier MCP investigation was dead end - JWT token misconfigured as URL, zero actions configured, fundamentally cannot access LLM conversations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Zapier MCP investigation was dead end - JWT token misconfigured as URL, zero actions configured, fundamentally cannot access LLM conversations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "898ac62f-4a8e-48c8-a82c-48ba1a044b42",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MCP token rotation attempt failed - token only visible at generation, never stored client-side",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MCP token rotation attempt failed - token only visible at generation, never stored client-side",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5ae0d57f-8dfd-485a-a7b4-aade3a1634f5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Multiple attempts to programmatically capture Zapier token unsuccessful - requires manual copy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Multiple attempts to programmatically capture Zapier token unsuccessful - requires manual copy",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "66281a13-5c83-4e1e-a093-d0a7a844f99b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eb33e566-f7d6-4019-b7a0-438cadc62843",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion API response format differs from expected structure causing false parsing errors",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion API response format differs from expected structure causing false parsing errors",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d2ee1506-d5cb-435b-b500-6ce6d1d5576f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Zapier MCP token is JWT displayed once at generation, never exposed in DOM/cookies afterward",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Zapier MCP token is JWT displayed once at generation, never exposed in DOM/cookies afterward",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dc4b077d-2ec2-4ecc-a4fd-8cb1cf482ec7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MCP servers for app integration (Notion, Gmail, Slack) already provide direct access - Zapier as middleware adds no value",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MCP servers for app integration (Notion, Gmail, Slack) already provide direct access - Zapier as middleware adds no value",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b0fb41f9-e249-4593-94c8-3ab56e617a40",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ChatGPT and Gemini have official export mechanisms (ZIP, Takeout) making them easiest to extract",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ChatGPT and Gemini have official export mechanisms (ZIP, Takeout) making them easiest to extract",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "54c5660a-8f22-416d-bfad-0be03bf0fdf7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Grok and Claude require browser automation or API interception - no export feature",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Grok and Claude require browser automation or API interception - no export feature",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "161cc944-bc0e-406c-b646-a82b2bafc218",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Cross-LLM knowledge can be unified post-extraction through embedding-based clustering",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Cross-LLM knowledge can be unified post-extraction through embedding-based clustering",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ab19d3f6-b1a0-4fb5-9570-4f32bf19e79b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6a0ba1ad-1bec-4f50-93f9-c3e03353f48c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Zapier MCP misconfigured with JWT as URL instead of SSE endpoint - resolved by declaring Zapier MCP unnecessary for this use case",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Zapier MCP misconfigured with JWT as URL instead of SSE endpoint - resolved by declaring Zapier MCP unnecessary for this use case",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f3c4bda8-729c-43e9-baa7-3e169d1c1735",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "13 Notion sessions appeared failed but were actually successful - resolved by fixing response parser and confirming all uploaded",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "13 Notion sessions appeared failed but were actually successful - resolved by fixing response parser and confirming all uploaded",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b3407b26-9399-4122-84bd-afbfd3667c13",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Cannot execute Playwright-based extractors (Grok, Claude, Perplexity) from mobile - blocked until on desktop",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Cannot execute Playwright-based extractors (Grok, Claude, Perplexity) from mobile - blocked until on desktop",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8f939966-c1de-4465-bc32-dde0877dcd5b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Cannot perform ChatGPT ZIP export or Gemini Takeout from mobile - blocked until on desktop",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Cannot perform ChatGPT ZIP export or Gemini Takeout from mobile - blocked until on desktop",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6b729398-f83e-485e-89d8-916b5ed3588e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Zapier token capture impossible without manual intervention - modale closes without programmatic access",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Zapier token capture impossible without manual intervention - modale closes without programmatic access",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6b242aea-138f-4da0-a8db-3f0980ddfb9f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "237d9e60-55d3-4a6b-9334-d353a795988f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should progressive synthesis system remain as interim solution or become permanent lightweight memory layer?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should progressive synthesis system remain as interim solution or become permanent lightweight memory layer?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8de8879d-e7e5-4bc4-ad16-3e48b253f485",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to handle cross-LLM session deduplication if same conversation exported from multiple sources?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to handle cross-LLM session deduplication if same conversation exported from multiple sources?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "85abe191-1378-4247-a05c-d47002ab53a3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should Perplexity be included in initial extraction batch or deferred?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should Perplexity be included in initial extraction batch or deferred?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "aa27d79e-b2fd-4e1d-bfda-93f6797d9250",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What embedding model and similarity threshold for cross-LLM clustering?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What embedding model and similarity threshold for cross-LLM clustering?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "79d67579-a837-4f18-a43f-a8ba549df3da",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should verbatim sections be collapsed by default in all future Notion uploads?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should verbatim sections be collapsed by default in all future Notion uploads?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e91c9d79-8091-4b4e-b3a0-fca63fe136f0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Is there value in configuring Zapier AI Actions for workflow automation separate from LLM extraction?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Is there value in configuring Zapier AI Actions for workflow automation separate from LLM extraction?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "544717dd-0c5e-4a06-b866-322f9bdf5741",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fa8ce5af-16f9-46be-a6cf-649f38272bb7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "On desktop: perform ChatGPT ZIP export via ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "On desktop: perform ChatGPT ZIP export via ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "chat.openai.com",
+              "link": {
+                "url": "http://chat.openai.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "chat.openai.com",
+            "href": "http://chat.openai.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → Settings → Export",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → Settings → Export",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c1333e6d-251d-4c94-ba29-2310cbb03178",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "On desktop: perform Gemini Takeout via ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "On desktop: perform Gemini Takeout via ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "takeout.google.com",
+              "link": {
+                "url": "http://takeout.google.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "takeout.google.com",
+            "href": "http://takeout.google.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → Gemini Apps Activity",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → Gemini Apps Activity",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "aab34a04-0278-4583-b202-dd93f0d35f35",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "On desktop: login to ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "On desktop: login to ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "grok.com",
+              "link": {
+                "url": "http://grok.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "grok.com",
+            "href": "http://grok.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " and run python lmp_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " and run python lmp_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "run.py",
+              "link": {
+                "url": "http://run.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "run.py",
+            "href": "http://run.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " --llm grok --playwright",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " --llm grok --playwright",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a9bf100d-05b0-47ad-9cbb-e8fcd65dcaf7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "On desktop: capture ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "On desktop: capture ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Claude.ai",
+              "link": {
+                "url": "http://claude.ai/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Claude.ai",
+            "href": "http://claude.ai/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " bearer token from DevTools and run adapters/claude_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " bearer token from DevTools and run adapters/claude_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "playwright.py",
+              "link": {
+                "url": "http://playwright.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "playwright.py",
+            "href": "http://playwright.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " --token T --org-id O",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " --token T --org-id O",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "990c876a-c3fb-41de-9a63-9ae519c07eec",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Run python lmp_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Run python lmp_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "run.py",
+              "link": {
+                "url": "http://run.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "run.py",
+            "href": "http://run.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " --cluster-all to merge all LLM sessions into unified taxonomy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " --cluster-all to merge all LLM sessions into unified taxonomy",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3f4adc1e-49cc-4938-adac-55ba0308440f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test progressive synthesis system by creating new Manus project with accumulated context from clustered sessions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test progressive synthesis system by creating new Manus project with accumulated context from clustered sessions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a030c086-bd02-4afe-892a-284e2fae7711",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Decide whether to configure Zapier AI Actions for non-LLM workflow automation or ignore entirely",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Decide whether to configure Zapier AI Actions for non-LLM workflow automation or ignore entirely",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bd2f3188-55fc-40f2-b607-80398b1e91aa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "12562ef8-ed02-426c-9d43-d02ee774869d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "38635e21-8cf8-8116-a0c6-d1228b761fb5"
+      },
+      "created_time": "2026-06-21T12:20:00.000Z",
+      "last_edited_time": "2026-06-21T12:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "vXs1WpNeEuH8ZJ4ybDExws",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "vXs1WpNeEuH8ZJ4ybDExws",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-3-5-sonnet | Cost: $0.0494",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-3-5-sonnet | Cost: $0.0494",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick proposed a temporary progressive synthesis system: group related Manus sessions into projects, extract essence from each session, merge summaries into project system prompt to build accumulated context. Manus delivered complete LMP v2 implementation with unified lmp_run.py script, 5 LLM-specific adapters (ChatGPT, Gemini, Grok, Claude, Perplexity), cross-LLM clustering capability, and completed Notion archiving of all 325 Manus sessions with verbatim sections. Investigated Zapier MCP for potential LLM extraction but diagnosed configuration error and confirmed Zapier has no access to LLM conversations. System now ready for desktop execution to ingest multi-LLM history.\n\n\n## Context & Intent\n\nYannick wanted a quick interim solution to aggregate inter-session knowledge before full memory system is ready. Initial concept: create Manus project containing related sessions, use skill to extract essence from each session, progressively merge summaries into project system prompt so new sessions inherit accumulated context instead of starting from zero. This evolved into request for unified pipeline to extract, synthesize, and cluster conversations from all LLMs (Manus, ChatGPT, Gemini, Grok, Claude, Perplexity) into unified knowledge base.\n\n\n## What Was Done\n\nManus identified 13 failed Notion uploads were false errors due to response parsing bug. Re-uploaded all 13 sessions successfully completing 325/325 Manus session archive. Ran verbatim update on 278 pages with collapsed sections. Built complete LMP v2 unified pipeline with lmp_run.py orchestrator script supporting --status, --llm, --input, --playwright, --instructions, --cluster-all commands. Implemented 5 LLM-specific adapters: chatgpt_adapter.py (ZIP JSON parsing), gemini_adapter.py (Takeout processing), grok_playwright.py (browser automation), claude_playwright.py (API token interception), perplexity_playwright.py (hybrid approach). Created 06_cross_llm_cluster.py to merge sessions from all LLMs into existing 7-project taxonomy. Updated skill documentation in SKILL.md and LLM_EXTRACTION_METHODS.md. Investigated Zapier MCP at user request - diagnosed misconfigured JWT token as URL, confirmed zero configured actions, verified Zapier cannot access LLM conversations, concluded direct methods remain correct approach.\n\n\n## Outputs Produced\n\n- [script] lmp_run.py — Unified orchestrator for multi-LLM extraction pipeline with status checks, per-LLM execution, clustering, and instruction display\n- [adapter] chatgpt_adapter.py — ChatGPT ZIP export conversations.json parser\n- [adapter] gemini_adapter.py — Google Takeout Gemini activity JSON processor\n- [adapter] grok_playwright.py — Playwright browser automation for Grok conversation scraping\n- [adapter] claude_playwright.py — Claude.ai API bearer token interception and conversation extraction\n- [adapter] perplexity_playwright.py — Perplexity hybrid Playwright/API extraction adapter\n- [script] 06_cross_llm_cluster.py — Cross-LLM session clustering into unified project taxonomy with state persistence\n- [documentation] LLM_EXTRACTION_METHODS.md — Complete extraction methodology documentation for each LLM platform\n- [documentation] SKILL.md updates — Updated skill documentation with LMP v2 capabilities and usage patterns\n- [archive] Notion complete archive — 325/325 Manus sessions archived with verbatim sections, 278 updated with collapsed format\n- [state] cross_llm_assignments.json — Persistent state for cross-LLM session-to-project assignments\n\n## Key Decisions & Validations\n\n- Adopted progressive synthesis approach: extract essence from each session, merge into project system prompt for accumulated context inheritance\n- Built unified lmp_run.py orchestrator instead of separate scripts per LLM\n- Used adapter pattern with 5 LLM-specific implementations (ChatGPT ZIP, Gemini Takeout, Grok Playwright, Claude API intercept, Perplexity hybrid)\n- Confirmed Zapier MCP not viable for LLM extraction - no access to conversation data, direct methods remain correct\n- Integrated cross-LLM clustering into existing 7-project taxonomy (yOS, eia, DOMUS, ONE, VISUAL_REALITY, GEN5, ODYSSEY)\n- Deferred actual multi-LLM extraction execution until on desktop with browser access\n- Fixed 13 failed Notion uploads - was false error from response parsing, not actual failure\n- Completed verbatim collapsing on 278 Notion pages for cleaner presentation\n\n## Lessons Learned\n\nWorked well:\n\n- Unified orchestrator pattern with adapter plugins scales cleanly across LLMs\n- Playwright browser automation works for LLMs without export APIs (Grok, Claude fallback)\n- API token interception via DevTools viable for authenticated endpoints (Claude)\n- Progressive system prompt enrichment clever interim solution before full memory system\n- Cross-LLM clustering can reuse existing project taxonomy without major refactor\n- False error diagnosis prevented waste - 13 sessions were actually uploaded successfully\nFailed / suboptimal:\n\n- Zapier MCP investigation was dead end - JWT token misconfigured as URL, zero actions configured, fundamentally cannot access LLM conversations\n- MCP token rotation attempt failed - token only visible at generation, never stored client-side\n- Multiple attempts to programmatically capture Zapier token unsuccessful - requires manual copy\nDiscoveries:\n\n- Notion API response format differs from expected structure causing false parsing errors\n- Zapier MCP token is JWT displayed once at generation, never exposed in DOM/cookies afterward\n- MCP servers for app integration (Notion, Gmail, Slack) already provide direct access - Zapier as middleware adds no value\n- ChatGPT and Gemini have official export mechanisms (ZIP, Takeout) making them easiest to extract\n- Grok and Claude require browser automation or API interception - no export feature\n- Cross-LLM knowledge can be unified post-extraction through embedding-based clustering\n\n## Challenges & Blockers\n\n- Zapier MCP misconfigured with JWT as URL instead of SSE endpoint - resolved by declaring Zapier MCP unnecessary for this use case\n- 13 Notion sessions appeared failed but were actually successful - resolved by fixing response parser and confirming all uploaded\n- Cannot execute Playwright-based extractors (Grok, Claude, Perplexity) from mobile - blocked until on desktop\n- Cannot perform ChatGPT ZIP export or Gemini Takeout from mobile - blocked until on desktop\n- Zapier token capture impossible without manual intervention - modale closes without programmatic access\n\n## Open Questions\n\n- Should progressive synthesis system remain as interim solution or become permanent lightweight memory layer?\n- How to handle cross-LLM session deduplication if same conversation exported from multiple sources?\n- Should Perplexity be included in initial extraction batch or deferred?\n- What embedding model and similarity threshold for cross-LLM clustering?\n- Should verbatim sections be collapsed by default in all future Notion uploads?\n- Is there value in configuring Zapier AI Actions for workflow automation separate from LLM extraction?\n\n## Next Steps\n\n- On desktop: perform ChatGPT ZIP export via chat.openai.com → Settings → Export\n- On desktop: perform Gemini Takeout via takeout.google.com → Gemini Apps Activity\n- On desktop: login to grok.com and run python lmp_run.py --llm grok --playwright\n- On desktop: capture Claude.ai bearer token from DevTools and run adapters/claude_playwright.py --token T --org-id O\n- Run python lmp_run.py --cluster-all to merge all LLM sessions into unified taxonomy\n- Test progressive synthesis system by creating new Manus project with accumulated context from clustered sessions\n- Decide whether to configure Zapier AI Actions for non-LLM workflow automation or ignore entirely\n---\nUID: vXs1WpNeEuH8ZJ4ybDExws | Model: claude-3-5-sonnet | Cost: $0.0494\n"
+}

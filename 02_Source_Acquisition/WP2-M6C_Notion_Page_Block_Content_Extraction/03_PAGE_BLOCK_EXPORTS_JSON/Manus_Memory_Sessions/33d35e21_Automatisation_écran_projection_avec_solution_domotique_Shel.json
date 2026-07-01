@@ -1,0 +1,2217 @@
+{
+  "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6",
+  "title": "Automatisation écran projection avec solution domotique Shelly",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "xl",
+    "Language": "fr",
+    "Subthemes": "screen automation, Shelly devices, Home Assistant, iCloud integration, 1Password access, Swiss e-commerce",
+    "Project": "DOMUS",
+    "UID": "x9f3nFJxfM1dKkiqRYoyGi",
+    "Date": "2026-02-15",
+    "Themes": "home automation, smart home integration, hardware configuration, system access",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Automatisation écran projection avec solution domotique Shelly"
+  },
+  "blocks_count": 48,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "4ca5aefe-4303-4f1f-867b-502eb05905fa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c9ff2783-9aa6-4168-a8d1-e94022200432",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Session focused on automating a manual projection screen using Shelly Plus 2PM smart switch integrated with Home Assistant. Delivered complete technical solution with architecture documents, BOM (~30€), and implementation plan. Encountered access challenges with iCloud contacts and 1Password CLI during procurement phase, requiring manual credential sharing. Successfully identified best price (22.70 CHF) but purchasing blocked by authentication requirements.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Session focused on automating a manual projection screen using Shelly Plus 2PM smart switch integrated with Home Assistant. Delivered complete technical solution with architecture documents, BOM (~30€), and implementation plan. Encountered access challenges with iCloud contacts and 1Password CLI during procurement phase, requiring manual credential sharing. Successfully identified best price (22.70 CHF) but purchasing blocked by authentication requirements.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "39cc4007-0310-47fd-8872-e692242b8217",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8b32844e-4f91-46a6-85cc-e60847de3cc9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User wanted to replace manual remote control for projection screen with smart home automation solution integrated into broader domotique system.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User wanted to replace manual remote control for projection screen with smart home automation solution integrated into broader domotique system.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fa114c8e-dac8-455d-ab98-6ff7abfecb02",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d43dbc92-e06c-41a7-b6e0-36042c11b08b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Designed complete automation architecture with Shelly Plus 2PM recommendation over Gen 1 version. Created 6 technical documents including hardware analysis, Home Assistant integration, and governance protocols. Attempted multiple access methods for iCloud contacts and 1Password credentials. Found best pricing on Swiss e-commerce site Galaxus.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Designed complete automation architecture with Shelly Plus 2PM recommendation over Gen 1 version. Created 6 technical documents including hardware analysis, Home Assistant integration, and governance protocols. Attempted multiple access methods for iCloud contacts and 1Password credentials. Found best pricing on Swiss e-commerce site Galaxus.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ce66d042-752b-4259-9d1e-7d3106e182dc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "23cb71fc-4e1f-496f-9a26-61908f48cd90",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[architecture]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[architecture]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Complete Domotique Solution — 6 documents + diagram covering hardware, software, integration, and governance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Complete Domotique Solution — 6 documents + diagram covering hardware, software, integration, and governance",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cf57de9c-6bce-4aec-b284-90bbe8b81776",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[recommendation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[recommendation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Shelly Plus 2PM Selection — Comparative analysis recommending Gen 2+ over Gen 1 for better future-proofing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Shelly Plus 2PM Selection — Comparative analysis recommending Gen 2+ over Gen 1 for better future-proofing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d3519d88-74c7-4896-8b6e-19fa70fa6eba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[pricing]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[pricing]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Swiss Market Research — Best price identification at 22.70 CHF on Galaxus platform",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Swiss Market Research — Best price identification at 22.70 CHF on Galaxus platform",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7a3a74f2-75ff-42f3-b737-f5115b575db2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "569c0997-bf3b-4ac7-881b-2675263e7098",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Selected Shelly Plus 2PM over standard 2PM for ESP32 architecture and scripting capabilities",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Selected Shelly Plus 2PM over standard 2PM for ESP32 architecture and scripting capabilities",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c00351fa-a2a6-4c00-95d5-3fbb25cda950",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chose Home Assistant as integration platform",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Chose Home Assistant as integration platform",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e952883c-282b-4655-8055-d4673ce2c8fc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Identified Galaxus as best price vendor in Swiss market",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Identified Galaxus as best price vendor in Swiss market",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fc28d3da-3366-406b-803a-08ce897abb6d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Deferred iCloud access configuration as P1 task",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Deferred iCloud access configuration as P1 task",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a0912768-3c7d-4afa-bb62-ea240318f020",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Attempted 1Password CLI integration for credential management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Attempted 1Password CLI integration for credential management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "82f69a73-2816-4e97-bd36-2aa1692552ff",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "23208539-68d7-4354-b276-c7cc7dd5558a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "148f1cef-06ef-4304-8a4a-306ed335fa93",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive technical documentation delivery",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comprehensive technical documentation delivery",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8fbda484-fc83-40cd-8cdc-eaa45fc61a99",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hardware comparison methodology",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Hardware comparison methodology",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9781c2ba-68c1-4794-ad12-6c43becb7aa4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Swiss e-commerce price research",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Swiss e-commerce price research",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ca3844f2-cf79-46d5-ad40-6751032b8086",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "07e2ada2-867e-45ff-8d83-79c677d6a753",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "iCloud API access from Linux sandbox limitations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "iCloud API access from Linux sandbox limitations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ec630990-3538-4b64-9dbf-cdd58ea6bd27",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1Password Service Account token configuration issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "1Password Service Account token configuration issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "76b15477-27a7-41fc-818c-2af63dd9a0ba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Swiss website CAPTCHA blocking automated browsers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Swiss website CAPTCHA blocking automated browsers",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8f33aee0-1ee7-4c8c-b66f-6533ac621441",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Authentication dependencies blocking purchase completion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Authentication dependencies blocking purchase completion",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2895943a-7357-49fe-9a61-3193fc703cc5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "55e9f3b7-d9db-411b-bca6-5824f3a8d59c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Swiss e-commerce sites use aggressive anti-bot protection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Swiss e-commerce sites use aggressive anti-bot protection",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8f81b198-f256-43de-b21d-d38b2fd36212",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Service Account tokens require specific permissions configuration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Service Account tokens require specific permissions configuration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9b794a5c-0b70-4f14-8241-7057797a6858",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Browser automation needs human intervention for CAPTCHA resolution",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Browser automation needs human intervention for CAPTCHA resolution",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "69ad8c84-620c-4a68-a74b-6fc81f27e381",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "adf99e45-3206-4d32-b689-b8cea20713e9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "No iCloud API access available in current Manus architecture",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "No iCloud API access available in current Manus architecture",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d623bfc5-93c4-4a56-85c2-0ceaa0090a49",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1Password CLI authentication failing with Service Account token",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "1Password CLI authentication failing with Service Account token",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5124724b-1cbd-4bfb-b593-5b601a1e759d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Swiss e-commerce CAPTCHA preventing automated checkout",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Swiss e-commerce CAPTCHA preventing automated checkout",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a67a4317-0b87-41a3-b76e-1d376416a640",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Missing user credentials for Galaxus account login",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Missing user credentials for Galaxus account login",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d4b12d92-7e8f-48d9-a5b7-e9e647468553",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1478a89b-7a60-4728-b279-88a5098860fe",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to properly configure 1Password Service Account permissions?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to properly configure 1Password Service Account permissions?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cb6a3484-03c2-4bf6-9a3c-f6efcf6c1f87",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What's the best method for persistent credential access in Manus?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What's the best method for persistent credential access in Manus?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "943e182a-cc82-437d-ae8e-5e10488a63b5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should we implement alternative authentication flows for Swiss sites?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should we implement alternative authentication flows for Swiss sites?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "136d51e7-64b7-4f23-bde4-ed66ed3d6fd4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to balance automation vs. security for credential management?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to balance automation vs. security for credential management?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5a52f297-e846-4d21-b435-29f5c6a4a408",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7cff7f74-57e5-444c-94b0-52ee5dd57023",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Configure iCloud API access as P1 priority task",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Configure iCloud API access as P1 priority task",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "07aacc81-6644-463f-b1ad-e9723f2e07e6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Resolve 1Password Service Account token configuration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Resolve 1Password Service Account token configuration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "232fba46-d171-4dc9-a361-ca716b86087d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complete Shelly Plus 2PM purchase via manual login",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complete Shelly Plus 2PM purchase via manual login",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "73c368ab-fce3-4f3c-ab93-94f90bc10528",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement hardware installation following provided documentation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement hardware installation following provided documentation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5dcce990-abb8-4c74-ba0c-5071356655b9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test Home Assistant integration and automation scenarios",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test Home Assistant integration and automation scenarios",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1a823a3a-f9e5-430d-90fd-33dd6ae317c9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b8ddbb81-3c98-4513-86d7-bf4f49815e78",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8135-8877-d9c7a20a41c6"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "x9f3nFJxfM1dKkiqRYoyGi",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "x9f3nFJxfM1dKkiqRYoyGi",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0334",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0334",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nSession focused on automating a manual projection screen using Shelly Plus 2PM smart switch integrated with Home Assistant. Delivered complete technical solution with architecture documents, BOM (~30€), and implementation plan. Encountered access challenges with iCloud contacts and 1Password CLI during procurement phase, requiring manual credential sharing. Successfully identified best price (22.70 CHF) but purchasing blocked by authentication requirements.\n\n\n## Context & Intent\n\nUser wanted to replace manual remote control for projection screen with smart home automation solution integrated into broader domotique system.\n\n\n## What Was Done\n\nDesigned complete automation architecture with Shelly Plus 2PM recommendation over Gen 1 version. Created 6 technical documents including hardware analysis, Home Assistant integration, and governance protocols. Attempted multiple access methods for iCloud contacts and 1Password credentials. Found best pricing on Swiss e-commerce site Galaxus.\n\n\n## Outputs Produced\n\n- [architecture] Complete Domotique Solution — 6 documents + diagram covering hardware, software, integration, and governance\n- [recommendation] Shelly Plus 2PM Selection — Comparative analysis recommending Gen 2+ over Gen 1 for better future-proofing\n- [pricing] Swiss Market Research — Best price identification at 22.70 CHF on Galaxus platform\n\n## Key Decisions & Validations\n\n- Selected Shelly Plus 2PM over standard 2PM for ESP32 architecture and scripting capabilities\n- Chose Home Assistant as integration platform\n- Identified Galaxus as best price vendor in Swiss market\n- Deferred iCloud access configuration as P1 task\n- Attempted 1Password CLI integration for credential management\n\n## Lessons Learned\n\nWorked well:\n\n- Comprehensive technical documentation delivery\n- Hardware comparison methodology\n- Swiss e-commerce price research\nFailed / suboptimal:\n\n- iCloud API access from Linux sandbox limitations\n- 1Password Service Account token configuration issues\n- Swiss website CAPTCHA blocking automated browsers\n- Authentication dependencies blocking purchase completion\nDiscoveries:\n\n- Swiss e-commerce sites use aggressive anti-bot protection\n- Service Account tokens require specific permissions configuration\n- Browser automation needs human intervention for CAPTCHA resolution\n\n## Challenges & Blockers\n\n- No iCloud API access available in current Manus architecture\n- 1Password CLI authentication failing with Service Account token\n- Swiss e-commerce CAPTCHA preventing automated checkout\n- Missing user credentials for Galaxus account login\n\n## Open Questions\n\n- How to properly configure 1Password Service Account permissions?\n- What's the best method for persistent credential access in Manus?\n- Should we implement alternative authentication flows for Swiss sites?\n- How to balance automation vs. security for credential management?\n\n## Next Steps\n\n- Configure iCloud API access as P1 priority task\n- Resolve 1Password Service Account token configuration\n- Complete Shelly Plus 2PM purchase via manual login\n- Implement hardware installation following provided documentation\n- Test Home Assistant integration and automation scenarios\n---\nUID: x9f3nFJxfM1dKkiqRYoyGi | Model: claude-sonnet-4-20250514 | Cost: $0.0334\n"
+}

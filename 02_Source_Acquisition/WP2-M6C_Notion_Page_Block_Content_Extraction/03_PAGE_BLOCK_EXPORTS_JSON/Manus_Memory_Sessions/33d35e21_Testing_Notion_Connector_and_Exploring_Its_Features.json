@@ -1,0 +1,1391 @@
+{
+  "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd",
+  "title": "Testing Notion Connector and Exploring Its Features",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "short",
+    "Language": "en",
+    "Subthemes": "MCP Connector, Authentication, API Capabilities, Live Data Testing",
+    "Project": "yOS",
+    "UID": "xmv6ovvuh6HA2fwYJAptfv",
+    "Date": "2026-02-27",
+    "Themes": "API Integration, Tool Testing, Notion Connector",
+    "Archived": "True",
+    "Depth": "standard",
+    "Title": "Testing Notion Connector and Exploring Its Features"
+  },
+  "blocks_count": 30,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "d780fda4-d881-4c43-a402-2df6d24b70d6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3773adb5-ea50-4097-82f0-4370d3aec89d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick requested testing and exploration of the Notion MCP connector features. Manus discovered 12 available tools but encountered authentication issues initially. After OAuth token refresh, successful connection was established and comprehensive testing performed, producing a detailed capability brief with live data demonstrations.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick requested testing and exploration of the Notion MCP connector features. Manus discovered 12 available tools but encountered authentication issues initially. After OAuth token refresh, successful connection was established and comprehensive testing performed, producing a detailed capability brief with live data demonstrations.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d16bb656-6915-48a9-a91c-13dd468844d8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8da60b95-3505-4f12-bd38-96202c23195b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User wanted to understand the capabilities of the integrated Notion connector and see it working with real data from their workspace.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User wanted to understand the capabilities of the integrated Notion connector and see it working with real data from their workspace.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "21fa708b-94d7-4b59-817d-8a9905b8ee8a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "22818c96-5535-4638-9fd0-d764f388fb48",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Probed Notion MCP connector, identified 12 available tools, diagnosed authentication failure (401 Unauthorized), guided user through token refresh process, successfully reconnected, performed live read/write operations, and compiled comprehensive capability documentation.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Probed Notion MCP connector, identified 12 available tools, diagnosed authentication failure (401 Unauthorized), guided user through token refresh process, successfully reconnected, performed live read/write operations, and compiled comprehensive capability documentation.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "df3fd2c4-6864-42f0-aa7d-b5f3cfe9d755",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f3f54581-f17a-4bc5-93ae-39fa057d5adf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[document]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[document]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Notion Connector Capability Brief — Detailed documentation of all 12 Notion MCP tools with live data demonstrations and test results",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Notion Connector Capability Brief — Detailed documentation of all 12 Notion MCP tools with live data demonstrations and test results",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b9967491-1b48-4838-9d6b-c57c81801996",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f61310c1-64d2-4ea4-b8f5-e2a906f0b523",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Proceeded with comprehensive testing after authentication resolution",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Proceeded with comprehensive testing after authentication resolution",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "aefc3905-756e-41fe-92d9-5dba7cb49285",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Created test page for live demonstration purposes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Created test page for live demonstration purposes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9f5f6275-085f-4c28-b607-c968c3fac87c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8bd915e4-0011-4880-8e94-255992c171ea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b4ee822c-8e09-4a51-ad7f-05902a736b11",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MCP connector discovery and diagnosis",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MCP connector discovery and diagnosis",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3e3e6194-68ca-44e6-babc-5a139a65a95e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Clear authentication troubleshooting guidance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Clear authentication troubleshooting guidance",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3783ea72-29e1-41c8-b165-b52ee8455f6b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive capability documentation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comprehensive capability documentation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "079ca13f-80a7-4594-9890-55361f4fc856",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c008e8bb-4178-456e-aa3b-66b4010c03fa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial authentication token was expired/invalid",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial authentication token was expired/invalid",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b6c910fa-34fc-4132-992d-73d937480a40",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1a1ddc97-d874-4502-8957-55f758ee9145",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion MCP connector has 12 available tools",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion MCP connector has 12 available tools",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "81e09534-62b8-44b5-85a0-560fff9e2f39",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "OAuth token refresh resolves authentication issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "OAuth token refresh resolves authentication issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a35d52d6-b754-49fc-8c30-3b31fe76ab81",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Live read/write operations work as expected",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Live read/write operations work as expected",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a86b154e-fa32-4b1a-b5f5-aa82f5c67073",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "137daf9a-a9a6-42b2-ac81-702c5fe15fa8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial 401 Unauthorized error due to invalid/expired API token",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial 401 Unauthorized error due to invalid/expired API token",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "67140d4b-503d-4353-b421-c7bf741be762",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b862ce00-de20-4b5d-b6c9-6efbf7a374f4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should the test page created during testing be deleted?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should the test page created during testing be deleted?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f5e345e9-c575-4509-beb3-d84903817bc0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3747f747-aad6-4d13-827a-7f05a66bc67a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User to confirm if test page should be removed from workspace",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User to confirm if test page should be removed from workspace",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7f7ee2a6-b9d2-4eb0-ace9-11ac1970904e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e29638e5-3a01-496b-869d-7306c61e8ff0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8117-a522-fee02ef312bd"
+      },
+      "created_time": "2026-04-09T08:45:00.000Z",
+      "last_edited_time": "2026-04-09T08:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "xmv6ovvuh6HA2fwYJAptfv",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "xmv6ovvuh6HA2fwYJAptfv",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0107",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0107",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick requested testing and exploration of the Notion MCP connector features. Manus discovered 12 available tools but encountered authentication issues initially. After OAuth token refresh, successful connection was established and comprehensive testing performed, producing a detailed capability brief with live data demonstrations.\n\n\n## Context & Intent\n\nUser wanted to understand the capabilities of the integrated Notion connector and see it working with real data from their workspace.\n\n\n## What Was Done\n\nProbed Notion MCP connector, identified 12 available tools, diagnosed authentication failure (401 Unauthorized), guided user through token refresh process, successfully reconnected, performed live read/write operations, and compiled comprehensive capability documentation.\n\n\n## Outputs Produced\n\n- [document] Notion Connector Capability Brief — Detailed documentation of all 12 Notion MCP tools with live data demonstrations and test results\n\n## Key Decisions & Validations\n\n- Proceeded with comprehensive testing after authentication resolution\n- Created test page for live demonstration purposes\n\n## Lessons Learned\n\nWorked well:\n\n- MCP connector discovery and diagnosis\n- Clear authentication troubleshooting guidance\n- Comprehensive capability documentation\nFailed / suboptimal:\n\n- Initial authentication token was expired/invalid\nDiscoveries:\n\n- Notion MCP connector has 12 available tools\n- OAuth token refresh resolves authentication issues\n- Live read/write operations work as expected\n\n## Challenges & Blockers\n\n- Initial 401 Unauthorized error due to invalid/expired API token\n\n## Open Questions\n\n- Should the test page created during testing be deleted?\n\n## Next Steps\n\n- User to confirm if test page should be removed from workspace\n---\nUID: xmv6ovvuh6HA2fwYJAptfv | Model: claude-sonnet-4-20250514 | Cost: $0.0107\n"
+}

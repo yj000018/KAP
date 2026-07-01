@@ -1,0 +1,2903 @@
+{
+  "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187",
+  "title": "LLM Knowledge Distillation Pipeline - Complete Setup & Architecture",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "xl",
+    "Language": "mixed",
+    "Subthemes": "ChatGPT Export Automation, Merge Conflict Resolution, Graph-based Knowledge, Canonical Key Strategy, Signal Scoring, GitHub Actions Deployment",
+    "Project": "yOS",
+    "UID": "ochsaGsrKtX5f1eU2x8CAi",
+    "Date": "2026-03-08",
+    "Themes": "AI Knowledge Management, LLM Pipeline Architecture, Automated Distillation, Notion Integration, Multi-layer System Design",
+    "Archived": "True",
+    "Depth": "landmark",
+    "Title": "LLM Knowledge Distillation Pipeline - Complete Setup & Architecture"
+  },
+  "blocks_count": 58,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "fb51f05d-b4d2-4204-be69-a793787f5956",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d577c86f-6ec6-4a03-a345-8908066bfa44",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complete design and implementation of a 9-layer LLM knowledge distillation pipeline that automatically ingests chat sessions, distills knowledge, and maintains a structured knowledge base. The system includes sophisticated merge logic, semantic clustering, graph relations, and working memory contexts. Deployed on GitHub Actions with Notion as storage backend.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complete design and implementation of a 9-layer LLM knowledge distillation pipeline that automatically ingests chat sessions, distills knowledge, and maintains a structured knowledge base. The system includes sophisticated merge logic, semantic clustering, graph relations, and working memory contexts. Deployed on GitHub Actions with Notion as storage backend.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e3130d38-2df6-422a-9d00-8b5a9280d6bf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0a29d6b1-0f05-47eb-9a60-061343252c3f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick needed an autonomous system to capture, distill, and organize knowledge from his LLM conversations across ChatGPT/Claude into a searchable knowledge base. The system had to handle continued conversations, avoid duplicates, and scale from 200 to thousands of knowledge items with increasing sophistication.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick needed an autonomous system to capture, distill, and organize knowledge from his LLM conversations across ChatGPT/Claude into a searchable knowledge base. The system had to handle continued conversations, avoid duplicates, and scale from 200 to thousands of knowledge items with increasing sophistication.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9aaf56c6-bf30-4b92-ad93-e7f150538c50",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6ec87a60-816a-4a72-8280-f2699dd92d36",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built a complete pipeline from scratch with 9 architectural layers: ingestion (ChatGPT2Notion), LLM distillation, merge logic with 6 conflict resolution cases, signal scoring, concept clustering, graph relations, active context management, and synthesis capabilities. Created 5 Notion databases, implemented scheduling, and deployed to GitHub Actions.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built a complete pipeline from scratch with 9 architectural layers: ingestion (ChatGPT2Notion), LLM distillation, merge logic with 6 conflict resolution cases, signal scoring, concept clustering, graph relations, active context management, and synthesis capabilities. Created 5 Notion databases, implemented scheduling, and deployed to GitHub Actions.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "74d732d0-46a2-4631-ac74-68164ee9e44c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ed87b4f5-0586-4563-a5f0-51e399a3892d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[database]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[database]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Chat_Export_Sessions — Notion database for raw chat imports",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Chat_Export_Sessions — Notion database for raw chat imports",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "41a5584d-5cd8-4ba6-aa60-a2665fa141c0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[database]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[database]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Knowledge — Main knowledge base with distilled items",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Knowledge — Main knowledge base with distilled items",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9d921f37-55ea-47f4-a72b-bbf32dc7249a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[database]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[database]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Pipeline_State — Processing state tracking",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Pipeline_State — Processing state tracking",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3ed1205a-31d7-4f43-aa3e-0607e4b0b6c0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[database]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[database]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Concept_Clusters — Semantic groupings (activates at 150+ items)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Concept_Clusters — Semantic groupings (activates at 150+ items)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "73a9aa8f-b59d-4971-96e8-379a7380d2dd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[database]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[database]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Active_Context — Working memory for current decisions/issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Active_Context — Working memory for current decisions/issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f3bad710-e82d-44c3-93ea-d206e50e4d16",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " llm_distillation_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " llm_distillation_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "pipeline.py",
+              "link": {
+                "url": "http://pipeline.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "pipeline.py",
+            "href": "http://pipeline.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Main processing pipeline with 6 merge cases",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Main processing pipeline with 6 merge cases",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "53cfa829-ec2e-427f-a96e-2da8bceea2b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " import_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " import_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "sessions.py",
+              "link": {
+                "url": "http://sessions.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "sessions.py",
+            "href": "http://sessions.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Bootstrap script for existing 200 chats",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Bootstrap script for existing 200 chats",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e40b81ec-f2b2-4a8d-a176-00b8c6672ab5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[deployment]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[deployment]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " GitHub Actions workflow — Automated daily execution at 5am UTC",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " GitHub Actions workflow — Automated daily execution at 5am UTC",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cd110a20-d4a3-4485-848c-f07444eb7ffe",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Complete system documentation — Full architecture guide in Notion with configuration parameters",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Complete system documentation — Full architecture guide in Notion with configuration parameters",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d013acdb-f035-4199-b3b7-84a420d54007",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "92968526-2bb5-46a8-b37a-8591597a9d43",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Use ChatGPT2Notion extension with Overwrite mode and daily sync to avoid 28-conversation limit",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Use ChatGPT2Notion extension with Overwrite mode and daily sync to avoid 28-conversation limit",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "98696fc2-fb81-487c-9678-04958106e4df",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement Canonical Key strategy for duplicate detection before expensive semantic comparison",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement Canonical Key strategy for duplicate detection before expensive semantic comparison",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4ee0e8e2-87f8-46d3-8398-26fc9f932363",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Deploy on GitHub Actions instead of ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Deploy on GitHub Actions instead of ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " for stateless daily cron execution",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " for stateless daily cron execution",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "70951191-60dc-411d-b2f5-83e376a2ef18",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create 9-layer architecture with progressive activation based on knowledge volume thresholds",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create 9-layer architecture with progressive activation based on knowledge volume thresholds",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ef32046e-91e0-4343-b5d2-6b7cac7919bb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Use importance/confidence scoring instead of just boolean flags for knowledge quality",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Use importance/confidence scoring instead of just boolean flags for knowledge quality",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0edce60e-bcd0-429f-85c6-4084fb04e6a0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Schedule pipeline 2 hours after extension sync (3am sync, 5am processing)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Schedule pipeline 2 hours after extension sync (3am sync, 5am processing)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7abf09a2-faa0-4d04-9534-6d7431e304ea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "881db0d6-41db-4701-8df7-189ed2242e37",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b4d4c27c-d905-4e18-a230-fe8e50750708",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Canonical Key approach significantly reduces false merges compared to pure semantic similarity",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Canonical Key approach significantly reduces false merges compared to pure semantic similarity",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3e197e6d-e0b6-4b47-af10-a06c23a1a21c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "6-case merge logic handles all conversation continuation scenarios robustly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "6-case merge logic handles all conversation continuation scenarios robustly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f1457281-2df9-4d04-b530-0869af6dc100",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "GitHub Actions perfect for stateless daily cron jobs with minimal cost",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GitHub Actions perfect for stateless daily cron jobs with minimal cost",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d7324b63-9809-49fb-919b-80892fc633a0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion MCP API reliable for database creation and schema management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion MCP API reliable for database creation and schema management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "83a2e53f-334d-45fa-ae81-5364843434fb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Progressive feature activation based on volume thresholds provides clean scaling path",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Progressive feature activation based on volume thresholds provides clean scaling path",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1622dbf5-ea7f-4d4e-a5f3-67fbacc6f62a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7df74dc6-063d-4178-920d-20cea9788ff7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion MCP API doesn't support ALTER TABLE on existing databases - requires manual property addition",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion MCP API doesn't support ALTER TABLE on existing databases - requires manual property addition",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "73167c9b-6191-4905-a5b7-cb904ad09ebc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ChatGPT2Notion extension's 28-conversation window creates silent data loss risk for high-volume users",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ChatGPT2Notion extension's 28-conversation window creates silent data loss risk for high-volume users",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c83980ae-67cc-4a8c-9450-a09baff53374",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Auto-sync with Overwrite mode causes unnecessary API costs with frequent rewrites",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Auto-sync with Overwrite mode causes unnecessary API costs with frequent rewrites",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f6461c29-1282-43af-95a4-60882c25e3c8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Browser-based GitHub authentication in sandbox has session isolation issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Browser-based GitHub authentication in sandbox has session isolation issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e0a48d6f-6248-4fdf-ac8b-7c1d60ea8a74",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "88142a2a-beff-43d9-8335-d572d9da4ca3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Extension behavior varies significantly between commercial (",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Extension behavior varies significantly between commercial (",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "chatgpt2notion.com",
+              "link": {
+                "url": "http://chatgpt2notion.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "chatgpt2notion.com",
+            "href": "http://chatgpt2notion.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ") and open-source versions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ") and open-source versions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fdcf2fbf-d515-4127-a797-da55bf68a2fa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Continued conversations in ChatGPT maintain same conversation_id but aren't auto-detected by extensions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Continued conversations in ChatGPT maintain same conversation_id but aren't auto-detected by extensions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "145d3d9e-6d3b-43b0-b5fe-5d59a6b3032c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jaccard similarity on title+content tokens provides good merge detection without embedding API costs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jaccard similarity on title+content tokens provides good merge detection without embedding API costs",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b21234e6-d73c-4103-bc81-11b3c3ff8a78",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fine-grained GitHub PATs have complex permission scopes that don't match classic token behavior",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fine-grained GitHub PATs have complex permission scopes that don't match classic token behavior",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "38e15555-8309-4d32-a086-bb73c2eb5eb8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "077a8dad-3f89-413e-883d-62674d9bb868",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "GitHub PAT permissions prevented automatic repo creation - required manual token generation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GitHub PAT permissions prevented automatic repo creation - required manual token generation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7cd45488-cc88-4ff4-9a94-ff56d220682d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion integration access control blocked extension database selection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion integration access control blocked extension database selection",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a7ec1c18-4c62-4902-b276-ff2da631d1b6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Extension auto-sync limitations with conversation continuation detection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Extension auto-sync limitations with conversation continuation detection",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0d31bf0f-a11a-4ce3-81a0-04d6a1513ed4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Browser session isolation in sandbox environment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Browser session isolation in sandbox environment",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "be66f92d-bdae-4770-af25-3d1967a42470",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2afbbbe4-7082-4a12-884b-99a5b99564a0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should semantic embeddings replace Jaccard similarity earlier than 3000-item threshold?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should semantic embeddings replace Jaccard similarity earlier than 3000-item threshold?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "25f69ba0-ca9e-483e-9ae9-b288e1db691d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to handle extension integration permissions automatically for new users?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to handle extension integration permissions automatically for new users?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dfadb565-0b5c-4c34-902e-bafe95451d86",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Is there a way to detect continued conversations without manual re-export?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Is there a way to detect continued conversations without manual re-export?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "10fb2434-1922-47ce-97fc-e1fa6f0a7c01",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should synthesis engine be rule-based or LLM-based for better consistency?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should synthesis engine be rule-based or LLM-based for better consistency?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "807c17db-a57a-4271-994b-f304fe34c505",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "642e7941-ba85-4353-a0f9-5d0ea27549af",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Configure GitHub Actions secrets (OPENAI_API_KEY, NOTION_MCP_TOKEN) to activate pipeline",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Configure GitHub Actions secrets (OPENAI_API_KEY, NOTION_MCP_TOKEN) to activate pipeline",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "91c57b74-0ea0-461e-868e-ab0541faa2d2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Grant Notion integration access to MEMORY page for ChatGPT2Notion extension",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Grant Notion integration access to MEMORY page for ChatGPT2Notion extension",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "24e78a99-a65e-4b9e-bb02-d9da6634f105",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Bootstrap with 200 existing chats using --force-all flag",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Bootstrap with 200 existing chats using --force-all flag",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7e406f58-fda0-4896-a039-fe4ff5150611",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Monitor pipeline execution and knowledge base growth toward 150-item clustering threshold",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Monitor pipeline execution and knowledge base growth toward 150-item clustering threshold",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c015566e-a2bf-4295-ab80-8ae1633da089",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test conversation continuation scenarios with manual re-export workflow",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test conversation continuation scenarios with manual re-export workflow",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7df2766f-65ac-4c51-aa15-a0e31d8b95b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bf15f791-6a70-4a89-b548-2d9f2f6db533",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-814d-afcb-f8fa9ae42187"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ochsaGsrKtX5f1eU2x8CAi",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "ochsaGsrKtX5f1eU2x8CAi",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0575",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0575",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nComplete design and implementation of a 9-layer LLM knowledge distillation pipeline that automatically ingests chat sessions, distills knowledge, and maintains a structured knowledge base. The system includes sophisticated merge logic, semantic clustering, graph relations, and working memory contexts. Deployed on GitHub Actions with Notion as storage backend.\n\n\n## Context & Intent\n\nYannick needed an autonomous system to capture, distill, and organize knowledge from his LLM conversations across ChatGPT/Claude into a searchable knowledge base. The system had to handle continued conversations, avoid duplicates, and scale from 200 to thousands of knowledge items with increasing sophistication.\n\n\n## What Was Done\n\nBuilt a complete pipeline from scratch with 9 architectural layers: ingestion (ChatGPT2Notion), LLM distillation, merge logic with 6 conflict resolution cases, signal scoring, concept clustering, graph relations, active context management, and synthesis capabilities. Created 5 Notion databases, implemented scheduling, and deployed to GitHub Actions.\n\n\n## Outputs Produced\n\n- [database] Chat_Export_Sessions — Notion database for raw chat imports\n- [database] Knowledge — Main knowledge base with distilled items\n- [database] Pipeline_State — Processing state tracking\n- [database] Concept_Clusters — Semantic groupings (activates at 150+ items)\n- [database] Active_Context — Working memory for current decisions/issues\n- [script] llm_distillation_pipeline.py — Main processing pipeline with 6 merge cases\n- [script] import_sessions.py — Bootstrap script for existing 200 chats\n- [deployment] GitHub Actions workflow — Automated daily execution at 5am UTC\n- [documentation] Complete system documentation — Full architecture guide in Notion with configuration parameters\n\n## Key Decisions & Validations\n\n- Use ChatGPT2Notion extension with Overwrite mode and daily sync to avoid 28-conversation limit\n- Implement Canonical Key strategy for duplicate detection before expensive semantic comparison\n- Deploy on GitHub Actions instead of Fly.io for stateless daily cron execution\n- Create 9-layer architecture with progressive activation based on knowledge volume thresholds\n- Use importance/confidence scoring instead of just boolean flags for knowledge quality\n- Schedule pipeline 2 hours after extension sync (3am sync, 5am processing)\n\n## Lessons Learned\n\nWorked well:\n\n- Canonical Key approach significantly reduces false merges compared to pure semantic similarity\n- 6-case merge logic handles all conversation continuation scenarios robustly\n- GitHub Actions perfect for stateless daily cron jobs with minimal cost\n- Notion MCP API reliable for database creation and schema management\n- Progressive feature activation based on volume thresholds provides clean scaling path\nFailed / suboptimal:\n\n- Notion MCP API doesn't support ALTER TABLE on existing databases - requires manual property addition\n- ChatGPT2Notion extension's 28-conversation window creates silent data loss risk for high-volume users\n- Auto-sync with Overwrite mode causes unnecessary API costs with frequent rewrites\n- Browser-based GitHub authentication in sandbox has session isolation issues\nDiscoveries:\n\n- Extension behavior varies significantly between commercial (chatgpt2notion.com) and open-source versions\n- Continued conversations in ChatGPT maintain same conversation_id but aren't auto-detected by extensions\n- Jaccard similarity on title+content tokens provides good merge detection without embedding API costs\n- Fine-grained GitHub PATs have complex permission scopes that don't match classic token behavior\n\n## Challenges & Blockers\n\n- GitHub PAT permissions prevented automatic repo creation - required manual token generation\n- Notion integration access control blocked extension database selection\n- Extension auto-sync limitations with conversation continuation detection\n- Browser session isolation in sandbox environment\n\n## Open Questions\n\n- Should semantic embeddings replace Jaccard similarity earlier than 3000-item threshold?\n- How to handle extension integration permissions automatically for new users?\n- Is there a way to detect continued conversations without manual re-export?\n- Should synthesis engine be rule-based or LLM-based for better consistency?\n\n## Next Steps\n\n- Configure GitHub Actions secrets (OPENAI_API_KEY, NOTION_MCP_TOKEN) to activate pipeline\n- Grant Notion integration access to MEMORY page for ChatGPT2Notion extension\n- Bootstrap with 200 existing chats using --force-all flag\n- Monitor pipeline execution and knowledge base growth toward 150-item clustering threshold\n- Test conversation continuation scenarios with manual re-export workflow\n---\nUID: ochsaGsrKtX5f1eU2x8CAi | Model: claude-sonnet-4-20250514 | Cost: $0.0575\n"
+}

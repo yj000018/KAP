@@ -1,0 +1,45 @@
+# SHA256 Checksums — WP2-M6B
+
+| path | size | sha256 |
+|---|---|---|
+| `01_MANIFESTS/sprint_manifest.json` | 1,227 | `8094ffe07e5613d2...` |
+| `01_MANIFESTS/sprint_manifest.md` | 602 | `b438cd74b6b2c32a...` |
+| `02_RAW_MIRRORS/KOR_Knowledge_Object_Repository_raw.json` | 170 | `12b0b02032e974ac...` |
+| `02_RAW_MIRRORS/Manus_Memory_Hub_raw.json` | 103,859 | `bafb6b89a1b0711e...` |
+| `02_RAW_MIRRORS/Manus_Memory_Sessions_raw.json` | 1,822,471 | `44d8051c336446bc...` |
+| `02_RAW_MIRRORS/SSA_Session_Synthetic_Archive_raw.json` | 75,968 | `b324a7922b2e6344...` |
+| `02_RAW_MIRRORS/YOS_Archives_raw.json` | 81,743 | `68b3b889d2f1b4a6...` |
+| `02_RAW_MIRRORS/YOS_Tools_Registry_v1_raw.json` | 315,550 | `c4ec79bcf1e18330...` |
+| `02_RAW_MIRRORS/YOS_Tools_Registry_v2_raw.json` | 434,484 | `82383601996664ff...` |
+| `03_SOURCE_CARDS/KOR_Knowledge_Object_Repository_SOURCE_CARD.md` | 609 | `9f97af7f1fa24a42...` |
+| `03_SOURCE_CARDS/Manus_Memory_Hub_SOURCE_CARD.md` | 535 | `4ee08060c80de863...` |
+| `03_SOURCE_CARDS/Manus_Memory_Sessions_SOURCE_CARD.md` | 561 | `6222678049e675ab...` |
+| `03_SOURCE_CARDS/SSA_Session_Synthetic_Archive_SOURCE_CARD.md` | 600 | `7a2a9608c8821999...` |
+| `03_SOURCE_CARDS/YOS_Archives_SOURCE_CARD.md` | 515 | `8919ce8ce7b7c894...` |
+| `03_SOURCE_CARDS/YOS_Tools_Registry_v1_SOURCE_CARD.md` | 560 | `b283616d635fe478...` |
+| `03_SOURCE_CARDS/YOS_Tools_Registry_v2_SOURCE_CARD.md` | 560 | `7f687d6b450cde91...` |
+| `04_REGISTRIES/Notion_DB_Registry.json` | 839 | `ae9b21068f282bfa...` |
+| `04_REGISTRIES/Notion_DB_Registry.md` | 1,077 | `81b5b945625a1375...` |
+| `04_REGISTRIES/Sessions_DB_Full_Registry.json` | 293,379 | `d71ed83886db8e70...` |
+| `04_REGISTRIES/Sessions_DB_Full_Registry.md` | 32,227 | `6337e53aab5645f8...` |
+| `08_TEXT_EXTRACTS/Manus_Memory_Hub.csv` | 8,065 | `c8b2a221838c9920...` |
+| `08_TEXT_EXTRACTS/Manus_Memory_Hub.md` | 4,378 | `82f21a7b83a8294e...` |
+| `08_TEXT_EXTRACTS/Manus_Memory_Sessions.csv` | 147,717 | `561a843dbb552902...` |
+| `08_TEXT_EXTRACTS/Manus_Memory_Sessions.md` | 33,757 | `b712b63f64c838a5...` |
+| `08_TEXT_EXTRACTS/SSA_Session_Synthetic_Archive.csv` | 7,582 | `9fe855b123aa7dd6...` |
+| `08_TEXT_EXTRACTS/SSA_Session_Synthetic_Archive.md` | 920 | `49015730d6fa55ab...` |
+| `08_TEXT_EXTRACTS/YOS_Archives.csv` | 10,977 | `7fbac43f91f62423...` |
+| `08_TEXT_EXTRACTS/YOS_Archives.md` | 1,441 | `40a44a503a5ac852...` |
+| `08_TEXT_EXTRACTS/YOS_Tools_Registry_v1.csv` | 17,565 | `b955f0e387818560...` |
+| `08_TEXT_EXTRACTS/YOS_Tools_Registry_v1.md` | 6,332 | `d5d73430cc74ae54...` |
+| `08_TEXT_EXTRACTS/YOS_Tools_Registry_v2.csv` | 29,617 | `467bacb9e9032c2e...` |
+| `08_TEXT_EXTRACTS/YOS_Tools_Registry_v2.md` | 6,540 | `3b8974faef7d380e...` |
+| `09_JSON_EXPORTS/KOR_Knowledge_Object_Repository_flat.json` | 130 | `22d87ad0d5f9ac86...` |
+| `09_JSON_EXPORTS/Manus_Memory_Hub_flat.json` | 19,189 | `e72008355c8e2ac5...` |
+| `09_JSON_EXPORTS/Manus_Memory_Sessions_flat.json` | 293,465 | `5fc7009849be20ff...` |
+| `09_JSON_EXPORTS/SSA_Session_Synthetic_Archive_flat.json` | 11,053 | `468169ee53c77c52...` |
+| `09_JSON_EXPORTS/YOS_Archives_flat.json` | 16,910 | `57d824889744b595...` |
+| `09_JSON_EXPORTS/YOS_Tools_Registry_v1_flat.json` | 49,266 | `d62b01a488edeb4e...` |
+| `09_JSON_EXPORTS/YOS_Tools_Registry_v2_flat.json` | 63,432 | `7f7b2c7fa3114a98...` |
+| `13_BLOCKERS/blockers.md` | 456 | `2453bce4d28e7d84...` |
+| `14_READY_FOR_ARCHITECT_REVIEW/WP2-M6B_Architect_Review.md` | 1,164 | `5c299ff4ffe110ad...` |

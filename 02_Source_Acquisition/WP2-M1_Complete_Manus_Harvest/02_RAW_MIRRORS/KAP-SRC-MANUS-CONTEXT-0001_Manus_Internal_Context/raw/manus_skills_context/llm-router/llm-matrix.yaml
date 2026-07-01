@@ -1,0 +1,221 @@
+# ============================================================
+# Y-OS LLM Matrix — Routing Configuration
+# Version: 1.1
+# Updated: 2026-06-25
+# Owner: Yannick (Y-OS)
+# ============================================================
+# BACKWARD COMPATIBILITY: All existing direct-API routes are preserved.
+# New entries (openrouter, manus) are additive only.
+# ============================================================
+
+# ─────────────────────────────────────────
+# PROVIDERS
+# ─────────────────────────────────────────
+providers:
+
+  anthropic:
+    provider_type: api
+    base_url: "https://api.anthropic.com/v1"
+    api_key_env: ANTHROPIC_API_KEY
+    models:
+      - claude-3-opus-20240229
+      - claude-3-7-sonnet-20250219
+    default_model: claude-3-7-sonnet-20250219
+    notes: "Closed/proprietary. Always use direct API — OpenRouter adds 5.5% fee."
+
+  openai:
+    provider_type: api
+    base_url: "https://api.openai.com/v1"
+    api_key_env: OPENAI_API_KEY
+    models:
+      - gpt-5
+      - gpt-4o
+    default_model: gpt-5
+    notes: "Closed/proprietary. Always use direct API — OpenRouter adds 5.5% fee."
+
+  google:
+    provider_type: api
+    base_url: "https://generativelanguage.googleapis.com"
+    api_key_env: GEMINI_API_KEY
+    models:
+      - gemini-2.5-pro
+      - gemini-2.5-flash
+    default_model: gemini-2.5-flash
+    notes: "Closed/proprietary. Always use direct API — OpenRouter adds 5.5% fee."
+
+  perplexity:
+    provider_type: api
+    base_url: "https://api.perplexity.ai"
+    api_key_env: SONAR_API_KEY
+    models:
+      - sonar-pro
+      - sonar
+    default_model: sonar-pro
+    notes: "Real-time web search with citations."
+
+  xai:
+    provider_type: api
+    base_url: "https://api.x.ai/v1"
+    api_key_env: XAI_API_KEY
+    models:
+      - grok-4
+    default_model: grok-4
+    notes: "Closed/proprietary. Always use direct API — OpenRouter adds 5.5% fee."
+
+  # ── NEW: OpenRouter ──────────────────────────────────────
+  openrouter:
+    provider_type: api
+    base_url: "https://openrouter.ai/api/v1"
+    api_key_env: OPENROUTER_API_KEY
+    notes: >
+      Use ONLY for open-weight models where host competition drives prices down.
+      For closed models (GPT-5.5, Claude, Gemini), OpenRouter charges provider
+      rate + 5.5% platform fee — making it MORE expensive than direct API.
+      High-volume open-weight usage (>10M output tokens/month) yields 30-50% savings.
+    force_openrouter_override: false  # Set to true to force all routes through OpenRouter
+    models:
+      - id: "moonshotai/kimi-k2-6"
+        alias: kimi-k2
+        type: open_weight
+        max_tokens: 262144
+        temperature_default: 0.7
+        cost_tracking:
+          provider: openrouter
+          model: kimi-k2-6
+          optimisation_rule: open_weight_cheaper
+        fallback_policy: retry_direct_moonshot
+      - id: "meta-llama/llama-3.3-70b-instruct"
+        alias: llama-3.3-70b
+        type: open_weight
+        cost_tracking:
+          provider: openrouter
+          model: llama-3.3-70b-instruct
+          optimisation_rule: open_weight_cheaper
+      - id: "deepseek/deepseek-r1"
+        alias: deepseek-r1
+        type: open_weight
+        cost_tracking:
+          provider: openrouter
+          model: deepseek-r1
+          optimisation_rule: open_weight_cheaper
+      - id: "qwen/qwen-2.5-72b-instruct"
+        alias: qwen-2.5-72b
+        type: open_weight
+        cost_tracking:
+          provider: openrouter
+          model: qwen-2.5-72b-instruct
+          optimisation_rule: open_weight_cheaper
+
+  # ── NEW: Manus ───────────────────────────────────────────
+  manus:
+    provider_type: saas
+    api_available: false
+    base_url: "https://manus.im"
+    api_key_env: null
+    notes: >
+      Access via manus.im web interface or Telegram/WhatsApp/Slack integrations only.
+      NOT available on OpenRouter — credit-based consumer SaaS, not an API model.
+      Do NOT include in any API routing rules.
+
+
+# ─────────────────────────────────────────
+# ROUTING RULES
+# ─────────────────────────────────────────
+# Priority: explicit model_override > task_category > default
+# force_openrouter: true overrides direct-API rules for unified billing/failover.
+# ─────────────────────────────────────────
+routing:
+
+  # Open-weight models → OpenRouter by default
+  - model_family: kimi
+    provider: openrouter
+    model_id: "moonshotai/kimi-k2-6"
+    rationale: "Open-weight — host competition makes OpenRouter cheaper"
+    force_openrouter: false
+
+  - model_family: llama
+    provider: openrouter
+    model_id: "meta-llama/llama-3.3-70b-instruct"
+    rationale: "Open-weight — host competition makes OpenRouter cheaper"
+    force_openrouter: false
+
+  - model_family: deepseek
+    provider: openrouter
+    model_id: "deepseek/deepseek-r1"
+    rationale: "Open-weight — host competition makes OpenRouter cheaper"
+    force_openrouter: false
+
+  - model_family: qwen
+    provider: openrouter
+    model_id: "qwen/qwen-2.5-72b-instruct"
+    rationale: "Open-weight — host competition makes OpenRouter cheaper"
+    force_openrouter: false
+
+  # Closed/proprietary models → Direct API by default
+  - model_family: gpt
+    provider: openai
+    model_id: "gpt-5"
+    rationale: "Closed model — OpenRouter adds 5.5% fee, use direct API"
+    force_openrouter: false
+
+  - model_family: claude
+    provider: anthropic
+    model_id: "claude-3-7-sonnet-20250219"
+    rationale: "Closed model — OpenRouter adds 5.5% fee, use direct API"
+    force_openrouter: false
+
+  - model_family: gemini
+    provider: google
+    model_id: "gemini-2.5-flash"
+    rationale: "Closed model — OpenRouter adds 5.5% fee, use direct API"
+    force_openrouter: false
+
+  # Manus — excluded from API routing entirely
+  - model_family: manus
+    provider: manus
+    model_id: null
+    rationale: "SaaS only — not an API model, access via manus.im directly"
+    force_openrouter: false
+
+
+# ─────────────────────────────────────────
+# TASK CATEGORY → LLM MATRIX
+# ─────────────────────────────────────────
+task_routing:
+  realtime_search:
+    provider: perplexity
+    model_id: sonar-pro
+
+  vision_multimodal:
+    provider: google
+    model_id: gemini-2.5-flash
+
+  code_generation:
+    provider: openai
+    model_id: gpt-5
+
+  complex_reasoning:
+    provider: openai
+    model_id: gpt-5
+
+  creative_writing:
+    provider: anthropic
+    model_id: claude-3-opus-20240229
+
+  conversation:
+    provider: xai
+    model_id: grok-4
+
+  data_analysis:
+    provider: openai
+    model_id: gpt-5
+
+  # Open-weight / cost-optimised tasks
+  open_weight_default:
+    provider: openrouter
+    model_id: "moonshotai/kimi-k2-6"
+    rationale: "Best open-weight default — long context, competitive pricing"
+
+  default:
+    provider: anthropic
+    model_id: claude-3-7-sonnet-20250219

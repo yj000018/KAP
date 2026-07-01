@@ -1,0 +1,1970 @@
+{
+  "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf",
+  "title": "Pinecone Vector DB Selection & PoC for yOS Memory System",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "medium",
+    "Language": "mixed",
+    "Subthemes": "Pinecone vs alternatives, Semantic memory persistence, API key management, Embedding models, Session retrieval testing",
+    "Project": "yOS",
+    "UID": "c1RZU2jVkaQwDxPB3iVKMQ",
+    "Date": "2026-02-22",
+    "Themes": "Vector database architecture, RAG memory system design, Technical proof of concept, Infrastructure setup",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Pinecone Vector DB Selection & PoC for yOS Memory System"
+  },
+  "blocks_count": 42,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "a158359d-4c0d-45de-b86a-2d8caf9a33c3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "10a21f32-f48f-408a-8a45-23dca1c856b3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick evaluated Pinecone as a vector database solution for yOS long-term memory versus internal RAG capabilities. After architectural analysis, Pinecone was selected as the canonical choice. A complete proof of concept was executed including account creation, API key setup, index creation, test data ingestion, and successful semantic retrieval, validating the technical approach for yOS memory persistence.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick evaluated Pinecone as a vector database solution for yOS long-term memory versus internal RAG capabilities. After architectural analysis, Pinecone was selected as the canonical choice. A complete proof of concept was executed including account creation, API key setup, index creation, test data ingestion, and successful semantic retrieval, validating the technical approach for yOS memory persistence.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4a345ef6-9a07-4ea2-b126-0d3cf55c8088",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9f6d60c3-d446-4db5-a59e-b64a1cb185fa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Determine the optimal vector database solution for yOS persistent memory system, specifically comparing Pinecone against Manus's internal RAG capabilities for storing and retrieving session memories and project context",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Determine the optimal vector database solution for yOS persistent memory system, specifically comparing Pinecone against Manus's internal RAG capabilities for storing and retrieving session memories and project context",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9d5f3e8d-9b2e-47dc-8be2-659e296ec92f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0f6fdcc9-6dac-49a0-8dfb-37e51c24cef8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Conducted architectural analysis comparing Pinecone to internal RAG, created Pinecone account with secure API key storage, built and executed complete PoC including index creation, test session ingestion with embeddings, and semantic retrieval validation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Conducted architectural analysis comparing Pinecone to internal RAG, created Pinecone account with secure API key storage, built and executed complete PoC including index creation, test session ingestion with embeddings, and semantic retrieval validation",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "567d4ff6-02b2-42f4-b737-40e3f29f3798",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f4c794b7-fd9f-46c9-8a6d-b4422512d237",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[infrastructure]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[infrastructure]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Pinecone Account & API Setup — Active Pinecone account with API key securely stored in multiple locations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Pinecone Account & API Setup — Active Pinecone account with API key securely stored in multiple locations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9bbb0b06-dc6d-4708-a391-f6aa5c53d6e0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[poc]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[poc]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Vector Database PoC — Working pipeline demonstrating session ingestion and semantic retrieval",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Vector Database PoC — Working pipeline demonstrating session ingestion and semantic retrieval",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4a892361-13e2-47e1-a123-35960b01e018",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[index]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[index]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yos-memory-poc — Pinecone serverless index configured for 384-dim embeddings with cosine similarity",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yos-memory-poc — Pinecone serverless index configured for 384-dim embeddings with cosine similarity",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "47bacad7-5373-45c5-81c7-53fde24429da",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Canonical Decision Record — Notion page documenting Pinecone as official yOS RAG solution",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Canonical Decision Record — Notion page documenting Pinecone as official yOS RAG solution",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "50acb731-bbfa-484d-9070-25560c2ebca9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "84ee72ac-eb98-4475-8340-e28fd979d7eb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Pinecone selected as canonical vector database for yOS memory system",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Pinecone selected as canonical vector database for yOS memory system",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eb41880f-2d9b-46c0-81c8-a4d8542c80e7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Rejection of Manus internal RAG for persistent memory use case",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Rejection of Manus internal RAG for persistent memory use case",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9b3bcc63-a8f5-4108-9304-e91398e7a9af",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Architecture: Notion + Pinecone + Manus integration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Architecture: Notion + Pinecone + Manus integration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8d85b235-bebf-4cf7-b690-0a9652c8f0fd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Production stack: Pinecone + text-embedding-3-small + Notion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Production stack: Pinecone + text-embedding-3-small + Notion",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a58a81aa-4cbd-4399-976d-e798a937d6fa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0d3cc0f8-24e1-47f4-9b95-c9fed916d3be",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "97839888-df33-4381-8c42-e810a9163ede",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Clear architectural distinction between memory vs knowledge needs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Clear architectural distinction between memory vs knowledge needs",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f530d1db-0819-48f8-83b1-b1eaca4f9127",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "PoC validation approach with concrete test data and retrieval",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "PoC validation approach with concrete test data and retrieval",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "49945fbc-86af-4e79-9e1a-1a007cae372b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Secure multi-location API key storage strategy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Secure multi-location API key storage strategy",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "26d186aa-f275-4677-8c74-50080f55d2cd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4307d0fa-cc9a-4fc8-958c-eab5f0e0ece9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Low semantic similarity scores (0.14-0.36) with all-MiniLM-L6-v2 model",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Low semantic similarity scores (0.14-0.36) with all-MiniLM-L6-v2 model",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "796be399-d994-4973-9f2a-cecce66a26a3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manual CAPTCHA intervention required during signup",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manual CAPTCHA intervention required during signup",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "761bbcfe-e3a3-46ec-b29e-6c4ceeb78b21",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ec391951-e4c8-4c01-9930-56eeaabaddbe",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Pinecone serverless model works well for yOS scale",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Pinecone serverless model works well for yOS scale",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9671af28-3c93-4caf-bc87-b467e7f3c66c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Need for production-grade embedding model for better retrieval scores",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Need for production-grade embedding model for better retrieval scores",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "742b6a2e-7f66-465f-9583-6db588d8d5eb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Successful semantic retrieval of test sessions validates architecture",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Successful semantic retrieval of test sessions validates architecture",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f2f04666-e31f-46b5-8949-62436382f100",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3cfc2ca3-a70b-4433-8463-21c20b18a875",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CAPTCHA verification required manual intervention during account creation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "CAPTCHA verification required manual intervention during account creation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5c20dbd2-cc50-4656-a337-e8d829e24d95",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Embedding model choice impacts retrieval quality significantly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Embedding model choice impacts retrieval quality significantly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6ecd7b3f-a8bf-4822-963f-587a19bf2151",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e0b5740b-4b80-4dcb-bfe5-f6d4d3320de4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Optimal embedding model for multilingual yOS sessions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Optimal embedding model for multilingual yOS sessions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "aa59acad-b3de-45e3-9f6b-1804e995c70b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Index sizing strategy as session volume grows",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Index sizing strategy as session volume grows",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8e107f67-3fe8-464f-8d15-ba279fc28bad",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integration timeline with existing Notion memory system",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integration timeline with existing Notion memory system",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "258886e1-b51f-425e-99e7-c5df664cbee8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "60cc66c1-48a5-4660-adb4-10ae80711df0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Build automated pipeline for Manus sessions → Pinecone ingestion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Build automated pipeline for Manus sessions → Pinecone ingestion",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "087ea6d8-f255-4e51-b765-284d7eec163a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Upgrade to production embedding model (text-embedding-3-small)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Upgrade to production embedding model (text-embedding-3-small)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "366a8142-df38-4358-8258-4b6eb5d4fbb3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Define session metadata schema and indexing strategy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Define session metadata schema and indexing strategy",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9a359770-bbf9-409c-bc90-4a504217574d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integrate retrieval capabilities into Manus workflow",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integrate retrieval capabilities into Manus workflow",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "45e3b18d-5c97-4fb6-8214-606002d95262",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "db3376d8-22cd-46f8-a8f7-c6b9d51c346f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8163-9c3f-f77a0861a4bf"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "c1RZU2jVkaQwDxPB3iVKMQ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "c1RZU2jVkaQwDxPB3iVKMQ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0243",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0243",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick evaluated Pinecone as a vector database solution for yOS long-term memory versus internal RAG capabilities. After architectural analysis, Pinecone was selected as the canonical choice. A complete proof of concept was executed including account creation, API key setup, index creation, test data ingestion, and successful semantic retrieval, validating the technical approach for yOS memory persistence.\n\n\n## Context & Intent\n\nDetermine the optimal vector database solution for yOS persistent memory system, specifically comparing Pinecone against Manus's internal RAG capabilities for storing and retrieving session memories and project context\n\n\n## What Was Done\n\nConducted architectural analysis comparing Pinecone to internal RAG, created Pinecone account with secure API key storage, built and executed complete PoC including index creation, test session ingestion with embeddings, and semantic retrieval validation\n\n\n## Outputs Produced\n\n- [infrastructure] Pinecone Account & API Setup — Active Pinecone account with API key securely stored in multiple locations\n- [poc] Vector Database PoC — Working pipeline demonstrating session ingestion and semantic retrieval\n- [index] yos-memory-poc — Pinecone serverless index configured for 384-dim embeddings with cosine similarity\n- [documentation] Canonical Decision Record — Notion page documenting Pinecone as official yOS RAG solution\n\n## Key Decisions & Validations\n\n- Pinecone selected as canonical vector database for yOS memory system\n- Rejection of Manus internal RAG for persistent memory use case\n- Architecture: Notion + Pinecone + Manus integration\n- Production stack: Pinecone + text-embedding-3-small + Notion\n\n## Lessons Learned\n\nWorked well:\n\n- Clear architectural distinction between memory vs knowledge needs\n- PoC validation approach with concrete test data and retrieval\n- Secure multi-location API key storage strategy\nFailed / suboptimal:\n\n- Low semantic similarity scores (0.14-0.36) with all-MiniLM-L6-v2 model\n- Manual CAPTCHA intervention required during signup\nDiscoveries:\n\n- Pinecone serverless model works well for yOS scale\n- Need for production-grade embedding model for better retrieval scores\n- Successful semantic retrieval of test sessions validates architecture\n\n## Challenges & Blockers\n\n- CAPTCHA verification required manual intervention during account creation\n- Embedding model choice impacts retrieval quality significantly\n\n## Open Questions\n\n- Optimal embedding model for multilingual yOS sessions\n- Index sizing strategy as session volume grows\n- Integration timeline with existing Notion memory system\n\n## Next Steps\n\n- Build automated pipeline for Manus sessions → Pinecone ingestion\n- Upgrade to production embedding model (text-embedding-3-small)\n- Define session metadata schema and indexing strategy\n- Integrate retrieval capabilities into Manus workflow\n---\nUID: c1RZU2jVkaQwDxPB3iVKMQ | Model: claude-sonnet-4-20250514 | Cost: $0.0243\n"
+}

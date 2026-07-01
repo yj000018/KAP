@@ -1,0 +1,1752 @@
+{
+  "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137",
+  "title": "Integration of Lemlist via MCP for personalized outreach campaigns",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "medium",
+    "Language": "mixed",
+    "Subthemes": "Lemlist MCP, API vs MCP comparison, Campaign personalization, Architecture decisions",
+    "Project": "yOS",
+    "UID": "nuRRRbRPj57FPEXv8Xns82",
+    "Date": "2026-02-27",
+    "Themes": "MCP integration, Outreach automation, Tool architecture",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Integration of Lemlist via MCP for personalized outreach campaigns"
+  },
+  "blocks_count": 37,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2dadb915-0157-432b-9e6a-2ace36f2181d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4f788aa7-03bc-462c-b4d4-893960369f3f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User wants to integrate Lemlist for highly personalized, low-volume outreach campaigns targeting 'change agents' for planetary issues. Manus analyzed API vs MCP approaches, identified an official Lemlist MCP, and established architectural principles. The session established that MCP integration provides better composability and maintainability than direct API calls for recurring tools.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User wants to integrate Lemlist for highly personalized, low-volume outreach campaigns targeting 'change agents' for planetary issues. Manus analyzed API vs MCP approaches, identified an official Lemlist MCP, and established architectural principles. The session established that MCP integration provides better composability and maintainability than direct API calls for recurring tools.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "480eb628-4e6a-46a1-9c89-f2c847c0e552",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3ab3705f-1179-4fab-a6e8-38fa5eaecd32",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User seeks to add Lemlist to yOS for creating massive search campaigns with high personalization, targeting influential individuals like Elon Musk for planetary issues outreach",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User seeks to add Lemlist to yOS for creating massive search campaigns with high personalization, targeting influential individuals like Elon Musk for planetary issues outreach",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b0ed23f7-90ff-4790-9dc6-703045a564c6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4affa86f-111d-49b7-a518-cae3ba2f49e7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Compared API direct integration vs MCP custom integration approaches, researched available Lemlist MCP solutions, identified official Lemlist MCP server, defined architectural principles for tool integration in yOS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Compared API direct integration vs MCP custom integration approaches, researched available Lemlist MCP solutions, identified official Lemlist MCP server, defined architectural principles for tool integration in yOS",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eb20ed01-5c82-44d7-ae90-251557e75ae3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4fc36ad2-9786-4f21-a61c-9b7421d203c6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[comparison]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[comparison]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " API vs MCP analysis — Detailed comparison of integration approaches with advantages/disadvantages",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " API vs MCP analysis — Detailed comparison of integration approaches with advantages/disadvantages",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "39f70370-bd4f-4b9d-98b7-c5b69a449c44",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[research]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[research]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " MCP Lemlist mapping — Complete survey of available Lemlist MCP solutions including official and community options",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " MCP Lemlist mapping — Complete survey of available Lemlist MCP solutions including official and community options",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b4b5fbf7-aff6-4ab9-bc46-ff43c602d80c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[architecture]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[architecture]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yOS tool integration principles — Hierarchical rules for choosing between MCP official, community, custom, or direct API",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yOS tool integration principles — Hierarchical rules for choosing between MCP official, community, custom, or direct API",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4cb8b4a5-0f07-4449-9a3b-7c48c0710f9d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "48283a11-1fb1-4c12-a4fe-a2a18dbe8d85",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Use official Lemlist MCP instead of direct API integration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Use official Lemlist MCP instead of direct API integration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "99963a31-4319-4811-be65-d60b0780d976",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Establish MCP-first approach for all recurring tools in yOS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Establish MCP-first approach for all recurring tools in yOS",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7ed22ce3-603d-41b9-87d9-a345e838d8f1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Reserve direct API calls for high-volume operations or uncovered use cases",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Reserve direct API calls for high-volume operations or uncovered use cases",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "00a5a89d-6bda-4532-9a51-811ae6f3b553",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "56703de4-53a7-46d7-b7fb-3f723674d1bd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "95115183-f672-4e08-941f-a52e41a36e10",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Official MCP provides better long-term maintainability than custom API integration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Official MCP provides better long-term maintainability than custom API integration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "96976abf-5744-4ece-a6a1-8a8ca5a9fc3e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MCP integration offers zero-friction composability with other yOS tools",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MCP integration offers zero-friction composability with other yOS tools",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "58f520b4-2d8b-4cfe-a5ff-f30ab6d86c6d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fe30f182-84a6-439a-8c8e-4ede03cba2f6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Community MCP alternatives add unnecessary layers without value",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Community MCP alternatives add unnecessary layers without value",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1ae4bfdb-782c-4959-a775-caf22027382c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Direct API integration creates maintenance burden and coupling issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Direct API integration creates maintenance burden and coupling issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a2815dc6-4396-4020-9dc0-6624308c29a0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "848e0802-fb1e-4d15-ad52-80ac556442ff",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lemlist has an official MCP server available at ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lemlist has an official MCP server available at ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "app.lemlist.com/mcp",
+              "link": {
+                "url": "http://app.lemlist.com/mcp"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "app.lemlist.com/mcp",
+            "href": "http://app.lemlist.com/mcp"
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4e312f76-f14e-40fe-b85c-7c52fde368bf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "OAuth vs API key authentication options available for different deployment scenarios",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "OAuth vs API key authentication options available for different deployment scenarios",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a7afa551-a106-407b-99fb-7ab45191a420",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cf5a265d-3f95-4ea3-a42b-882bc85b42e4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Need Lemlist API key for configuration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Need Lemlist API key for configuration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "51e788f6-0e81-4f64-bf14-4e4a26087ecc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "OAuth not suitable for server environments like Manus",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "OAuth not suitable for server environments like Manus",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3a2fbe9b-b554-497a-a698-e7e0f1f5d193",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f9b12244-1f4a-4c74-ad31-9f553eebed57",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What specific outreach targets and sectors to prioritize for initial testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What specific outreach targets and sectors to prioritize for initial testing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "00b6b263-b34a-42b3-837d-050c25aafd7c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to effectively qualify and score 'change agents' for campaign targeting",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to effectively qualify and score 'change agents' for campaign targeting",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "840438d8-a971-487f-af7f-f1a3556bcee7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a5bef7cb-de24-4dad-8d21-aa132e41b6b7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Obtain Lemlist API key from Settings → Team → Integrations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Obtain Lemlist API key from Settings → Team → Integrations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "48fe7999-b973-4cf9-8ed0-1f38d117d8e5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Configure official Lemlist MCP in yOS environment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Configure official Lemlist MCP in yOS environment",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e96eb90d-3106-4344-bd18-569ddeb33f03",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test MCP integration with initial campaign creation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test MCP integration with initial campaign creation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0e8b3724-3f03-4400-9d63-6df113405736",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Define complete outreach workflow from research to tracking",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Define complete outreach workflow from research to tracking",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7d48b32f-393c-4263-a960-d89168720b79",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b2b25ec9-0008-447b-be2f-1c3c5e26317e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8145-81fa-d13db7258137"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "nuRRRbRPj57FPEXv8Xns82",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "nuRRRbRPj57FPEXv8Xns82",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0228",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0228",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nUser wants to integrate Lemlist for highly personalized, low-volume outreach campaigns targeting 'change agents' for planetary issues. Manus analyzed API vs MCP approaches, identified an official Lemlist MCP, and established architectural principles. The session established that MCP integration provides better composability and maintainability than direct API calls for recurring tools.\n\n\n## Context & Intent\n\nUser seeks to add Lemlist to yOS for creating massive search campaigns with high personalization, targeting influential individuals like Elon Musk for planetary issues outreach\n\n\n## What Was Done\n\nCompared API direct integration vs MCP custom integration approaches, researched available Lemlist MCP solutions, identified official Lemlist MCP server, defined architectural principles for tool integration in yOS\n\n\n## Outputs Produced\n\n- [comparison] API vs MCP analysis — Detailed comparison of integration approaches with advantages/disadvantages\n- [research] MCP Lemlist mapping — Complete survey of available Lemlist MCP solutions including official and community options\n- [architecture] yOS tool integration principles — Hierarchical rules for choosing between MCP official, community, custom, or direct API\n\n## Key Decisions & Validations\n\n- Use official Lemlist MCP instead of direct API integration\n- Establish MCP-first approach for all recurring tools in yOS\n- Reserve direct API calls for high-volume operations or uncovered use cases\n\n## Lessons Learned\n\nWorked well:\n\n- Official MCP provides better long-term maintainability than custom API integration\n- MCP integration offers zero-friction composability with other yOS tools\nFailed / suboptimal:\n\n- Community MCP alternatives add unnecessary layers without value\n- Direct API integration creates maintenance burden and coupling issues\nDiscoveries:\n\n- Lemlist has an official MCP server available at app.lemlist.com/mcp\n- OAuth vs API key authentication options available for different deployment scenarios\n\n## Challenges & Blockers\n\n- Need Lemlist API key for configuration\n- OAuth not suitable for server environments like Manus\n\n## Open Questions\n\n- What specific outreach targets and sectors to prioritize for initial testing\n- How to effectively qualify and score 'change agents' for campaign targeting\n\n## Next Steps\n\n- Obtain Lemlist API key from Settings → Team → Integrations\n- Configure official Lemlist MCP in yOS environment\n- Test MCP integration with initial campaign creation\n- Define complete outreach workflow from research to tracking\n---\nUID: nuRRRbRPj57FPEXv8Xns82 | Model: claude-sonnet-4-20250514 | Cost: $0.0228\n"
+}

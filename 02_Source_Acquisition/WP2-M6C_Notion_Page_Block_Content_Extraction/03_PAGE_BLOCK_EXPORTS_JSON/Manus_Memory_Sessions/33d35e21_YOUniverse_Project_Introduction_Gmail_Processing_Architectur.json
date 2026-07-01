@@ -1,0 +1,2305 @@
+{
+  "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933",
+  "title": "YOUniverse Project Introduction & Gmail Processing Architecture",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "long",
+    "Language": "mixed",
+    "Subthemes": "OAuth Integration, Rate Limiting Solutions, Batch Processing, Model Fallback Systems, Quota Management",
+    "Project": "yOS",
+    "UID": "n4NbfAoYYvq2FobfPv9qTW",
+    "Date": "2026-02-27",
+    "Themes": "Personal Information Management, AI System Architecture, Gmail Processing Pipeline, LLM Router Design, API Optimization",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "YOUniverse Project Introduction & Gmail Processing Architecture"
+  },
+  "blocks_count": 50,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "9838cf09-0f78-478c-9ce6-e1c3db5da11c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "006998ae-e340-4511-8c4f-785f6cff1fc0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick introduces the YOUniverse project for comprehensive personal information management and initiates a large-scale Gmail analysis pipeline. The session involves processing 168,581 emails through a two-phase system: heuristic classification followed by AI extraction. Major architectural improvements were implemented including a universal LLM Router for flexible model switching and quota management. The pipeline successfully classified 141,885 emails with 57.5% categorized as STRUCTURED content.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick introduces the YOUniverse project for comprehensive personal information management and initiates a large-scale Gmail analysis pipeline. The session involves processing 168,581 emails through a two-phase system: heuristic classification followed by AI extraction. Major architectural improvements were implemented including a universal LLM Router for flexible model switching and quota management. The pipeline successfully classified 141,885 emails with 57.5% categorized as STRUCTURED content.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9866ee53-7f32-4b69-a9fb-27fc1b6566fc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8dd8deac-6f0e-46ad-a169-c099a917fbc6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick wanted to establish YOUniverse as a personal information management system and process his complete Gmail archive for categorization and analysis. The technical focus was on building robust, scalable pipelines that could handle large-scale email processing while managing API quotas and model switching.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick wanted to establish YOUniverse as a personal information management system and process his complete Gmail archive for categorization and analysis. The technical focus was on building robust, scalable pipelines that could handle large-scale email processing while managing API quotas and model switching.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9a678629-d24b-4406-8b0d-3b0595c8dfcd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1397b583-21e5-4b28-83c9-afa2cb3e453c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Developed and executed a two-phase Gmail processing pipeline: Phase 1 performed heuristic classification of 141,885 emails into NOISE, STRUCTURED, ORDER, and HIGH categories. Phase 2 began AI-powered extraction using Gemini models. Created a universal yOS LLM Router architecture for flexible model management across all scripts. Implemented OAuth2 integration, batch processing optimizations, and rate limiting solutions.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Developed and executed a two-phase Gmail processing pipeline: Phase 1 performed heuristic classification of 141,885 emails into NOISE, STRUCTURED, ORDER, and HIGH categories. Phase 2 began AI-powered extraction using Gemini models. Created a universal yOS LLM Router architecture for flexible model management across all scripts. Implemented OAuth2 integration, batch processing optimizations, and rate limiting solutions.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d68743c1-3a32-4df7-bb82-516ac1061875",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a32ba5e6-12c2-408d-8c2d-209c92c52778",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[data_analysis]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[data_analysis]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Gmail Classification Report — Complete classification of 141,885 emails (2020-2026) with distribution analysis and volume trends",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Gmail Classification Report — Complete classification of 141,885 emails (2020-2026) with distribution analysis and volume trends",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "44099f85-1dac-4827-b36c-7cb803cb58b9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[architecture]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[architecture]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yOS LLM Router System — Universal router for LLM calls with fallback mechanisms, quota management, and hot-reload configuration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yOS LLM Router System — Universal router for LLM calls with fallback mechanisms, quota management, and hot-reload configuration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dd2a3100-54a4-4753-8664-4d189dadb382",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[pipeline]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[pipeline]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Gmail Processing Pipeline — Two-phase system for large-scale email processing with OAuth2, batch API, and error handling",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Gmail Processing Pipeline — Two-phase system for large-scale email processing with OAuth2, batch API, and error handling",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e55a3967-fcb8-4265-b7ed-0f4164d771a3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "06d776c6-0f83-4845-b93f-671d1c40a5b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Switch from IMAP to Gmail API for 10-15x performance improvement",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Switch from IMAP to Gmail API for 10-15x performance improvement",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4b2a74de-f087-4994-ab74-5b8b28f23941",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement two-phase processing: heuristic classification followed by AI extraction",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement two-phase processing: heuristic classification followed by AI extraction",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "25beaad6-5229-46e8-8328-a404e102325b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create universal LLM Router for all yOS scripts to enable flexible model switching",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create universal LLM Router for all yOS scripts to enable flexible model switching",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a9683c7e-c557-4d2f-b673-629dc388c633",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Use Tier 1 API keys to overcome quota limitations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Use Tier 1 API keys to overcome quota limitations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2335f749-5723-4801-acbe-d9e6560b7972",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Reduce batch sizes and implement retry logic for rate limit handling",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Reduce batch sizes and implement retry logic for rate limit handling",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "37072b9d-b584-4b72-bc2a-8a8beec8da2b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "998d84c9-a793-458e-8d3e-416a56b29757",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "28625b30-1cca-44e8-97fa-bfb40b3cc442",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Gmail Batch API provided significant speed improvements over individual requests",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Gmail Batch API provided significant speed improvements over individual requests",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a9d56475-4cf0-4428-9f20-f550441937b4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Two-phase processing architecture separated concerns effectively",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Two-phase processing architecture separated concerns effectively",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c1564322-6236-40a3-8891-1b705681e743",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Universal LLM Router design allows flexible model management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Universal LLM Router design allows flexible model management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "953717c1-8d7e-4c9a-ad61-a60ebabc45fe",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Heuristic classification achieved good accuracy for initial filtering",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Heuristic classification achieved good accuracy for initial filtering",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "45adb39e-c772-438b-993c-f077ac3dcc1f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c1d7e835-65c8-4145-8ae4-c0f4573dd393",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hardcoded model names in scripts created maintenance overhead",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Hardcoded model names in scripts created maintenance overhead",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8527aa53-b7ac-4f31-a999-5c4e3cb4dcff",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Free tier API quotas insufficient for large-scale processing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Free tier API quotas insufficient for large-scale processing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1232c511-ffff-4842-b6fd-69b43f314c2f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial architecture required multiple rewrites due to quota issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial architecture required multiple rewrites due to quota issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "27724e03-7131-4453-bc64-3a837763dac3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Sequential processing was too slow for the volume of data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Sequential processing was too slow for the volume of data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f6f40fca-fc2d-40f4-998c-93ba55e86557",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6e4d40cd-1f87-43c6-9509-4240b494f405",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Gmail API rate limits are more complex than initially understood",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Gmail API rate limits are more complex than initially understood",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "24d253ab-aaaa-4ca8-9222-990d39c20e11",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Model quotas reset per minute, not daily as assumed",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Model quotas reset per minute, not daily as assumed",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a047cfaf-ef26-4594-b4dd-4d18a57f5b3d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tier 1 API keys dramatically improve processing capabilities",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tier 1 API keys dramatically improve processing capabilities",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eff7afe4-80c4-4310-8652-643ff87d9857",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Batch processing requires careful error handling for partial failures",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Batch processing requires careful error handling for partial failures",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5ce5f95b-4692-4c9a-bb72-e34de26ee0ca",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e184f047-b268-4895-aefa-3dbf359f4e94",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Gmail API quota exhaustion with free tier accounts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Gmail API quota exhaustion with free tier accounts",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c75c316b-0649-4d18-a44c-fc766261ec1a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complex OAuth2 setup across different platforms",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complex OAuth2 setup across different platforms",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b0ff592a-ca72-4f2d-8ab6-68e3588f143a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Rate limiting requiring careful batch sizing and retry logic",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Rate limiting requiring careful batch sizing and retry logic",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "423c98fa-6f70-4a1c-b2f9-ee05bae599f7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Model availability and quota management across different providers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Model availability and quota management across different providers",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5faceb10-520d-423a-badf-9ad0afa8a1b5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a182faf6-b9de-4976-8a59-41dc3472ee47",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Optimal batch sizes for different API endpoints",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Optimal batch sizes for different API endpoints",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9c9fe99f-21fa-40c3-9032-9eda812738e4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Long-term cost implications of Tier 1 API usage",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Long-term cost implications of Tier 1 API usage",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7fda7865-93c1-4cda-b4de-c6f3bd0a2b72",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integration strategy for YOUniverse personal data management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integration strategy for YOUniverse personal data management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "362894e4-0e77-4d50-bc70-d52f92a1598f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Scalability of the LLM Router across all yOS components",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Scalability of the LLM Router across all yOS components",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "009f6ca3-8eed-4a1e-ba85-2d03ee7cb702",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "46053426-b209-4a5e-859c-9acdab5b736d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complete Phase 2 AI extraction with Tier 1 API key",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complete Phase 2 AI extraction with Tier 1 API key",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "51edd8df-abdb-454a-88a3-c995d9038621",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integrate LLM Router into existing yOS scripts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integrate LLM Router into existing yOS scripts",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6cee08f8-6121-4c62-9f19-eba8b50448f3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Develop YOUniverse personal information categorization system",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Develop YOUniverse personal information categorization system",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "df11d5d8-f9ae-4f4e-8009-66c12a9d9282",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement hot-reload configuration management",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement hot-reload configuration management",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5bd895a7-00ab-40d4-80d8-6579ef247403",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create comprehensive documentation for the new architecture",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create comprehensive documentation for the new architecture",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1ef63f14-c12f-40c3-800b-17e26bb9b58e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "85b486a9-053e-4a0a-9d38-1c749dd33079",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8152-9e3f-f32bbb920933"
+      },
+      "created_time": "2026-04-09T08:41:00.000Z",
+      "last_edited_time": "2026-04-09T08:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "n4NbfAoYYvq2FobfPv9qTW",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "n4NbfAoYYvq2FobfPv9qTW",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0419",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0419",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick introduces the YOUniverse project for comprehensive personal information management and initiates a large-scale Gmail analysis pipeline. The session involves processing 168,581 emails through a two-phase system: heuristic classification followed by AI extraction. Major architectural improvements were implemented including a universal LLM Router for flexible model switching and quota management. The pipeline successfully classified 141,885 emails with 57.5% categorized as STRUCTURED content.\n\n\n## Context & Intent\n\nYannick wanted to establish YOUniverse as a personal information management system and process his complete Gmail archive for categorization and analysis. The technical focus was on building robust, scalable pipelines that could handle large-scale email processing while managing API quotas and model switching.\n\n\n## What Was Done\n\nDeveloped and executed a two-phase Gmail processing pipeline: Phase 1 performed heuristic classification of 141,885 emails into NOISE, STRUCTURED, ORDER, and HIGH categories. Phase 2 began AI-powered extraction using Gemini models. Created a universal yOS LLM Router architecture for flexible model management across all scripts. Implemented OAuth2 integration, batch processing optimizations, and rate limiting solutions.\n\n\n## Outputs Produced\n\n- [data_analysis] Gmail Classification Report — Complete classification of 141,885 emails (2020-2026) with distribution analysis and volume trends\n- [architecture] yOS LLM Router System — Universal router for LLM calls with fallback mechanisms, quota management, and hot-reload configuration\n- [pipeline] Gmail Processing Pipeline — Two-phase system for large-scale email processing with OAuth2, batch API, and error handling\n\n## Key Decisions & Validations\n\n- Switch from IMAP to Gmail API for 10-15x performance improvement\n- Implement two-phase processing: heuristic classification followed by AI extraction\n- Create universal LLM Router for all yOS scripts to enable flexible model switching\n- Use Tier 1 API keys to overcome quota limitations\n- Reduce batch sizes and implement retry logic for rate limit handling\n\n## Lessons Learned\n\nWorked well:\n\n- Gmail Batch API provided significant speed improvements over individual requests\n- Two-phase processing architecture separated concerns effectively\n- Universal LLM Router design allows flexible model management\n- Heuristic classification achieved good accuracy for initial filtering\nFailed / suboptimal:\n\n- Hardcoded model names in scripts created maintenance overhead\n- Free tier API quotas insufficient for large-scale processing\n- Initial architecture required multiple rewrites due to quota issues\n- Sequential processing was too slow for the volume of data\nDiscoveries:\n\n- Gmail API rate limits are more complex than initially understood\n- Model quotas reset per minute, not daily as assumed\n- Tier 1 API keys dramatically improve processing capabilities\n- Batch processing requires careful error handling for partial failures\n\n## Challenges & Blockers\n\n- Gmail API quota exhaustion with free tier accounts\n- Complex OAuth2 setup across different platforms\n- Rate limiting requiring careful batch sizing and retry logic\n- Model availability and quota management across different providers\n\n## Open Questions\n\n- Optimal batch sizes for different API endpoints\n- Long-term cost implications of Tier 1 API usage\n- Integration strategy for YOUniverse personal data management\n- Scalability of the LLM Router across all yOS components\n\n## Next Steps\n\n- Complete Phase 2 AI extraction with Tier 1 API key\n- Integrate LLM Router into existing yOS scripts\n- Develop YOUniverse personal information categorization system\n- Implement hot-reload configuration management\n- Create comprehensive documentation for the new architecture\n---\nUID: n4NbfAoYYvq2FobfPv9qTW | Model: claude-sonnet-4-20250514 | Cost: $0.0419\n"
+}

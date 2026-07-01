@@ -1,0 +1,1797 @@
+{
+  "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab",
+  "title": "OpenRouter API Testing and Demo Script Creation",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "short",
+    "Language": "en",
+    "Subthemes": "Demo Scripts, Code Generation, API Documentation, Python Development",
+    "Project": "UNKNOWN",
+    "UID": "c9rFnY6cgmnZqC3sWetWeo",
+    "Date": "2025-12-29",
+    "Themes": "API Testing, Development Tools, AI Integration",
+    "Archived": "True",
+    "Depth": "standard",
+    "Title": "OpenRouter API Testing and Demo Script Creation"
+  },
+  "blocks_count": 36,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "3dd79ce2-c021-4bff-91bc-a8e25f12c44c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "86f354f5-d6a0-4888-8425-deb4608c0513",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User requested help testing the OpenRouter API and creating demo scripts showing its capabilities, including poem generation with Claude. Manus created a comprehensive toolkit with a full demo script, capabilities overview, and quick-start guide covering 400+ AI models through unified API access.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User requested help testing the OpenRouter API and creating demo scripts showing its capabilities, including poem generation with Claude. Manus created a comprehensive toolkit with a full demo script, capabilities overview, and quick-start guide covering 400+ AI models through unified API access.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1ebfa14e-4431-4c97-9160-eacc19d5512c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8d93e464-23db-43d4-be90-0f56c2a85a2d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User wanted to explore and test OpenRouter API functionality with practical examples",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User wanted to explore and test OpenRouter API functionality with practical examples",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "09897cd2-81b0-45c7-8d11-5c028735f1eb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1dbf8234-5ea9-4472-b971-539448a43b5c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Created complete OpenRouter API testing toolkit including demo script with 6 examples, comprehensive documentation, and quick-start guide",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Created complete OpenRouter API testing toolkit including demo script with 6 examples, comprehensive documentation, and quick-start guide",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "064aedc4-a5e0-49b9-8549-2d06192cc134",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5df327c1-0321-486e-bb44-9a1bce77381d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[code]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[code]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " openrouter_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " openrouter_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "demo.py",
+              "link": {
+                "url": "http://demo.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "demo.py",
+            "href": "http://demo.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Production-ready Python script demonstrating 6 API capabilities including poem generation, model comparison, streaming, and error handling",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Production-ready Python script demonstrating 6 API capabilities including poem generation, model comparison, streaming, and error handling",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fa251a6d-d125-45e7-9110-ba08a1bed27d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " OPENROUTER_CAPABILITIES_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " OPENROUTER_CAPABILITIES_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "BRIEF.md",
+              "link": {
+                "url": "http://brief.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "BRIEF.md",
+            "href": "http://brief.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Detailed overview of OpenRouter's 400+ models, features, and use cases",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Detailed overview of OpenRouter's 400+ models, features, and use cases",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "12ceb823-aaae-455c-9e05-586618916529",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " QUICK_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " QUICK_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "START.md",
+              "link": {
+                "url": "http://start.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "START.md",
+            "href": "http://start.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Quick reference guide with code examples and best practices",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Quick reference guide with code examples and best practices",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "70815b2f-8738-4114-b268-1dd1ba749260",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "60225322-1803-4757-9ea0-164dd337ce5f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Created comprehensive toolkit rather than simple example",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Created comprehensive toolkit rather than simple example",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b38360c1-934b-48f1-b5f8-a06e5e8434d0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Included multiple model comparison",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Included multiple model comparison",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e498ca09-1e12-4491-83bb-b8baff65211a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Added error handling and fallback patterns",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Added error handling and fallback patterns",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "76fe6e74-7303-462f-9c5a-a173fafe0551",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "120bb591-0253-4b4a-a5bb-d8b2b4bb629d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "46f406a9-b381-45c1-bac0-e939d2623c6c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive approach provided immediate value",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comprehensive approach provided immediate value",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "10c404cf-b807-4d4b-96e6-38f77b05d401",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Multiple examples showed API versatility",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Multiple examples showed API versatility",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35c93f3e-30a2-4b79-bfea-d779f9e23bc9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "16d69fca-a463-456a-a49c-afe23c74c42c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Session ended abruptly without testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Session ended abruptly without testing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dcb8ac75-d442-4a7d-a9e7-e6b6d5ef4032",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mobile compatibility question not fully addressed",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mobile compatibility question not fully addressed",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7ed3685c-a6b9-446e-b764-fd3665f62b0c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4a57f82b-5e2e-49a9-9673-8a84ed2d1bda",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "OpenRouter provides unified access to 400+ AI models",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "OpenRouter provides unified access to 400+ AI models",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4f05dcd7-6da1-4446-acc1-6a9b80107909",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API is OpenAI-compatible for easy migration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "API is OpenAI-compatible for easy migration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bd49c0ab-01c4-445d-8734-f0431e1fff7d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "14d35e1a-449c-4404-a9ea-93e437c4d015",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mobile compatibility concern raised but not resolved",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mobile compatibility concern raised but not resolved",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e4c19e2f-1a3d-41ab-8638-4bf1997314e4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "No actual API testing performed",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "No actual API testing performed",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "18a5ced9-52e5-42f0-9d15-5848d509894b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "092cc9bb-04b5-4c06-aeb1-ce5e3a696c10",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Will the demo script work on user's mobile setup?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Will the demo script work on user's mobile setup?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "06a58130-ed17-4d67-8d97-2f63049086bc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Does user have OpenRouter API key?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Does user have OpenRouter API key?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0fe2af13-26a6-4d60-a1e5-6101636462b0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3c3049a4-9d43-41aa-9827-531b774bbff2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User should test the demo script",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User should test the demo script",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dd3d1061-200d-4d86-8307-e21353c94c99",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Verify API key setup",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Verify API key setup",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a9775dc7-41d6-4ac1-b9b9-70f354c22ef2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Run examples to validate functionality",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Run examples to validate functionality",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "de1bb437-8449-41d6-8196-df7f5b213e70",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6004c607-735d-4b09-8d7d-f6b0defadeac",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bdd6-d810687f6cab"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "c9rFnY6cgmnZqC3sWetWeo",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "c9rFnY6cgmnZqC3sWetWeo",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0138",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0138",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nUser requested help testing the OpenRouter API and creating demo scripts showing its capabilities, including poem generation with Claude. Manus created a comprehensive toolkit with a full demo script, capabilities overview, and quick-start guide covering 400+ AI models through unified API access.\n\n\n## Context & Intent\n\nUser wanted to explore and test OpenRouter API functionality with practical examples\n\n\n## What Was Done\n\nCreated complete OpenRouter API testing toolkit including demo script with 6 examples, comprehensive documentation, and quick-start guide\n\n\n## Outputs Produced\n\n- [code] openrouter_demo.py — Production-ready Python script demonstrating 6 API capabilities including poem generation, model comparison, streaming, and error handling\n- [documentation] OPENROUTER_CAPABILITIES_BRIEF.md — Detailed overview of OpenRouter's 400+ models, features, and use cases\n- [documentation] QUICK_START.md — Quick reference guide with code examples and best practices\n\n## Key Decisions & Validations\n\n- Created comprehensive toolkit rather than simple example\n- Included multiple model comparison\n- Added error handling and fallback patterns\n\n## Lessons Learned\n\nWorked well:\n\n- Comprehensive approach provided immediate value\n- Multiple examples showed API versatility\nFailed / suboptimal:\n\n- Session ended abruptly without testing\n- Mobile compatibility question not fully addressed\nDiscoveries:\n\n- OpenRouter provides unified access to 400+ AI models\n- API is OpenAI-compatible for easy migration\n\n## Challenges & Blockers\n\n- Mobile compatibility concern raised but not resolved\n- No actual API testing performed\n\n## Open Questions\n\n- Will the demo script work on user's mobile setup?\n- Does user have OpenRouter API key?\n\n## Next Steps\n\n- User should test the demo script\n- Verify API key setup\n- Run examples to validate functionality\n---\nUID: c9rFnY6cgmnZqC3sWetWeo | Model: claude-sonnet-4-20250514 | Cost: $0.0138\n"
+}

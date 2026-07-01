@@ -1,0 +1,47 @@
+id,created,edited,title,Actions,Date,Decisions,Knowledge,Project,SessionID,Summary,Title
+32535e21-8cf8-819e-883f-d2dd16fa3a7c,2026-03-16,2026-03-16,Y-OS — Skill Summary : Synthèse Interactive de Conversations,1. Tester la skill sur 3-5 conversations existantes (Yannick). 2. Affiner le prompt generate_ summary.py  selon retours production (Manus). 3. Renommer session Manus manuellement via sidebar (Yannick). 4. Connecter option 11 au clustering sémantique session-navigator quand opérationnel (Manus).,2026-03-16,"1. Créer une skill summary interactive en 3 étapes progressives. 2. Architecture : Sommaire Initial → Synthèse Détaillée → Exécutif Summary. 3. Intégration native avec yos-mmm (option 8), memory-manager (option 9), session-navigator (options 10/11). 4. Analyse via Gemini 2.5 Flash API → JSON structuré.",Skill summary = orchestrateur de synthèse Y-OS. Script: /home/ubuntu/skills/summary/scripts/generate_ summary.py . Template: /home/ubuntu/skills/summary/templates/exec_ summary.md . data_source_id Manus Memory Hub corrigé: 94086d51-ac40-4027-b994-55c5681f72e5.,yOS / Skills / Memory Management,skill-summary-2026-03-16,"Création et livraison complète de la skill summary pour Y-OS. Workflow interactif en 3 étapes (Sommaire Initial, Synthèse Détaillée, Exécutif Summary) avec 4 orientations de finalité. Intégration native avec yos-mmm, memory-manager et session-navigator.",Y-OS — Skill Summary : Synthèse Interactive de Conversations
+31935e21-8cf8-8174-96d6-f64c0785dbd3,2026-03-04,2026-03-04,Live Test MMM v2.0 — Audit post-reset,Élaborer un guide de tests live pour Yannick.,2026-03-04,"Le système de backup/restore fonctionne comme prévu.
+Un guide de tests live sera élaboré pour Yannick.","Les scripts ont été restaurés avec succès depuis GDrive backup.
+ChromaDB a été restauré avec 130 snippets et 9 sessions.
+Les packages nécessaires ont été réinstallés.
+Le context loader I2 retourne 3 sessions pertinentes.
+La fonction memory search retourne des résultats sémantiques corrects.",Y-OS,2026-03-04_live_test_mmm_v20__audit_postreset,"Lors de cette session, un audit complet du système après un reset de la sandbox a été réalisé. Les résultats ont confirmé que le système de backup/restore fonctionne correctement et la prochaine étape consiste à élaborer un guide de tests live pour Yannick.",Live Test MMM v2.0 — Audit post-reset
+31935e21-8cf8-8125-b8e3-f4651e50f9c2,2026-03-04,2026-03-04,Test pipeline intégré v2.0,,2026-03-04,"Validation du stack complet pour MMM v2.0
+Mise en opération de yos_ memory.py  avec 16 faits
+Mise en opération de yos_ audit.py  pour le traçage des opérations
+Utilisation de D3.js pour la visualisation du memory-cloud
+Intégration d'Obsidian pour la visualisation des données","yos_ memory.py  est capable de gérer 16 faits
+yos_ audit.py  permet de tracer toutes les opérations effectuées
+D3.js est utilisé pour visualiser le memory-cloud
+Obsidian peut être utilisé pour la visualisation des données
+Le stack complet est opérationnel pour le projet MMM v2.0",Y-OS,2026-03-04_test_pipeline_intégré_v20,"La session a permis de valider le stack complet pour le projet MMM v2.0. Les outils yos_ memory.py  et yos_ audit.py  sont opérationnels, et le memory-cloud est désormais visualisable via D3.js et Obsidian.",Test pipeline intégré v2.0
+31935e21-8cf8-818a-a3c4-e6f8b2abdf98,2026-03-04,2026-03-04,Test MMM v2.0 — Intégration complète,"Tester la déduplication sur des sessions réelles
+Enrichir les prompts Y-OS avec le vocabulaire spécifique (SCA, KOR, SSA)
+Générer le memory_cloud.html après chaque session archivée",2026-03-04,"Remplacer mem0 cloud par yos_ memory.py  natif — contrôle total, zéro coût
+Intégrer yos_audit dans tous les scripts MMM pour traçabilité complète
+Utiliser Obsidian Graph View pour visualiser le memory-cloud","yos_ memory.py  est un moteur de mémoire natif avec 5 prompts Y-OS-aware
+yos_ audit.py  permet un log universel avec des fonctionnalités d'undo/replay/monitoring
+yos_memory_ graph.py  utilise D3.js pour la visualisation du memory-cloud",Y-OS,2026-03-04_test_mmm_v20__intégration_complète,"Yannick a validé l'implémentation complète du stack MMM v2.0, incluant plusieurs outils pour la gestion de la mémoire et la traçabilité. Des décisions clés ont été prises pour améliorer le contrôle et la visualisation des données.",Test MMM v2.0 — Intégration complète
+31935e21-8cf8-81cd-a4a0-f2e134bbeac0,2026-03-04,2026-03-04,PoC MMM — Validation Toutes Facettes,"Mettre à jour le PAT GitHub avec scope contents:write
+Créer le iOS Shortcut pour injection mobile",2026-03-03,"Le PoC valide les 8 facettes de la mémoire MMM
+ChromaDB local est la source de vérité pour les embeddings
+Notion SSA reçoit les archives synthétiques de chaque session
+mem0 cloud est le miroir pour l'extension Chrome","I1 Profile Inject : opérationnel via yos_config.yaml
+I2 Session Load : ChromaDB sessions → contexte injecté
+I3 Knowledge Load : ChromaDB full → contexte complet
+I4 Session Replay : listing + replay sessions disponibles
+EXT mem0 cloud : 85+ snippets, recherche sémantique <2s",Y-OS,2026-03-03_poc_mmm__validation_toutes_facettes,La session a permis de valider le PoC du stack MMM Y-OS en démontrant les 8 facettes de la mémoire. Plusieurs décisions clés ont été prises concernant les sources de vérité et les intégrations avec Notion et mem0 cloud.,PoC MMM — Validation Toutes Facettes
+31935e21-8cf8-8188-b886-c99014d43e76,2026-03-04,2026-03-04,PoC MMM — Validation Toutes Facettes,"Mettre à jour le PAT GitHub avec scope contents:write
+Créer le iOS Shortcut pour injection mobile",2026-03-03,"Le PoC valide les 8 facettes de la mémoire MMM
+ChromaDB local est la source de vérité pour les embeddings
+Notion SSA reçoit les archives synthétiques de chaque session
+mem0 cloud est le miroir pour l'extension Chrome","I1 Profile Inject : opérationnel via yos_config.yaml
+I2 Session Load : ChromaDB sessions → contexte injecté
+I3 Knowledge Load : ChromaDB full → contexte complet
+I4 Session Replay : listing + replay sessions disponibles
+EXT mem0 cloud : 85+ snippets, recherche sémantique <2s",Y-OS,2026-03-03_poc_mmm__validation_toutes_facettes,La session a permis de valider les 8 facettes de la mémoire MMM dans des conditions réelles. Plusieurs décisions clés ont été prises concernant les sources de vérité et les intégrations entre les différents composants du système.,PoC MMM — Validation Toutes Facettes
+31935e21-8cf8-8168-ab0f-eb5abb003474,2026-03-04,2026-03-04,Y-OS MMM — Validation SSA Finale,,2026-03-03,Le payload SSA utilise les propriétés sans tags.,Le pipeline SSA Notion est fonctionnel.,Y-OS,2026-03-03_yos_mmm__validation_ssa_finale,La session a porté sur le test final de validation du système SSA. Le pipeline a été corrigé et le payload SSA utilise désormais les propriétés sans tags pour éviter les erreurs dans Notion.,Y-OS MMM — Validation SSA Finale
+31935e21-8cf8-811f-9997-fd7fad4931c6,2026-03-04,2026-03-04,Test Sans Tags,,2026-03-04,,,Y-OS,debug-notags,,Test Sans Tags
+31935e21-8cf8-8104-b97b-cb7467491f52,2026-03-04,2026-03-04,Test Debug Final,,2026-03-04,,,Y-OS,debug-final,,Test Debug Final
+31935e21-8cf8-8169-bc3d-c4b460b0815e,2026-03-04,2026-03-04,Test SSA Pipeline Debug,,2026-03-04,,,Y-OS,test-debug-001,,Test SSA Pipeline Debug
+31935e21-8cf8-8199-a5be-eedaafe69163,2026-03-04,2026-03-04,Test SSA Direct,,2026-03-04,,,Y-OS,test-direct-001,,Test SSA Direct

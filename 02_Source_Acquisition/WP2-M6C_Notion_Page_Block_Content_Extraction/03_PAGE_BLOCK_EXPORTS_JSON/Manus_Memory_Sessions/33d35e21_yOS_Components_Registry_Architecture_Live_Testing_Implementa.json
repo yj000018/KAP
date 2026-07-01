@@ -1,0 +1,2473 @@
+{
+  "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018",
+  "title": "yOS Components Registry Architecture & Live Testing Implementation",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "xl",
+    "Language": "mixed",
+    "Subthemes": "component registry, versioning strategy, template standardization, mermaid rendering, GitHub API, live testing, CLI development",
+    "Project": "yOS",
+    "UID": "oNgNvAxtADoPXVVfndFcqK",
+    "Date": "2026-03-03",
+    "Themes": "component architecture, modular development, system design, git integration, documentation framework",
+    "Archived": "True",
+    "Depth": "landmark",
+    "Title": "yOS Components Registry Architecture & Live Testing Implementation"
+  },
+  "blocks_count": 49,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "4435d893-236d-4771-acf2-259b63ec7f54",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "377baebd-6c51-4d85-bde1-0c8dcb879507",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Developed complete Components Registry architecture for yOS with 7 files including template system, loader with CLI, and JSON schema. Implemented Git-based versioning with hybrid strategy (GitHub source + local cache). Created comprehensive testing framework and successfully validated with live component creation (viz-status-badge) using yOS theming system. Architecture includes 4-layer taxonomy, semantic versioning, and standardized 12-section component documentation.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Developed complete Components Registry architecture for yOS with 7 files including template system, loader with CLI, and JSON schema. Implemented Git-based versioning with hybrid strategy (GitHub source + local cache). Created comprehensive testing framework and successfully validated with live component creation (viz-status-badge) using yOS theming system. Architecture includes 4-layer taxonomy, semantic versioning, and standardized 12-section component documentation.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cd08b10c-88fc-4366-a6ed-ac79db3a1b6d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "03517d19-1bc3-4a7d-8bc1-dde7afea774e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Building a modular, reusable components system for yOS to manage growing library of tools like mermaid-themed renderer. Need robust architecture with discovery, documentation, versioning, and Git integration.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Building a modular, reusable components system for yOS to manage growing library of tools like mermaid-themed renderer. Need robust architecture with discovery, documentation, versioning, and Git integration.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "920d2966-ea77-4f72-8062-f95d465ac51f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a30f3abc-5798-4fe7-99aa-a28c9e9f1f15",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built complete Components Registry with architecture document (664 lines), component template, registry index, Python loader with CLI, and yOS renderer v4. Created test component viz-status-badge with dual skin rendering. Established GitHub integration with PAT setup and hybrid Git/cache strategy.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built complete Components Registry with architecture document (664 lines), component template, registry index, Python loader with CLI, and yOS renderer v4. Created test component viz-status-badge with dual skin rendering. Established GitHub integration with PAT setup and hybrid Git/cache strategy.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "76447e53-64b9-4695-b3b3-90be0f9c1c0e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9fdd7f18-dbed-47ee-96b4-12786fd0967c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[architecture]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[architecture]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " YOS_COMPONENTS_REGISTRY_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " YOS_COMPONENTS_REGISTRY_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ARCHITECTURE.md",
+              "link": {
+                "url": "http://architecture.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ARCHITECTURE.md",
+            "href": "http://architecture.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Complete 10-section architecture document",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Complete 10-section architecture document",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "01f380bc-f8d5-45a4-8db3-02401be60b92",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[template]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[template]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " COMPONENT_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " COMPONENT_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "TEMPLATE.md",
+              "link": {
+                "url": "http://template.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "TEMPLATE.md",
+            "href": "http://template.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Canonical 12-section component documentation template",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Canonical 12-section component documentation template",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ddcb4508-3036-4f67-89db-da43be6ed886",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[code]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[code]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yos_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yos_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "loader.py",
+              "link": {
+                "url": "http://loader.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "loader.py",
+            "href": "http://loader.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Python loader with CLI and caching (355 lines)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Python loader with CLI and caching (355 lines)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9dac8014-217e-4f0d-aaa3-edc82c09583f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[schema]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[schema]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " registry.json — Machine-readable component index with 9 components",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " registry.json — Machine-readable component index with 9 components",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "18035ada-7aed-4384-a95a-c53c09a8cf2b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[renderer]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[renderer]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yos_renderer_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yos_renderer_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "v4.py",
+              "link": {
+                "url": "http://v4.py/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "v4.py",
+            "href": "http://v4.py/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Mermaid renderer with yOS canonical theme",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Mermaid renderer with yOS canonical theme",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "68fa8714-f340-4901-8ad8-803585680869",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[component]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[component]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " viz-status-badge — Test component with compact/detailed skins",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " viz-status-badge — Test component with compact/detailed skins",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "695c942a-f1fc-40ee-bbd4-123037c77190",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Notion Components Registry — Live documentation page with component index",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Notion Components Registry — Live documentation page with component index",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7969f5ec-3435-489f-9cde-237e3d6a6034",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fff8e45f-7841-4534-83d6-8fb31659106e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hybrid Git strategy: GitHub as source of truth with 24h TTL local cache",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Hybrid Git strategy: GitHub as source of truth with 24h TTL local cache",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bb90cba2-9dd0-4718-86a2-19ae3239a2c7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Semantic versioning with Git tags per component (component/vX.Y.Z)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Semantic versioning with Git tags per component (component/vX.Y.Z)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "42c28a2f-a6bf-4b15-ad9d-65921e79f0d0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4-layer component taxonomy: Primitives → Renderers → Composites → Workflows",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "4-layer component taxonomy: Primitives → Renderers → Composites → Workflows",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d0a70c41-263a-42af-9ff0-5024ea501944",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Standardized 12-section component documentation template",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Standardized 12-section component documentation template",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7c31fb99-cf2c-401c-9786-4154f0357f1b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "JSON Schema for component I/O validation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "JSON Schema for component I/O validation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "59b606a4-79c6-41fd-b5da-bc1bc4c33a18",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CLI-based component discovery and loading",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "CLI-based component discovery and loading",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ef646a95-514c-4758-9cd1-7a2c5a3945ec",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b93e6f15-cfd9-48ca-ac45-b2924ce057ab",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b453e838-705f-42db-92ef-7eff0de70f82",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Modular architecture scales well - easy to add components",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Modular architecture scales well - easy to add components",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b19f439e-28b7-4d68-ab60-36b68c2ce379",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CLI interface provides intuitive component discovery",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "CLI interface provides intuitive component discovery",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a143d57c-0b31-4adc-9d09-22b44aa3667e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "yOS theming system is inheritable and consistent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "yOS theming system is inheritable and consistent",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ff16208a-bb65-46c1-a2f4-58f48c961ccb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Git API bypasses push restrictions effectively",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Git API bypasses push restrictions effectively",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dc635164-d440-45ff-bfe6-8495da790aa4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3f63ad3c-f830-476a-b356-33cee858a772",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "GitHub PAT permissions confusion - fine-grained tokens need explicit Contents scope",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GitHub PAT permissions confusion - fine-grained tokens need explicit Contents scope",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3d39bcad-986f-41f8-96cd-9d957ed7db69",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1Password CLI not available in sandbox for secret persistence",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "1Password CLI not available in sandbox for secret persistence",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "028f9c4f-ea1a-4d59-82eb-bbdf45907f49",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "164a4812-cc8b-4c9b-b8f7-ff1530e64335",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Component registry enables rapid development - 3 files per component",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Component registry enables rapid development - 3 files per component",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "32d7596a-face-45b5-8985-8b0deeda3f04",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "JSON Schema validation catches I/O errors early",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "JSON Schema validation catches I/O errors early",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "139e6b1e-34cc-4e54-8ede-6e6bef4cc6f2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Live testing reveals integration gaps immediately",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Live testing reveals integration gaps immediately",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "64a92985-2119-4a7a-b060-ed47571fd680",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f4bd98a1-ea8c-4cf7-84fb-7667750cbaf7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "GitHub PAT with Contents write permissions - requires manual token update",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GitHub PAT with Contents write permissions - requires manual token update",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8461cd30-78b3-4160-b65c-9cd0372d74ad",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1Password CLI unavailable in sandbox for automated secret storage",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "1Password CLI unavailable in sandbox for automated secret storage",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a12fefd5-ec9d-4e07-a623-c029100a4a1f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "33182243-d990-4c0e-ac27-a15b6f7f335f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mono-repo vs multi-repo for component storage strategy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mono-repo vs multi-repo for component storage strategy",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7a479ef0-9e8a-4665-aad4-fbcf1d317de6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Automatic Notion sync timing - real-time vs batch updates",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Automatic Notion sync timing - real-time vs batch updates",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "07ae728a-70ad-4288-8af7-2eb450f2318a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Component deprecation and migration policy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Component deprecation and migration policy",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "342ebc28-49a5-4abe-8d07-af5818677120",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cd257a8a-72aa-46ec-b8a6-0da48a0cc241",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Update GITHUB_PAT in Manus secrets with full-scope token",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Update GITHUB_PAT in Manus secrets with full-scope token",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5db822e1-0dbb-4082-a36e-25b8ebf70cea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Push complete registry to GitHub main branch",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Push complete registry to GitHub main branch",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8fc2387a-7704-4174-be06-43909f263f68",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create additional components (MMM, TreeView, PickList)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create additional components (MMM, TreeView, PickList)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "105fe66a-4f90-4afe-8568-b1d71d3d6d0a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement automated Notion sync workflow",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement automated Notion sync workflow",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dffc72a0-edee-4d3b-b370-0c9ffe613de7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Establish component lifecycle and deprecation policies",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Establish component lifecycle and deprecation policies",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "429449f5-558d-48ad-8000-8586cc7dfc95",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b452667f-09bc-4ffe-a193-34bcb9b9226a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8105-aec2-cb8082f42018"
+      },
+      "created_time": "2026-04-09T08:42:00.000Z",
+      "last_edited_time": "2026-04-09T08:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "oNgNvAxtADoPXVVfndFcqK",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "oNgNvAxtADoPXVVfndFcqK",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0324",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0324",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nDeveloped complete Components Registry architecture for yOS with 7 files including template system, loader with CLI, and JSON schema. Implemented Git-based versioning with hybrid strategy (GitHub source + local cache). Created comprehensive testing framework and successfully validated with live component creation (viz-status-badge) using yOS theming system. Architecture includes 4-layer taxonomy, semantic versioning, and standardized 12-section component documentation.\n\n\n## Context & Intent\n\nBuilding a modular, reusable components system for yOS to manage growing library of tools like mermaid-themed renderer. Need robust architecture with discovery, documentation, versioning, and Git integration.\n\n\n## What Was Done\n\nBuilt complete Components Registry with architecture document (664 lines), component template, registry index, Python loader with CLI, and yOS renderer v4. Created test component viz-status-badge with dual skin rendering. Established GitHub integration with PAT setup and hybrid Git/cache strategy.\n\n\n## Outputs Produced\n\n- [architecture] YOS_COMPONENTS_REGISTRY_ARCHITECTURE.md — Complete 10-section architecture document\n- [template] COMPONENT_TEMPLATE.md — Canonical 12-section component documentation template\n- [code] yos_loader.py — Python loader with CLI and caching (355 lines)\n- [schema] registry.json — Machine-readable component index with 9 components\n- [renderer] yos_renderer_v4.py — Mermaid renderer with yOS canonical theme\n- [component] viz-status-badge — Test component with compact/detailed skins\n- [documentation] Notion Components Registry — Live documentation page with component index\n\n## Key Decisions & Validations\n\n- Hybrid Git strategy: GitHub as source of truth with 24h TTL local cache\n- Semantic versioning with Git tags per component (component/vX.Y.Z)\n- 4-layer component taxonomy: Primitives → Renderers → Composites → Workflows\n- Standardized 12-section component documentation template\n- JSON Schema for component I/O validation\n- CLI-based component discovery and loading\n\n## Lessons Learned\n\nWorked well:\n\n- Modular architecture scales well - easy to add components\n- CLI interface provides intuitive component discovery\n- yOS theming system is inheritable and consistent\n- Git API bypasses push restrictions effectively\nFailed / suboptimal:\n\n- GitHub PAT permissions confusion - fine-grained tokens need explicit Contents scope\n- 1Password CLI not available in sandbox for secret persistence\nDiscoveries:\n\n- Component registry enables rapid development - 3 files per component\n- JSON Schema validation catches I/O errors early\n- Live testing reveals integration gaps immediately\n\n## Challenges & Blockers\n\n- GitHub PAT with Contents write permissions - requires manual token update\n- 1Password CLI unavailable in sandbox for automated secret storage\n\n## Open Questions\n\n- Mono-repo vs multi-repo for component storage strategy\n- Automatic Notion sync timing - real-time vs batch updates\n- Component deprecation and migration policy\n\n## Next Steps\n\n- Update GITHUB_PAT in Manus secrets with full-scope token\n- Push complete registry to GitHub main branch\n- Create additional components (MMM, TreeView, PickList)\n- Implement automated Notion sync workflow\n- Establish component lifecycle and deprecation policies\n---\nUID: oNgNvAxtADoPXVVfndFcqK | Model: claude-sonnet-4-20250514 | Cost: $0.0324\n"
+}

@@ -1,0 +1,2278 @@
+{
+  "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a",
+  "title": "yOS Tree View UI Complete Implementation with Mobile Interface",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "xl",
+    "Language": "mixed",
+    "Subthemes": "Tree view interface, Manus API endpoints, OAuth integration, Responsive design, External data loading",
+    "Project": "yOS",
+    "UID": "sVUnGFiX7EYxQB47zcdsEA",
+    "Date": "2026-02-15",
+    "Themes": "UI development, API integration, Mobile responsiveness, Data visualization",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "yOS Tree View UI Complete Implementation with Mobile Interface"
+  },
+  "blocks_count": 49,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "4c9c0cbc-5a7f-4c07-8571-574065a8c3b6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "543e6b5e-a256-46be-8725-4b322b911aab",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive development of yOS Tree View UI interface for hierarchical content visualization. Complete implementation including Notion OAuth, Manus API integration with fallback systems, external data loading endpoints, real session ID handling, mobile-responsive design with hamburger menu, and localStorage persistence. Full bidirectional communication system established between Manus sessions and Tree View interface.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comprehensive development of yOS Tree View UI interface for hierarchical content visualization. Complete implementation including Notion OAuth, Manus API integration with fallback systems, external data loading endpoints, real session ID handling, mobile-responsive design with hamburger menu, and localStorage persistence. Full bidirectional communication system established between Manus sessions and Tree View interface.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7ffc0600-9bce-4f42-9151-f46bede79463",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6ebaa3ad-84d3-4c2f-ab06-ba7ea6536dce",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create a polished presentation layer for yOS hierarchical content (projects, tasks, tags, insights) with standard tree/mindmap interface features. Avoid redevelopment by building reusable component with advanced features like expand/collapse, export, linking, color coding, and external data integration.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create a polished presentation layer for yOS hierarchical content (projects, tasks, tags, insights) with standard tree/mindmap interface features. Avoid redevelopment by building reusable component with advanced features like expand/collapse, export, linking, color coding, and external data integration.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "97a0a552-37d1-4378-8d88-36cb19bfc95f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "60368079-93ee-4692-ab9b-8f06473b8070",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built complete Tree View UI with Notion OAuth integration, external API endpoints for Manus session loading, mobile-responsive header with hamburger menu, localStorage persistence, filtering system (All/24h/Week/Active), real session ID linking, and comprehensive documentation for integration workflows.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built complete Tree View UI with Notion OAuth integration, external API endpoints for Manus session loading, mobile-responsive header with hamburger menu, localStorage persistence, filtering system (All/24h/Week/Active), real session ID linking, and comprehensive documentation for integration workflows.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "42566ea6-dc0c-4ecc-b776-b4843f3f33c2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7ced2f85-1297-4977-a7ef-c2aee9f235f2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[web_application]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[web_application]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Tree View UI v2.3.0 — Complete hierarchical data visualization interface with mobile support",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Tree View UI v2.3.0 — Complete hierarchical data visualization interface with mobile support",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "66383fa3-a7f0-467a-8f83-5b5e80f9fee7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[api_endpoint]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[api_endpoint]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " /api/tree/external-load — External data loading endpoint accepting POST requests from Manus sessions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " /api/tree/external-load — External data loading endpoint accepting POST requests from Manus sessions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7829d61c-e300-4780-9c20-e5556ffe256e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Integration guides — Complete docs for Manus skill creation, API usage, and session data sending",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Integration guides — Complete docs for Manus skill creation, API usage, and session data sending",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d8387021-b3af-4361-8057-c7e9b308cce4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[skill_template]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[skill_template]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yOS Tree Loader skill — Automated Manus skill for extracting and sending session data to Tree View",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yOS Tree Loader skill — Automated Manus skill for extracting and sending session data to Tree View",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8f47cd46-1dcd-4166-8e8e-49459893e544",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bc76ef7e-8231-4350-b0e6-171595739a77",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Use publicProcedure instead of protectedProcedure for external API access",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Use publicProcedure instead of protectedProcedure for external API access",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6ff838ff-3b0c-4921-9377-1f76bfed5f71",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement fallback mock data system when real API endpoints unavailable",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement fallback mock data system when real API endpoints unavailable",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bab31e73-092d-4ed2-bc2b-c5ac6c692b3c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Correct session URL format to /app/ instead of /chat/ for proper Manus linking",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Correct session URL format to /app/ instead of /chat/ for proper Manus linking",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "13639390-ddde-47c2-9f61-bf6a120d86f9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create responsive mobile interface with hamburger menu to reduce header clutter",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create responsive mobile interface with hamburger menu to reduce header clutter",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7289f78f-6f00-4699-999e-6afa01d57039",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add localStorage persistence for session data across page reloads",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add localStorage persistence for session data across page reloads",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "71fdffce-bc0b-441a-90fc-30f4978d0746",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ec1be25f-7211-46f5-9d64-313d546ce292",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "87e3eee7-663e-4ee0-a57b-45d9e744fb99",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mock data fallback system provided seamless development experience",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mock data fallback system provided seamless development experience",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "12f34b15-282f-4fd9-842e-5fd1ed583635",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Incremental version releases with clear feature delivery",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Incremental version releases with clear feature delivery",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "120326e3-656d-48b1-b19b-f0f8e2ab071f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "External API endpoint design allows flexible data injection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "External API endpoint design allows flexible data injection",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c25e3f39-a31c-477d-8c38-1315d7fc9689",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mobile-first responsive design approach",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mobile-first responsive design approach",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a3ebf819-cb58-4ff3-bc7b-2954e2faf252",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3b06aad5-1156-4970-8b63-fc70e16129e4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial assumption about Manus API endpoints (/v1/sessions returned 404)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial assumption about Manus API endpoints (/v1/sessions returned 404)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "79f70ccd-dd0d-4b78-990a-025356a56a86",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Wrong session URL format caused 404 errors initially",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Wrong session URL format caused 404 errors initially",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "464bdbb4-b1c9-4a8a-ae42-64110b205ff4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Header became cluttered on mobile before responsive redesign",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Header became cluttered on mobile before responsive redesign",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b20f5c79-a7e0-4519-8fce-ca0c822a8bb3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "80b4343b-3dfd-422d-9625-6614d561dd17",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus session URLs use /app/ format not /chat/",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus session URLs use /app/ format not /chat/",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "788a464c-078b-42cc-a9ff-cca370311adc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "External data loading requires bidirectional communication design",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "External data loading requires bidirectional communication design",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6616646a-9d02-447f-9458-8fb7dca0a82d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mobile UX requires careful prioritization of essential controls",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mobile UX requires careful prioritization of essential controls",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a95d42c9-2e38-403e-898d-69fc4500cba0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a0384e95-5396-43e9-8812-7410eebdde10",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus API documentation not publicly available",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus API documentation not publicly available",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5db4996d-60d3-4e9a-b37c-961bccad00f5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Multiple API endpoint testing required for session data access",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Multiple API endpoint testing required for session data access",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5326d05c-2720-40e3-951c-d9026f2ed59e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mobile interface optimization for complex control sets",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mobile interface optimization for complex control sets",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "85e3df4a-52a2-4328-a8c9-bcb73a69cf00",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Session ID extraction and validation for real links",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Session ID extraction and validation for real links",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2d27cde7-fbae-45cd-88c4-85e377a62b5b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b371a4c1-a2da-4af9-8b18-bb187706ae15",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should implement swipe gestures for mobile menu interactions?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should implement swipe gestures for mobile menu interactions?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b7c1c952-aa70-4230-947f-448d9c06872d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to optimize touch target sizes for accessibility compliance?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to optimize touch target sizes for accessibility compliance?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c2d6c086-3174-4a5a-8175-a772351780a1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What additional data sources should be integrated beyond Manus sessions?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What additional data sources should be integrated beyond Manus sessions?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2b3bda87-cfab-418d-b8b0-77512765bb9a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should filters be combinable (Active + Last 24h simultaneously)?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should filters be combinable (Active + Last 24h simultaneously)?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1f319ef2-6117-462f-8ccb-ad87b767c2fc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9b73266d-51ef-48e4-b6ed-833274c5b36b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test complete mobile interface on real devices for UX validation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test complete mobile interface on real devices for UX validation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9fd30791-a2f1-4efe-8190-8c831f0f610f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement combinable filter system for enhanced data control",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement combinable filter system for enhanced data control",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3bd19d6c-a3b3-490e-806e-7ce9e7809286",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create automated Manus skill deployment and testing workflow",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create automated Manus skill deployment and testing workflow",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3403ff91-ac30-4e91-a109-cd1cee4d04ac",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add export functionality that respects active filter states",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add export functionality that respects active filter states",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3a0e7e6b-7f30-4140-86fd-065b554ab465",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integrate additional yOS data sources (projects, tasks, insights)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integrate additional yOS data sources (projects, tasks, insights)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "00cfac40-3194-4ef1-a417-34e241cc02fc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7a9229c1-57ec-453f-82e3-91eaa4f7ef34",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8190-87d9-e890180af84a"
+      },
+      "created_time": "2026-04-09T08:44:00.000Z",
+      "last_edited_time": "2026-04-09T08:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "sVUnGFiX7EYxQB47zcdsEA",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "sVUnGFiX7EYxQB47zcdsEA",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0319",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0319",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nComprehensive development of yOS Tree View UI interface for hierarchical content visualization. Complete implementation including Notion OAuth, Manus API integration with fallback systems, external data loading endpoints, real session ID handling, mobile-responsive design with hamburger menu, and localStorage persistence. Full bidirectional communication system established between Manus sessions and Tree View interface.\n\n\n## Context & Intent\n\nCreate a polished presentation layer for yOS hierarchical content (projects, tasks, tags, insights) with standard tree/mindmap interface features. Avoid redevelopment by building reusable component with advanced features like expand/collapse, export, linking, color coding, and external data integration.\n\n\n## What Was Done\n\nBuilt complete Tree View UI with Notion OAuth integration, external API endpoints for Manus session loading, mobile-responsive header with hamburger menu, localStorage persistence, filtering system (All/24h/Week/Active), real session ID linking, and comprehensive documentation for integration workflows.\n\n\n## Outputs Produced\n\n- [web_application] Tree View UI v2.3.0 — Complete hierarchical data visualization interface with mobile support\n- [api_endpoint] /api/tree/external-load — External data loading endpoint accepting POST requests from Manus sessions\n- [documentation] Integration guides — Complete docs for Manus skill creation, API usage, and session data sending\n- [skill_template] yOS Tree Loader skill — Automated Manus skill for extracting and sending session data to Tree View\n\n## Key Decisions & Validations\n\n- Use publicProcedure instead of protectedProcedure for external API access\n- Implement fallback mock data system when real API endpoints unavailable\n- Correct session URL format to /app/ instead of /chat/ for proper Manus linking\n- Create responsive mobile interface with hamburger menu to reduce header clutter\n- Add localStorage persistence for session data across page reloads\n\n## Lessons Learned\n\nWorked well:\n\n- Mock data fallback system provided seamless development experience\n- Incremental version releases with clear feature delivery\n- External API endpoint design allows flexible data injection\n- Mobile-first responsive design approach\nFailed / suboptimal:\n\n- Initial assumption about Manus API endpoints (/v1/sessions returned 404)\n- Wrong session URL format caused 404 errors initially\n- Header became cluttered on mobile before responsive redesign\nDiscoveries:\n\n- Manus session URLs use /app/ format not /chat/\n- External data loading requires bidirectional communication design\n- Mobile UX requires careful prioritization of essential controls\n\n## Challenges & Blockers\n\n- Manus API documentation not publicly available\n- Multiple API endpoint testing required for session data access\n- Mobile interface optimization for complex control sets\n- Session ID extraction and validation for real links\n\n## Open Questions\n\n- Should implement swipe gestures for mobile menu interactions?\n- How to optimize touch target sizes for accessibility compliance?\n- What additional data sources should be integrated beyond Manus sessions?\n- Should filters be combinable (Active + Last 24h simultaneously)?\n\n## Next Steps\n\n- Test complete mobile interface on real devices for UX validation\n- Implement combinable filter system for enhanced data control\n- Create automated Manus skill deployment and testing workflow\n- Add export functionality that respects active filter states\n- Integrate additional yOS data sources (projects, tasks, insights)\n---\nUID: sVUnGFiX7EYxQB47zcdsEA | Model: claude-sonnet-4-20250514 | Cost: $0.0319\n"
+}

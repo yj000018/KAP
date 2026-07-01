@@ -1,0 +1,2146 @@
+{
+  "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b",
+  "title": "YOS Manus Language v1.2: Transcript Tag System Implementation",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "long",
+    "Language": "mixed",
+    "Subthemes": "Tag Recognition, Voice Transcript Processing, Notion Integration, Schedule System, Message Routing",
+    "Project": "yOS",
+    "UID": "j9gcq6rrnWoxJ5EVE4mc8y",
+    "Date": "2026-02-09",
+    "Themes": "Natural Language Processing, Task Management, Workflow Automation, Parser Development",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "YOS Manus Language v1.2: Transcript Tag System Implementation"
+  },
+  "blocks_count": 46,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "3a7e2938-7649-4e4b-ab06-12fe3fe55e3b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "75ca47de-eaeb-44f8-a272-0ecbfb5b8bf4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complete implementation of YOS Manus Language v1.2, a tag-based system for processing voice transcripts and automating actions. The system parses natural language tags (Task, Note, Quote, Canon, etc.) from ChatGPT transcripts and automatically routes content to appropriate destinations (Notion databases, Manus scheduler). Key innovation: flexible parser accepting all case variations and optional colons, with automatic text cleaning to separate commands from conversational content.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complete implementation of YOS Manus Language v1.2, a tag-based system for processing voice transcripts and automating actions. The system parses natural language tags (Task, Note, Quote, Canon, etc.) from ChatGPT transcripts and automatically routes content to appropriate destinations (Notion databases, Manus scheduler). Key innovation: flexible parser accepting all case variations and optional colons, with automatic text cleaning to separate commands from conversational content.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6c569cc7-f95f-4016-bf94-456cebb24fec",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "02197b09-b67a-427a-a64b-09769f979889",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick needed a robust system to process voice transcripts from iOS dictation, extract tagged commands, and execute corresponding actions while maintaining natural conversation flow. The goal was to eliminate syntax constraints and make voice-to-action seamless.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick needed a robust system to process voice transcripts from iOS dictation, extract tagged commands, and execute corresponding actions while maintaining natural conversation flow. The goal was to eliminate syntax constraints and make voice-to-action seamless.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f611f521-a69d-4d8f-91c2-5c5953cfa2fc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0265da17-37e6-4eb6-b088-aebb6378fb65",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built complete YOS Manus Language system including: flexible tag parser accepting all case variations, router connecting to Notion databases (Journal, Canon, Drafts), task creation system integrated with Manus scheduler, text cleaning function to separate commands from conversation, comprehensive test suite, and workflow automation.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built complete YOS Manus Language system including: flexible tag parser accepting all case variations, router connecting to Notion databases (Journal, Canon, Drafts), task creation system integrated with Manus scheduler, text cleaning function to separate commands from conversation, comprehensive test suite, and workflow automation.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b88453b9-00ef-4098-a2a9-0378ff88c7f9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "73fe04cd-d462-4eca-b40c-63f9ea99851a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[software]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[software]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " YOS Manus Language v1.2 — Complete parsing and routing system with 9 test files",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " YOS Manus Language v1.2 — Complete parsing and routing system with 9 test files",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "23124ad4-4597-473a-ab57-4a61f3ccafcb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[databases]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[databases]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Notion Integration — Created Journal, Canon, and Drafts databases with automatic routing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Notion Integration — Created Journal, Canon, and Drafts databases with automatic routing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "508dfa2a-95aa-4045-8e60-38a498cc66d9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[task]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[task]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Manus Task Integration — Working task creation system using schedule tool",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Manus Task Integration — Working task creation system using schedule tool",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "33d24284-324f-46b3-b9ff-808a573ae01d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " System Architecture — Complete specification and usage guides",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " System Architecture — Complete specification and usage guides",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "077dce82-f184-4c90-95b4-f86016fb9465",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "70486898-91aa-4bee-ac4d-4ba85002bed0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Made colon (:) optional in all tag syntax",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Made colon (:) optional in all tag syntax",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3c8462ae-5b18-4e9f-b8c3-13b4d24c8554",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implemented automatic text cleaning to separate commands from conversation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implemented automatic text cleaning to separate commands from conversation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3e4da5b6-fa40-45dd-8e1b-4d4bfc3d2ebd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Used Manus native schedule tool instead of external task managers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Used Manus native schedule tool instead of external task managers",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d55adfb7-34d2-4c62-aad6-0de228dc2476",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Applied case-insensitive parsing for natural voice dictation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Applied case-insensitive parsing for natural voice dictation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a632b003-193e-4ffe-a119-e9d92c57d3aa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Designed workflow to process cleaned prompt first, then execute tag commands",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Designed workflow to process cleaned prompt first, then execute tag commands",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4e0f9d27-a752-4932-8938-b6c397757caf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "908fd8c3-f451-4db9-9eba-e636a7912744",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e33baa6d-3078-4475-93fb-26e1cd701a58",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Flexible parser handles all natural dictation variations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Flexible parser handles all natural dictation variations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "155e546f-9d6e-45cb-8f86-2a29a9e32523",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Direct integration with Manus schedule tool",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Direct integration with Manus schedule tool",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f3f4000a-726c-4119-9346-55f8a79f0b68",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Automatic text cleaning preserves conversational flow",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Automatic text cleaning preserves conversational flow",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dd78b8b8-6590-4582-9631-5ff33f93c18e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive test suite ensured reliability",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comprehensive test suite ensured reliability",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f6785574-5879-4278-8872-7fb0ab4d095d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ed21437f-9e8e-47fc-b18a-9e585fb86aa9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial implementation used placeholder stubs instead of real task creation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial implementation used placeholder stubs instead of real task creation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5759519c-c5c3-4574-8779-d57b07c4bed3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Memory-only task storage wasn't persistent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Memory-only task storage wasn't persistent",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2967071b-1b44-4d69-ab59-e02a8360cdb0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complex subprocess approach was unnecessary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complex subprocess approach was unnecessary",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9674a131-7b06-4854-b1f6-dfb9a14db12f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d34ab4bf-38ab-47b7-af69-432d2ab7e180",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Voice dictation requires maximum syntax flexibility",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Voice dictation requires maximum syntax flexibility",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0f98258d-f43c-4510-97a9-8b5ac1fab7dd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Users want commands processed after conversation, not instead of it",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Users want commands processed after conversation, not instead of it",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "df3402ff-800c-41e9-ba58-683109178443",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Direct tool integration works better than subprocess calls",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Direct tool integration works better than subprocess calls",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a19a8a3b-dd6a-4ce7-bbc0-5bc5fff2e998",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5e09c128-5e45-464c-a427-f70a22041bcc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial confusion about task persistence in Manus interface",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial confusion about task persistence in Manus interface",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c22172de-202f-4f32-828f-b705bc145232",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Parser complexity for handling inline tags without line breaks",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Parser complexity for handling inline tags without line breaks",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "83d572fc-c3f6-4ad7-8345-8cf0f1099b73",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Balancing syntax flexibility with parsing accuracy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Balancing syntax flexibility with parsing accuracy",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "044d0c3d-4c76-4f39-a608-f722f3f371ba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6f0e0c73-4057-49ac-9da4-312e86d59668",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How will the system handle complex multi-tag scenarios in practice?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How will the system handle complex multi-tag scenarios in practice?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "92005c0a-59d9-4c51-9d0c-6eef23b9e2d6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should scheduled tasks include additional metadata like priority or context?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should scheduled tasks include additional metadata like priority or context?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "979247aa-600e-42db-a59d-4b913f5e77f7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Will voice recognition accuracy affect tag detection reliability?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Will voice recognition accuracy affect tag detection reliability?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b29bd97b-47e0-4276-86c6-7e0f49536a2c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6da26602-db08-4d68-b488-49ff2a7e8cbf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test with real ChatGPT voice transcripts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test with real ChatGPT voice transcripts",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "41d4d559-a223-40bc-b39b-0b3da8e22958",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Validate task visibility in Manus interface",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Validate task visibility in Manus interface",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9b4b7a65-e60e-454a-8c3e-96c0214f1b56",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Expand system to handle Schedule tags with dates",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Expand system to handle Schedule tags with dates",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "98744889-a969-41d3-80e4-92a680f9f867",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create user documentation for voice dictation best practices",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create user documentation for voice dictation best practices",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5159c405-0c4d-437d-866b-2443b99c87b6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "619e30d9-6cf3-4446-af6a-d2f30e1c4907",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8188-8ed3-dcfca9a99a6b"
+      },
+      "created_time": "2026-04-09T08:39:00.000Z",
+      "last_edited_time": "2026-04-09T08:39:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "j9gcq6rrnWoxJ5EVE4mc8y",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "j9gcq6rrnWoxJ5EVE4mc8y",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0352",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0352",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nComplete implementation of YOS Manus Language v1.2, a tag-based system for processing voice transcripts and automating actions. The system parses natural language tags (Task, Note, Quote, Canon, etc.) from ChatGPT transcripts and automatically routes content to appropriate destinations (Notion databases, Manus scheduler). Key innovation: flexible parser accepting all case variations and optional colons, with automatic text cleaning to separate commands from conversational content.\n\n\n## Context & Intent\n\nYannick needed a robust system to process voice transcripts from iOS dictation, extract tagged commands, and execute corresponding actions while maintaining natural conversation flow. The goal was to eliminate syntax constraints and make voice-to-action seamless.\n\n\n## What Was Done\n\nBuilt complete YOS Manus Language system including: flexible tag parser accepting all case variations, router connecting to Notion databases (Journal, Canon, Drafts), task creation system integrated with Manus scheduler, text cleaning function to separate commands from conversation, comprehensive test suite, and workflow automation.\n\n\n## Outputs Produced\n\n- [software] YOS Manus Language v1.2 — Complete parsing and routing system with 9 test files\n- [databases] Notion Integration — Created Journal, Canon, and Drafts databases with automatic routing\n- [task] Manus Task Integration — Working task creation system using schedule tool\n- [documentation] System Architecture — Complete specification and usage guides\n\n## Key Decisions & Validations\n\n- Made colon (:) optional in all tag syntax\n- Implemented automatic text cleaning to separate commands from conversation\n- Used Manus native schedule tool instead of external task managers\n- Applied case-insensitive parsing for natural voice dictation\n- Designed workflow to process cleaned prompt first, then execute tag commands\n\n## Lessons Learned\n\nWorked well:\n\n- Flexible parser handles all natural dictation variations\n- Direct integration with Manus schedule tool\n- Automatic text cleaning preserves conversational flow\n- Comprehensive test suite ensured reliability\nFailed / suboptimal:\n\n- Initial implementation used placeholder stubs instead of real task creation\n- Memory-only task storage wasn't persistent\n- Complex subprocess approach was unnecessary\nDiscoveries:\n\n- Voice dictation requires maximum syntax flexibility\n- Users want commands processed after conversation, not instead of it\n- Direct tool integration works better than subprocess calls\n\n## Challenges & Blockers\n\n- Initial confusion about task persistence in Manus interface\n- Parser complexity for handling inline tags without line breaks\n- Balancing syntax flexibility with parsing accuracy\n\n## Open Questions\n\n- How will the system handle complex multi-tag scenarios in practice?\n- Should scheduled tasks include additional metadata like priority or context?\n- Will voice recognition accuracy affect tag detection reliability?\n\n## Next Steps\n\n- Test with real ChatGPT voice transcripts\n- Validate task visibility in Manus interface\n- Expand system to handle Schedule tags with dates\n- Create user documentation for voice dictation best practices\n---\nUID: j9gcq6rrnWoxJ5EVE4mc8y | Model: claude-sonnet-4-20250514 | Cost: $0.0352\n"
+}
