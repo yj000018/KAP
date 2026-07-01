@@ -1,0 +1,1408 @@
+{
+  "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e",
+  "title": "Introduction to Jam Connector Testing and Capabilities",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "short",
+    "Language": "en",
+    "Subthemes": "MCP server, session analysis, bug reporting",
+    "Project": "yOS",
+    "UID": "68qiXHCP6bLCEhkjQMhKHt",
+    "Date": "2026-01-02",
+    "Themes": "connector testing, tool demonstration, debugging capabilities",
+    "Archived": "True",
+    "Depth": "minor",
+    "Title": "Introduction to Jam Connector Testing and Capabilities"
+  },
+  "blocks_count": 30,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "1c1b05de-40ff-4054-97aa-5d89e9747067",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4fab5453-b129-47c3-b3a8-2612a560509c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User requested assistance with testing the Jam connector and understanding its features. Manus explained the connector's purpose for debugging user sessions and analyzing bug reports through recording data access. The session remained incomplete as the user did not provide a required Jam recording link needed for demonstration.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User requested assistance with testing the Jam connector and understanding its features. Manus explained the connector's purpose for debugging user sessions and analyzing bug reports through recording data access. The session remained incomplete as the user did not provide a required Jam recording link needed for demonstration.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "44bbcf45-ccb4-4973-94d8-44286854f197",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cadc3c64-b806-4f1e-bad1-4e50a09a9eae",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User wants to understand and test the Jam connector functionality within the system",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User wants to understand and test the Jam connector functionality within the system",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a5597703-bc9a-42b6-a6cc-adfe48026f5c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4cbe8002-b79e-4359-8941-1cd9fb690178",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus explained Jam connector capabilities and requested necessary inputs for demonstration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus explained Jam connector capabilities and requested necessary inputs for demonstration",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8c8d1edd-77dd-403e-a8cc-c3b14eda0b7a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "34a9bdae-1110-46a9-a4ab-e3a7ad78ac01",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[explanation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[explanation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Jam Connector Overview — Description of connector capabilities including video, user events, console logs, and network requests access",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Jam Connector Overview — Description of connector capabilities including video, user events, console logs, and network requests access",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "439a6f82-74da-4892-a8a5-ff4807f75905",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[instruction]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[instruction]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Usage Requirements — Clear steps for what's needed to proceed with testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Usage Requirements — Clear steps for what's needed to proceed with testing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "240700cb-6519-455f-b3b2-234a585aadbd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "32f4d917-6cdc-47e8-bc92-3c0dbcc46f7e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Requested Jam recording link as prerequisite for demonstration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Requested Jam recording link as prerequisite for demonstration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "184225a6-ed7c-47f8-87b1-775765275e67",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ecf282c3-563b-4837-a4da-103d3178a052",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "820e4402-67a7-4660-97f5-2b547ccb417a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Clear explanation of connector capabilities",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Clear explanation of connector capabilities",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9d3fdf7c-164f-43d1-a460-5349263b1a2c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Proper requirement gathering",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Proper requirement gathering",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8df5d7a8-b5fb-4822-9f93-1c6ef136a766",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3483a4b3-3e03-4c17-8135-eece013bb2ce",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Session incomplete due to missing user input",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Session incomplete due to missing user input",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8ac8df60-3699-466e-a2f3-1c5e3457a733",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a18ec1da-beb7-4f88-af8d-e1f2f7911a1d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jam connector designed for debugging and session analysis",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jam connector designed for debugging and session analysis",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6891ae1e-2778-4ca1-a613-410bb6d41965",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4ced9e70-0ef2-4b65-a22e-dcabdbdf2a5e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Missing Jam recording link prevents actual testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Missing Jam recording link prevents actual testing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6c7adb74-bff9-4b58-bcda-d8e9bbbbaca9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "10fad2f7-9b27-41ff-83bd-5d018ff62835",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What specific Jam recording will be used for testing?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What specific Jam recording will be used for testing?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "58de7222-079c-47ef-a9e5-d6180b443409",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What particular aspects of the connector are most important to demonstrate?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What particular aspects of the connector are most important to demonstrate?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a863df6c-57c1-4e7a-b011-72aa4c9fcda0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9c7cf0f3-bcf7-42e1-ae11-2e8ca28bd5e8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User needs to provide Jam recording link",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User needs to provide Jam recording link",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f0721313-5bf8-4663-b424-c89abf7c5fe6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Demonstrate connector features with real data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Demonstrate connector features with real data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ab5683f3-9084-4e67-8fe5-6e49f3071348",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Show practical usage examples",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Show practical usage examples",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e7ae3c0c-55d8-4f76-b317-e3de6e44ea04",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "970ea59e-8b89-4837-8b30-16e63f14409a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8178-bf3a-d02e9e34757e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "68qiXHCP6bLCEhkjQMhKHt",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "68qiXHCP6bLCEhkjQMhKHt",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0099",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0099",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nUser requested assistance with testing the Jam connector and understanding its features. Manus explained the connector's purpose for debugging user sessions and analyzing bug reports through recording data access. The session remained incomplete as the user did not provide a required Jam recording link needed for demonstration.\n\n\n## Context & Intent\n\nUser wants to understand and test the Jam connector functionality within the system\n\n\n## What Was Done\n\nManus explained Jam connector capabilities and requested necessary inputs for demonstration\n\n\n## Outputs Produced\n\n- [explanation] Jam Connector Overview — Description of connector capabilities including video, user events, console logs, and network requests access\n- [instruction] Usage Requirements — Clear steps for what's needed to proceed with testing\n\n## Key Decisions & Validations\n\n- Requested Jam recording link as prerequisite for demonstration\n\n## Lessons Learned\n\nWorked well:\n\n- Clear explanation of connector capabilities\n- Proper requirement gathering\nFailed / suboptimal:\n\n- Session incomplete due to missing user input\nDiscoveries:\n\n- Jam connector designed for debugging and session analysis\n\n## Challenges & Blockers\n\n- Missing Jam recording link prevents actual testing\n\n## Open Questions\n\n- What specific Jam recording will be used for testing?\n- What particular aspects of the connector are most important to demonstrate?\n\n## Next Steps\n\n- User needs to provide Jam recording link\n- Demonstrate connector features with real data\n- Show practical usage examples\n---\nUID: 68qiXHCP6bLCEhkjQMhKHt | Model: claude-sonnet-4-20250514 | Cost: $0.0099\n"
+}

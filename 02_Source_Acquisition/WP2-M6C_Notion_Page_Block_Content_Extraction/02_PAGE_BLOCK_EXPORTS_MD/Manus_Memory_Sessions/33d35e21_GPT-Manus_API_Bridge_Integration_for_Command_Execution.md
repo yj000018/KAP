@@ -1,6 +1,6 @@
 ---
 source_id: KAP-WP2-M6C-Manus_Memory_Sessions-33d35e21
-notion_page_id: 33d35e21-8cf8-81b4-a586-cf0583d74f46
+notion_page_id: 33d35e21-8cf8-8191-b701-ca8f42b42d57
 notion_database_id: 5e51ded4-0b46-4a68-acc2-4e90886a2499
 title: "GPT-Manus API Bridge Integration for Command Execution"
 database_name: Manus_Memory_Sessions
@@ -12,7 +12,7 @@ limitations: block_content_only_no_media_downloads
 
 # GPT-Manus API Bridge Integration for Command Execution
 
-**Page ID:** `33d35e21-8cf8-81b4-a586-cf0583d74f46`  
+**Page ID:** `33d35e21-8cf8-8191-b701-ca8f42b42d57`  
 **Database:** Manus_Memory_Sessions  
 **Created:** 2026-04-09  
 **Last Edited:** 2026-04-09  
@@ -94,8 +94,5 @@ Discoveries:
 - Create Relevance AI team automation
 - Set up webhook for real-time ChatGPT integration
 - Test complete end-to-end workflow
----
-<summary>📄 Full Verbatim — 26 messages</summary>
-
 ---
 UID: 3WCYm9PhVd4w5CABsYT3Bf | Model: claude-sonnet-4-20250514 | Cost: $0.0236

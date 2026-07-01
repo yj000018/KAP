@@ -1,0 +1,1421 @@
+{
+  "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c",
+  "title": "YOS MMM Migration Pinecone — Test réel",
+  "database": "YOS_Archives",
+  "db_id": "31235e21-8cf8-8126-9212-f5a0eebadce0",
+  "created": "2026-02-26",
+  "edited": "2026-02-26",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Tags": "yOS, architecture",
+    "Action": "push+archive",
+    "Keywords": "YOS, MMM, Pinecone, AWS, Notion",
+    "Push Ref": "",
+    "Summary": "La conversation porte sur la migration du RAG MMM vers Pinecone, avec des décisions clés telles que l'utilisation de Pinecone serverless sur AWS et la création de l'index yos-memory-poc. Notion est désignée comme source de vérité, et un fallback JSON est prévu en cas d'indisponibilité de Pinecone. L'embedding text-embedding-3-small est sélectionné pour ses dimensions spécifiques, et la version de l'endpoint est fixée à 2.3.0.",
+    "Source URL": "",
+    "Turn Count": "",
+    "Source": "Manus",
+    "Title": "YOS MMM Migration Pinecone — Test réel"
+  },
+  "blocks_count": 32,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8170-bfff-ebd9b2da6906",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "La conversation porte sur la migration du RAG MMM vers Pinecone, avec des décisions clés telles que l'utilisation de Pinecone serverless sur AWS et la création de l'index yos-memory-poc. Notion est désignée comme source de vérité, et un fallback JSON est prévu en cas d'indisponibilité de Pinecone. L'embedding text-embedding-3-small est sélectionné pour ses dimensions spécifiques, et la version de l'endpoint est fixée à 2.3.0.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "La conversation porte sur la migration du RAG MMM vers Pinecone, avec des décisions clés telles que l'utilisation de Pinecone serverless sur AWS et la création de l'index yos-memory-poc. Notion est désignée comme source de vérité, et un fallback JSON est prévu en cas d'indisponibilité de Pinecone. L'embedding text-embedding-3-small est sélectionné pour ses dimensions spécifiques, et la version de l'endpoint est fixée à 2.3.0.",
+            "href": null
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "💡"
+        },
+        "color": "blue_background"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81eb-8d51-d26afed718b6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "⚡ Décisions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "⚡ Décisions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8136-8d04-f17c3b3b6e06",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Utiliser Pinecone serverless AWS us-east-1",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Utiliser Pinecone serverless AWS us-east-1",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81d2-859d-cebeab92654b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Créer l'index yos-memory-poc",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Créer l'index yos-memory-poc",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81c1-a569-eed7ca2d0364",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Utiliser l'embedding text-embedding-3-small dim=1536",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Utiliser l'embedding text-embedding-3-small dim=1536",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8117-9913-ce7e547efcf6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Définir Notion comme source de vérité",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Définir Notion comme source de vérité",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8164-afd8-ed13353de8a6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Utiliser un fallback JSON si Pinecone est indisponible",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Utiliser un fallback JSON si Pinecone est indisponible",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81b0-a16c-e6bf3fd31de5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📐 Canons & Règles",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "📐 Canons & Règles",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81b9-8817-c8a02a387a2d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Pinecone comme index dérivé",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Pinecone comme index dérivé",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81d3-9005-d00fca2f6dda",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Version endpoint 2.3.0",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Version endpoint 2.3.0",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8177-8961-dbeefe74ee23",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Architecture basée sur une source de vérité",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Architecture basée sur une source de vérité",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8176-8b57-f8358bb64e77",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fallback en cas d'indisponibilité",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fallback en cas d'indisponibilité",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81aa-9625-d41abe9e3f0b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Utilisation d'embeddings spécifiques",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Utilisation d'embeddings spécifiques",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8103-bf25-f307cbe87ac4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🔗 Entités",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "🔗 Entités",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8165-bea3-c1f96b310a2e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "YOS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "YOS",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81b5-b942-dc2118fe8dc2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MMM",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MMM",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81e5-a55a-f7f57a614c14",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Pinecone",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Pinecone",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81cf-addd-f29c97e8f4fe",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81ac-b4ce-f209a0b82ab2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81f7-bf97-fb7a5d1c7d3d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "JSON",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "JSON",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81d0-9c06-c9d21a400bf2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "yos-memory-poc",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "yos-memory-poc",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8119-b065-c3a8d5e026a9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "text-embedding-3-small",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "text-embedding-3-small",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81ea-9186-ffdd47770996",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "endpoint 2.3.0",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "endpoint 2.3.0",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-819e-8596-d67ab2a10ee7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🧠 Insights",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "🧠 Insights",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8123-b3f1-ffc00668f7e0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Migration vers Pinecone améliore la gestion des données",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Migration vers Pinecone améliore la gestion des données",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-813b-8418-e0576a13e888",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "L'utilisation de Notion comme source de vérité renforce la fiabilité",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "L'utilisation de Notion comme source de vérité renforce la fiabilité",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81c2-927f-cc646150c4cc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Le fallback JSON est une bonne pratique pour la continuité de service",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Le fallback JSON est une bonne pratique pour la continuité de service",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-818f-8235-f136e57f14b2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "L'architecture proposée est scalable grâce à Pinecone serverless",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "L'architecture proposée est scalable grâce à Pinecone serverless",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8127-9d74-dce61bc1043e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "L'embedding choisi est adapté aux besoins du projet",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "L'embedding choisi est adapté aux besoins du projet",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81cf-9e3e-d16cf5338f69",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8112-bef6-ed14c4cc5ee2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Verbatim",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Verbatim",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8123-a071-dd4ff5522d5c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-81be-ab88-e53aafadd85c"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discussion sur la migration du RAG MMM de JSON éphémère vers Pinecone. Décision: utiliser Pinecone serverless AWS us-east-1 avec index yos-memory-poc. Embedding: text-embedding-3-small dim=1536. Architecture: Notion = source de vérité, Pinecone = index dérivé. Fallback JSON si Pinecone indisponible. Version endpoint: 2.3.0.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discussion sur la migration du RAG MMM de JSON éphémère vers Pinecone. Décision: utiliser Pinecone serverless AWS us-east-1 avec index yos-memory-poc. Embedding: text-embedding-3-small dim=1536. Architecture: Notion = source de vérité, Pinecone = index dérivé. Fallback JSON si Pinecone indisponible. Version endpoint: 2.3.0.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "> 💡 La conversation porte sur la migration du RAG MMM vers Pinecone, avec des décisions clés telles que l'utilisation de Pinecone serverless sur AWS et la création de l'index yos-memory-poc. Notion est désignée comme source de vérité, et un fallback JSON est prévu en cas d'indisponibilité de Pinecone. L'embedding text-embedding-3-small est sélectionné pour ses dimensions spécifiques, et la version de l'endpoint est fixée à 2.3.0.\n\n### ⚡ Décisions\n\n- Utiliser Pinecone serverless AWS us-east-1\n- Créer l'index yos-memory-poc\n- Utiliser l'embedding text-embedding-3-small dim=1536\n- Définir Notion comme source de vérité\n- Utiliser un fallback JSON si Pinecone est indisponible\n\n### 📐 Canons & Règles\n\n- Pinecone comme index dérivé\n- Version endpoint 2.3.0\n- Architecture basée sur une source de vérité\n- Fallback en cas d'indisponibilité\n- Utilisation d'embeddings spécifiques\n\n### 🔗 Entités\n\n- YOS\n- MMM\n- Pinecone\n- AWS\n- Notion\n- JSON\n- yos-memory-poc\n- text-embedding-3-small\n- endpoint 2.3.0\n\n### 🧠 Insights\n\n- Migration vers Pinecone améliore la gestion des données\n- L'utilisation de Notion comme source de vérité renforce la fiabilité\n- Le fallback JSON est une bonne pratique pour la continuité de service\n- L'architecture proposée est scalable grâce à Pinecone serverless\n- L'embedding choisi est adapté aux besoins du projet\n---\n\n## Verbatim\n\nDiscussion sur la migration du RAG MMM de JSON éphémère vers Pinecone. Décision: utiliser Pinecone serverless AWS us-east-1 avec index yos-memory-poc. Embedding: text-embedding-3-small dim=1536. Architecture: Notion = source de vérité, Pinecone = index dérivé. Fallback JSON si Pinecone indisponible. Version endpoint: 2.3.0.\n"
+}

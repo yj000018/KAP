@@ -1,0 +1,1642 @@
+{
+  "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f",
+  "title": "YOS MMM Pinecone Test",
+  "database": "YOS_Archives",
+  "db_id": "31235e21-8cf8-8126-9212-f5a0eebadce0",
+  "created": "2026-02-26",
+  "edited": "2026-02-26",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Tags": "yOS, architecture",
+    "Action": "push+archive",
+    "Keywords": "YOS, Pinecone, RAG, Notion, yos-memory-poc",
+    "Push Ref": "",
+    "Summary": "La conversation porte sur la migration du système RAG vers Pinecone, en utilisant l'index yos-memory-poc et l'embedding text-embedding-3-small. Notion est désigné comme la source de vérité, tandis qu'un fallback JSON est prévu pour assurer la continuité. La version de l'outil est fixée à v2.3.0, et plusieurs actions doivent être entreprises pour finaliser cette migration.",
+    "Source URL": "",
+    "Turn Count": "",
+    "Source": "Manus",
+    "Title": "YOS MMM Pinecone Test"
+  },
+  "blocks_count": 37,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8176-a68f-cedd9dac4672",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "La conversation porte sur la migration du système RAG vers Pinecone, en utilisant l'index yos-memory-poc et l'embedding text-embedding-3-small. Notion est désigné comme la source de vérité, tandis qu'un fallback JSON est prévu pour assurer la continuité. La version de l'outil est fixée à v2.3.0, et plusieurs actions doivent être entreprises pour finaliser cette migration.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "La conversation porte sur la migration du système RAG vers Pinecone, en utilisant l'index yos-memory-poc et l'embedding text-embedding-3-small. Notion est désigné comme la source de vérité, tandis qu'un fallback JSON est prévu pour assurer la continuité. La version de l'outil est fixée à v2.3.0, et plusieurs actions doivent être entreprises pour finaliser cette migration.",
+            "href": null
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "💡"
+        },
+        "color": "blue_background"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81f9-9765-f658c09207a7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "⚡ Décisions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "⚡ Décisions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-815f-ac60-e85440cc476a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Migrer RAG vers Pinecone",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Migrer RAG vers Pinecone",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8102-88f8-df3151c2208a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Utiliser l'index yos-memory-poc",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Utiliser l'index yos-memory-poc",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-818a-a1c1-df09fb6e478a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Adopter l'embedding text-embedding-3-small",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Adopter l'embedding text-embedding-3-small",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81a2-95d3-cead56cc3b64",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Établir Notion comme source de vérité",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Établir Notion comme source de vérité",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81fe-b557-ced7ec0804c6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Utiliser un fallback JSON",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Utiliser un fallback JSON",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81bf-8a19-db9d13eeee14",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📐 Canons & Règles",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "📐 Canons & Règles",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8171-9d25-f190c6681a23",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Architecture basée sur Notion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Architecture basée sur Notion",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8156-91c7-da8ca6af9ca5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Index dérivé de Pinecone",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Index dérivé de Pinecone",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8181-8796-e8467576a06f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Version de l'outil : v2.3.0",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Version de l'outil : v2.3.0",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8152-ad6a-d3a3ae328ac4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Utilisation d'embeddings pour le traitement de texte",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Utilisation d'embeddings pour le traitement de texte",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8130-bc26-d621e2982548",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fallback en cas d'erreur",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fallback en cas d'erreur",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-812a-9ad0-d99d033310e7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "✅ TODOs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "✅ TODOs",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8162-ac60-dadc86c91914",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Configurer l'index yos-memory-poc",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Configurer l'index yos-memory-poc",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8148-823e-ec7a40045dec",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implémenter l'embedding text-embedding-3-small",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implémenter l'embedding text-embedding-3-small",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-811a-b5b0-fd38087cec8b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Vérifier l'intégration avec Notion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Vérifier l'intégration avec Notion",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-818f-a5d1-ed7d06c7bb26",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tester le fallback JSON",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tester le fallback JSON",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8136-8491-e2611176605e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Documenter le processus de migration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Documenter le processus de migration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8139-8ce5-edb9b6a095f0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🔗 Entités",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "🔗 Entités",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-817b-b20c-e4398abd28cb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "YOS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "YOS",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81a2-8caa-d4b8c964c332",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Pinecone",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Pinecone",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81e5-adb1-c705b78f230f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "RAG",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "RAG",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8197-b8cb-d4fceae0ed23",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8183-b6db-df878d129acd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "yos-memory-poc",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "yos-memory-poc",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8153-be82-f736032d2a7c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "text-embedding-3-small",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "text-embedding-3-small",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-812c-af1a-ebbd79750521",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "JSON",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "JSON",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81f5-97c6-c418c32eaec5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "v2.3.0",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "v2.3.0",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81cf-a8c6-db6696e4aada",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🧠 Insights",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "🧠 Insights",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-816f-9c51-c24eda178052",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "La migration vers Pinecone pourrait améliorer la gestion des données.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "La migration vers Pinecone pourrait améliorer la gestion des données.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8132-b240-d3b030c30672",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "L'utilisation de Notion comme source de vérité centralise les informations.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "L'utilisation de Notion comme source de vérité centralise les informations.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-818c-afd3-c1f247146997",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "L'embedding text-embedding-3-small est adapté pour le traitement de texte.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "L'embedding text-embedding-3-small est adapté pour le traitement de texte.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8197-8dc7-d931f58a129d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Un fallback JSON est essentiel pour la robustesse du système.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Un fallback JSON est essentiel pour la robustesse du système.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8109-ae08-ec56e4207ba8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "La version v2.3.0 apporte des améliorations significatives.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "La version v2.3.0 apporte des améliorations significatives.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-8131-9627-c042dcddbd97",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81cc-bc5c-c2f38d1c74de",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Verbatim",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Verbatim",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31335e21-8cf8-81dc-9fb7-e08736b986f3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "31335e21-8cf8-819b-8ad8-d081085a4d3f"
+      },
+      "created_time": "2026-02-26T15:48:00.000Z",
+      "last_edited_time": "2026-02-26T15:48:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "31035e21-8cf8-8114-9307-00273172be65"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Migration RAG vers Pinecone. Index yos-memory-poc. Embedding text-embedding-3-small. Architecture: Notion source de verite, Pinecone index derive. Fallback JSON. v2.3.0.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Migration RAG vers Pinecone. Index yos-memory-poc. Embedding text-embedding-3-small. Architecture: Notion source de verite, Pinecone index derive. Fallback JSON. v2.3.0.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "> 💡 La conversation porte sur la migration du système RAG vers Pinecone, en utilisant l'index yos-memory-poc et l'embedding text-embedding-3-small. Notion est désigné comme la source de vérité, tandis qu'un fallback JSON est prévu pour assurer la continuité. La version de l'outil est fixée à v2.3.0, et plusieurs actions doivent être entreprises pour finaliser cette migration.\n\n### ⚡ Décisions\n\n- Migrer RAG vers Pinecone\n- Utiliser l'index yos-memory-poc\n- Adopter l'embedding text-embedding-3-small\n- Établir Notion comme source de vérité\n- Utiliser un fallback JSON\n\n### 📐 Canons & Règles\n\n- Architecture basée sur Notion\n- Index dérivé de Pinecone\n- Version de l'outil : v2.3.0\n- Utilisation d'embeddings pour le traitement de texte\n- Fallback en cas d'erreur\n\n### ✅ TODOs\n\n- Configurer l'index yos-memory-poc\n- Implémenter l'embedding text-embedding-3-small\n- Vérifier l'intégration avec Notion\n- Tester le fallback JSON\n- Documenter le processus de migration\n\n### 🔗 Entités\n\n- YOS\n- Pinecone\n- RAG\n- Notion\n- yos-memory-poc\n- text-embedding-3-small\n- JSON\n- v2.3.0\n\n### 🧠 Insights\n\n- La migration vers Pinecone pourrait améliorer la gestion des données.\n- L'utilisation de Notion comme source de vérité centralise les informations.\n- L'embedding text-embedding-3-small est adapté pour le traitement de texte.\n- Un fallback JSON est essentiel pour la robustesse du système.\n- La version v2.3.0 apporte des améliorations significatives.\n---\n\n## Verbatim\n\nMigration RAG vers Pinecone. Index yos-memory-poc. Embedding text-embedding-3-small. Architecture: Notion source de verite, Pinecone index derive. Fallback JSON. v2.3.0.\n"
+}

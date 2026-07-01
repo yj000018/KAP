@@ -1,6 +1,6 @@
 ---
 source_id: KAP-WP2-M6C-Manus_Memory_Sessions-33d35e21
-notion_page_id: 33d35e21-8cf8-8160-bff2-f521a93d55bd
+notion_page_id: 33d35e21-8cf8-8192-b8a5-df0c9d1479bb
 notion_database_id: 5e51ded4-0b46-4a68-acc2-4e90886a2499
 title: "GPT-Manus Command Bridge Script Implementation and Deployment"
 database_name: Manus_Memory_Sessions
@@ -12,7 +12,7 @@ limitations: block_content_only_no_media_downloads
 
 # GPT-Manus Command Bridge Script Implementation and Deployment
 
-**Page ID:** `33d35e21-8cf8-8160-bff2-f521a93d55bd`  
+**Page ID:** `33d35e21-8cf8-8192-b8a5-df0c9d1479bb`  
 **Database:** Manus_Memory_Sessions  
 **Created:** 2026-04-09  
 **Last Edited:** 2026-04-09  
@@ -83,8 +83,5 @@ Discoveries:
 - Monitor hourly executions
 - Integrate with actual Relevance AI API
 - Add command authentication mechanisms
----
-<summary>📄 Full Verbatim — 6 messages</summary>
-
 ---
 UID: LjGPSTm3SKKUd4Akmo6STC | Model: claude-sonnet-4-20250514 | Cost: $0.0125

@@ -1,0 +1,2017 @@
+{
+  "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab",
+  "title": "OCR Analysis and LLM Router Creation for Manuscript Transcription",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "medium",
+    "Language": "mixed",
+    "Subthemes": "Manuscript Analysis, LLM Comparison, Multi-Model Integration, Tool Creation",
+    "Project": "yOS",
+    "UID": "04PWr9N3nzzyNQkJ3u3DZ5",
+    "Date": "2026-02-08",
+    "Themes": "Document Processing, AI Routing, OCR Technology, System Architecture",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "OCR Analysis and LLM Router Creation for Manuscript Transcription"
+  },
+  "blocks_count": 41,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "f43934b1-21c8-4c30-ba96-3ad50e9c499f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5202aa1d-89ad-4c33-9f6f-3a5312b1e090",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick requested OCR analysis of a complex manuscript written on tablet with stylus. Manus created an intelligent LLM router skill for automated model selection, tested multiple AI models (Gemini, GPT-4o, Claude) for OCR accuracy, and consolidated 4 different transcriptions from various AIs to produce an optimal final version with enriched commentary.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick requested OCR analysis of a complex manuscript written on tablet with stylus. Manus created an intelligent LLM router skill for automated model selection, tested multiple AI models (Gemini, GPT-4o, Claude) for OCR accuracy, and consolidated 4 different transcriptions from various AIs to produce an optimal final version with enriched commentary.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c77de583-cfde-4ad8-acbf-12c30916524a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "12fd2727-a073-4138-bb9a-735ff944b489",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Transcribe difficult handwritten manuscript and create intelligent routing system for selecting optimal LLMs based on task requirements",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Transcribe difficult handwritten manuscript and create intelligent routing system for selecting optimal LLMs based on task requirements",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e08e91ff-4415-4b6d-a5e4-92d394c69e1a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "26489ccb-f3f6-4633-b1ed-73ca847a44f8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Analyzed manuscript PDF, created LLM router skill with semi/auto modes, tested OCR across multiple AI models, consolidated 4 transcriptions into optimal version, compiled enriched commentary from all AI interpretations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Analyzed manuscript PDF, created LLM router skill with semi/auto modes, tested OCR across multiple AI models, consolidated 4 transcriptions into optimal version, compiled enriched commentary from all AI interpretations",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "998fb8ee-507d-4905-914a-3660c4209e27",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4e3c0d42-f8d8-4e6b-b8f4-75702edf7f24",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[skill]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[skill]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " llm-router — Intelligent LLM routing system with 8 task categories and dual operation modes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " llm-router — Intelligent LLM routing system with 8 task categories and dual operation modes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bbdc5349-30f0-49e2-873d-a65126d9ddf2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[transcription]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[transcription]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " consolidated_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " consolidated_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "manuscript.md",
+              "link": {
+                "url": "http://manuscript.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "manuscript.md",
+            "href": "http://manuscript.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Final consolidated transcription crossing 4 AI interpretations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Final consolidated transcription crossing 4 AI interpretations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c4b4a37d-c228-45a3-9287-47dfa7f35c8f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[analysis]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[analysis]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " enriched_",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " enriched_",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "commentary.md",
+              "link": {
+                "url": "http://commentary.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "commentary.md",
+            "href": "http://commentary.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " — Structured compilation of AI interpretations and insights",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " — Structured compilation of AI interpretations and insights",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "50a46286-21e7-4229-bbf1-d91f16d0a4ac",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0fd7b76c-56b0-424a-ae0d-24e9c717463b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Use Gemini 2.5 Flash for primary OCR after GPT-4o refusal",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Use Gemini 2.5 Flash for primary OCR after GPT-4o refusal",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f41c36c2-5b20-43f4-bd6e-df1e280db9ab",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create semi-auto LLM router as default mode",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create semi-auto LLM router as default mode",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0347fafe-f77c-4a75-8d1c-e829501c275f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Consolidate multiple AI transcriptions rather than relying on single model",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Consolidate multiple AI transcriptions rather than relying on single model",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "750574c7-3a06-4790-8516-1ad4734c8a7a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fix YAML front matter for skill validation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fix YAML front matter for skill validation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3c2cce69-0f7a-451a-8c70-339ae8f461ff",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "95dfdf81-2694-48af-a604-333a9706284b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6ac22feb-a37e-4294-b245-0ae2d640dd52",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Multi-model approach improved transcription quality",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Multi-model approach improved transcription quality",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b11cbd1f-6e42-42b6-91f5-4e41aecbb7ee",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "LLM router skill architecture flexible and extensible",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "LLM router skill architecture flexible and extensible",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b282f82a-f1b8-4fbc-b140-48d3002dc12f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Consolidation strategy effective for difficult OCR tasks",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Consolidation strategy effective for difficult OCR tasks",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e910d81a-3727-4cb2-8c81-eeba5e8ae797",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2081fd06-1f84-4894-a2a1-a0516cbc48a8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "GPT-4o refused manuscript analysis due to safety filters",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GPT-4o refused manuscript analysis due to safety filters",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8d75073b-efe3-448a-ab69-0c91d2d569eb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "SKILL.md",
+              "link": {
+                "url": "http://skill.md/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SKILL.md",
+            "href": "http://skill.md/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " missing required YAML front matter",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " missing required YAML front matter",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8c9bd215-387a-4e85-9ca8-847a7370eb54",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Gemini API quota limitations during processing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Gemini API quota limitations during processing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3c030ac1-c1aa-42eb-b598-88294cee2df3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "39062064-9512-49a0-9125-94c06e3ec62e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Different LLMs excel at different aspects of vision/OCR tasks",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Different LLMs excel at different aspects of vision/OCR tasks",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dd31cada-2933-4d5c-addd-0e70c51f962c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Safety filters can block legitimate OCR requests",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Safety filters can block legitimate OCR requests",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c281527a-6d44-4aea-8a01-785cf49f9f4e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Cross-referencing multiple AI outputs significantly improves accuracy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Cross-referencing multiple AI outputs significantly improves accuracy",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "940d608a-f438-4f2e-9681-087554963a89",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "196049d2-4176-4118-9fce-8c304bbc6cad",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "GPT-4o safety refusal on manuscript pages",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GPT-4o safety refusal on manuscript pages",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0cb76a99-3e86-4985-933f-5dfa61b1fab5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API quota limits with Gemini",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "API quota limits with Gemini",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a6b4ce78-4db1-4529-a4b3-390a360ba173",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial skill validation errors",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial skill validation errors",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "99ec2972-4de1-493c-bb33-819c4f34593a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "71b6fb26-9c9e-4cc6-8d36-bdf8f8f4deb2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to avoid safety filter false positives for legitimate OCR tasks",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to avoid safety filter false positives for legitimate OCR tasks",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3f0ee596-f11d-4247-9acf-f7c573a8aac1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Optimal strategy for handling API rate limits across multiple models",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Optimal strategy for handling API rate limits across multiple models",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d67bcfb5-c144-4d2b-b9ff-1145dce88290",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bc19bbc0-38ec-4cda-9f75-1d3e46925310",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test LLM router skill in production",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test LLM router skill in production",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b6712ab5-8c0f-47c7-b3e7-7ac2bf009c6d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Optimize OCR workflow for complex manuscripts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Optimize OCR workflow for complex manuscripts",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a979585f-9fd8-4126-b1b2-620dbd368a5a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Consider backup routing when primary models fail",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Consider backup routing when primary models fail",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ddbe601c-ccd9-4b6e-aeb1-35e9dccd744e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d347de90-ce00-420e-9bab-49c7599879b0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8181-8411-c95fdbd52aab"
+      },
+      "created_time": "2026-04-09T08:29:00.000Z",
+      "last_edited_time": "2026-04-09T08:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "04PWr9N3nzzyNQkJ3u3DZ5",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "04PWr9N3nzzyNQkJ3u3DZ5",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0219",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0219",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick requested OCR analysis of a complex manuscript written on tablet with stylus. Manus created an intelligent LLM router skill for automated model selection, tested multiple AI models (Gemini, GPT-4o, Claude) for OCR accuracy, and consolidated 4 different transcriptions from various AIs to produce an optimal final version with enriched commentary.\n\n\n## Context & Intent\n\nTranscribe difficult handwritten manuscript and create intelligent routing system for selecting optimal LLMs based on task requirements\n\n\n## What Was Done\n\nAnalyzed manuscript PDF, created LLM router skill with semi/auto modes, tested OCR across multiple AI models, consolidated 4 transcriptions into optimal version, compiled enriched commentary from all AI interpretations\n\n\n## Outputs Produced\n\n- [skill] llm-router — Intelligent LLM routing system with 8 task categories and dual operation modes\n- [transcription] consolidated_manuscript.md — Final consolidated transcription crossing 4 AI interpretations\n- [analysis] enriched_commentary.md — Structured compilation of AI interpretations and insights\n\n## Key Decisions & Validations\n\n- Use Gemini 2.5 Flash for primary OCR after GPT-4o refusal\n- Create semi-auto LLM router as default mode\n- Consolidate multiple AI transcriptions rather than relying on single model\n- Fix YAML front matter for skill validation\n\n## Lessons Learned\n\nWorked well:\n\n- Multi-model approach improved transcription quality\n- LLM router skill architecture flexible and extensible\n- Consolidation strategy effective for difficult OCR tasks\nFailed / suboptimal:\n\n- GPT-4o refused manuscript analysis due to safety filters\n- Initial SKILL.md missing required YAML front matter\n- Gemini API quota limitations during processing\nDiscoveries:\n\n- Different LLMs excel at different aspects of vision/OCR tasks\n- Safety filters can block legitimate OCR requests\n- Cross-referencing multiple AI outputs significantly improves accuracy\n\n## Challenges & Blockers\n\n- GPT-4o safety refusal on manuscript pages\n- API quota limits with Gemini\n- Initial skill validation errors\n\n## Open Questions\n\n- How to avoid safety filter false positives for legitimate OCR tasks\n- Optimal strategy for handling API rate limits across multiple models\n\n## Next Steps\n\n- Test LLM router skill in production\n- Optimize OCR workflow for complex manuscripts\n- Consider backup routing when primary models fail\n---\nUID: 04PWr9N3nzzyNQkJ3u3DZ5 | Model: claude-sonnet-4-20250514 | Cost: $0.0219\n"
+}

@@ -1,0 +1,2322 @@
+{
+  "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e",
+  "title": "VoixItalia: French-to-Italian voice translation app with emotional fidelity",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "long",
+    "Language": "mixed",
+    "Subthemes": "ElevenLabs API, speech synthesis, mobile UI/UX, iOS native sharing, SSML audio tags",
+    "Project": "UNKNOWN",
+    "UID": "6V4cCKQoKVTkkApzrqHqi4",
+    "Date": "2026-03-10",
+    "Themes": "AI voice translation, mobile web development, emotional fidelity, TTS/STS integration",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "VoixItalia: French-to-Italian voice translation app with emotional fidelity"
+  },
+  "blocks_count": 50,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "fc952002-eb74-4e2a-a576-1568b4d188d6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3a3d503b-9a2e-43f6-823b-cafcf9759d40",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built VoixItalia, a complete French-to-Italian voice translation web app with emotional fidelity preservation. Overcame multiple TTS integration challenges (Forge API limitations, OpenAI access issues, Web Speech API iOS bugs) to ultimately implement ElevenLabs eleven_v3 with SSML audio tags. Final architecture: browser audio recording → S3 → Whisper transcription → LLM translation with emotion detection → ElevenLabs TTS with audio tags → emotional Italian speech synthesis. Mobile-first single-screen design optimized for iPhone 14 Pro Max with native iOS sharing integration.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built VoixItalia, a complete French-to-Italian voice translation web app with emotional fidelity preservation. Overcame multiple TTS integration challenges (Forge API limitations, OpenAI access issues, Web Speech API iOS bugs) to ultimately implement ElevenLabs eleven_v3 with SSML audio tags. Final architecture: browser audio recording → S3 → Whisper transcription → LLM translation with emotion detection → ElevenLabs TTS with audio tags → emotional Italian speech synthesis. Mobile-first single-screen design optimized for iPhone 14 Pro Max with native iOS sharing integration.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b598e7ea-9d78-47a8-81c7-f8c28b1cdc49",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d37a714e-c809-47dd-86b9-e0689cd6d1cb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User requested a mobile webapp for real-time French-to-Italian voice translation with preservation of emotions, intonations, pauses, and vocal emphasis. Key requirement was maintaining the emotional fidelity of the original speech in the translated output.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User requested a mobile webapp for real-time French-to-Italian voice translation with preservation of emotions, intonations, pauses, and vocal emphasis. Key requirement was maintaining the emotional fidelity of the original speech in the translated output.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a91db8f9-4aba-4af2-9c87-c5d53822bb80",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f16335a9-2c80-4d4f-ba37-af9c2fb1d998",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built complete pipeline from scratch: mobile-responsive UI with recording interface, S3 audio storage, Whisper transcription, LLM-powered translation with emotion analysis, multiple TTS provider integrations, native iOS sharing, and public shareable links. Iterated through Web Speech API, OpenAI TTS, ElevenLabs STS, and finally ElevenLabs TTS with SSML tags.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built complete pipeline from scratch: mobile-responsive UI with recording interface, S3 audio storage, Whisper transcription, LLM-powered translation with emotion analysis, multiple TTS provider integrations, native iOS sharing, and public shareable links. Iterated through Web Speech API, OpenAI TTS, ElevenLabs STS, and finally ElevenLabs TTS with SSML tags.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5b61a288-730f-434a-885c-2d8f783d20f5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6e2b875a-0ebd-4d48-b9ae-52d7cbb452df",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[web application]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[web application]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " VoixItalia — Complete mobile web app with 4 screens: Home, Recorder, Result, History",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " VoixItalia — Complete mobile web app with 4 screens: Home, Recorder, Result, History",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1cbe64c1-0467-49cd-8640-3c0a20ec5374",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[backend pipeline]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[backend pipeline]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Translation API — Node.js/Express server with S3, Whisper, LLM, and ElevenLabs integrations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Translation API — Node.js/Express server with S3, Whisper, LLM, and ElevenLabs integrations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e61ea5be-14eb-474c-9130-e71a47e21488",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[database schema]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[database schema]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Translations DB — SQLite schema with audio storage, transcriptions, and emotion metadata",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Translations DB — SQLite schema with audio storage, transcriptions, and emotion metadata",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bf7e7949-780c-41ff-a6ef-442689c98abc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[test suite]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[test suite]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Vitest tests — 11 passing tests covering API endpoints and core functionality",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Vitest tests — 11 passing tests covering API endpoints and core functionality",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ab2cb7af-bd8c-4be6-99bb-9de3d82f1a11",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "11491563-4f44-459e-8b6a-19d69e55fac6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Switched from server-side TTS to ElevenLabs API for emotional fidelity",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Switched from server-side TTS to ElevenLabs API for emotional fidelity",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "521e0646-b82e-4620-a6d2-0b606aefb80b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chose eleven_v3 model over turbo_v2_5 for SSML audio tags interpretation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Chose eleven_v3 model over turbo_v2_5 for SSML audio tags interpretation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "862a9d04-4b5f-4eb9-be9d-117df04bf7d1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implemented dual text storage: clean display text vs tagged synthesis text",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implemented dual text storage: clean display text vs tagged synthesis text",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f3a1daa3-73ba-48e3-ab80-7eb227fc6af8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Selected Gus (Italian native voice) over Aria (English voice) for natural pronunciation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Selected Gus (Italian native voice) over Aria (English voice) for natural pronunciation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "19396037-6038-4ad8-9198-1d8be2c66ca5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Used single-screen mobile layout optimized for iPhone 14 Pro Max dimensions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Used single-screen mobile layout optimized for iPhone 14 Pro Max dimensions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c3c99f03-7617-4b64-86bb-051ec953b9de",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6dc48ccc-af68-492f-aef6-8c76b05c3e49",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f71ca136-8b20-4113-add6-969fd047279b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ElevenLabs eleven_v3 with SSML audio tags for emotional speech synthesis",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ElevenLabs eleven_v3 with SSML audio tags for emotional speech synthesis",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "09ada637-eeea-4ad8-86d1-49143c8728e4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "LLM-based emotion detection and SSML tag injection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "LLM-based emotion detection and SSML tag injection",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f7767079-c728-480a-9a72-6e59d1d15a85",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Native iOS Web Share API for seamless file sharing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Native iOS Web Share API for seamless file sharing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3fd670e2-1fd8-44d1-bdbb-0cea78c713bc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "S3 integration for reliable audio storage and public sharing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "S3 integration for reliable audio storage and public sharing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e4ba099d-080c-47a5-90cc-96ff6990c196",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d67e6f8a-eb91-432d-9d82-696542474576",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Web Speech API unreliable on iOS Safari for programmatic synthesis",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Web Speech API unreliable on iOS Safari for programmatic synthesis",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3c460c78-c800-49b7-8037-461107c25fba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ElevenLabs STS reproduces source language instead of translating",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ElevenLabs STS reproduces source language instead of translating",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e33b980b-57d6-49c0-897f-160b55a91643",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "eleven_turbo_v2_5 reads SSML tags literally instead of interpreting them",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "eleven_turbo_v2_5 reads SSML tags literally instead of interpreting them",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1760731e-3141-418c-9d17-88c2a8efb78f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Forge API lacks TTS endpoints, OpenAI keys not available in server environment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Forge API lacks TTS endpoints, OpenAI keys not available in server environment",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ce58b5e0-eef7-49c1-a469-0714754a7156",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c29513d1-29ea-4eae-8bfc-1a9397a8faa5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "iOS Safari requires user gesture for reliable SpeechSynthesis events",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "iOS Safari requires user gesture for reliable SpeechSynthesis events",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b6d4f8aa-3500-48cd-b1b9-cc04c277d689",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ElevenLabs STS preserves voice characteristics but not target language",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ElevenLabs STS preserves voice characteristics but not target language",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b4e57d25-39db-43db-9a52-b378df4494cc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "SSML audio tags only work with eleven_v3 model, not turbo variants",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SSML audio tags only work with eleven_v3 model, not turbo variants",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ead2ad4a-7c08-488d-b83f-1d967d9ea3c5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mobile translation apps need careful UX for single-screen workflows",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mobile translation apps need careful UX for single-screen workflows",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a768c307-8df8-4323-b123-660e7b6ed872",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "55aaa2a7-4e01-416d-b279-c08090ae0f05",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Multiple TTS provider failures (Forge API limitations, OpenAI access, Web Speech iOS bugs)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Multiple TTS provider failures (Forge API limitations, OpenAI access, Web Speech iOS bugs)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0c2851b1-45f8-44e7-87cb-97acb90141ea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ElevenLabs payment issue temporarily blocking STS testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ElevenLabs payment issue temporarily blocking STS testing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c1297e77-cf68-4c44-8bbf-e69d2d334428",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complex emotion-to-SSML mapping requiring extensive prompt engineering",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complex emotion-to-SSML mapping requiring extensive prompt engineering",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a3686ca7-7500-4d38-a627-75bd74e8c71a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "iOS Safari audio synthesis reliability issues requiring architecture changes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "iOS Safari audio synthesis reliability issues requiring architecture changes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "616c2587-1434-4bd8-93b4-74909d734d7e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "763d840a-e324-4492-9942-509c14768da7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should voice selection be exposed to users or kept with current Gus default?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should voice selection be exposed to users or kept with current Gus default?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5d67ecc4-876f-4840-805d-ca9988e23ca4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to handle longer recordings beyond ElevenLabs character limits?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to handle longer recordings beyond ElevenLabs character limits?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5c3ac305-c977-4cc8-a036-77767d434d16",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Whether to add debug mode showing SSML tags for transparency",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Whether to add debug mode showing SSML tags for transparency",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f38982cd-0b52-42eb-89d7-cd66333bb8f5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Potential integration with other Italian voice models for comparison",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Potential integration with other Italian voice models for comparison",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ee783e67-e686-4ec4-8744-56fc90a0589b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "30af0f80-7bf5-461f-ae07-f810f8250177",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add voice selector (Gus/Luca Brasi/Sami) on Recorder screen",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add voice selector (Gus/Luca Brasi/Sami) on Recorder screen",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "29786ea4-5e84-48e2-ae15-63ef874e9d4c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement 60-second recording limit with circular progress indicator",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement 60-second recording limit with circular progress indicator",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b21792d9-c905-4753-9f48-e80e6e1327cf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add debug toggle to show SSML-tagged text alongside clean translation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add debug toggle to show SSML-tagged text alongside clean translation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e9ec7960-0bc9-44b9-8166-425f6fb8e064",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enhance public share page with both audio players and transcriptions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Enhance public share page with both audio players and transcriptions",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e1628529-0f18-454c-a9fc-458f35c5114c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c58d13f6-0adb-4f6b-b96b-018bf9681d7f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810b-8584-dd88b6a3f85e"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "6V4cCKQoKVTkkApzrqHqi4",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "6V4cCKQoKVTkkApzrqHqi4",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0476",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0476",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nBuilt VoixItalia, a complete French-to-Italian voice translation web app with emotional fidelity preservation. Overcame multiple TTS integration challenges (Forge API limitations, OpenAI access issues, Web Speech API iOS bugs) to ultimately implement ElevenLabs eleven_v3 with SSML audio tags. Final architecture: browser audio recording → S3 → Whisper transcription → LLM translation with emotion detection → ElevenLabs TTS with audio tags → emotional Italian speech synthesis. Mobile-first single-screen design optimized for iPhone 14 Pro Max with native iOS sharing integration.\n\n\n## Context & Intent\n\nUser requested a mobile webapp for real-time French-to-Italian voice translation with preservation of emotions, intonations, pauses, and vocal emphasis. Key requirement was maintaining the emotional fidelity of the original speech in the translated output.\n\n\n## What Was Done\n\nBuilt complete pipeline from scratch: mobile-responsive UI with recording interface, S3 audio storage, Whisper transcription, LLM-powered translation with emotion analysis, multiple TTS provider integrations, native iOS sharing, and public shareable links. Iterated through Web Speech API, OpenAI TTS, ElevenLabs STS, and finally ElevenLabs TTS with SSML tags.\n\n\n## Outputs Produced\n\n- [web application] VoixItalia — Complete mobile web app with 4 screens: Home, Recorder, Result, History\n- [backend pipeline] Translation API — Node.js/Express server with S3, Whisper, LLM, and ElevenLabs integrations\n- [database schema] Translations DB — SQLite schema with audio storage, transcriptions, and emotion metadata\n- [test suite] Vitest tests — 11 passing tests covering API endpoints and core functionality\n\n## Key Decisions & Validations\n\n- Switched from server-side TTS to ElevenLabs API for emotional fidelity\n- Chose eleven_v3 model over turbo_v2_5 for SSML audio tags interpretation\n- Implemented dual text storage: clean display text vs tagged synthesis text\n- Selected Gus (Italian native voice) over Aria (English voice) for natural pronunciation\n- Used single-screen mobile layout optimized for iPhone 14 Pro Max dimensions\n\n## Lessons Learned\n\nWorked well:\n\n- ElevenLabs eleven_v3 with SSML audio tags for emotional speech synthesis\n- LLM-based emotion detection and SSML tag injection\n- Native iOS Web Share API for seamless file sharing\n- S3 integration for reliable audio storage and public sharing\nFailed / suboptimal:\n\n- Web Speech API unreliable on iOS Safari for programmatic synthesis\n- ElevenLabs STS reproduces source language instead of translating\n- eleven_turbo_v2_5 reads SSML tags literally instead of interpreting them\n- Forge API lacks TTS endpoints, OpenAI keys not available in server environment\nDiscoveries:\n\n- iOS Safari requires user gesture for reliable SpeechSynthesis events\n- ElevenLabs STS preserves voice characteristics but not target language\n- SSML audio tags only work with eleven_v3 model, not turbo variants\n- Mobile translation apps need careful UX for single-screen workflows\n\n## Challenges & Blockers\n\n- Multiple TTS provider failures (Forge API limitations, OpenAI access, Web Speech iOS bugs)\n- ElevenLabs payment issue temporarily blocking STS testing\n- Complex emotion-to-SSML mapping requiring extensive prompt engineering\n- iOS Safari audio synthesis reliability issues requiring architecture changes\n\n## Open Questions\n\n- Should voice selection be exposed to users or kept with current Gus default?\n- How to handle longer recordings beyond ElevenLabs character limits?\n- Whether to add debug mode showing SSML tags for transparency\n- Potential integration with other Italian voice models for comparison\n\n## Next Steps\n\n- Add voice selector (Gus/Luca Brasi/Sami) on Recorder screen\n- Implement 60-second recording limit with circular progress indicator\n- Add debug toggle to show SSML-tagged text alongside clean translation\n- Enhance public share page with both audio players and transcriptions\n---\nUID: 6V4cCKQoKVTkkApzrqHqi4 | Model: claude-sonnet-4-20250514 | Cost: $0.0476\n"
+}

@@ -1,0 +1,372 @@
+{
+  "page_id": "32535e21-8cf8-819e-883f-d2dd16fa3a7c",
+  "title": "Y-OS — Skill Summary : Synthèse Interactive de Conversations",
+  "database": "SSA_Session_Synthetic_Archive",
+  "db_id": "ebafd590-ce92-45c7-9fe7-068f7ca6d415",
+  "created": "2026-03-16",
+  "edited": "2026-03-16",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Project": "yOS / Skills / Memory Management",
+    "Actions": "1. Tester la skill sur 3-5 conversations existantes (Yannick). 2. Affiner le prompt generate_summary.py selon retours production (Manus). 3. Renommer session Manus manuellement via sidebar (Yannick). 4. Connecter option 11 au clustering sémantique session-navigator quand opérationnel (Manus).",
+    "Decisions": "1. Créer une skill summary interactive en 3 étapes progressives. 2. Architecture : Sommaire Initial → Synthèse Détaillée → Exécutif Summary. 3. Intégration native avec yos-mmm (option 8), memory-manager (option 9), session-navigator (options 10/11). 4. Analyse via Gemini 2.5 Flash API → JSON structuré.",
+    "SessionID": "skill-summary-2026-03-16",
+    "Date": "2026-03-16",
+    "Summary": "Création et livraison complète de la skill summary pour Y-OS. Workflow interactif en 3 étapes (Sommaire Initial, Synthèse Détaillée, Exécutif Summary) avec 4 orientations de finalité. Intégration native avec yos-mmm, memory-manager et session-navigator.",
+    "Tags": "",
+    "Knowledge": "Skill summary = orchestrateur de synthèse Y-OS. Script: /home/ubuntu/skills/summary/scripts/generate_summary.py. Template: /home/ubuntu/skills/summary/templates/exec_summary.md. data_source_id Manus Memory Hub corrigé: 94086d51-ac40-4027-b994-55c5681f72e5.",
+    "Title": "Y-OS — Skill Summary : Synthèse Interactive de Conversations"
+  },
+  "blocks_count": 7,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "984af908-0bee-4a6e-9efd-13a604d8cee7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "32535e21-8cf8-819e-883f-d2dd16fa3a7c"
+      },
+      "created_time": "2026-03-16T18:36:00.000Z",
+      "last_edited_time": "2026-03-16T18:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Création et livraison complète de la skill ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Création et livraison complète de la skill ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "summary",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " pour l'écosystème Y-OS. Workflow interactif en 3 étapes, intégration native avec yos-mmm, memory-manager et session-navigator.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " pour l'écosystème Y-OS. Workflow interactif en 3 étapes, intégration native avec yos-mmm, memory-manager et session-navigator.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0fb00066-3a0a-4b97-9c79-df7950eaf6d6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "32535e21-8cf8-819e-883f-d2dd16fa3a7c"
+      },
+      "created_time": "2026-03-16T18:36:00.000Z",
+      "last_edited_time": "2026-03-16T18:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Artefacts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Artefacts",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "200946ac-e1f0-4273-b646-39c5e5992712",
+      "parent": {
+        "type": "page_id",
+        "page_id": "32535e21-8cf8-819e-883f-d2dd16fa3a7c"
+      },
+      "created_time": "2026-03-16T18:36:00.000Z",
+      "last_edited_time": "2026-03-16T18:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "/home/ubuntu/skills/summary/SKILL.md",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "/home/ubuntu/skills/summary/SKILL.md",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "db8e0d54-5c4d-41f3-b7d4-f7b4e00ca233",
+      "parent": {
+        "type": "page_id",
+        "page_id": "32535e21-8cf8-819e-883f-d2dd16fa3a7c"
+      },
+      "created_time": "2026-03-16T18:36:00.000Z",
+      "last_edited_time": "2026-03-16T18:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "/home/ubuntu/skills/summary/scripts/generate_summary.py",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "/home/ubuntu/skills/summary/scripts/generate_summary.py",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b514ab70-f1b3-4b9d-a92e-e065f8df22d2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "32535e21-8cf8-819e-883f-d2dd16fa3a7c"
+      },
+      "created_time": "2026-03-16T18:36:00.000Z",
+      "last_edited_time": "2026-03-16T18:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "/home/ubuntu/skills/summary/templates/exec_summary.md",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "/home/ubuntu/skills/summary/templates/exec_summary.md",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7827b980-cd8a-4f58-a7d5-308b2f54b457",
+      "parent": {
+        "type": "page_id",
+        "page_id": "32535e21-8cf8-819e-883f-d2dd16fa3a7c"
+      },
+      "created_time": "2026-03-16T18:36:00.000Z",
+      "last_edited_time": "2026-03-16T18:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lien Archivage Manus Memory Hub",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lien Archivage Manus Memory Hub",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1a8583cb-e37b-40f4-9971-c97b710ca36e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "32535e21-8cf8-819e-883f-d2dd16fa3a7c"
+      },
+      "created_time": "2026-03-16T18:36:00.000Z",
+      "last_edited_time": "2026-03-16T18:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📝 Y-OS — Skill Summary",
+              "link": {
+                "url": "https://www.notion.so/32535e218cf881aab4bff9d265c2bbd0"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "📝 Y-OS — Skill Summary",
+            "href": "https://www.notion.so/32535e218cf881aab4bff9d265c2bbd0"
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "Création et livraison complète de la skill summary pour l'écosystème Y-OS. Workflow interactif en 3 étapes, intégration native avec yos-mmm, memory-manager et session-navigator.\n\n\n## Artefacts\n\n- /home/ubuntu/skills/summary/SKILL.md\n- /home/ubuntu/skills/summary/scripts/generate_summary.py\n- /home/ubuntu/skills/summary/templates/exec_summary.md\n\n## Lien Archivage Manus Memory Hub\n\n📝 Y-OS — Skill Summary\n"
+}

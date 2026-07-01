@@ -1,0 +1,2667 @@
+{
+  "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec",
+  "title": "Building yOS Voice Telegram Bot with Manus Integration",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "long",
+    "Language": "mixed",
+    "Subthemes": "STT/TTS Pipeline, Manus API Connection, Railway vs Fly.io Comparison, Secret Management, Cross-Platform Deployment",
+    "Project": "yOS",
+    "UID": "E4On9Cc51voDTaa5tuK5Cd",
+    "Date": "2026-02-22",
+    "Themes": "Voice Interface Development, Telegram Bot Architecture, Deployment Infrastructure, API Integration",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Building yOS Voice Telegram Bot with Manus Integration"
+  },
+  "blocks_count": 50,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "07517d13-63ee-41ed-91e2-271e2488b9ce",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "34ac5523-c085-40fc-9906-2247700b49d8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built and deployed a complete yOS voice interface Telegram bot with STT (Whisper), LLM processing via Manus API, and TTS (OpenAI). Initially deployed with isolated GPT-4o, then rebuilt for full Manus integration with access to all MCPs and memory systems. Evaluated multiple deployment platforms (Railway, ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built and deployed a complete yOS voice interface Telegram bot with STT (Whisper), LLM processing via Manus API, and TTS (OpenAI). Initially deployed with isolated GPT-4o, then rebuilt for full Manus integration with access to all MCPs and memory systems. Evaluated multiple deployment platforms (Railway, ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", Render) before settling on ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", Render) before settling on ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ". Established permanent secret management in Notion.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ". Established permanent secret management in Notion.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d2e1c6ae-4e59-40b8-9cbb-3174a55a9e64",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "04d19309-bf81-4390-aa5a-e0b9a6fac74c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create a voice interface to yOS/Manus system via Telegram, allowing vocal interaction with the same capabilities as text-based Manus conversations. The goal was to extend yOS with natural voice input/output while maintaining full access to memory, tools, and knowledge systems.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create a voice interface to yOS/Manus system via Telegram, allowing vocal interaction with the same capabilities as text-based Manus conversations. The goal was to extend yOS with natural voice input/output while maintaining full access to memory, tools, and knowledge systems.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eacb7043-bb24-4137-89fc-348666453f5f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f2877eb5-7cc7-4cc3-9b00-6de878c61ac0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Developed a complete Telegram voice bot with Whisper STT, Manus API integration, and OpenAI TTS. Configured deployment infrastructure on ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Developed a complete Telegram voice bot with Whisper STT, Manus API integration, and OpenAI TTS. Configured deployment infrastructure on ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " with proper secret management. Updated yOS canon documentation in Notion. Rebuilt the architecture twice: first with isolated GPT-4o, then with full Manus API integration for complete tool access.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " with proper secret management. Updated yOS canon documentation in Notion. Rebuilt the architecture twice: first with isolated GPT-4o, then with full Manus API integration for complete tool access.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0d5e3346-8459-4e44-9dd0-9dd4ca4c4b4d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6678bb57-c24d-4a8c-b0d0-7112fd53bcb9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[application]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[application]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yOS Voice Telegram Bot — Complete voice interface with STT/TTS pipeline connected to Manus API",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yOS Voice Telegram Bot — Complete voice interface with STT/TTS pipeline connected to Manus API",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b954a886-a606-4398-8172-5a6a47f767dd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[infrastructure]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[infrastructure]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Deployment Configuration — Production deployment setup with environment variables and secrets",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Deployment Configuration — Production deployment setup with environment variables and secrets",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "065e9ce9-a43e-442d-9602-37cdc1c736fe",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yOS Canon Update — Updated canonical yOS infrastructure documentation in Notion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yOS Canon Update — Updated canonical yOS infrastructure documentation in Notion",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f0b26ec0-73a2-41c2-a8e9-c4fb335d2d87",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[security]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[security]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Centralized Secret Management — Permanent API key storage in Notion with secure sandbox backup",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Centralized Secret Management — Permanent API key storage in Notion with secure sandbox backup",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "65304d6d-bcb9-485a-8473-9dc03e33478a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6152e306-ef47-4ffd-b626-3b27f494a43f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chose ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Chose ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " over Railway due to direct CLI deployment without GitHub requirement",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " over Railway due to direct CLI deployment without GitHub requirement",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b7e7218f-05a4-4f45-a999-8f3b7ca611b7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Selected OpenAI TTS over Hume due to MCP API access limitations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Selected OpenAI TTS over Hume due to MCP API access limitations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "97bc995a-36e3-4a4e-8fc1-a06d3a228fe0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Rebuilt architecture from isolated GPT-4o to full Manus API integration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Rebuilt architecture from isolated GPT-4o to full Manus API integration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fd691e54-c1da-422d-a893-1b76bef6ae0b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implemented permanent secret storage in Notion for cross-session persistence",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implemented permanent secret storage in Notion for cross-session persistence",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "da124056-293c-4f17-9061-a0416ba3a102",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Used French as primary language with voice onyx for professional tone",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Used French as primary language with voice onyx for professional tone",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bd88b4a4-953e-4d63-b0b4-0e24785b4855",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "beb4f27a-38cb-4901-907b-8ff85958fd61",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f0f047db-c60f-4ca2-9645-ab169d2adceb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Modular STT/LLM/TTS pipeline allows easy component swapping",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Modular STT/LLM/TTS pipeline allows easy component swapping",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9ee4f124-4957-40e3-a44c-7ec0b3695169",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " CLI deployment is streamlined once token is available",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " CLI deployment is streamlined once token is available",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "69a0c7ad-487c-4a06-b132-79517fe93e9d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus API integration provides full tool access as intended",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus API integration provides full tool access as intended",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ea80ae8b-45e6-4a2a-90be-7e777966297f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion-based secret management ensures permanence across sandbox resets",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion-based secret management ensures permanence across sandbox resets",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "27095109-8d22-4d5e-8d3a-dbe73ffc8d08",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "15f145a9-9656-4ad0-8144-c6aa0e71ab7e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Railway requires GitHub connection which blocks direct deployment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Railway requires GitHub connection which blocks direct deployment",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cb63750e-690a-4931-a4a9-663acc49c7bb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hume AI MCP keys cannot be used directly from external bots",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Hume AI MCP keys cannot be used directly from external bots",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d9adc154-93b7-4e1f-b507-04d16c878d60",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial isolated GPT-4o approach defeated the purpose of yOS integration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial isolated GPT-4o approach defeated the purpose of yOS integration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e994c52c-aefd-41a2-8406-813bc4aade67",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion API updates through MCP layer are slower than expected",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion API updates through MCP layer are slower than expected",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "59c9ad27-15c5-47c3-9ec1-3d0926ae74cb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e57394e3-5ed4-42b1-8c16-57eefba5fe82",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus has a public API (",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus has a public API (",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "api.manus.ai",
+              "link": {
+                "url": "http://api.manus.ai/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "api.manus.ai",
+            "href": "http://api.manus.ai/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ") with full capability access",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ") with full capability access",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b5a92890-27f8-4b43-ba63-594d4e23c900",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " requires credit card even for free tier usage",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " requires credit card even for free tier usage",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b45f2e1b-cfb2-4945-92b4-aca90b43b2a0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Render.com",
+              "link": {
+                "url": "http://render.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Render.com",
+            "href": "http://render.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " has sleep issues for long-polling bots on free tier",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " has sleep issues for long-polling bots on free tier",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e2ba795d-7fe6-482c-8d77-1cf971b239db",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Voice interface latency (30s-2min) is acceptable for complex Manus tasks",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Voice interface latency (30s-2min) is acceptable for complex Manus tasks",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b71434a5-c4fb-4945-a4dc-bbf7e57981d9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "aee5f42c-16e9-45fd-8f21-5b89f12d1856",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Credit card requirement for ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Credit card requirement for ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " deployment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " deployment",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "87e35f59-7a5d-4e90-a780-5c99926ef5dc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MCP API access limitations for external tools",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MCP API access limitations for external tools",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fa7d0420-d881-4c5d-8ae7-dfcf5b1d7008",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Asynchronous Manus API requires polling and user feedback during processing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Asynchronous Manus API requires polling and user feedback during processing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "15b7ed93-2136-4903-b5ea-8a26194acff3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Platform comparison complexity for deployment infrastructure choice",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Platform comparison complexity for deployment infrastructure choice",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e5940993-dc43-4194-9baf-1418b62be004",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "deca6b53-b77a-400b-88bb-76a84b43fba7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Why is Notion API slow through MCP when direct API calls are fast?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Why is Notion API slow through MCP when direct API calls are fast?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b6365526-f124-4759-a5fb-302fbf9fbeaf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Can Manus API response times be optimized for voice interactions?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Can Manus API response times be optimized for voice interactions?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "565e608a-2500-41a5-ac64-b6da61eedbd1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Should voice interface have different timeout handling than text interface?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Should voice interface have different timeout handling than text interface?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dc38ba2e-a3fe-4bb4-ad3a-4eee54d0660d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a83f67da-6502-4610-a29e-a7e2a4599acf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add credit card to ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add credit card to ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fly.io",
+              "link": {
+                "url": "http://fly.io/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fly.io",
+            "href": "http://fly.io/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " account and complete production deployment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " account and complete production deployment",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cc136003-513a-40de-8836-b06486250579",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test complete voice workflow with complex Manus tasks",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test complete voice workflow with complex Manus tasks",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d7fb603e-3aca-4306-8db7-d9bab34e368a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Investigate Notion MCP performance issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Investigate Notion MCP performance issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "650a8ae6-3c7a-492c-af65-2da69d1ea72d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Consider adding voice interface status indicators during long tasks",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Consider adding voice interface status indicators during long tasks",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f0fa7cdc-4c9e-4dbf-89ba-e7600e62c673",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Document voice bot usage patterns and optimize for common use cases",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Document voice bot usage patterns and optimize for common use cases",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4cdfa013-382a-4046-a189-208cdebdb014",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6785a9e2-3206-43e3-8159-a8f19d08977b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8121-a856-cc1e2f576cec"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "E4On9Cc51voDTaa5tuK5Cd",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "E4On9Cc51voDTaa5tuK5Cd",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0467",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0467",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nBuilt and deployed a complete yOS voice interface Telegram bot with STT (Whisper), LLM processing via Manus API, and TTS (OpenAI). Initially deployed with isolated GPT-4o, then rebuilt for full Manus integration with access to all MCPs and memory systems. Evaluated multiple deployment platforms (Railway, Fly.io, Render) before settling on Fly.io. Established permanent secret management in Notion.\n\n\n## Context & Intent\n\nCreate a voice interface to yOS/Manus system via Telegram, allowing vocal interaction with the same capabilities as text-based Manus conversations. The goal was to extend yOS with natural voice input/output while maintaining full access to memory, tools, and knowledge systems.\n\n\n## What Was Done\n\nDeveloped a complete Telegram voice bot with Whisper STT, Manus API integration, and OpenAI TTS. Configured deployment infrastructure on Fly.io with proper secret management. Updated yOS canon documentation in Notion. Rebuilt the architecture twice: first with isolated GPT-4o, then with full Manus API integration for complete tool access.\n\n\n## Outputs Produced\n\n- [application] yOS Voice Telegram Bot — Complete voice interface with STT/TTS pipeline connected to Manus API\n- [infrastructure] Fly.io Deployment Configuration — Production deployment setup with environment variables and secrets\n- [documentation] yOS Canon Update — Updated canonical yOS infrastructure documentation in Notion\n- [security] Centralized Secret Management — Permanent API key storage in Notion with secure sandbox backup\n\n## Key Decisions & Validations\n\n- Chose Fly.io over Railway due to direct CLI deployment without GitHub requirement\n- Selected OpenAI TTS over Hume due to MCP API access limitations\n- Rebuilt architecture from isolated GPT-4o to full Manus API integration\n- Implemented permanent secret storage in Notion for cross-session persistence\n- Used French as primary language with voice onyx for professional tone\n\n## Lessons Learned\n\nWorked well:\n\n- Modular STT/LLM/TTS pipeline allows easy component swapping\n- Fly.io CLI deployment is streamlined once token is available\n- Manus API integration provides full tool access as intended\n- Notion-based secret management ensures permanence across sandbox resets\nFailed / suboptimal:\n\n- Railway requires GitHub connection which blocks direct deployment\n- Hume AI MCP keys cannot be used directly from external bots\n- Initial isolated GPT-4o approach defeated the purpose of yOS integration\n- Notion API updates through MCP layer are slower than expected\nDiscoveries:\n\n- Manus has a public API (api.manus.ai) with full capability access\n- Fly.io requires credit card even for free tier usage\n- Render.com has sleep issues for long-polling bots on free tier\n- Voice interface latency (30s-2min) is acceptable for complex Manus tasks\n\n## Challenges & Blockers\n\n- Credit card requirement for Fly.io deployment\n- MCP API access limitations for external tools\n- Asynchronous Manus API requires polling and user feedback during processing\n- Platform comparison complexity for deployment infrastructure choice\n\n## Open Questions\n\n- Why is Notion API slow through MCP when direct API calls are fast?\n- Can Manus API response times be optimized for voice interactions?\n- Should voice interface have different timeout handling than text interface?\n\n## Next Steps\n\n- Add credit card to Fly.io account and complete production deployment\n- Test complete voice workflow with complex Manus tasks\n- Investigate Notion MCP performance issues\n- Consider adding voice interface status indicators during long tasks\n- Document voice bot usage patterns and optimize for common use cases\n---\nUID: E4On9Cc51voDTaa5tuK5Cd | Model: claude-sonnet-4-20250514 | Cost: $0.0467\n"
+}

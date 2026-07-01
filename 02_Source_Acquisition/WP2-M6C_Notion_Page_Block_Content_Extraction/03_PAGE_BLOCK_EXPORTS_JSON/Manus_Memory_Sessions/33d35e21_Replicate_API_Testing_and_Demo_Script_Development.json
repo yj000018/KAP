@@ -1,0 +1,1496 @@
+{
+  "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076",
+  "title": "Replicate API Testing and Demo Script Development",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "short",
+    "Language": "en",
+    "Subthemes": "Model Discovery, Text-to-Image Generation, Text-to-Speech, LLM Inference, Webhook Patterns, Authentication",
+    "Project": "yOS",
+    "UID": "KEERzBTHXL3zNDN4YWInV6",
+    "Date": "2026-02-27",
+    "Themes": "API Integration, Machine Learning Infrastructure, Development Tools",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Replicate API Testing and Demo Script Development"
+  },
+  "blocks_count": 32,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "cdf46e8c-63c7-4769-b136-f6caa63c5562",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eda45d57-184e-4f74-90d7-b542c48280cb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick requested assistance testing the Replicate API and creating a demo script. Manus mapped the API structure, built a comprehensive demo covering model discovery, text-to-image (FLUX), TTS, LLM inference, and async patterns. Authentication and discovery worked, but inference calls returned 402/429 errors due to missing billing setup. A complete demo script and capability brief were delivered.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick requested assistance testing the Replicate API and creating a demo script. Manus mapped the API structure, built a comprehensive demo covering model discovery, text-to-image (FLUX), TTS, LLM inference, and async patterns. Authentication and discovery worked, but inference calls returned 402/429 errors due to missing billing setup. A complete demo script and capability brief were delivered.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ddd9b77e-5c3e-498a-b9ae-d52fc7e4a039",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ffccfde1-5946-4e59-a7b6-65432e460a2c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User needed to understand and test Replicate API capabilities for potential integration into projects",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User needed to understand and test Replicate API capabilities for potential integration into projects",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "712a4574-42ac-4a12-9f34-5d451f2eec5c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eea159d2-517b-4f4d-87f1-13c8b6a9fe96",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built comprehensive demo script covering core Replicate API features, tested authentication and model discovery endpoints, documented billing limitations, created structured capability brief",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built comprehensive demo script covering core Replicate API features, tested authentication and model discovery endpoints, documented billing limitations, created structured capability brief",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4431c235-7469-4d38-8e8e-61dd0e17fc0b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c16e78fe-6e35-4f4e-88ef-62333cd944a9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[script]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[script]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Replicate API Demo Script — Comprehensive Python script demonstrating model discovery, inference calls, and error handling",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Replicate API Demo Script — Comprehensive Python script demonstrating model discovery, inference calls, and error handling",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "87dad054-b053-4c81-8062-236c71d3e38b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[documentation]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[documentation]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " API Capability Brief — Structured overview of Replicate platform features and endpoints",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " API Capability Brief — Structured overview of Replicate platform features and endpoints",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "44c5f93b-c53b-4524-8c0f-2124e39e5961",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2bca63ea-c3a2-43ac-8fa5-0dd61a4cbefb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Handle billing errors gracefully in demo script",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Handle billing errors gracefully in demo script",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "54753e28-e547-417f-9ce0-0e2629e8fafd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mock inference sections with documented payloads",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mock inference sections with documented payloads",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5f9a20a7-c425-4a8e-a0dc-f077972a7129",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Structure demo to cover all major API capabilities",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Structure demo to cover all major API capabilities",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "809444b8-009a-442a-856d-f3744291b892",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "005e28d5-1ac2-48e3-b475-252fa873e2a7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "60fb0d1b-5186-4364-875d-737f01318fe1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API authentication and discovery endpoints",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "API authentication and discovery endpoints",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4dab6f04-cb62-4dc9-a521-31ba29f85b90",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Systematic approach to API exploration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Systematic approach to API exploration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "569e67d6-fb2c-4522-a137-2f566167095d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "436acfdb-efa4-4ba6-9437-d5127db9e611",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Inference calls blocked by billing requirements",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Inference calls blocked by billing requirements",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "47039a77-7e89-404d-9e1d-3bc597cb43f3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "28208828-cc74-4d62-8c9d-3c01ffa87f33",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Replicate enforces billing even for free-tier model runs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Replicate enforces billing even for free-tier model runs",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d200fd40-9c76-4110-b7e7-8a24595a352c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API provides comprehensive model discovery capabilities",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "API provides comprehensive model discovery capabilities",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "60910ab9-16d0-4cf1-8532-4b10c40f697f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d02de394-78b4-4962-a308-191d173a964b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Account lacks billing method preventing actual model inference testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Account lacks billing method preventing actual model inference testing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "78b544a9-597f-4c2b-8c62-26e8095b6e05",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3a7aca5c-f5c1-4e38-9115-a5af560afb1a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Which specific models would be most useful for intended use cases",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Which specific models would be most useful for intended use cases",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a94b88cb-6464-45a2-a8f5-bed350123580",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "104978ff-e868-4b14-a23e-1c0701530ca0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Set up billing method to test actual model inference",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Set up billing method to test actual model inference",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "47243a99-1294-4040-97fd-7228d333c9dc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integrate demo patterns into target projects",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integrate demo patterns into target projects",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3d01d95f-5a43-4dc1-ac7d-0803a66c3139",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Evaluate specific models for project requirements",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Evaluate specific models for project requirements",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "eccdd8d9-634e-411b-b909-94260559df05",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a67bdf52-39c7-4ef2-841d-a779033d7582",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8179-8e71-d18262c5a076"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "KEERzBTHXL3zNDN4YWInV6",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "KEERzBTHXL3zNDN4YWInV6",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0112",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0112",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick requested assistance testing the Replicate API and creating a demo script. Manus mapped the API structure, built a comprehensive demo covering model discovery, text-to-image (FLUX), TTS, LLM inference, and async patterns. Authentication and discovery worked, but inference calls returned 402/429 errors due to missing billing setup. A complete demo script and capability brief were delivered.\n\n\n## Context & Intent\n\nUser needed to understand and test Replicate API capabilities for potential integration into projects\n\n\n## What Was Done\n\nBuilt comprehensive demo script covering core Replicate API features, tested authentication and model discovery endpoints, documented billing limitations, created structured capability brief\n\n\n## Outputs Produced\n\n- [script] Replicate API Demo Script — Comprehensive Python script demonstrating model discovery, inference calls, and error handling\n- [documentation] API Capability Brief — Structured overview of Replicate platform features and endpoints\n\n## Key Decisions & Validations\n\n- Handle billing errors gracefully in demo script\n- Mock inference sections with documented payloads\n- Structure demo to cover all major API capabilities\n\n## Lessons Learned\n\nWorked well:\n\n- API authentication and discovery endpoints\n- Systematic approach to API exploration\nFailed / suboptimal:\n\n- Inference calls blocked by billing requirements\nDiscoveries:\n\n- Replicate enforces billing even for free-tier model runs\n- API provides comprehensive model discovery capabilities\n\n## Challenges & Blockers\n\n- Account lacks billing method preventing actual model inference testing\n\n## Open Questions\n\n- Which specific models would be most useful for intended use cases\n\n## Next Steps\n\n- Set up billing method to test actual model inference\n- Integrate demo patterns into target projects\n- Evaluate specific models for project requirements\n---\nUID: KEERzBTHXL3zNDN4YWInV6 | Model: claude-sonnet-4-20250514 | Cost: $0.0112\n"
+}

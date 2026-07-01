@@ -1,0 +1,1716 @@
+{
+  "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e",
+  "title": "Wrike MCP Connector OAuth Authentication Troubleshooting",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "medium",
+    "Language": "en",
+    "Subthemes": "Wrike API, access tokens, redirect URLs, MCP configuration",
+    "Project": "UNKNOWN",
+    "UID": "FeZeM7gpLl0uYBklTXrV0n",
+    "Date": "2026-01-06",
+    "Themes": "MCP connectors, OAuth authentication, API integration, troubleshooting",
+    "Archived": "True",
+    "Depth": "standard",
+    "Title": "Wrike MCP Connector OAuth Authentication Troubleshooting"
+  },
+  "blocks_count": 37,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "26390654-845f-45a2-90f1-80bb95c2289f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e4f2f0d0-bafb-4477-b73b-92157034bcaf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User attempted to test the Wrike MCP connector by providing API credentials, but encountered persistent OAuth authentication failures. Assistant identified the root cause as incomplete OAuth flow configuration and provided troubleshooting guidance. The session revealed that MCP connectors require proper OAuth setup at the server level rather than direct API credential input.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User attempted to test the Wrike MCP connector by providing API credentials, but encountered persistent OAuth authentication failures. Assistant identified the root cause as incomplete OAuth flow configuration and provided troubleshooting guidance. The session revealed that MCP connectors require proper OAuth setup at the server level rather than direct API credential input.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b1ebbac4-46b8-4942-8546-927500e4e290",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7fbb8056-ea23-45c0-aeb0-e787e10e0be7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User wanted to test and explore the capabilities of a Wrike MCP connector, expecting to see data fetching and feature demonstrations.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User wanted to test and explore the capabilities of a Wrike MCP connector, expecting to see data fetching and feature demonstrations.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d9a13852-5d9b-487e-bfc9-662d473e91ac",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "71fd886a-d3e1-4417-94a2-3840cb34b12f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Attempted to connect to Wrike MCP server, diagnosed OAuth authentication issues, analyzed provided API credentials and configuration screenshots, provided troubleshooting steps for OAuth setup.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Attempted to connect to Wrike MCP server, diagnosed OAuth authentication issues, analyzed provided API credentials and configuration screenshots, provided troubleshooting steps for OAuth setup.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7d9ca30a-b320-4dcf-bb73-c6c43dabe0dc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d5742f62-65ff-4e0e-a6f2-0a0c8875c55c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[diagnosis]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[diagnosis]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " OAuth Authentication Analysis — Identified that MCP connector requires OAuth flow completion at server level",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " OAuth Authentication Analysis — Identified that MCP connector requires OAuth flow completion at server level",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "78bcf809-b0cd-417d-bc99-8ec07ed5e338",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[troubleshooting_guide]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[troubleshooting_guide]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " OAuth Configuration Steps — Provided specific steps for resolving authentication issues including redirect URL configuration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " OAuth Configuration Steps — Provided specific steps for resolving authentication issues including redirect URL configuration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d0e90ca2-b07f-4697-a729-0babf6991569",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8ef548fe-c7fb-4f3b-b1e8-4319c18b5a0a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Identified OAuth authentication as the blocking issue rather than attempting alternative approaches",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Identified OAuth authentication as the blocking issue rather than attempting alternative approaches",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "399b0788-2636-45d0-83a8-315b948b7ccf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Recommended contacting Manus support for proper OAuth configuration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Recommended contacting Manus support for proper OAuth configuration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3b78661c-6d76-4eb8-8bf7-a0cf3852e777",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b5c57979-dd2a-4ecd-a224-2af26165cbea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "be02b314-a559-4bf4-8a8b-ad3f72f63db7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Clear error diagnosis from 401 responses",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Clear error diagnosis from 401 responses",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8cc69119-2e59-4aa4-a7fc-af21989920e9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Systematic troubleshooting approach",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Systematic troubleshooting approach",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "91e7066e-afbc-41f1-87cd-632745304481",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c6467ead-c98f-418d-8ce2-75243e5b0082",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Could not complete the primary objective of testing connector features",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Could not complete the primary objective of testing connector features",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cea6c2a7-0c05-4478-b4c5-442b3127b42e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "OAuth flow not properly configured",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "OAuth flow not properly configured",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "45474798-2422-458d-a541-b3c1a7b9dfcf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1fcf065f-8d4f-4123-86dd-579bd1fd0856",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MCP connectors require OAuth configuration at server level",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MCP connectors require OAuth configuration at server level",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6266127f-282f-4398-a650-b0126ee31bf3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Direct API credentials cannot bypass OAuth requirements in MCP system",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Direct API credentials cannot bypass OAuth requirements in MCP system",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7b5dec4a-4217-4414-ad0d-864d42ae7aa4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "66258ccd-3252-4dfb-9852-b0abd9a4349b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Incomplete OAuth authentication setup",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Incomplete OAuth authentication setup",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3a811a05-ae6f-4963-a9cd-2a8fa194dc4e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Redirect URL configuration mismatch",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Redirect URL configuration mismatch",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0c6850c0-74ee-4806-b592-1136d6d05eea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Unable to access Wrike connector functionality",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Unable to access Wrike connector functionality",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a9ebcd34-b3a6-42ce-b06e-47576911a204",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "55805146-67bb-42b4-b7d7-8b94a134ecf1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What is the correct redirect URL for Wrike MCP connector?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What is the correct redirect URL for Wrike MCP connector?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1d73325b-b5d9-4130-814f-ebd9fb2bfe16",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to properly configure OAuth in MCP settings?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to properly configure OAuth in MCP settings?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "76d09109-41c0-4a13-906d-0eaee359c19c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Can permanent access tokens be used as alternative to OAuth flow?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Can permanent access tokens be used as alternative to OAuth flow?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0225bcdc-17e9-4bfd-935a-b037e031917a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4e5717f5-322b-4cc2-9f2b-c46e31778280",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Configure proper redirect URL in Wrike app settings",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Configure proper redirect URL in Wrike app settings",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5519c076-92ec-485d-9c5b-731e77d02adf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complete OAuth authorization flow through MCP interface",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complete OAuth authorization flow through MCP interface",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5a644cac-9154-4cd5-86bf-33b3b5851933",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Contact Manus support for connector configuration guidance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Contact Manus support for connector configuration guidance",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d0b68b74-b1df-4e21-9999-7576f5bde1d2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Retry connector testing once authentication is resolved",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Retry connector testing once authentication is resolved",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ad0c1cd8-0480-492a-92ee-08072cc55f09",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "18e9eb2a-fabb-494c-86f4-8c729ed8afe5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-817e-bd1f-ce973273ce5e"
+      },
+      "created_time": "2026-04-09T08:32:00.000Z",
+      "last_edited_time": "2026-04-09T08:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "FeZeM7gpLl0uYBklTXrV0n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "FeZeM7gpLl0uYBklTXrV0n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0148",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0148",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nUser attempted to test the Wrike MCP connector by providing API credentials, but encountered persistent OAuth authentication failures. Assistant identified the root cause as incomplete OAuth flow configuration and provided troubleshooting guidance. The session revealed that MCP connectors require proper OAuth setup at the server level rather than direct API credential input.\n\n\n## Context & Intent\n\nUser wanted to test and explore the capabilities of a Wrike MCP connector, expecting to see data fetching and feature demonstrations.\n\n\n## What Was Done\n\nAttempted to connect to Wrike MCP server, diagnosed OAuth authentication issues, analyzed provided API credentials and configuration screenshots, provided troubleshooting steps for OAuth setup.\n\n\n## Outputs Produced\n\n- [diagnosis] OAuth Authentication Analysis — Identified that MCP connector requires OAuth flow completion at server level\n- [troubleshooting_guide] OAuth Configuration Steps — Provided specific steps for resolving authentication issues including redirect URL configuration\n\n## Key Decisions & Validations\n\n- Identified OAuth authentication as the blocking issue rather than attempting alternative approaches\n- Recommended contacting Manus support for proper OAuth configuration\n\n## Lessons Learned\n\nWorked well:\n\n- Clear error diagnosis from 401 responses\n- Systematic troubleshooting approach\nFailed / suboptimal:\n\n- Could not complete the primary objective of testing connector features\n- OAuth flow not properly configured\nDiscoveries:\n\n- MCP connectors require OAuth configuration at server level\n- Direct API credentials cannot bypass OAuth requirements in MCP system\n\n## Challenges & Blockers\n\n- Incomplete OAuth authentication setup\n- Redirect URL configuration mismatch\n- Unable to access Wrike connector functionality\n\n## Open Questions\n\n- What is the correct redirect URL for Wrike MCP connector?\n- How to properly configure OAuth in MCP settings?\n- Can permanent access tokens be used as alternative to OAuth flow?\n\n## Next Steps\n\n- Configure proper redirect URL in Wrike app settings\n- Complete OAuth authorization flow through MCP interface\n- Contact Manus support for connector configuration guidance\n- Retry connector testing once authentication is resolved\n---\nUID: FeZeM7gpLl0uYBklTXrV0n | Model: claude-sonnet-4-20250514 | Cost: $0.0148\n"
+}

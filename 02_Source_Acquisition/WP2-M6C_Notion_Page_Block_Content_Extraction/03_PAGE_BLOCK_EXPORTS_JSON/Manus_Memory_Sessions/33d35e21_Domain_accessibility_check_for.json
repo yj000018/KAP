@@ -1,0 +1,1816 @@
+{
+  "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a",
+  "title": "Domain accessibility check for ",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "short",
+    "Language": "fr",
+    "Subthemes": "Cloudflare configuration, SSL/TLS setup, HTTP status codes, DNS propagation",
+    "Project": "UNKNOWN",
+    "UID": "bC4iQRkV4XiNUXpKf65oPx",
+    "Date": "2026-03-10",
+    "Themes": "domain management, DNS resolution, web hosting, troubleshooting",
+    "Archived": "True",
+    "Depth": "standard",
+    "Title": "Domain accessibility check for ynot.cafe - DNS propagation and configuration"
+  },
+  "blocks_count": 36,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "d8e77a0b-b771-4925-b1d1-fc39f88f1a14",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "616f6025-bbf2-4487-83da-8571b1ac7a74",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User requested verification of ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User requested verification of ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ynot.cafe",
+              "link": {
+                "url": "http://ynot.cafe/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ynot.cafe",
+            "href": "http://ynot.cafe/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " accessibility through DNS and HTTP checks. DNS propagation is working correctly with Cloudflare IPs resolved, but the site is inaccessible due to Cloudflare configuration issues. HTTP returns 409 Conflict with error 1001 indicating missing origin server configuration, and HTTPS fails with TLS handshake errors.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " accessibility through DNS and HTTP checks. DNS propagation is working correctly with Cloudflare IPs resolved, but the site is inaccessible due to Cloudflare configuration issues. HTTP returns 409 Conflict with error 1001 indicating missing origin server configuration, and HTTPS fails with TLS handshake errors.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7418329c-ba9a-4ad8-8279-e8d66c01077e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f44778ed-b4bd-452c-a3e5-1250f0ba52cf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Technical diagnostic to verify if a domain (",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Technical diagnostic to verify if a domain (",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ynot.cafe",
+              "link": {
+                "url": "http://ynot.cafe/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ynot.cafe",
+            "href": "http://ynot.cafe/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ") is properly accessible and propagated across DNS servers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ") is properly accessible and propagated across DNS servers",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b67aa18e-c3a8-4ac8-ba35-d8eee9d16977",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8096fb9d-60ca-4011-9b81-218bb776c44f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Performed DNS lookup using Google DNS (8.8.8.8) and HTTP status check using curl commands to diagnose domain accessibility",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Performed DNS lookup using Google DNS (8.8.8.8) and HTTP status check using curl commands to diagnose domain accessibility",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ca2ec208-2e8e-4b36-a0f0-f392d572576f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5f9bfca1-0410-4daa-a426-aab9c93f53cc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[diagnostic_report]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[diagnostic_report]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ynot.cafe",
+              "link": {
+                "url": "http://ynot.cafe/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ynot.cafe",
+            "href": "http://ynot.cafe/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " status table — Structured table showing DNS resolution, HTTP status codes, and technical parameters",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " status table — Structured table showing DNS resolution, HTTP status codes, and technical parameters",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4de67fe8-1204-4c3e-bc52-5fa769368a07",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[troubleshooting_guide]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[troubleshooting_guide]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Cloudflare configuration recommendations — Step-by-step actions to resolve the identified configuration issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Cloudflare configuration recommendations — Step-by-step actions to resolve the identified configuration issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d7a74342-debf-48fc-90b4-0914f4ea68e6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "878c6ffb-e672-4576-a322-a4eaa885362d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "DNS propagation confirmed working",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "DNS propagation confirmed working",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b235129f-b065-4012-8d76-448e27d00a9b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Problem identified as Cloudflare origin configuration issue",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Problem identified as Cloudflare origin configuration issue",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bba2d4a7-4b4e-4741-9bdb-34a03a715ee9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e7bec96f-c4fa-4474-a896-04c3641d5ff5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9ab50e06-376d-4053-abb4-7ceec537a7c5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "DNS resolution working correctly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "DNS resolution working correctly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e264e743-c5fa-4c22-a8b4-cdd6c3e14fba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Clear diagnostic methodology with structured output",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Clear diagnostic methodology with structured output",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7398446e-4ce6-4c51-9472-75e4484fdd2e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "82ca588c-c884-45c8-83e4-b285ff52017f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Origin server not properly configured in Cloudflare",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Origin server not properly configured in Cloudflare",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8547c438-fcd2-4bb1-99f9-ace8967709af",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "SSL certificate provisioning incomplete",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SSL certificate provisioning incomplete",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d62a88e8-3bb5-4120-9ae2-b4b7550ae011",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5f017045-5f03-49b6-8d75-fbe9568bedd0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "HTTP 409 + error 1001 indicates Cloudflare DNS resolution error",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "HTTP 409 + error 1001 indicates Cloudflare DNS resolution error",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c0563df3-594c-464a-a144-37e6040cf423",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "TLS handshake failure suggests SSL mode misconfiguration",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "TLS handshake failure suggests SSL mode misconfiguration",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8bdfbd74-dff1-4353-8f2b-2e66a8f0bfc7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bc59bdea-8980-4935-8752-b17005c28656",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Origin server configuration missing or incorrect",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Origin server configuration missing or incorrect",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "64f9a39a-f3e3-4ef2-aa6f-d088e4750814",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "SSL/TLS mode incompatible with origin server setup",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SSL/TLS mode incompatible with origin server setup",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5c248374-feb9-4fba-b6fc-9ab3f5fe1309",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e5e70bf0-06b4-44e0-b28b-75c6f4500c76",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What is the correct origin server IP for ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What is the correct origin server IP for ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ynot.cafe",
+              "link": {
+                "url": "http://ynot.cafe/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ynot.cafe",
+            "href": "http://ynot.cafe/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "63f11544-4071-4043-b329-3f0f40855ff5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Is the origin server running and accessible?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Is the origin server running and accessible?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3bb4e81c-e1dc-44f4-93dd-2d45e9549b54",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What SSL mode should be used based on origin certificate status?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What SSL mode should be used based on origin certificate status?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "addaf4e2-6aec-402c-a2ed-d06792b1f30c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f0827f35-1e31-4086-bc9b-b6fe71437f91",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Check Cloudflare Dashboard DNS settings",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Check Cloudflare Dashboard DNS settings",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "67d752d9-7677-4ec9-8ec9-a49aaf7f1806",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Verify origin server status and accessibility",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Verify origin server status and accessibility",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7fc9550e-66b2-4168-b68e-919ef4e94c7c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Configure appropriate SSL/TLS mode",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Configure appropriate SSL/TLS mode",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "60daf7e6-d413-43ab-81c9-5fd85d39b2f7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test accessibility after configuration changes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test accessibility after configuration changes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9e7174e6-838c-45c5-a85c-535950d79cba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d8ba00a7-be2c-4091-8a01-c5c119722eae",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-813d-8060-d42ff632142a"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "bC4iQRkV4XiNUXpKf65oPx",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "bC4iQRkV4XiNUXpKf65oPx",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0136",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0136",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nUser requested verification of ynot.cafe accessibility through DNS and HTTP checks. DNS propagation is working correctly with Cloudflare IPs resolved, but the site is inaccessible due to Cloudflare configuration issues. HTTP returns 409 Conflict with error 1001 indicating missing origin server configuration, and HTTPS fails with TLS handshake errors.\n\n\n## Context & Intent\n\nTechnical diagnostic to verify if a domain (ynot.cafe) is properly accessible and propagated across DNS servers\n\n\n## What Was Done\n\nPerformed DNS lookup using Google DNS (8.8.8.8) and HTTP status check using curl commands to diagnose domain accessibility\n\n\n## Outputs Produced\n\n- [diagnostic_report] ynot.cafe status table — Structured table showing DNS resolution, HTTP status codes, and technical parameters\n- [troubleshooting_guide] Cloudflare configuration recommendations — Step-by-step actions to resolve the identified configuration issues\n\n## Key Decisions & Validations\n\n- DNS propagation confirmed working\n- Problem identified as Cloudflare origin configuration issue\n\n## Lessons Learned\n\nWorked well:\n\n- DNS resolution working correctly\n- Clear diagnostic methodology with structured output\nFailed / suboptimal:\n\n- Origin server not properly configured in Cloudflare\n- SSL certificate provisioning incomplete\nDiscoveries:\n\n- HTTP 409 + error 1001 indicates Cloudflare DNS resolution error\n- TLS handshake failure suggests SSL mode misconfiguration\n\n## Challenges & Blockers\n\n- Origin server configuration missing or incorrect\n- SSL/TLS mode incompatible with origin server setup\n\n## Open Questions\n\n- What is the correct origin server IP for ynot.cafe?\n- Is the origin server running and accessible?\n- What SSL mode should be used based on origin certificate status?\n\n## Next Steps\n\n- Check Cloudflare Dashboard DNS settings\n- Verify origin server status and accessibility\n- Configure appropriate SSL/TLS mode\n- Test accessibility after configuration changes\n---\nUID: bC4iQRkV4XiNUXpKf65oPx | Model: claude-sonnet-4-20250514 | Cost: $0.0136\n"
+}

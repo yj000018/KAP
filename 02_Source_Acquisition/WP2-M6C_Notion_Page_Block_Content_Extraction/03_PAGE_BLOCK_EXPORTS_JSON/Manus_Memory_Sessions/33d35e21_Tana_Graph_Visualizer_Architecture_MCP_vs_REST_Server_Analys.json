@@ -1,0 +1,1964 @@
+{
+  "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167",
+  "title": "Tana Graph Visualizer Architecture: MCP vs REST Server Analysis",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "medium",
+    "Language": "mixed",
+    "Subthemes": "supertag-cli, REST vs MCP, 3D visualization, Force graphs, N100 deployment",
+    "Project": "yOS",
+    "UID": "aVdOH4P4EyQnExg6hKG4gM",
+    "Date": "2026-03-21",
+    "Themes": "Tana integration, Data visualization, Architecture design, MCP protocols",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Tana Graph Visualizer Architecture: MCP vs REST Server Analysis"
+  },
+  "blocks_count": 41,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "feb7b711-e7c2-4aec-ba95-4159a5174d94",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e138f62b-d5ba-474f-90b3-5311c9490e7f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Architecture discussion for Tana graph visualization comparing MCP Tana Desktop vs supertag-server. Built complete visualizer app with 3 modes (Tree/Mindmap/Galaxy) using mock data. Determined supertag-server superior for web apps due to native CORS and REST endpoints, while MCP better for AI agents. Deployed working prototype at ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Architecture discussion for Tana graph visualization comparing MCP Tana Desktop vs supertag-server. Built complete visualizer app with 3 modes (Tree/Mindmap/Galaxy) using mock data. Determined supertag-server superior for web apps due to native CORS and REST endpoints, while MCP better for AI agents. Deployed working prototype at ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "tanagraph-vycdpucn.manus.space",
+              "link": {
+                "url": "http://tanagraph-vycdpucn.manus.space/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "tanagraph-vycdpucn.manus.space",
+            "href": "http://tanagraph-vycdpucn.manus.space/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ".",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ".",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5a5a4f27-d0f9-402d-a736-631a3997169d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "494be08f-8c13-488c-b9d1-08a83792a6c3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User inquired about installing MCP Tana for Manus, leading to architectural analysis of best approach for Tana data visualization in web interface.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "User inquired about installing MCP Tana for Manus, leading to architectural analysis of best approach for Tana data visualization in web interface.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "132e2eae-805c-40f7-9c58-7bd153ef039b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "68190970-e9fa-4237-9acc-46e0997b80ce",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Built complete Tana Graph Visualizer with React/TypeScript featuring three visualization modes, analyzed MCP vs REST architectures, created mock data structure, deployed working prototype, and generated comprehensive specs document for Claude collaboration.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Built complete Tana Graph Visualizer with React/TypeScript featuring three visualization modes, analyzed MCP vs REST architectures, created mock data structure, deployed working prototype, and generated comprehensive specs document for Claude collaboration.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "084d337a-2d28-45ee-bced-935601a0b18e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "00191faf-dbcc-4dde-bfe1-2c2eaf7a12a8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[web_app]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[web_app]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Tana Graph Visualizer — React app with Tree/Mindmap/Galaxy views at ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Tana Graph Visualizer — React app with Tree/Mindmap/Galaxy views at ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "tanagraph-vycdpucn.manus.space",
+              "link": {
+                "url": "http://tanagraph-vycdpucn.manus.space/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "tanagraph-vycdpucn.manus.space",
+            "href": "http://tanagraph-vycdpucn.manus.space/"
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1c1a1ef0-534b-4165-9552-b939e282923a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[json_data]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[json_data]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Mock Tana Data — 39 nodes hierarchical structure with Y-OS content for testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Mock Tana Data — 39 nodes hierarchical structure with Y-OS content for testing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "81850a3c-719f-428d-9346-ac625a066938",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[specs_document]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[specs_document]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Complete Technical Specs — Comprehensive specs for Claude including TypeScript interfaces and enhancement details",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Complete Technical Specs — Comprehensive specs for Claude including TypeScript interfaces and enhancement details",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "53d9871f-6f1f-4fd8-a087-6acc66facfa4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a93899ee-b841-469a-9b11-81718e224943",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "supertag-server preferred over MCP for web visualization due to CORS support",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "supertag-server preferred over MCP for web visualization due to CORS support",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8a60c64d-6407-4fa5-991b-16a508585f9b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Universal module architecture for source-agnostic visualization",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Universal module architecture for source-agnostic visualization",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "81556028-2570-444a-866a-abaea2c9389d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MBA2 + N100 distributed architecture for always-on availability",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MBA2 + N100 distributed architecture for always-on availability",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9cc3538e-29db-4e97-9414-466bbf92d644",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "React + D3/markmap/3d-force-graph stack for multiple visualization modes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "React + D3/markmap/3d-force-graph stack for multiple visualization modes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dc937de3-4448-491c-99b6-ddf838fab1f6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b68b63ac-4d02-47fd-9dfa-ee221dde50d4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5e4c7ff0-320d-4583-8959-249888b30aeb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "supertag-cli provides complete MCP + REST server solution",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "supertag-cli provides complete MCP + REST server solution",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b015877e-17ff-4b14-b8e2-170015354ca9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Component lazy loading reduces initial bundle size effectively",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Component lazy loading reduces initial bundle size effectively",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "38d10f98-abb3-487d-a3df-3905eee3705d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mock data approach enables parallel development",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mock data approach enables parallel development",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "647a4728-5e06-4b6f-a963-648bea7a9ff4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e738c73f-d68d-4b1a-ba21-8cad5f727254",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MCP protocol requires proxy for browser access",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MCP protocol requires proxy for browser access",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d4bdc790-b76e-4c6d-adf0-afc519f58f5b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "WebGL issues in headless browser environments for 3D rendering",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "WebGL issues in headless browser environments for 3D rendering",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ba4c8dd2-823f-4dfe-89cd-692ab8652e25",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bbdeb19b-7fc4-4bd2-8ebc-d18e5d549a63",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "supertag-server offers semantic search with vector embeddings",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "supertag-server offers semantic search with vector embeddings",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d31646b7-5b57-481a-a007-de9af6e5d8e8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "REST API much simpler for web apps than MCP JSON-RPC",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "REST API much simpler for web apps than MCP JSON-RPC",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9c0f8288-0c68-444a-8b1d-b3cfe333aecf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d76cafdb-bbae-4715-84ca-88360647a74a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MBA needed for Tana Desktop dependency",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MBA needed for Tana Desktop dependency",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8238303e-0f8f-42ae-bbf5-57380a3e3531",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "WebGL Galaxy view not working in sandbox browser",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "WebGL Galaxy view not working in sandbox browser",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b8e4c059-ef49-448d-b05f-3a85b7a96451",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Index sync dependency on macOS for Linux deployment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Index sync dependency on macOS for Linux deployment",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9a0d3ec1-5629-4c5a-82f0-5ff896b7fe20",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6ab264da-33f5-4d76-8e7d-1ee25aac9e92",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Galaxy view enhancements with Three.js custom nodes and bloom effects",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Galaxy view enhancements with Three.js custom nodes and bloom effects",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e813a967-376c-4c05-bb9a-170bdbe680f4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Real-time vs 6-hour sync trade-offs for data freshness",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Real-time vs 6-hour sync trade-offs for data freshness",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "769f5d78-a4c3-4b31-8295-301087eb6618",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Browser compatibility for 3D WebGL components",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Browser compatibility for 3D WebGL components",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c1d5acb9-71af-44d8-8a37-9d51c78dc803",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a4a9c912-ed25-482a-8e49-5b803d0c1215",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Install supertag-cli on MBA when available",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Install supertag-cli on MBA when available",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3f6196bb-fec8-4fac-aa81-7e7df63f4733",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Connect real Tana data via supertag-server API",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Connect real Tana data via supertag-server API",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6ebd284c-3254-4580-aa16-d8daa74765d7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Deploy N100 instance with cloudflared tunnel",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Deploy N100 instance with cloudflared tunnel",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d7ce84cd-80d7-4dae-a5e0-594984410c67",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enhance Galaxy view with Claude collaboration using provided specs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Enhance Galaxy view with Claude collaboration using provided specs",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "41a9c135-67a9-4075-b154-ba39dc782d00",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "769ac26a-ab30-4417-bbd6-de57c3cbf714",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8146-8af1-c263edd0a167"
+      },
+      "created_time": "2026-04-09T08:35:00.000Z",
+      "last_edited_time": "2026-04-09T08:35:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "aVdOH4P4EyQnExg6hKG4gM",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "aVdOH4P4EyQnExg6hKG4gM",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0281",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0281",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nArchitecture discussion for Tana graph visualization comparing MCP Tana Desktop vs supertag-server. Built complete visualizer app with 3 modes (Tree/Mindmap/Galaxy) using mock data. Determined supertag-server superior for web apps due to native CORS and REST endpoints, while MCP better for AI agents. Deployed working prototype at tanagraph-vycdpucn.manus.space.\n\n\n## Context & Intent\n\nUser inquired about installing MCP Tana for Manus, leading to architectural analysis of best approach for Tana data visualization in web interface.\n\n\n## What Was Done\n\nBuilt complete Tana Graph Visualizer with React/TypeScript featuring three visualization modes, analyzed MCP vs REST architectures, created mock data structure, deployed working prototype, and generated comprehensive specs document for Claude collaboration.\n\n\n## Outputs Produced\n\n- [web_app] Tana Graph Visualizer — React app with Tree/Mindmap/Galaxy views at tanagraph-vycdpucn.manus.space\n- [json_data] Mock Tana Data — 39 nodes hierarchical structure with Y-OS content for testing\n- [specs_document] Complete Technical Specs — Comprehensive specs for Claude including TypeScript interfaces and enhancement details\n\n## Key Decisions & Validations\n\n- supertag-server preferred over MCP for web visualization due to CORS support\n- Universal module architecture for source-agnostic visualization\n- MBA2 + N100 distributed architecture for always-on availability\n- React + D3/markmap/3d-force-graph stack for multiple visualization modes\n\n## Lessons Learned\n\nWorked well:\n\n- supertag-cli provides complete MCP + REST server solution\n- Component lazy loading reduces initial bundle size effectively\n- Mock data approach enables parallel development\nFailed / suboptimal:\n\n- MCP protocol requires proxy for browser access\n- WebGL issues in headless browser environments for 3D rendering\nDiscoveries:\n\n- supertag-server offers semantic search with vector embeddings\n- REST API much simpler for web apps than MCP JSON-RPC\n\n## Challenges & Blockers\n\n- MBA needed for Tana Desktop dependency\n- WebGL Galaxy view not working in sandbox browser\n- Index sync dependency on macOS for Linux deployment\n\n## Open Questions\n\n- Galaxy view enhancements with Three.js custom nodes and bloom effects\n- Real-time vs 6-hour sync trade-offs for data freshness\n- Browser compatibility for 3D WebGL components\n\n## Next Steps\n\n- Install supertag-cli on MBA when available\n- Connect real Tana data via supertag-server API\n- Deploy N100 instance with cloudflared tunnel\n- Enhance Galaxy view with Claude collaboration using provided specs\n---\nUID: aVdOH4P4EyQnExg6hKG4gM | Model: claude-sonnet-4-20250514 | Cost: $0.0281\n"
+}

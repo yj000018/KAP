@@ -1,0 +1,2292 @@
+{
+  "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b",
+  "title": "yOS Core Architecture Definition & Telegram Voice Bot Planning",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "long",
+    "Language": "mixed",
+    "Subthemes": "Manus-native approach, Tool evaluation, Voice capabilities, Proactive triggers, Memory systems",
+    "Project": "yOS",
+    "UID": "VCFUH6ISMGhAFXSqdqhYfm",
+    "Date": "2026-02-22",
+    "Themes": "System Architecture, Technology Stack, AI Agent Design, Competitive Analysis",
+    "Archived": "True",
+    "Depth": "landmark",
+    "Title": "yOS Core Architecture Definition & Telegram Voice Bot Planning"
+  },
+  "blocks_count": 46,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "76817f33-f0cb-4af7-97e6-6a9b3a722b01",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2a502ff8-abbe-4a62-97d7-1ed0b63dac8e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick and Manus defined the canonical yOS architecture, simplifying from complex multi-tool stacks to a Manus-native approach. Key decisions include eliminating LangGraph/CrewAI/n8n in favor of Manus Scheduled Tasks, establishing Gmail forwarding rules (",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick and Manus defined the canonical yOS architecture, simplifying from complex multi-tool stacks to a Manus-native approach. Key decisions include eliminating LangGraph/CrewAI/n8n in favor of Manus Scheduled Tasks, establishing Gmail forwarding rules (",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "yOS-mail@manus.bot",
+              "link": {
+                "url": "mailto:yOS-mail@manus.bot"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "yOS-mail@manus.bot",
+            "href": "mailto:yOS-mail@manus.bot"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "), and planning a voice-enabled Telegram bot. Competitive analysis of GravityClaw and Motion confirmed yOS architectural soundness while identifying voice bidirectionality as the main gap to address.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "), and planning a voice-enabled Telegram bot. Competitive analysis of GravityClaw and Motion confirmed yOS architectural soundness while identifying voice bidirectionality as the main gap to address.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "237ba3b8-4023-474e-bb35-d0e1f3dcf7a4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0abe9b59-f4ea-42bd-bcd9-40a8105baf73",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick sought guidance on optimal technology stack for yOS after discovering Google Antigravity and OpenClaw. Goal was architectural clarity and identifying the best approach versus current Manus-native development path.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick sought guidance on optimal technology stack for yOS after discovering Google Antigravity and OpenClaw. Goal was architectural clarity and identifying the best approach versus current Manus-native development path.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c713cbbe-70a6-43ee-bc74-1811be78b362",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "df8aec49-053b-4899-89f4-fec7cdcf3453",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive analysis of Google Antigravity, OpenClaw, and Motion versus Manus-native approach. Architectural simplification from complex multi-agent frameworks to streamlined stack. Competitive video analysis of GravityClaw implementation. Established canonical decisions for Gmail integration and planned voice-enabled Telegram bot development.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comprehensive analysis of Google Antigravity, OpenClaw, and Motion versus Manus-native approach. Architectural simplification from complex multi-agent frameworks to streamlined stack. Competitive video analysis of GravityClaw implementation. Established canonical decisions for Gmail integration and planned voice-enabled Telegram bot development.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "78490d58-38e7-4f69-9fe0-d713798d457d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f5a8d03c-d0a8-4365-a8bf-40f8c9a8577e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[architectural_document]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[architectural_document]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yOS Stack Recommendation — Detailed comparison of orchestration frameworks leading to Manus-native decision",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yOS Stack Recommendation — Detailed comparison of orchestration frameworks leading to Manus-native decision",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9343bc60-f250-42c4-aff6-197876d60bcc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[canonical_decision]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[canonical_decision]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Gmail Rule Definition — Subject contains [manus] → forward to ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Gmail Rule Definition — Subject contains [manus] → forward to ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "yOS-mail@manus.bot",
+              "link": {
+                "url": "mailto:yOS-mail@manus.bot"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "yOS-mail@manus.bot",
+            "href": "mailto:yOS-mail@manus.bot"
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "08f6ea1e-566b-420f-99af-f8ac4c6e8c12",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[stack_definition]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[stack_definition]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " yOS Final Architecture — Manus+Skills, Scheduled Tasks, Notion, Pinecone, Tampermonkey, Python bot",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " yOS Final Architecture — Manus+Skills, Scheduled Tasks, Notion, Pinecone, Tampermonkey, Python bot",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "18b873d0-a258-4f7c-a232-1db58e3ceca2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[competitive_analysis]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[competitive_analysis]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " GravityClaw vs yOS Comparison — Feature-by-feature analysis of OpenClaw-based personal agent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " GravityClaw vs yOS Comparison — Feature-by-feature analysis of OpenClaw-based personal agent",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "482c259c-f52e-47c1-8439-7992e0896618",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[feature_backlog]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[feature_backlog]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Future Features List — Meeting Notetaker added to yOS roadmap",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Future Features List — Meeting Notetaker added to yOS roadmap",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3342c91e-1662-4053-b91d-a267de0edd21",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "59f3355f-c34d-431c-9f9b-983fe296f5b3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Eliminated LangGraph, CrewAI, and n8n from yOS stack in favor of Manus-native approach",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Eliminated LangGraph, CrewAI, and n8n from yOS stack in favor of Manus-native approach",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7f9d87bd-6624-4970-8fbd-885fa8afa38e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Established Gmail forwarding rule: [manus] subject → ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Established Gmail forwarding rule: [manus] subject → ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "yOS-mail@manus.bot",
+              "link": {
+                "url": "mailto:yOS-mail@manus.bot"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "yOS-mail@manus.bot",
+            "href": "mailto:yOS-mail@manus.bot"
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8b3181b7-39d3-461f-a34d-162fc9a4ee3c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Confirmed Manus Scheduled Tasks for proactive heartbeat functionality",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Confirmed Manus Scheduled Tasks for proactive heartbeat functionality",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "96f94ab1-a151-4476-8d85-9ff5cac919d1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Decided against ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Decided against ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Motion.com",
+              "link": {
+                "url": "http://motion.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Motion.com",
+            "href": "http://motion.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " integration due to limited value beyond calendar",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " integration due to limited value beyond calendar",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "684823a8-e924-4783-92f3-cfdc880b511f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Prioritized voice-enabled Telegram bot as critical parity feature with GravityClaw",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Prioritized voice-enabled Telegram bot as critical parity feature with GravityClaw",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8a7116ff-4cf7-403d-9b4a-28a264d56194",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b3baa3e6-73d6-47c3-a1cc-31f0ad59663f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ab56ab67-f444-4198-8904-b8fe90b0a20d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manus-native approach provides superior simplicity without sacrificing capability",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manus-native approach provides superior simplicity without sacrificing capability",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "77209a61-fbb1-4f51-bd4a-fc8f64f1cefd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Stack minimalism reduces complexity and friction while maintaining robustness",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Stack minimalism reduces complexity and friction while maintaining robustness",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4efca2b1-d63e-4ed3-92a8-77a7d6f672e5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Gmail forwarding rules offer elegant email integration without external dependencies",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Gmail forwarding rules offer elegant email integration without external dependencies",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5a307342-0482-43ff-814b-4cd2eeb6cdb8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e88899ec-4582-4f28-b9b6-d9a913594df6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial complex multi-framework approach was unnecessary over-engineering",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Initial complex multi-framework approach was unnecessary over-engineering",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d455cda5-0424-40e9-bdbb-e344d7faac21",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "External orchestration tools add complexity without meaningful value over Manus capabilities",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "External orchestration tools add complexity without meaningful value over Manus capabilities",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6b8484f6-b9fd-4e3f-823d-711177766b89",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "193bf424-0e3f-4cdc-ad56-c5fd5a4dfcfc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "GravityClaw represents nearly identical yOS vision in open-source form",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GravityClaw represents nearly identical yOS vision in open-source form",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "87a7e3bb-3ec0-4715-8e52-e07750f7834f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Voice bidirectionality is the primary competitive gap for yOS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Voice bidirectionality is the primary competitive gap for yOS",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "66a77c39-a738-4077-a7a9-cee1eca3345b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Motion.com",
+              "link": {
+                "url": "http://motion.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Motion.com",
+            "href": "http://motion.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " offers no unique value beyond calendar scheduling for yOS use case",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " offers no unique value beyond calendar scheduling for yOS use case",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6b12680e-e5ef-4a6e-af0c-bc5ce624b083",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "dc4ad7b3-5fdc-48f3-a004-eb6c99eafe6b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Need Telegram bot token configuration for voice implementation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Need Telegram bot token configuration for voice implementation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "68ebf816-e2f5-4027-aa67-17118660c538",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "TTS service selection (Hume vs ElevenLabs) pending",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "TTS service selection (Hume vs ElevenLabs) pending",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4d04ffa5-b313-4d52-8f79-b4b9cc69dec1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Deployment target decision required (NAS/VPS/Railway)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Deployment target decision required (NAS/VPS/Railway)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1938f2b7-13a6-4a8f-b8a3-30c7db8211ae",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b9c561f7-6c33-476e-83ca-ef9fc5b8b19d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Optimal TTS service selection for voice quality vs integration complexity",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Optimal TTS service selection for voice quality vs integration complexity",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "36e9aada-ced8-469e-9d12-b3c79ade9996",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Deployment architecture for Telegram bot reliability and maintenance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Deployment architecture for Telegram bot reliability and maintenance",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e65b2165-5438-44f6-94ca-5ef9bff99306",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Voice input processing capabilities and integration approach",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Voice input processing capabilities and integration approach",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "020066c2-0e2f-4fa2-8c89-4e8b9617aacb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5a7e02cc-0c8e-4f38-8d72-f3beadc495b3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Obtain Telegram bot token configuration details",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Obtain Telegram bot token configuration details",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "99085124-a0f4-430f-aa75-08a6c621f570",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Select TTS service (Hume AI vs ElevenLabs) for voice output",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Select TTS service (Hume AI vs ElevenLabs) for voice output",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f3bad756-7950-42ec-8534-87060e04f9c0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Choose deployment target for Telegram voice bot",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Choose deployment target for Telegram voice bot",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "79cc3070-361f-405f-8077-be6ca3dae9f5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implement voice-enabled Telegram bot to achieve GravityClaw parity",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implement voice-enabled Telegram bot to achieve GravityClaw parity",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1518b3e9-98a1-4a87-a116-09cc4d0885b1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Document canonical yOS architecture decisions in Notion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Document canonical yOS architecture decisions in Notion",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f92e9b85-f19d-4ae9-a4a7-9a234a2b465c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3ff025bd-7f99-4d35-961e-936074f1fac9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-810d-bfd5-fd49ca34181b"
+      },
+      "created_time": "2026-04-09T08:34:00.000Z",
+      "last_edited_time": "2026-04-09T08:34:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "VCFUH6ISMGhAFXSqdqhYfm",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "VCFUH6ISMGhAFXSqdqhYfm",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0373",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0373",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick and Manus defined the canonical yOS architecture, simplifying from complex multi-tool stacks to a Manus-native approach. Key decisions include eliminating LangGraph/CrewAI/n8n in favor of Manus Scheduled Tasks, establishing Gmail forwarding rules (yOS-mail@manus.bot), and planning a voice-enabled Telegram bot. Competitive analysis of GravityClaw and Motion confirmed yOS architectural soundness while identifying voice bidirectionality as the main gap to address.\n\n\n## Context & Intent\n\nYannick sought guidance on optimal technology stack for yOS after discovering Google Antigravity and OpenClaw. Goal was architectural clarity and identifying the best approach versus current Manus-native development path.\n\n\n## What Was Done\n\nComprehensive analysis of Google Antigravity, OpenClaw, and Motion versus Manus-native approach. Architectural simplification from complex multi-agent frameworks to streamlined stack. Competitive video analysis of GravityClaw implementation. Established canonical decisions for Gmail integration and planned voice-enabled Telegram bot development.\n\n\n## Outputs Produced\n\n- [architectural_document] yOS Stack Recommendation — Detailed comparison of orchestration frameworks leading to Manus-native decision\n- [canonical_decision] Gmail Rule Definition — Subject contains [manus] → forward to yOS-mail@manus.bot\n- [stack_definition] yOS Final Architecture — Manus+Skills, Scheduled Tasks, Notion, Pinecone, Tampermonkey, Python bot\n- [competitive_analysis] GravityClaw vs yOS Comparison — Feature-by-feature analysis of OpenClaw-based personal agent\n- [feature_backlog] Future Features List — Meeting Notetaker added to yOS roadmap\n\n## Key Decisions & Validations\n\n- Eliminated LangGraph, CrewAI, and n8n from yOS stack in favor of Manus-native approach\n- Established Gmail forwarding rule: [manus] subject → yOS-mail@manus.bot\n- Confirmed Manus Scheduled Tasks for proactive heartbeat functionality\n- Decided against Motion.com integration due to limited value beyond calendar\n- Prioritized voice-enabled Telegram bot as critical parity feature with GravityClaw\n\n## Lessons Learned\n\nWorked well:\n\n- Manus-native approach provides superior simplicity without sacrificing capability\n- Stack minimalism reduces complexity and friction while maintaining robustness\n- Gmail forwarding rules offer elegant email integration without external dependencies\nFailed / suboptimal:\n\n- Initial complex multi-framework approach was unnecessary over-engineering\n- External orchestration tools add complexity without meaningful value over Manus capabilities\nDiscoveries:\n\n- GravityClaw represents nearly identical yOS vision in open-source form\n- Voice bidirectionality is the primary competitive gap for yOS\n- Motion.com offers no unique value beyond calendar scheduling for yOS use case\n\n## Challenges & Blockers\n\n- Need Telegram bot token configuration for voice implementation\n- TTS service selection (Hume vs ElevenLabs) pending\n- Deployment target decision required (NAS/VPS/Railway)\n\n## Open Questions\n\n- Optimal TTS service selection for voice quality vs integration complexity\n- Deployment architecture for Telegram bot reliability and maintenance\n- Voice input processing capabilities and integration approach\n\n## Next Steps\n\n- Obtain Telegram bot token configuration details\n- Select TTS service (Hume AI vs ElevenLabs) for voice output\n- Choose deployment target for Telegram voice bot\n- Implement voice-enabled Telegram bot to achieve GravityClaw parity\n- Document canonical yOS architecture decisions in Notion\n---\nUID: VCFUH6ISMGhAFXSqdqhYfm | Model: claude-sonnet-4-20250514 | Cost: $0.0373\n"
+}

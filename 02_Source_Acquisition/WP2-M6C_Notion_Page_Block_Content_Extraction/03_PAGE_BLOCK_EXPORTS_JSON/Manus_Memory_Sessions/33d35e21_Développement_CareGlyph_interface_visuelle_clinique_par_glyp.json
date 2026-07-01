@@ -1,0 +1,2041 @@
+{
+  "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7",
+  "title": "Développement CareGlyph : interface visuelle clinique par glyphes",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "medium",
+    "Language": "fr",
+    "Subthemes": "clinical interfaces, glyphs and pictograms, patient-caregiver communication, UX/UI design, medical visualization",
+    "Project": "UNKNOWN",
+    "UID": "aXmtSiUc9LDFxAg98NZSjh",
+    "Date": "2026-04-02",
+    "Themes": "interface design, healthcare technology, visual communication, iPad application",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "Développement CareGlyph : interface visuelle clinique par glyphes"
+  },
+  "blocks_count": 44,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "91576a3c-9de7-4b5c-9e08-d781a4c91164",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "495a73eb-7fe7-463a-8612-948e2d5d24b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick définit la vision pour CareGlyph, application iPad de communication visuelle au pied du lit. Manus développe d'abord une version textuelle avec design Swiss Medical Warmth, puis la reconstruit entièrement en interface à glyphes après feedback critique. L'application finale comprend 5 vues fonctionnelles avec 30+ pictogrammes SVG médicaux et timeline visuelle par périodes.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick définit la vision pour CareGlyph, application iPad de communication visuelle au pied du lit. Manus développe d'abord une version textuelle avec design Swiss Medical Warmth, puis la reconstruit entièrement en interface à glyphes après feedback critique. L'application finale comprend 5 vues fonctionnelles avec 30+ pictogrammes SVG médicaux et timeline visuelle par périodes.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3ca4db18-0f6c-4eda-b79b-5524e593c612",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ff35eee0-17a8-40ce-9e5e-4821e7fdd262",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Créer une application de démonstration pour interface clinique qui privilégie la qualité visuelle et la compréhension immédiate sur la technologie. L'objectif est de montrer un produit évident, apaisant et utile dès le premier regard.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Créer une application de démonstration pour interface clinique qui privilégie la qualité visuelle et la compréhension immédiate sur la technologie. L'objectif est de montrer un produit évident, apaisant et utile dès le premier regard.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7d8287b6-9c88-4e4f-9d3d-cdb169712c5a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "53512d80-a248-4091-a9da-695068a37a18",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Développement complet de CareGlyph v1 (interface textuelle avec couleurs sémantiques) puis refonte totale en v2 (interface à glyphes visuels). Création d'un design system, 5 vues navigables, bibliothèque de 30+ pictogrammes SVG, timeline 3 colonnes, système de réponses visuelles.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Développement complet de CareGlyph v1 (interface textuelle avec couleurs sémantiques) puis refonte totale en v2 (interface à glyphes visuels). Création d'un design system, 5 vues navigables, bibliothèque de 30+ pictogrammes SVG, timeline 3 colonnes, système de réponses visuelles.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b0b7b9a0-2df9-4951-9930-2bc196c34325",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "1460994e-07f8-490e-beb0-3078c8e66b76",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[web_application]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[web_application]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " CareGlyph v2 — Application iPad complète avec interface à glyphes pour communication clinique",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " CareGlyph v2 — Application iPad complète avec interface à glyphes pour communication clinique",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2ebfc9b8-0aac-43f5-a1c0-8b4d0284e6e0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[design_system]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[design_system]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Swiss Medical Warmth — Système de design avec typographie, palette couleurs et principes visuels",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Swiss Medical Warmth — Système de design avec typographie, palette couleurs et principes visuels",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2e032369-2449-40a8-b98a-8168053cae97",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[icon_library]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[icon_library]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Pictogrammes médicaux SVG — 30+ glyphes dessinés sur mesure pour contexte hospitalier",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Pictogrammes médicaux SVG — 30+ glyphes dessinés sur mesure pour contexte hospitalier",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e83c985e-185a-4179-bb52-f7163fde1391",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a84c65d2-c84c-41d4-aa88-6a0b20cd2d9b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Priorité absolue à la qualité d'interface sur la technologie",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Priorité absolue à la qualité d'interface sur la technologie",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4207d7a1-811d-416f-a862-7bc4ac48bd17",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Refonte complète de l'approche textuelle vers interface à glyphes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Refonte complète de l'approche textuelle vers interface à glyphes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7d890137-9cc6-4e0c-8b4a-3a6e530c14ed",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Design Swiss Medical Warmth : précision sans froideur",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Design Swiss Medical Warmth : précision sans froideur",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "afc0c201-989f-40da-b055-adb63d0c5a49",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Timeline visuelle 3 colonnes matin/après-midi/soir",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Timeline visuelle 3 colonnes matin/après-midi/soir",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6074c759-629e-44d5-a0c4-e921c2e1c2c2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Bibliothèque de pictogrammes SVG médicaux sur mesure",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Bibliothèque de pictogrammes SVG médicaux sur mesure",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2bd86d63-71c7-47ee-a6e3-d09d698d2ce9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "03aa0700-177e-4050-80fd-79e86945ef64",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c15534b2-62b3-4fee-9fc7-474031a29c3f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Design system structuré avec familles sémantiques",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Design system structuré avec familles sémantiques",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "882c3b75-b7a4-4c69-8db6-c7bab84fce00",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Interface à 5 vues bien délimitées",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Interface à 5 vues bien délimitées",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fedbc9cf-d796-4d37-a1b1-03425efbb56c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Pictogrammes SVG expressifs et reconnaissables",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Pictogrammes SVG expressifs et reconnaissables",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bad87d3e-bb4c-471a-ace8-461eba5f006e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Layout iPad responsive avec grille CSS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Layout iPad responsive avec grille CSS",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2211aaf4-7238-414c-9bec-88cc86e70219",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bc7371f0-ec45-4b61-b98f-96f1d549f2db",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Version v1 trop textuelle malgré le nom CareGlyph",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Version v1 trop textuelle malgré le nom CareGlyph",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "04505022-1577-46de-8f61-4acf67c80d75",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Interface textuelle contradictoire avec l'objectif de glyphes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Interface textuelle contradictoire avec l'objectif de glyphes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "fdfc5256-eb62-4f13-8210-8956cb8fafa0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Distribution verticale de l'espace initialement problématique",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Distribution verticale de l'espace initialement problématique",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ac842eda-ff68-49d0-8cbd-9e94c48f4e62",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "c742c7c4-85e1-41d9-92c7-fe10ca31f30a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "L'interface doit être immédiatement compréhensible visuellement",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "L'interface doit être immédiatement compréhensible visuellement",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "51b85f94-89a5-4c6f-a0f2-375b015f4d04",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Les glyphes remplacent complètement le texte narratif",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Les glyphes remplacent complètement le texte narratif",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b2f0f4bd-feb0-4386-89d5-839789447b67",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "La timeline visuelle par périodes est plus efficace que les listes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "La timeline visuelle par périodes est plus efficace que les listes",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3077124a-19ae-476a-8285-2f6a0c990220",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "12a1055a-cf65-463b-ba66-74e0e44a17cb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Équilibrage de l'espace vertical dans le layout iPad",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Équilibrage de l'espace vertical dans le layout iPad",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ec325c13-38d1-4d62-ad99-86e7a7c67d19",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Transition de l'approche textuelle vers glyphes purs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Transition de l'approche textuelle vers glyphes purs",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f09992e9-e836-486b-96f6-4dddec3fe167",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Création de pictogrammes médicaux expressifs mais non infantilisants",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Création de pictogrammes médicaux expressifs mais non infantilisants",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9d292fb9-d01a-406c-acbf-06dfddb9735a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bf838311-f330-4a61-9dbe-6d878393a42b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comment implémenter le mode rotation patient/soignant ?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comment implémenter le mode rotation patient/soignant ?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "16dae647-1ad1-4451-9db9-bc9ca06e4db6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Quelle approche pour l'agrandissement des glyphes (troubles visuels) ?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Quelle approche pour l'agrandissement des glyphes (troubles visuels) ?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "cc77dee4-9340-4dda-a808-8331697f5693",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comment créer des scénarios interactifs convaincants pour démos ?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comment créer des scénarios interactifs convaincants pour démos ?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5b6e9777-26bd-4301-a854-1018e66f87ea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "12eb0019-79f0-405c-923a-a69705c73c15",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Ajouter animation de retournement iPad (rotation 180°) patient/soignant",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Ajouter animation de retournement iPad (rotation 180°) patient/soignant",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "11110f3e-9eee-4709-8444-451032e0e1b5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Créer mode démo guidée avec scénario chirurgie orthopédique complet",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Créer mode démo guidée avec scénario chirurgie orthopédique complet",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "82b3eb4c-709a-4f93-b193-06fb562ab918",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implémenter bouton grand format 150% pour accessibilité visuelle",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Implémenter bouton grand format 150% pour accessibilité visuelle",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "64768508-be46-40bd-872c-7f7052deef56",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "db5a034b-8549-41ca-8aca-39afb58280b4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-8151-b697-f827bc6497d7"
+      },
+      "created_time": "2026-04-09T08:36:00.000Z",
+      "last_edited_time": "2026-04-09T08:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "aXmtSiUc9LDFxAg98NZSjh",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "aXmtSiUc9LDFxAg98NZSjh",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0292",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0292",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick définit la vision pour CareGlyph, application iPad de communication visuelle au pied du lit. Manus développe d'abord une version textuelle avec design Swiss Medical Warmth, puis la reconstruit entièrement en interface à glyphes après feedback critique. L'application finale comprend 5 vues fonctionnelles avec 30+ pictogrammes SVG médicaux et timeline visuelle par périodes.\n\n\n## Context & Intent\n\nCréer une application de démonstration pour interface clinique qui privilégie la qualité visuelle et la compréhension immédiate sur la technologie. L'objectif est de montrer un produit évident, apaisant et utile dès le premier regard.\n\n\n## What Was Done\n\nDéveloppement complet de CareGlyph v1 (interface textuelle avec couleurs sémantiques) puis refonte totale en v2 (interface à glyphes visuels). Création d'un design system, 5 vues navigables, bibliothèque de 30+ pictogrammes SVG, timeline 3 colonnes, système de réponses visuelles.\n\n\n## Outputs Produced\n\n- [web_application] CareGlyph v2 — Application iPad complète avec interface à glyphes pour communication clinique\n- [design_system] Swiss Medical Warmth — Système de design avec typographie, palette couleurs et principes visuels\n- [icon_library] Pictogrammes médicaux SVG — 30+ glyphes dessinés sur mesure pour contexte hospitalier\n\n## Key Decisions & Validations\n\n- Priorité absolue à la qualité d'interface sur la technologie\n- Refonte complète de l'approche textuelle vers interface à glyphes\n- Design Swiss Medical Warmth : précision sans froideur\n- Timeline visuelle 3 colonnes matin/après-midi/soir\n- Bibliothèque de pictogrammes SVG médicaux sur mesure\n\n## Lessons Learned\n\nWorked well:\n\n- Design system structuré avec familles sémantiques\n- Interface à 5 vues bien délimitées\n- Pictogrammes SVG expressifs et reconnaissables\n- Layout iPad responsive avec grille CSS\nFailed / suboptimal:\n\n- Version v1 trop textuelle malgré le nom CareGlyph\n- Interface textuelle contradictoire avec l'objectif de glyphes\n- Distribution verticale de l'espace initialement problématique\nDiscoveries:\n\n- L'interface doit être immédiatement compréhensible visuellement\n- Les glyphes remplacent complètement le texte narratif\n- La timeline visuelle par périodes est plus efficace que les listes\n\n## Challenges & Blockers\n\n- Équilibrage de l'espace vertical dans le layout iPad\n- Transition de l'approche textuelle vers glyphes purs\n- Création de pictogrammes médicaux expressifs mais non infantilisants\n\n## Open Questions\n\n- Comment implémenter le mode rotation patient/soignant ?\n- Quelle approche pour l'agrandissement des glyphes (troubles visuels) ?\n- Comment créer des scénarios interactifs convaincants pour démos ?\n\n## Next Steps\n\n- Ajouter animation de retournement iPad (rotation 180°) patient/soignant\n- Créer mode démo guidée avec scénario chirurgie orthopédique complet\n- Implémenter bouton grand format 150% pour accessibilité visuelle\n---\nUID: aXmtSiUc9LDFxAg98NZSjh | Model: claude-sonnet-4-20250514 | Cost: $0.0292\n"
+}

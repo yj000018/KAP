@@ -1,0 +1,2075 @@
+{
+  "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818",
+  "title": "VISUAL REALITY UI Testing & Mobile UX Optimization",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "medium",
+    "Language": "mixed",
+    "Subthemes": "browser automation, mobile responsive design, playlist functionality, GSAP morphing, navigation optimization",
+    "Project": "VISUAL_REALITY",
+    "UID": "52qM9T6a12rsSSx3EYBkbF",
+    "Date": "2026-02-16",
+    "Themes": "frontend testing, mobile UX, feature implementation, bug fixing",
+    "Archived": "True",
+    "Depth": "substantial",
+    "Title": "VISUAL REALITY UI Testing & Mobile UX Optimization"
+  },
+  "blocks_count": 44,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "1730231e-4b3d-4c08-99f4-fdb6ed03fad8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "23c1ebf3-8788-47fd-8566-32c17b6b5919",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive testing and debugging session for VISUAL REALITY CMS. Yannick requested feature-by-feature testing using browser automation (described as superior to Playwright). Major findings: 80% features functional, critical Image Morphing bug identified and fixed, mobile UX issues with feature visibility addressed through Jump-to-Section navigation. Playlists page created but player remains buggy due to tRPC query issues.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Comprehensive testing and debugging session for VISUAL REALITY CMS. Yannick requested feature-by-feature testing using browser automation (described as superior to Playwright). Major findings: 80% features functional, critical Image Morphing bug identified and fixed, mobile UX issues with feature visibility addressed through Jump-to-Section navigation. Playlists page created but player remains buggy due to tRPC query issues.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a1c2afd3-ce33-4cc7-986e-35c20a52bdd8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d1433bd7-7155-4002-9a62-687f21edf944",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Testing all V3 features after previous implementation phases, ensuring mobile compatibility and fixing critical bugs before production deployment.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Testing all V3 features after previous implementation phases, ensuring mobile compatibility and fixing critical bugs before production deployment.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "45800972-f571-41df-8a8f-b2946b691968",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f2c84256-502a-4f12-99d3-95673899c054",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complete browser automation testing of 25 features, fixed Image Morphing implementation with GSAP transitions, created Playlists public page, implemented Jump-to-Section mobile navigation, debugged useAuth import conflicts, created sample playlist data.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Complete browser automation testing of 25 features, fixed Image Morphing implementation with GSAP transitions, created Playlists public page, implemented Jump-to-Section mobile navigation, debugged useAuth import conflicts, created sample playlist data.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7dfb567e-cc87-4009-9d0f-fdbf1803077a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e9ec970d-0890-46f7-adf7-ca3437e11f06",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[test_report]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[test_report]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Feature Testing Report — Comprehensive feature-by-feature test results with PASS/FAIL status",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Feature Testing Report — Comprehensive feature-by-feature test results with PASS/FAIL status",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0016ec76-f2d1-4bb7-8ea9-147cdc61db81",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[bug_fix]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[bug_fix]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Image Morphing Implementation — GSAP-based morphing with 5 transitions (crossfade, slide, zoom, wipe, flip)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Image Morphing Implementation — GSAP-based morphing with 5 transitions (crossfade, slide, zoom, wipe, flip)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "79383cdd-30ee-4911-80ab-b0d120cd0d0e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[ui_component]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[ui_component]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Jump-to-Section Navigation — Sticky floating button with smooth scroll to sections for mobile UX",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Jump-to-Section Navigation — Sticky floating button with smooth scroll to sections for mobile UX",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bd3a8083-31e6-4fce-a285-3a700fe65d01",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[page]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[page]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Playlists Public Page — Public listing page for curated art playlists at /playlists route",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Playlists Public Page — Public listing page for curated art playlists at /playlists route",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3957eb20-e960-45e5-be04-3bd2ef9174b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[data]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[data]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Sample Playlists — 3 playlists created (Spiritual Journey, Abstract Visions, Ethereal Moments)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Sample Playlists — 3 playlists created (Spiritual Journey, Abstract Visions, Ethereal Moments)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "73462f2a-45fb-4119-bb27-0295c2f9fe71",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "90549a1f-36c5-4e1d-a0e2-e7c4dba81cce",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Browser automation chosen over Playwright for testing (described as superior system)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Browser automation chosen over Playwright for testing (described as superior system)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "775dbb74-07f1-4650-9046-f3e939a86c02",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jump-to-Section navigation preferred over collapsible sections for mobile UX",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jump-to-Section navigation preferred over collapsible sections for mobile UX",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5f5d2d55-d1f1-493f-96a3-cfb341124648",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Direct SQL playlist creation used when admin modal failed",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Direct SQL playlist creation used when admin modal failed",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "7e5acaa2-f94c-458e-beba-f739e302b4a3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f901c488-65ad-4e8f-8c1c-120c2523665c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e169b846-91cb-4be7-98ce-85f4cda69004",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Browser automation testing providing comprehensive feature coverage",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Browser automation testing providing comprehensive feature coverage",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "62465b83-e312-4cbd-9584-7dae84346e62",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jump-to-Section navigation solving mobile feature visibility issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jump-to-Section navigation solving mobile feature visibility issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ebd6e43d-6660-42a1-8004-68d64bb51182",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "GSAP morphing implementation with multiple transition effects",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GSAP morphing implementation with multiple transition effects",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "91edef3c-1c07-4c06-ac3d-988b2df0af03",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Failed / suboptimal:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Failed / suboptimal:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "75725010-1e7d-4235-9dbb-d8e8085d59db",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Playlist player tRPC query issues causing loading loops",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Playlist player tRPC query issues causing loading loops",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "380b7b9d-4525-46b4-835a-a7143e782008",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Admin modal remaining open after playlist creation attempts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Admin modal remaining open after playlist creation attempts",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "780e2ebf-ecca-4b9f-aac3-12293b7d2df2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mobile UX requiring extensive scrolling (5721px height under viewport)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mobile UX requiring extensive scrolling (5721px height under viewport)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ed533a88-5b81-46d0-bc24-038e460a2f15",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "2891b0d8-24b5-4a02-b35d-b376a1084e7c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Browser automation described as 'super system' for testing vs Playwright",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Browser automation described as 'super system' for testing vs Playwright",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "14214037-1e54-49d2-9977-254f6181ea93",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mobile features were technically present but hidden by UX design",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mobile features were technically present but hidden by UX design",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "df0333f6-74a8-44ab-a8d9-70c8e92971e7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "tRPC userId authentication mismatch in playlist queries",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "tRPC userId authentication mismatch in playlist queries",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "87f90d1f-6556-4c9f-a308-0450fe549e21",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Challenges & Blockers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Challenges & Blockers",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "3c5f195f-9b11-47d3-8b1f-b392e0a28c29",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Playlist player stuck in loading state due to tRPC getById procedure issues",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Playlist player stuck in loading state due to tRPC getById procedure issues",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4de6f312-5b13-43d9-b1cf-2743f529aaef",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Playwright configuration conflict with TypeScript (frozen for later)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Playwright configuration conflict with TypeScript (frozen for later)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d188674a-62dd-4124-a802-42aa3af2b089",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Admin playlist creation modal not closing properly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Admin playlist creation modal not closing properly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9aac2440-7520-41fa-ab88-c8002997403a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "b3315472-ddf6-45af-a23a-3bfac2074891",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Why is the playlist player tRPC query failing (userId vs imageIds format issue)?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Why is the playlist player tRPC query failing (userId vs imageIds format issue)?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "10890ea1-e258-4aef-b2db-4609796f1535",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to resolve Playwright TypeScript configuration conflicts?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to resolve Playwright TypeScript configuration conflicts?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0d33c527-d789-4eed-bdc7-52a853c883a1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Are all features truly visible on real mobile devices vs browser automation?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Are all features truly visible on real mobile devices vs browser automation?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f529de27-454b-4d69-a554-f4a64b21bbc3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a17cd446-816b-464b-9836-398e16ccd4ee",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Debug Playlist Player tRPC getById procedure and imageIds format",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Debug Playlist Player tRPC getById procedure and imageIds format",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a830f409-b55a-42e8-b3b8-e1077e95d8de",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Test on real iPhone/Android devices to verify mobile UX",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Test on real iPhone/Android devices to verify mobile UX",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "18a207bb-1fe6-4a63-93c0-35347c9e41c2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Add real portfolio images to replace test data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Add real portfolio images to replace test data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "31573cc6-4d64-4033-a520-325c0b3ceb22",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Resolve Playwright configuration for future e2e testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Resolve Playwright configuration for future e2e testing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "bc97afb0-aa6c-481e-bb1d-7b38d11d059a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "ffb40205-a9c2-4cc6-bdc4-5b366c36ea9d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-812d-ae85-f6ecc8de4818"
+      },
+      "created_time": "2026-04-09T08:30:00.000Z",
+      "last_edited_time": "2026-04-09T08:30:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "52qM9T6a12rsSSx3EYBkbF",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "52qM9T6a12rsSSx3EYBkbF",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0319",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0319",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nComprehensive testing and debugging session for VISUAL REALITY CMS. Yannick requested feature-by-feature testing using browser automation (described as superior to Playwright). Major findings: 80% features functional, critical Image Morphing bug identified and fixed, mobile UX issues with feature visibility addressed through Jump-to-Section navigation. Playlists page created but player remains buggy due to tRPC query issues.\n\n\n## Context & Intent\n\nTesting all V3 features after previous implementation phases, ensuring mobile compatibility and fixing critical bugs before production deployment.\n\n\n## What Was Done\n\nComplete browser automation testing of 25 features, fixed Image Morphing implementation with GSAP transitions, created Playlists public page, implemented Jump-to-Section mobile navigation, debugged useAuth import conflicts, created sample playlist data.\n\n\n## Outputs Produced\n\n- [test_report] Feature Testing Report — Comprehensive feature-by-feature test results with PASS/FAIL status\n- [bug_fix] Image Morphing Implementation — GSAP-based morphing with 5 transitions (crossfade, slide, zoom, wipe, flip)\n- [ui_component] Jump-to-Section Navigation — Sticky floating button with smooth scroll to sections for mobile UX\n- [page] Playlists Public Page — Public listing page for curated art playlists at /playlists route\n- [data] Sample Playlists — 3 playlists created (Spiritual Journey, Abstract Visions, Ethereal Moments)\n\n## Key Decisions & Validations\n\n- Browser automation chosen over Playwright for testing (described as superior system)\n- Jump-to-Section navigation preferred over collapsible sections for mobile UX\n- Direct SQL playlist creation used when admin modal failed\n\n## Lessons Learned\n\nWorked well:\n\n- Browser automation testing providing comprehensive feature coverage\n- Jump-to-Section navigation solving mobile feature visibility issues\n- GSAP morphing implementation with multiple transition effects\nFailed / suboptimal:\n\n- Playlist player tRPC query issues causing loading loops\n- Admin modal remaining open after playlist creation attempts\n- Mobile UX requiring extensive scrolling (5721px height under viewport)\nDiscoveries:\n\n- Browser automation described as 'super system' for testing vs Playwright\n- Mobile features were technically present but hidden by UX design\n- tRPC userId authentication mismatch in playlist queries\n\n## Challenges & Blockers\n\n- Playlist player stuck in loading state due to tRPC getById procedure issues\n- Playwright configuration conflict with TypeScript (frozen for later)\n- Admin playlist creation modal not closing properly\n\n## Open Questions\n\n- Why is the playlist player tRPC query failing (userId vs imageIds format issue)?\n- How to resolve Playwright TypeScript configuration conflicts?\n- Are all features truly visible on real mobile devices vs browser automation?\n\n## Next Steps\n\n- Debug Playlist Player tRPC getById procedure and imageIds format\n- Test on real iPhone/Android devices to verify mobile UX\n- Add real portfolio images to replace test data\n- Resolve Playwright configuration for future e2e testing\n---\nUID: 52qM9T6a12rsSSx3EYBkbF | Model: claude-sonnet-4-20250514 | Cost: $0.0319\n"
+}

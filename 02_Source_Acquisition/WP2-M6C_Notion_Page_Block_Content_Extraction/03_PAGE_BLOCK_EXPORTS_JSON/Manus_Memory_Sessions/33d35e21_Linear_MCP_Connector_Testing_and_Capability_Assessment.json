@@ -1,0 +1,1301 @@
+{
+  "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f",
+  "title": "Linear MCP Connector Testing and Capability Assessment",
+  "database": "Manus_Memory_Sessions",
+  "db_id": "5e51ded4-0b46-4a68-acc2-4e90886a2499",
+  "created": "2026-04-09",
+  "edited": "2026-04-09",
+  "acquired_at": "2026-07-01T19:03:19Z",
+  "properties": {
+    "Length": "short",
+    "Language": "en",
+    "Subthemes": "MCP connectors, API testing, capability assessment, workspace exploration",
+    "Project": "yOS",
+    "UID": "Qg7F7q3DsnurkCeB5aKVPh",
+    "Date": "2026-01-04",
+    "Themes": "tool testing, connector integration, linear integration",
+    "Archived": "True",
+    "Depth": "standard",
+    "Title": "Linear MCP Connector Testing and Capability Assessment"
+  },
+  "blocks_count": 28,
+  "blocks": [
+    {
+      "object": "block",
+      "id": "4068d872-a891-420d-9cd8-ce81dc6f0e6b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Executive Summary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Executive Summary",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "03913199-d19b-45a6-815b-e2454991025b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yannick requested testing of the Linear MCP connector to understand its features and capabilities. Manus explored the connector, identified 25 available tools, performed practical tests on Yannick's Linear workspace, and generated a comprehensive report documenting the functionality. The session demonstrated successful integration and data retrieval from Linear through the MCP connector.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yannick requested testing of the Linear MCP connector to understand its features and capabilities. Manus explored the connector, identified 25 available tools, performed practical tests on Yannick's Linear workspace, and generated a comprehensive report documenting the functionality. The session demonstrated successful integration and data retrieval from Linear through the MCP connector.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d4722b67-ce13-495f-9755-a56aa4b8494a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Context & Intent",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Context & Intent",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "640514d1-f005-4970-b91b-a8bb1e0209ae",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Testing and documentation of Linear MCP connector capabilities for potential integration into yOS infrastructure",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Testing and documentation of Linear MCP connector capabilities for potential integration into yOS infrastructure",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "9e818603-aaea-4d54-bc9a-237d26008879",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What Was Done",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What Was Done",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "39678080-b314-4ef2-a79a-bbd85ec9b289",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Explored Linear MCP connector tools, tested key features with real workspace data, and prepared comprehensive capability report",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Explored Linear MCP connector tools, tested key features with real workspace data, and prepared comprehensive capability report",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e83d0cdf-817d-4548-8257-1ccfd3e182b0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Outputs Produced",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Outputs Produced",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "25d9cc38-c94f-4b92-a5f4-bda49e24270d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "[report]",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "[report]",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Linear MCP Connector Capability Report — Comprehensive documentation of Linear connector features, available tools, and test results",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Linear MCP Connector Capability Report — Comprehensive documentation of Linear connector features, available tools, and test results",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a62f019a-c936-45c5-a29d-ad135011b70e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Decisions & Validations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Key Decisions & Validations",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "8e978b42-d1b6-42d9-a46c-6a5646d55ecc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Selected 25 Linear tools for testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Selected 25 Linear tools for testing",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "371063a3-385f-49fa-ab01-7e2aed8c6659",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Generated detailed capability documentation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Generated detailed capability documentation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0f5a0588-577d-4e24-8f53-804eff3f467e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lessons Learned",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lessons Learned",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "96f400f5-4550-4237-8235-1b6e68d36cef",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Worked well:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Worked well:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "6e14d4bd-e6dc-49c6-b4d8-3fd01cd43c01",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Linear MCP connector responded successfully",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Linear MCP connector responded successfully",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "a2a887ae-380c-4ea4-808a-2c771f92d34a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tool discovery and testing process was efficient",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tool discovery and testing process was efficient",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "81a7fd23-b41b-4373-955c-858918df9898",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Real workspace data retrieval worked as expected",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Real workspace data retrieval worked as expected",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "f7ebece0-b7f8-40fb-966e-ae775cb81434",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Discoveries:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Discoveries:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "0d34bf5c-050d-4ccd-842f-d444ca52372e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Linear connector provides 25 distinct tools for workspace interaction",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Linear connector provides 25 distinct tools for workspace interaction",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "80a57e96-c630-40dc-8a70-9c6194951237",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MCP integration allows seamless Linear API access",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MCP integration allows seamless Linear API access",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4905b212-58c4-4e2d-a3b0-f716cd09f9ba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Questions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Open Questions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "00f8c65c-2fab-44a7-9381-481697209da3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What specific Linear workflows should be prioritized for yOS integration?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What specific Linear workflows should be prioritized for yOS integration?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "e1da9819-bded-4685-b4ca-18ec15bf838a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How should Linear connector be integrated into broader tool ecosystem?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How should Linear connector be integrated into broader tool ecosystem?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "811d8a6b-30fb-4c12-9588-73c0ba42ef8f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Next Steps",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next Steps",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "d4fec332-55db-41f1-b60b-e8ba38a7a7ed",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integrate Linear connector into yOS architecture",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Integrate Linear connector into yOS architecture",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "86da9a81-d228-4b29-aa49-4aa074c36228",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Define specific Linear workflow automations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Define specific Linear workflow automations",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "4bd2f0ae-bde1-47a5-b447-4c82eff30a28",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Document integration patterns for other MCP connectors",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Document integration patterns for other MCP connectors",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5b6ff4b5-d57d-4c6a-8452-6708be2f231a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "5472843c-2618-46a9-a6d7-44dbe7651104",
+      "parent": {
+        "type": "page_id",
+        "page_id": "33d35e21-8cf8-81e6-bbd2-ca77eeb8bb3f"
+      },
+      "created_time": "2026-04-09T08:33:00.000Z",
+      "last_edited_time": "2026-04-09T08:33:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "8c4fdbe9-a093-423b-9b80-211cd139586b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UID: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UID: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Qg7F7q3DsnurkCeB5aKVPh",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "Qg7F7q3DsnurkCeB5aKVPh",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " | Model: claude-sonnet-4-20250514 | Cost: $0.0099",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " | Model: claude-sonnet-4-20250514 | Cost: $0.0099",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "markdown_content": "\n## Executive Summary\n\nYannick requested testing of the Linear MCP connector to understand its features and capabilities. Manus explored the connector, identified 25 available tools, performed practical tests on Yannick's Linear workspace, and generated a comprehensive report documenting the functionality. The session demonstrated successful integration and data retrieval from Linear through the MCP connector.\n\n\n## Context & Intent\n\nTesting and documentation of Linear MCP connector capabilities for potential integration into yOS infrastructure\n\n\n## What Was Done\n\nExplored Linear MCP connector tools, tested key features with real workspace data, and prepared comprehensive capability report\n\n\n## Outputs Produced\n\n- [report] Linear MCP Connector Capability Report — Comprehensive documentation of Linear connector features, available tools, and test results\n\n## Key Decisions & Validations\n\n- Selected 25 Linear tools for testing\n- Generated detailed capability documentation\n\n## Lessons Learned\n\nWorked well:\n\n- Linear MCP connector responded successfully\n- Tool discovery and testing process was efficient\n- Real workspace data retrieval worked as expected\nDiscoveries:\n\n- Linear connector provides 25 distinct tools for workspace interaction\n- MCP integration allows seamless Linear API access\n\n## Open Questions\n\n- What specific Linear workflows should be prioritized for yOS integration?\n- How should Linear connector be integrated into broader tool ecosystem?\n\n## Next Steps\n\n- Integrate Linear connector into yOS architecture\n- Define specific Linear workflow automations\n- Document integration patterns for other MCP connectors\n---\nUID: Qg7F7q3DsnurkCeB5aKVPh | Model: claude-sonnet-4-20250514 | Cost: $0.0099\n"
+}
