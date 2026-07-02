@@ -50,9 +50,18 @@
       "contract": "02_Source_Acquisition/Obsidian_Import/CONN-OBS-01-CONTRACT.md",
       "dry_run_status": "ACCESS_LIMITED_NEEDS_VAULT_PATH",
       "last_validation": "2026-07-02",
-      "risks": "Requires local vault path; vault not accessible from sandbox",
+      "risks": [
+        "broken_links",
+        "duplicates",
+        "attachment_mapping",
+        "classification_uncertainty"
+      ],
       "notes": "Scripts ready; provide --vault path to run.",
-      "next_gate": "PILOT-ACQUISITION-GATE"
+      "next_gate": "OBSIDIAN-DRY-RUN-EXECUTION-GATE",
+      "implementation_status": "HARNESS_PATCHED_FAKE_VAULT_TESTED",
+      "acquisition_allowed": "NO",
+      "real_vault_execution_allowed": "NO",
+      "fake_vault_harness_tested": true
     },
     {
       "connector_id": "CONN-GDRIVE-01",
