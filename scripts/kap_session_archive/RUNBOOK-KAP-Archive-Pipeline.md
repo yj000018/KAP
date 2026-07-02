@@ -1,7 +1,7 @@
 # KAP Archive Pipeline — Runbook Technique & Procédural
 
-**Version:** 1.0 — 2026-07-02
-**Auteur:** Manus (documenté après 2 cycles d'apprentissage)
+**Version:** 1.1 — 2026-07-02
+**Auteur:** Manus (documenté après 3 cycles d'apprentissage et de trial-and-error)
 **Statut:** CANON — ne pas réinventer
 
 ---
@@ -17,17 +17,52 @@ Pour chaque session Manus non archivée :
 
 ---
 
-## ⚠️ RÈGLE CRITIQUE — My Browser Mac uniquement
+## ⚠️ RÈGLE CRITIQUE — Extraction des UIDs (Procédure Définitive)
 
-> **My Browser DOIT être utilisé depuis ton Mac (bureau ou laptop), jamais depuis iOS.**
+> **Problème fondamental :** L'API `task.list` de Manus est limitée aux 200 dernières tâches (et remplie de bruit "Wide Research Subtask"). Pour archiver **toutes** les sessions historiques, il faut extraire les UIDs directement depuis l'interface web de Manus.
 >
-> Raison : My Browser dans le sandbox Manus (machine virtuelle) ne maintient pas la session authentifiée — la page Manus se charge en mode non-connecté à chaque navigation. Seul ton navigateur Mac (Chrome/Safari) avec ta session Manus active permet de scroller la sidebar et récupérer tous les UIDs.
+> **Contrainte My Browser :** My Browser dans le sandbox Manus (machine virtuelle) ne maintient pas la session authentifiée. My Browser depuis iOS perd la session.
 >
-> **Processus correct :**
-> 1. Sur ton **Mac** → ouvre Manus dans Chrome
-> 2. Va dans Settings → Apps → My Browser → **Connect**
-> 3. Reviens dans cette session Manus et dis « My Browser connecté »
-> 4. Je prends le relais : je scrape la sidebar, collecte tous les UIDs, lance le pipeline
+> **La SEULE méthode fiable est une extraction manuelle via la console JS sur Chrome Mac.** Ne plus jamais tenter d'automatiser cette étape avec Playwright ou My Browser Sandbox.
+
+### Procédure pas-à-pas pour l'utilisateur (À copier-coller quand on demande les UIDs)
+
+**Prérequis :** Être sur **Mac** et utiliser **Google Chrome**.
+
+1. Ouvre Chrome sur ton Mac et va sur `https://manus.im/app`
+2. Dans la barre latérale de gauche (sidebar), scrolle **manuellement jusqu'en bas** pour charger tout l'historique (Manus utilise du virtual/lazy loading, il faut tout charger dans le DOM).
+3. Ouvre les outils de développement (Console) :
+   - Fais un clic droit n'importe où → **Inspecter** (Inspect)
+   - Clique sur l'onglet **Console**
+4. Copie et colle **exactement** ce script JS dans la console et appuie sur Entrée :
+
+```javascript
+// Script d'extraction des UIDs et Titres Manus (v1.1)
+// Ne pas utiliser copy() car il peut échouer silencieusement. Utiliser console.log.
+let sessions = [];
+document.querySelectorAll('a[href^="/app/task/"]').forEach(el => {
+    let url = el.getAttribute('href');
+    let uid = url.replace('/app/task/', '').split('?')[0];
+    let title = el.innerText.trim().split('\n')[0]; // Prend juste la première ligne du texte
+    
+    // Filtre le bruit de l'UI
+    const skip = ['New task', 'Agent', 'Plugins', 'Scheduled', 'Library', 'Projects', 'Tasks'];
+    if (uid && uid.length > 15 && title && !skip.includes(title)) {
+        sessions.push(uid + " | " + title);
+    }
+});
+
+// Déduplication (au cas où des éléments apparaissent en double dans le DOM)
+let uniqueSessions = [...new Set(sessions)];
+
+console.log("=== COPIEZ TOUT CE QUI SUIT ET COLLEZ-LE DANS MANUS ===");
+console.log(uniqueSessions.join('\n'));
+console.log("=== FIN DE LA LISTE (" + uniqueSessions.length + " sessions trouvées) ===");
+```
+
+5. Sélectionne tout le texte affiché entre les lignes `=== COPIEZ... ===` et `=== FIN... ===`, copie-le.
+6. Colle-le directement dans notre conversation Manus.
+7. Je prendrai le relais pour filtrer celles qui n'ont pas de `[✓]` et lancerai le pipeline d'archivage en bulk.
 
 ---
 
@@ -39,22 +74,20 @@ Pour chaque session Manus non archivée :
 |---|---|---|
 | **API `task.listMessages`** | Récupérer le contenu d'une session par UID | Fonctionne bien, paramètre = `task_id` |
 | **API `task.update`** | Modifier le titre d'une session | Fonctionne — payload `{"task_id": uid, "title": "nouveau titre"}` |
-| **API `task.list`** | Lister les sessions récentes | Limité à 200 tâches max, ne remonte pas avant ~juin 2026 |
-| **LLM proxy sandbox** | Générer les fiches MD | Utiliser `client = OpenAI()` sans clé explicite, model = `claude-sonnet-4-5` |
-| **My Browser** | Accéder à l'interface Manus authentifiée | Permet de voir toutes les sessions + URLs + titres |
+| **Extraction Console JS** | Obtenir la liste complète des UIDs | **LA SEULE MÉTHODE FIABLE** pour l'historique complet. |
+| **LLM proxy sandbox** | Générer les fiches MD | Utiliser `client = OpenAI()` sans clé explicite, model = `claude-sonnet-4-5` ou `claude-sonnet-4-6` |
 | **Git commit + push** | Archiver sur GitHub | Fonctionne via subprocess dans le script |
 
-### ❌ Ce qui ne fonctionne pas
+### ❌ Ce qui ne fonctionne pas (Ne plus essayer)
 
 | Méthode | Problème | Alternative |
 |---|---|---|
-| **API `task.list` pour corpus complet** | Retourne max 200 tâches, ~89% sont des "Wide Research Subtask", ne remonte pas avant juin 2026 | → My Browser **Mac** pour scraper la liste complète |
-| **My Browser depuis iOS** | Session non maintenue, page Manus se charge en mode non-connecté | → Utiliser uniquement depuis Mac |
-| **My Browser dans sandbox VM** | Même problème — session perdue à chaque navigation | → Utiliser uniquement depuis Mac |
-| **MCP Manus natif** | N'existe pas dans les connecteurs disponibles | → My Browser ou API directe |
-| **Clé Anthropic directe** | Clé expirée/révoquée | → Utiliser le proxy sandbox OpenAI avec `client = OpenAI()` |
-| **Clé OpenAI directe** | Clé externe rejetée par le proxy sandbox | → Utiliser `client = OpenAI()` sans base_url (proxy auto-configuré) |
-| **Scraping HTML sidebar** | Manus est une SPA React — les sessions sont des `div[role=button]`, pas des `<a>` | → Cliquer chaque session pour récupérer l'UID depuis l'URL |
+| **API `task.list` pour corpus complet** | Retourne max 200 tâches, rempli de sous-tâches. | → Console JS Chrome Mac |
+| **My Browser depuis iOS** | Session non maintenue. | → Chrome Mac |
+| **My Browser dans sandbox VM** | Session perdue à chaque navigation. | → Console JS Chrome Mac |
+| **Playwright Python (Sandbox)** | Pas de port CDP exposé pour My Browser, login impossible. | → Console JS Chrome Mac |
+| **Script JS avec `copy()`** | La fonction `copy()` du navigateur échoue souvent silencieusement pour de gros volumes. | → Utiliser `console.log()` et copier manuellement. |
+| **Clés Anthropic/OpenAI directes** | Rejetées ou expirées dans le sandbox. | → Utiliser le proxy sandbox OpenAI. |
 
 ---
 
@@ -66,136 +99,66 @@ Pour chaque session Manus non archivée :
 
 **Format canonique :** `[✓] ` au début du titre
 - Exemple : `[✓] KAP Sprint WP0-CORE-1`
-- Sessions déjà archivées dans Notion (363 corpus) : certaines ont `Check ` au début (ancien format)
 - **Règle de détection :** titre commence par `[✓]`, `Check `, `✓`, `✔`, `☑`, `✅`
-- **Ne jamais modifier** un titre qui a déjà un marqueur
+- **Ne jamais modifier** un titre qui a déjà un marqueur.
 
 ---
 
-## 4. Prérequis avant de lancer
+## 4. Prérequis avant de lancer le Pipeline (Côté Agent)
 
 | Prérequis | Comment vérifier |
 |---|---|
 | Clé API Manus valide | `sk-TEKENLb_4FM1xUD0skvl7Y5bxdg_ZwSBn93f4UyT3obza8szuxS1v4AFcs5iokvaLur6obq0SlG80yIIr-Zu_rKeVdze` |
 | Git configuré avec remote | `cd /home/ubuntu/KAP && git remote -v` |
 | Proxy LLM sandbox actif | `python3 -c "from openai import OpenAI; c=OpenAI(); print('OK')"` |
-| My Browser connecté (pour scraping complet) | Vérifier dans Manus Settings → Apps → My Browser |
+| Fichier UIDs prêt | Un fichier texte avec une liste d'UIDs extraits par l'utilisateur. |
 
 ---
 
-## 5. Comment lancer le pipeline
+## 5. Comment lancer le pipeline en Bulk
 
-### Option A — Sur une liste d'URLs fournie manuellement (recommandé)
+Une fois que l'utilisateur a collé la liste issue de la console JS (format `UID | Titre`) :
 
-**Comment récupérer les URLs depuis ton Mac :**
-1. Ouvre Manus dans Chrome sur ton Mac
-2. Clique sur chaque session dans la sidebar
-3. Copie l'URL depuis la barre d'adresse (format : `https://manus.im/app/XXXXXXXXXXXXXXXXXXXXXXXX`)
-4. Colle la liste dans un message Manus — je lance le pipeline automatiquement
+1. Sauvegarder le texte collé dans un fichier, ex: `/tmp/raw_sessions.txt`
+2. Extraire uniquement les UIDs des sessions qui n'ont pas le marqueur `[✓]`
+3. Créer un fichier `/tmp/uids_to_archive.txt` contenant un UID par ligne
+4. Lancer le script de bulk archive (qui doit être adapté pour lire ce fichier) :
 
 ```bash
-# Exemple : lancer sur une liste d'URLs collées dans un fichier
-cat > /tmp/session_urls.txt << 'EOF'
-https://manus.im/app/qDA41r2E22chzn2dV42hpk
-https://manus.im/app/x9fcuVXGiPyNhmXqLHRr87
+# Exemple de script python rapide pour lancer le pipeline sur la liste d'UIDs
+python3 << 'EOF'
+import os, subprocess
+
+with open('/tmp/uids_to_archive.txt', 'r') as f:
+    uids = [line.strip() for line in f if line.strip()]
+
+print(f"Lancement du pipeline pour {len(uids)} sessions...")
+
+for i, uid in enumerate(uids, 1):
+    print(f"\n--- [{i}/{len(uids)}] Traitement de {uid} ---")
+    cmd = ["python3", "/home/ubuntu/KAP/scripts/kap_session_archive/run_pipeline_enhanced.py", uid]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode == 0:
+        print(f"✅ Succès pour {uid}")
+    else:
+        print(f"❌ Échec pour {uid}:\n{result.stderr}")
 EOF
-
-python3 /home/ubuntu/KAP/scripts/kap_session_archive/run_pipeline_from_urls.py /tmp/session_urls.txt
 ```
-
-### Option B — Sur une liste d'UIDs connue (rapide)
-
-```bash
-cd /home/ubuntu/KAP
-python3 scripts/kap_session_archive/run_bulk_archive.py
-```
-
-Le script lit `/tmp/post_corpus_sessions.json` ou utilise l'API pour les 200 sessions récentes.
-
-### Option B — Sur une liste d'URLs (fournie par l'utilisateur)
-
-```bash
-# Créer un fichier avec une URL par ligne
-cat > /tmp/session_urls.txt << 'EOF'
-https://manus.im/app/task/UID1
-https://manus.im/app/task/UID2
-EOF
-
-# Extraire les UIDs et lancer
-python3 -c "
-import re, subprocess
-with open('/tmp/session_urls.txt') as f:
-    urls = f.read().splitlines()
-uids = [re.search(r'/app/task/([a-zA-Z0-9]+)', u).group(1) for u in urls if '/app/task/' in u]
-print(f'UIDs found: {len(uids)}')
-# Puis appeler run_pipeline.py pour chaque UID
-"
-```
-
-### Option C — Via My Browser Mac (scraping complet de la sidebar)
-
-> **Mac uniquement.** Ne fonctionne pas depuis iOS ou depuis le sandbox VM.
-
-1. Sur ton **Mac** : ouvre Chrome → Manus → Settings → Apps → My Browser → **Connect**
-2. Reviens dans cette session Manus et dis : **« My Browser connecté, reprends le scraping »**
-3. Je navigue sur `https://manus.im/app`, scrolle la sidebar, clique chaque session pour récupérer l'UID
-4. Je lance le pipeline sur tous les UIDs sans `[✓]`
-
-### Option D — Automatisation planifiée (scheduled)
-
-Le pipeline peut être planifié (cron/Manus Scheduled) pour s'exécuter automatiquement.
-**Contrainte :** nécessite My Browser Mac connecté au moment de l'exécution pour le scraping de la sidebar.
-Alternativement : planifier sur les UIDs fournis manuellement (Option A) sans dépendance My Browser.
-
-1. S'assurer que My Browser est connecté (Settings → Apps → My Browser dans Manus)
-2. Naviguer sur `https://manus.im/app`
-3. Scroller la sidebar pour charger toutes les sessions
-4. Extraire les UIDs en cliquant chaque session (URL = `https://manus.im/app/{UID}`)
-5. Lancer le pipeline sur les UIDs collectés
 
 ---
 
-## 6. Déduplication — règles
+## 6. Déduplication — règles (Rappel)
 
-Le pipeline skip automatiquement une session si :
+Le script `run_pipeline_enhanced.py` skip automatiquement une session si :
 1. Le titre commence par `[✓]`, `Check `, `✓`, `✔`, `☑`, `✅`
-2. Le fichier `{uid}_session_card.md` existe déjà dans `/KAP/03_Archived_Sessions/YOS/`
+2. Le fichier `{uid}_factsheet.md` (ou `_session_card.md`) existe déjà dans `/KAP/03_Archived_Sessions/YOS/`
 
 ---
 
-## 7. Ce que l'utilisateur doit faire manuellement
-
-> **Pour reprendre le pipeline là où on s'est arrêté :**
-> 1. Ouvre Manus sur ton **Mac** dans Chrome
-> 2. Settings → Apps → My Browser → Connect
-> 3. Dis à Manus : « My Browser connecté, reprends le scraping des sessions »
-> 4. Manus scrape la sidebar, collecte les UIDs, lance le pipeline automatiquement
-> 5. Résultat : fiches MD dans `/KAP/03_Archived_Sessions/YOS/` + titres `[✓]` dans Manus
-
-| Action | Quand | Comment |
-|---|---|---|
-| Connecter My Browser | Avant scraping complet | Manus Settings → Apps → My Browser → Connect |
-| Fournir liste d'URLs | Si API insuffisante | Copier-coller depuis l'interface Manus |
-| Vérifier les fiches générées | Après chaque run | Voir `/KAP/03_Archived_Sessions/YOS/` ou GitHub |
-
----
-
-## 8. Leçons apprises (ne pas répéter)
-
-1. **L'API `task.list` n'est pas un corpus de sessions** — c'est un log opérationnel limité à 200 entrées récentes. Pour le corpus complet, utiliser Notion MCP (WP2-M6B) ou My Browser.
-2. **Les clés LLM externes ne fonctionnent pas dans le sandbox** — toujours utiliser `client = OpenAI()` sans configuration manuelle.
-3. **Manus est une SPA React** — les sessions ne sont pas des `<a>` dans le HTML. L'UID est dans l'URL après clic.
-4. **Le marqueur `[✓]` est entre crochets carrés** — pas `✓` seul. Respecter ce format pour la cohérence visuelle.
-5. **Ne jamais modifier le titre sans ajouter `[✓]`** — le titre est l'identifiant humain de la session.
-
----
-
-## 9. Fichiers clés
+## 7. Fichiers clés
 
 | Fichier | Rôle |
 |---|---|
-| `scripts/kap_session_archive/run_bulk_archive.py` | Script principal bulk |
-| `scripts/kap_session_archive/04_mark_archived_in_manus.py` | Mise à jour titre seule |
+| `scripts/kap_session_archive/run_pipeline_enhanced.py` | Pipeline v3 (YAML + Card + Verbatim) |
+| `scripts/kap_session_archive/run_bulk_archive.py` | Script principal bulk (à adapter pour lire liste UIDs) |
 | `03_Archived_Sessions/YOS/` | Dossier des fiches MD |
-| `03_Archived_Sessions/YOS/bulk_archive_report.json` | Rapport du dernier run |
-| `/tmp/post_corpus_sessions.json` | Cache des sessions post-corpus (temporaire) |
