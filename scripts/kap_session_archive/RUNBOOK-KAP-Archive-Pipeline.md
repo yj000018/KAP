@@ -60,6 +60,10 @@ Pour chaque session Manus non archivée :
 
 ## 3. Marqueur d'archivage
 
+**Détection :** Le check peut être **au début OU à la fin** du titre — les deux sont acceptés comme « déjà archivé ».
+
+**Convention :** On ajoute toujours le check **au début** du titre pour les nouvelles archives.
+
 **Format canonique :** `[✓] ` au début du titre
 - Exemple : `[✓] KAP Sprint WP0-CORE-1`
 - Sessions déjà archivées dans Notion (363 corpus) : certaines ont `Check ` au début (ancien format)
@@ -81,7 +85,25 @@ Pour chaque session Manus non archivée :
 
 ## 5. Comment lancer le pipeline
 
-### Option A — Sur une liste d'UIDs connue (rapide)
+### Option A — Sur une liste d'URLs fournie manuellement (recommandé)
+
+**Comment récupérer les URLs depuis ton Mac :**
+1. Ouvre Manus dans Chrome sur ton Mac
+2. Clique sur chaque session dans la sidebar
+3. Copie l'URL depuis la barre d'adresse (format : `https://manus.im/app/XXXXXXXXXXXXXXXXXXXXXXXX`)
+4. Colle la liste dans un message Manus — je lance le pipeline automatiquement
+
+```bash
+# Exemple : lancer sur une liste d'URLs collées dans un fichier
+cat > /tmp/session_urls.txt << 'EOF'
+https://manus.im/app/qDA41r2E22chzn2dV42hpk
+https://manus.im/app/x9fcuVXGiPyNhmXqLHRr87
+EOF
+
+python3 /home/ubuntu/KAP/scripts/kap_session_archive/run_pipeline_from_urls.py /tmp/session_urls.txt
+```
+
+### Option B — Sur une liste d'UIDs connue (rapide)
 
 ```bash
 cd /home/ubuntu/KAP
@@ -110,7 +132,20 @@ print(f'UIDs found: {len(uids)}')
 "
 ```
 
-### Option C — Via My Browser (scraping complet de la sidebar)
+### Option C — Via My Browser Mac (scraping complet de la sidebar)
+
+> **Mac uniquement.** Ne fonctionne pas depuis iOS ou depuis le sandbox VM.
+
+1. Sur ton **Mac** : ouvre Chrome → Manus → Settings → Apps → My Browser → **Connect**
+2. Reviens dans cette session Manus et dis : **« My Browser connecté, reprends le scraping »**
+3. Je navigue sur `https://manus.im/app`, scrolle la sidebar, clique chaque session pour récupérer l'UID
+4. Je lance le pipeline sur tous les UIDs sans `[✓]`
+
+### Option D — Automatisation planifiée (scheduled)
+
+Le pipeline peut être planifié (cron/Manus Scheduled) pour s'exécuter automatiquement.
+**Contrainte :** nécessite My Browser Mac connecté au moment de l'exécution pour le scraping de la sidebar.
+Alternativement : planifier sur les UIDs fournis manuellement (Option A) sans dépendance My Browser.
 
 1. S'assurer que My Browser est connecté (Settings → Apps → My Browser dans Manus)
 2. Naviguer sur `https://manus.im/app`
