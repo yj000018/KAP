@@ -1,0 +1,81 @@
+{
+  "routing_matrix": [
+    {
+      "content_kind": "yOS process rules",
+      "destination": "yos_core",
+      "example": "Core Engine Backbone, Gate definitions",
+      "mem0_candidate": "YES",
+      "notes": "Must be distilled before Mem0."
+    },
+    {
+      "content_kind": "yOS bugs/failures",
+      "destination": "yos_core",
+      "example": "Pagination bug docs, API rate limit reports",
+      "mem0_candidate": "YES",
+      "notes": "Useful for agent context."
+    },
+    {
+      "content_kind": "Agent/skill docs",
+      "destination": "yos_core",
+      "example": "session-navigator skill code",
+      "mem0_candidate": "YES",
+      "notes": "Essential for yOS autonomy."
+    },
+    {
+      "content_kind": "Project knowledge",
+      "destination": "project_knowledge",
+      "example": "ELYSIUM ontology, KOSMOS specs",
+      "mem0_candidate": "YES",
+      "notes": "Core intellectual property."
+    },
+    {
+      "content_kind": "Personal data",
+      "destination": "youniverse",
+      "example": "Life logs, environment data",
+      "mem0_candidate": "YES (restricted)",
+      "notes": "Highly sensitive, requires explicit tag."
+    },
+    {
+      "content_kind": "Home automation",
+      "destination": "telemetry",
+      "example": "Temperature logs, light state",
+      "mem0_candidate": "NO",
+      "notes": "Too noisy, time-series data."
+    },
+    {
+      "content_kind": "Monitoring streams",
+      "destination": "telemetry",
+      "example": "Server uptime logs",
+      "mem0_candidate": "NO",
+      "notes": "Operational noise."
+    },
+    {
+      "content_kind": "LLM conversations",
+      "destination": "archive",
+      "example": "Raw Manus JSON transcript",
+      "mem0_candidate": "NO",
+      "notes": "Must be distilled via WP4 first."
+    },
+    {
+      "content_kind": "Raw task metadata",
+      "destination": "archive",
+      "example": "Task IDs, timestamps",
+      "mem0_candidate": "NO",
+      "notes": "Operational noise."
+    },
+    {
+      "content_kind": "Secrets/tokens",
+      "destination": "archive_only",
+      "example": "API keys, passwords",
+      "mem0_candidate": "NO",
+      "notes": "Must be redacted or excluded entirely."
+    },
+    {
+      "content_kind": "Duplicated noise",
+      "destination": "archive_only",
+      "example": "Wide Research Subtask",
+      "mem0_candidate": "NO",
+      "notes": "Ignored by downstream processes."
+    }
+  ]
+}

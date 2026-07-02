@@ -1,0 +1,34 @@
+{
+  "gates": [
+    {
+      "id": "Gate 1",
+      "name": "Source Inventory Gate",
+      "pass_condition": "Source exists, family known, status assigned, owner/access/risk documented.",
+      "fail_action": "Block acquisition until inventory is complete."
+    },
+    {
+      "id": "Gate 2",
+      "name": "Acquisition & Preservation Gate",
+      "pass_condition": "Raw captured, source card created, manifest created, checksum created, no unexplained missing output.",
+      "fail_action": "Mark source as BLOCKED or REOPEN_REQUIRED."
+    },
+    {
+      "id": "Gate 3",
+      "name": "Persistence Gate",
+      "pass_condition": "file exists -> in KAP -> tracked -> committed -> pushed -> visible on GitHub",
+      "fail_action": "Block pipeline advancement. Trigger Git disaster recovery runbook."
+    },
+    {
+      "id": "Gate 4",
+      "name": "Routing Gate",
+      "pass_condition": "Item classified, domain assigned, sensitivity assigned, ambiguous high-value items flagged for review.",
+      "fail_action": "Route to ARCHIVE_ONLY and flag for manual Architect review."
+    },
+    {
+      "id": "Gate 5",
+      "name": "Delta Gate",
+      "pass_condition": "Previous state loaded, new state compared, new/changed/deleted detected, delta manifest created, source registry updated.",
+      "fail_action": "Revert to previous known state. Block downstream processing."
+    }
+  ]
+}

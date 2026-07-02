@@ -1,0 +1,46 @@
+{
+  "gaps": [
+    {
+      "gap_id": "GAP-01",
+      "gap": "GitHub Actions PAT workflow scope issue if still present",
+      "risk": "HIGH",
+      "blocking_before_wp3": "YES",
+      "recommended_fix": "Test push with PAT, ensure workflow scope is granted."
+    },
+    {
+      "gap_id": "GAP-02",
+      "gap": "WP1 not yet reconciled as global freeze map",
+      "risk": "MEDIUM",
+      "blocking_before_wp3": "YES",
+      "recommended_fix": "Run WP1-R to initialize Source Registry instances."
+    },
+    {
+      "gap_id": "GAP-03",
+      "gap": "WP2-MANUS residuals still pending if M8B/M8C/M8D-PATCH not complete",
+      "risk": "HIGH",
+      "blocking_before_wp3": "YES",
+      "recommended_fix": "Execute WP2-MANUS-FINAL to close remaining sessions."
+    },
+    {
+      "gap_id": "GAP-04",
+      "gap": "Remote Manus filesystem/source surface must be explicitly covered or declared covered",
+      "risk": "LOW",
+      "blocking_before_wp3": "NO",
+      "recommended_fix": "Declare in WP1 if files are in scope or deferred."
+    },
+    {
+      "gap_id": "GAP-05",
+      "gap": "Source registry instances not yet created for all source branches",
+      "risk": "HIGH",
+      "blocking_before_wp3": "YES",
+      "recommended_fix": "Generate source_registry.schema.json files per branch in WP1-R."
+    },
+    {
+      "gap_id": "GAP-06",
+      "gap": "Delta process not yet tested",
+      "risk": "MEDIUM",
+      "blocking_before_wp3": "NO",
+      "recommended_fix": "Test delta script on WP2-MANUS after baseline freeze."
+    }
+  ]
+}
