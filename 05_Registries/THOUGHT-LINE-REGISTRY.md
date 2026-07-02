@@ -18,10 +18,10 @@ Track all recurring themes and evolving lines of thinking across the KAP corpus.
 | TL-006 | ChatGPT Conversation Corpus | source_corpus | active | seed | NO | Export not yet acquired | YES | ChatGPT as dialogue corpus |
 | TL-007 | GitHub Repos Corpus | source_corpus | active | emerging_pattern | NO | 36 repos (code, docs, README, issues) | YES | Code + documentation as knowledge source |
 | TL-008 | Other LLM Conversations | source_corpus | active | seed | NO | Claude, Gemini, Grok, Perplexity histories | YES | Non-ChatGPT LLM dialogue traces |
-| TL-009 | Mem0 Cross-Session Memory | source_corpus | active | exploratory | NO | Mem0 API, memory entries | YES | Compressed derivative memory — routing aid |
-| TL-010 | LLM Internal Memory | source_corpus | active | seed | NO | Custom instructions, system prompts, context | YES | What LLMs "remember" natively (non-exportable) |
-| TL-011 | Google Drive Documents | source_corpus | active | seed | NO | EYA/Roberta docs, shared files | YES | GDrive as document source |
-| TL-012 | Web/Bookmarks/External Sources | source_corpus | active | seed | NO | Browser bookmarks, referenced URLs | YES | External web sources referenced in corpus |
+| TL-009 | Mem0 Cross-Session Memory | source_corpus | active | exploratory | NO | Mem0 API | NO | All entries ACQUIRED — routing aid, not primary source |
+| TL-010 | LLM Internal Memory | source_corpus | active | seed | NO | Claude, ChatGPT, Gemini, Grok custom context | YES | Partially extractable via structured prompts — see PROMPT_EXTRACTION mode |
+| TL-011 | Google Drive Documents | source_corpus | **YOUniverse** | out_of_scope | NO | — | NO | Personal/admin docs — no yOS content — reserved for YOUniverse pipeline |
+| TL-012 | Web/Bookmarks/External Sources | source_corpus | **YOUniverse** | out_of_scope | NO | — | NO | No yOS content — reserved for YOUniverse pipeline |
 | TL-013 | Git/Markdown-first Persistence | architecture_principle | active | validated_architecture | NO | All KAP gates enforce this | NO | Canonical persistence principle |
 | TL-014 | Evolutionary Knowledge Merge | synthesis | active | candidate_architecture | NO | This gate's architecture docs | YES | How to merge without losing evolution |
 | TL-015 | Y-OS Cognitive Infrastructure | system_architecture | active | emerging_pattern | NO | Manus sessions, Notion, y-os-doctrine vault, YOS repo | YES | Y-OS as cognitive operating system |
@@ -49,13 +49,13 @@ Track all recurring themes and evolving lines of thinking across the KAP corpus.
 | 4 | GitHub Repos | 36 repos | INVENTORIED | HIGH |
 | 5 | ChatGPT Conversations | unknown | NOT ACQUIRED (needs export) | HIGH |
 | 6 | Other LLM Conversations | unknown | NOT ACQUIRED | MEDIUM |
-| 7 | Mem0 Memory | unknown entries | ACCESSIBLE via API | MEDIUM |
-| 8 | LLM Internal Memory | non-exportable | PARTIALLY CAPTURED in skills/instructions | LOW |
-| 9 | Google Drive | unknown | NOT INVENTORIED | MEDIUM |
-| 10 | Web/Bookmarks | unknown | NOT INVENTORIED | LOW |
-| 11 | YouTube/Video | unknown | FUTURE | LOW |
+| 7 | Mem0 Memory | all entries | **ACQUIRED** | — |
+| 8 | LLM Internal Memory | partial | EXTRACTABLE via PROMPT_EXTRACTION | MEDIUM |
+| 9 | Google Drive | unknown | OUT OF SCOPE (YOUniverse) | — |
+| 10 | Web/Bookmarks | unknown | OUT OF SCOPE (YOUniverse) | — |
+| 11 | YouTube/Video | unknown | OUT OF SCOPE (YOUniverse) | — |
 | 12 | Visuals (Excalidraw, Figma) | unknown | FUTURE | MEDIUM |
-| 13 | Behavioral (History) | unknown | FUTURE | LOW |
+| 13 | Behavioral (History) | unknown | OUT OF SCOPE (YOUniverse) | — |
 | 14 | Specialized AI Tools | unknown | FUTURE | MEDIUM |
 
 ## Maturity Levels
