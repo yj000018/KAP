@@ -1,0 +1,18 @@
+{
+  "purpose": "Define the gate that validates the machine structure before any new acquisition.",
+  "checks": [
+    { "check": "1. Git/MD source-of-truth structure", "expected_condition": "Defined and accepted", "status": "PASS", "evidence": "KAP-ARCH-1 folder structure", "blocker": "No" },
+    { "check": "2. Obsidian consultation rules", "expected_condition": "Defined", "status": "PASS", "evidence": "KAP-ARCH-1 documentation", "blocker": "No" },
+    { "check": "3. Notion frozen/decommission rule", "expected_condition": "Defined", "status": "PASS", "evidence": "KAP-ARCH-1-PATCH No Extraction Policy", "blocker": "No" },
+    { "check": "4. Mem0 semantic-only rule", "expected_condition": "Defined", "status": "PASS", "evidence": "KAP-ARCH-1-PATCH Patched Status", "blocker": "No" },
+    { "check": "5. Source Registry exists", "expected_condition": "Yes", "status": "PASS", "evidence": "WP1-R Source State Registry", "blocker": "No" },
+    { "check": "6. Protocol Registry exists", "expected_condition": "Yes", "status": "PASS", "evidence": "KAP-ARCH-1 Protocol Registry", "blocker": "No" },
+    { "check": "7. Pipeline Registry exists", "expected_condition": "Yes", "status": "PASS", "evidence": "KAP-ARCH-1 Pipeline Registry", "blocker": "No" },
+    { "check": "8. Connector Readiness Matrix exists", "expected_condition": "Yes", "status": "PASS", "evidence": "KAP-ARCH-1 Connector Readiness Matrix", "blocker": "No" },
+    { "check": "9. Team OS / Agent Role location", "expected_condition": "Exists or is defined", "status": "PASS", "evidence": "Team_OS/Agents/", "blocker": "No" },
+    { "check": "10. Guardian Architect role in Git", "expected_condition": "Yes", "status": "PASS", "evidence": "CHATGPT-Guardian-Architect.md", "blocker": "No" },
+    { "check": "11. Git persistence rules", "expected_condition": "Defined", "status": "PASS", "evidence": "KAP-ARCH-1 documentation", "blocker": "No" },
+    { "check": "12. Folder/index conventions", "expected_condition": "Defined", "status": "PASS", "evidence": "KAP-ARCH-1 folder conventions", "blocker": "No" },
+    { "check": "13. No extraction during patch", "expected_condition": "True", "status": "PASS", "evidence": "KAP-ARCH-1-PATCH Execution Report", "blocker": "No" }
+  ]
+}

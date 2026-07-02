@@ -1,0 +1,25 @@
+{
+  "purpose": "Define how to later choose the minimum useful seed corpus for yOS/MyOS self-knowledge, without bulk extraction.",
+  "rules": [
+    "1. Seed corpus must be minimal.",
+    "2. Seed corpus must be enough for yOS to find/recover more.",
+    "3. Seed corpus must avoid bulk acquisition.",
+    "4. Seed corpus must be Git/MD first.",
+    "5. Seed corpus must preserve provenance.",
+    "6. Seed corpus is not WP3.",
+    "7. Seed corpus is not Mem0 injection.",
+    "8. Seed corpus must be approved before extraction."
+  ],
+  "candidates": [
+    { "candidate_seed": "KAP-ARCH-1 outputs", "purpose": "Core architecture", "source_family": "GitHub KAP", "why_needed": "Defines the machine", "bulk_required": "NO", "recommended_scope": "Full folder", "approval_required": "YES" },
+    { "candidate_seed": "KAP-ARCH-1-PATCH", "purpose": "Current roadmap", "source_family": "GitHub KAP", "why_needed": "Defines the limits", "bulk_required": "NO", "recommended_scope": "Full folder", "approval_required": "YES" },
+    { "candidate_seed": "WP0-CORE-1", "purpose": "Core engine", "source_family": "GitHub KAP", "why_needed": "Defines pipelines", "bulk_required": "NO", "recommended_scope": "Full folder", "approval_required": "YES" },
+    { "candidate_seed": "WP1-R", "purpose": "Source registry", "source_family": "GitHub KAP", "why_needed": "Defines what exists", "bulk_required": "NO", "recommended_scope": "Full folder", "approval_required": "YES" },
+    { "candidate_seed": "Guardian Architect role", "purpose": "Agent definition", "source_family": "GitHub KAP", "why_needed": "Defines authority", "bulk_required": "NO", "recommended_scope": "Single file", "approval_required": "YES" },
+    { "candidate_seed": "Protocol Registry", "purpose": "Execution rules", "source_family": "GitHub KAP", "why_needed": "Defines how to act", "bulk_required": "NO", "recommended_scope": "Single file", "approval_required": "YES" },
+    { "candidate_seed": "Pipeline Registry", "purpose": "Data flow", "source_family": "GitHub KAP", "why_needed": "Defines how to process", "bulk_required": "NO", "recommended_scope": "Single file", "approval_required": "YES" },
+    { "candidate_seed": "Connector Readiness Matrix", "purpose": "Access state", "source_family": "GitHub KAP", "why_needed": "Defines what is open", "bulk_required": "NO", "recommended_scope": "Single file", "approval_required": "YES" },
+    { "candidate_seed": "Selected yOS project state", "purpose": "Context", "source_family": "GitHub yOS", "why_needed": "Defines active work", "bulk_required": "NO", "recommended_scope": "Selected only", "approval_required": "YES" },
+    { "candidate_seed": "Selected Manus sessions", "purpose": "Core knowledge", "source_family": "Manus Sessions", "why_needed": "High-value insights", "bulk_required": "NO", "recommended_scope": "Top 10 only", "approval_required": "YES" }
+  ]
+}

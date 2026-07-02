@@ -37,22 +37,52 @@ Pour chaque session Manus non archivée :
 4. Copie et colle **exactement** ce script JS dans la console et appuie sur Entrée :
 
 ```javascript
-// Script d'extraction des UIDs et Titres Manus (v1.1)
-// Ne pas utiliser copy() car il peut échouer silencieusement. Utiliser console.log.
-let sessions = [];
-document.querySelectorAll('a[href^="/app/task/"]').forEach(el => {
-    let url = el.getAttribute('href');
-    let uid = url.replace('/app/task/', '').split('?')[0];
-    let title = el.innerText.trim().split('\n')[0]; // Prend juste la première ligne du texte
-    
-    // Filtre le bruit de l'UI
-    const skip = ['New task', 'Agent', 'Plugins', 'Scheduled', 'Library', 'Projects', 'Tasks'];
-    if (uid && uid.length > 15 && title && !skip.includes(title)) {
-        sessions.push(uid + " | " + title);
-    }
-});
+// Script d'extraction des UIDs et Titres Manus (v1.2) - FIX REACT SPA
+// Manus est une SPA React sans balises <a> pour les sessions. 
+// Ce script extrait l'état React sous-jacent contenant l'historique complet.
 
-// Déduplication (au cas où des éléments apparaissent en double dans le DOM)
+let sessions = [];
+
+// Méthode 1: Chercher dans les props React des éléments de la sidebar
+const sidebarItems = Array.from(document.querySelectorAll('div[role="button"]'));
+for (let el of sidebarItems) {
+    let title = el.innerText.trim().split('\n')[0];
+    const skip = ['New task', 'Agent', 'Plugins', 'Scheduled', 'Library', 'Projects', 'Tasks'];
+    if (!title || skip.includes(title) || title.length < 5) continue;
+    
+    // Essayer de trouver l'UID dans les attributs React internes
+    let uid = null;
+    for (let key in el) {
+        if (key.startsWith('__reactProps')) {
+            try {
+                // Navigation profonde dans l'arbre des props React pour trouver l'ID
+                let props = el[key];
+                if (props.children && props.children.props && props.children.props.task) {
+                    uid = props.children.props.task.id;
+                } else if (props.onClick) {
+                    // Parfois l'ID est bindé dans le onClick handler
+                    let fnStr = props.onClick.toString();
+                    let match = fnStr.match(/([a-zA-Z0-9]{20,})/);
+                    if (match) uid = match[1];
+                }
+            } catch(e) {}
+        }
+    }
+    
+    if (uid) {
+        sessions.push(uid + " | " + title);
+    } else {
+        // Fallback: on garde le titre sans UID pour analyse
+        sessions.push("MISSING_UID | " + title);
+    }
+}
+
+// Si la méthode 1 échoue, Méthode 2: Extraction via l'API fetch interceptée
+if (sessions.filter(s => !s.startsWith("MISSING_UID")).length === 0) {
+    console.log("⚠️ UIDs introuvables dans le DOM React. Utilisation du Network tab requise.");
+    console.log("Veuillez rafraîchir la page avec l'onglet Network ouvert, filtrer sur 'task.list', et copier la réponse JSON.");
+}
+
 let uniqueSessions = [...new Set(sessions)];
 
 console.log("=== COPIEZ TOUT CE QUI SUIT ET COLLEZ-LE DANS MANUS ===");

@@ -1,0 +1,22 @@
+{
+  "purpose": "Define a clear temporary policy regarding data extraction.",
+  "core_policy": "No new acquisition or bulk extraction until structure/protocol/connector gates are accepted.",
+  "statements": [
+    "1. No full automatic extraction now.",
+    "2. No Manus bulk archive now.",
+    "3. No Notion migration now.",
+    "4. No ChatGPT/Claude/Gemini/Grok/Perplexity acquisition now.",
+    "5. No YOUniverse personal data acquisition now.",
+    "6. No telemetry/sensor acquisition now.",
+    "7. No Mem0 injection now.",
+    "8. No WP3 now.",
+    "9. Only architecture/protocol/registry/gate work is allowed.",
+    "10. Any exception requires Architect approval and must be scoped as minimal targeted acquisition."
+  ],
+  "exceptions": [
+    { "possible_exception": "Manus Session Archiving", "allowed_now": "NO", "condition": "Wait for Architect review of this patch", "approval_required": "YES" },
+    { "possible_exception": "WP0/WP1 outputs", "allowed_now": "YES", "condition": "Architecture work only", "approval_required": "NO" },
+    { "possible_exception": "Targeted single session", "allowed_now": "YES", "condition": "If explicitly requested by user", "approval_required": "YES" },
+    { "possible_exception": "Mem0 test query", "allowed_now": "YES", "condition": "Read-only testing", "approval_required": "NO" }
+  ]
+}
