@@ -1,0 +1,13 @@
+{
+  "gate": "CONNECTOR-DESIGN-GATE",
+  "version": "1.0",
+  "connectors": [
+    { "connector_id": "CONN-MANUS-01", "source_system": "Manus", "status": "DESIGNED", "owner_agent": "Manus Executor", "target_branches": "02_Source_Acquisition/Manus/", "acquisition_auth": "NO", "last_validation": "2026-07-02", "risks": "Pagination limits", "notes": "Requires API key" },
+    { "connector_id": "CONN-NOTION-01", "source_system": "Notion", "status": "DESIGNED", "owner_agent": "Manus Executor", "target_branches": "02_Source_Acquisition/Notion/", "acquisition_auth": "NO", "last_validation": "2026-07-02", "risks": "Hierarchy loss", "notes": "Requires API key" },
+    { "connector_id": "CONN-OAI-01", "source_system": "ChatGPT", "status": "DESIGNED", "owner_agent": "Manus Executor", "target_branches": "02_Source_Acquisition/ChatGPT/", "acquisition_auth": "NO", "last_validation": "2026-07-02", "risks": "Large JSON parsing", "notes": "Processes local export" },
+    { "connector_id": "CONN-GDRIVE-01", "source_system": "Google Drive", "status": "DESIGNED", "owner_agent": "Manus Executor", "target_branches": "02_Source_Acquisition/GDrive/", "acquisition_auth": "NO", "last_validation": "2026-07-02", "risks": "OAuth expiry", "notes": "Requires GCP project" },
+    { "connector_id": "CONN-MEM0-01", "source_system": "Mem0", "status": "DESIGNED", "owner_agent": "Mem0 Memory Layer", "target_branches": "02_Source_Acquisition/Mem0_Export/", "acquisition_auth": "NO", "last_validation": "2026-07-02", "risks": "State drift", "notes": "Requires API key" },
+    { "connector_id": "CONN-OBS-01", "source_system": "Obsidian", "status": "DESIGNED", "owner_agent": "Obsidian Nav Layer", "target_branches": "02_Source_Acquisition/Obsidian_Import/", "acquisition_auth": "NO", "last_validation": "2026-07-02", "risks": "Link breakage", "notes": "Local filesystem" },
+    { "connector_id": "CONN-WEB-01", "source_system": "Web URLs", "status": "DESIGNED", "owner_agent": "Manus Executor", "target_branches": "02_Source_Acquisition/Web_References/", "acquisition_auth": "NO", "last_validation": "2026-07-02", "risks": "CAPTCHAs", "notes": "Whitelist only" }
+  ]
+}
