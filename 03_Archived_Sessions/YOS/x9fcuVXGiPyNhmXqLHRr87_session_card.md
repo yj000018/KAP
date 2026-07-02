@@ -1,0 +1,73 @@
+# Bibliothèque Spirituelle Divine — Corrections critiques & inventaire Y World
+
+## Meta
+- **Date**: 2025-01-01
+- **Project Hint**: yOS
+- **Language**: fr
+- **Depth Score**: substantial
+- **Length Category**: medium
+- **Themes**: plateforme spirituelle, livrets PDF téléchargeables, système de paiement, React frontend, inventaire Y World, design 3D interactif
+- **Tags**: plateforme-spirituelle, livrets-PDF, Y-World-inventaire, React-frontend, corrections-critiques
+
+## Executive Summary
+Manus a présenté une plateforme spirituelle React déployée (https://kacgupql.manus.space) déclarée complète, mais l'utilisateur a identifié de nombreux dysfonctionnements critiques : livres non téléchargeables, paiements/abonnements non fonctionnels, liens footer cassés, vidéos non opérationnelles, et absence d'interactivité 3D réelle. Une tentative de correction a été lancée mais interrompue par un contexte trop long. En fin de session, l'utilisateur a demandé un inventaire Y World complet : 22 entrées ont été extraites et cartographiées, avec 3 flagships identifiés et 5 points d'attention critiques dont le prix d'abonnement non tranché et l'absence de backend réel.
+
+## Context & Intent
+L'utilisateur revenait sur une session précédente où Manus avait déclaré la plateforme 'complète'. L'objectif était de corriger les fonctionnalités manquantes (téléchargements PDF, paiements, 3D, footer, vidéos, parcours détaillés), puis de produire un inventaire structuré de tous les éléments du projet dans l'écosystème Y World / YOUniverse.
+
+## What Was Done
+1. Manus a présenté un état initial de la plateforme avec toutes fonctionnalités déclarées opérationnelles. 2. L'utilisateur a listé les dysfonctionnements critiques. 3. Manus a initié la création de PDFs pour 4 livrets (Buddha, Compassion & Amour, Yin Yang, Hindouisme) et tenté de corriger le code. 4. La session s'est interrompue avant finalisation (contexte trop long). 5. L'utilisateur a demandé un inventaire Y World complet. 6. Manus a produit un rapport de 22 entrées cartographiées dans l'écosystème Y World avec recommandations.
+
+## Key Points
+- Plateforme déployée à https://kacgupql.manus.space mais non pleinement fonctionnelle
+- Livres PDF partiellement créés (Buddha, Compassion, Yin Yang, Hindouisme) mais téléchargements non opérationnels
+- Système de paiement/abonnement non fonctionnel — prix non confirmé (€9/m implémenté vs €99/m demandé possible)
+- Aucun backend réel — Supabase requis pour communauté, favoris, paiements persistants
+- 22 projets/concepts extraits et cartographiés dans Y World
+- 3 flagships : Bibliothèque Spirituelle Divine, Divine Spiritual Library Platform (React), Y-OS
+- Concept différenciateur : favoris lecteurs → influence éditoriale sur publications futures
+- Rôle formel de Roberta (co-auteure / co-fondatrice) non défini, nom de famille inconnu
+- Classification cosmologique Meher Baba (4 niveaux) à assumer ou élargir
+
+## Outputs Produced
+- **[web platform]** Divine Spiritual Library Platform: Frontend React déployé à https://kacgupql.manus.space avec 4 catégories, interface trilingue, profils Yannick & Roberta, système de notation, parcours d'apprentissage
+- **[PDF]** Livret Buddha: Livre spirituel avec couverture, contenu riche, illustrations IA — création initiée, téléchargement non confirmé fonctionnel
+- **[PDF]** Livret Compassion & Amour: Livre sur le thème universel de la compassion — création initiée
+- **[PDF]** Livret Yin Yang: Livre sur le symbole Yin Yang avec mise en page riche — création initiée
+- **[PDF]** Livret Hindouisme: Livre sur la tradition hindoue — création initiée
+- **[report]** Inventaire Y World — 22 entrées: Cartographie complète de tous projets, concepts, systèmes et idées de la session dans l'écosystème Y World / YOUniverse avec recommandations d'action
+
+## Key Decisions
+- Prioriser les livres téléchargeables comme fonctionnalité critique n°1
+- Maintenir le modèle économique mixte : gratuit + achat individuel 15€ + abonnement
+- Intégrer vue 2D et 3D interactive pour chaque livre
+- Parcours spirituels à détailler avec système Collapse sur 2 niveaux
+- 22 éléments cartographiés dans Y World avec 3 flagships confirmés
+
+## Open Items & Blockers
+- Prix abonnement non tranché : €9/m (implémenté) vs potentiellement €99/m
+- Roberta : nom de famille inconnu, rôle formel (co-auteure ? co-fondatrice ?) non défini
+- Backend Supabase absent — toute la communauté et les paiements sont éphémères
+- PDF downloads partiellement fonctionnels — à corriger en priorité
+- Classification Meher Baba (4 niveaux cosmologiques) : spécifique ou à élargir ?
+- Vidéos YouTube non fonctionnelles — intégration à compléter
+- Liens footer toujours non fonctionnels au moment de l'interruption
+- Vue 3D interactive des couvertures non finalisée
+- Session interrompue par contexte trop long — corrections incomplètes
+
+## Next Steps
+- Ouvrir une nouvelle session pour finaliser les corrections critiques
+- Implémenter backend Supabase pour paiements, comptes, favoris persistants
+- Corriger et valider les téléchargements PDF pour les 4 livrets
+- Trancher le prix d'abonnement définitif avant intégration Stripe
+- Définir le rôle formel de Roberta dans le projet
+- Finaliser la vue 3D interactive des couvertures (2D + 3D toggle)
+- Corriger les liens footer et l'intégration vidéo
+- Déployer le système Collapse pour les parcours d'apprentissage détaillés
+- Protéger et documenter le concept 'Favoris → Influence Éditoriale'
+
+## Links & References
+- https://kacgupql.manus.space
+
+## Conversation Resume Hints
+Cette session est une continuation d'un projet de plateforme spirituelle React partiellement fonctionnelle. Pour reprendre : (1) Partir de https://kacgupql.manus.space comme base existante. (2) Priorité absolue : rendre les 4 PDFs (Buddha, Compassion, Yin Yang, Hindouisme) réellement téléchargeables. (3) Implémenter Supabase pour backend réel (auth, paiements, favoris). (4) Corriger footer, vidéos YouTube, vue 3D covers. (5) Ajouter Collapse sur 2 niveaux pour les parcours d'apprentissage. (6) Trancher le prix abonnement avant toute intégration Stripe. (7) L'inventaire Y World de 22 éléments a été produit — les deux flagships principaux sont la Bibliothèque Spirituelle Divine (contenu) et la Divine Spiritual Library Platform (tech). Le concept différenciateur 'favoris → influence éditoriale' doit être documenté et mis en avant.
