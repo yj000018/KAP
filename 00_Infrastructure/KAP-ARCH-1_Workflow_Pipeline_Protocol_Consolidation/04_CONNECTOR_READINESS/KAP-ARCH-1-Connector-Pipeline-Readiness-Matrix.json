@@ -1,0 +1,33 @@
+{
+  "sprint": "KAP-ARCH-1",
+  "document": "Connector Readiness Matrix",
+  "date": "2026-07-02",
+  "total_items": 25,
+  "items": [
+    {"source_or_family": "Manus Sessions API", "phase": "Phase 1", "domain": "yOS/MyOS", "connector_or_tool": "Manus API", "pipeline": "Archive Pipeline", "readiness_status": "PARTIAL_BLOCKER", "blocker_or_risk": "API limits pagination to 200", "next_decision": "Use My Browser Mac"},
+    {"source_or_family": "Manus Skills", "phase": "Phase 1", "domain": "yOS/MyOS", "connector_or_tool": "Filesystem", "pipeline": "Not started", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Run WP2-MANUS"},
+    {"source_or_family": "Manus Websites", "phase": "Phase 1", "domain": "yOS/MyOS", "connector_or_tool": "Filesystem", "pipeline": "Not started", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Run WP2-MANUS"},
+    {"source_or_family": "Manus Internal Knowledge", "phase": "Phase 1", "domain": "yOS/MyOS", "connector_or_tool": "Filesystem", "pipeline": "Not started", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Run WP2-MANUS"},
+    {"source_or_family": "Manus Tasks API", "phase": "Phase 1", "domain": "yOS/MyOS", "connector_or_tool": "Manus API", "pipeline": "Archive Pipeline", "readiness_status": "PARTIAL_BLOCKER", "blocker_or_risk": "API limits pagination to 200", "next_decision": "Use My Browser Mac"},
+    {"source_or_family": "GitHub KAP repo", "phase": "Phase 1", "domain": "System", "connector_or_tool": "Git CLI", "pipeline": "Clone Pipeline", "readiness_status": "TESTED_WORKING", "blocker_or_risk": "None", "next_decision": "Ready"},
+    {"source_or_family": "GitHub yOS / MyOS repos", "phase": "Phase 1", "domain": "System", "connector_or_tool": "Git CLI", "pipeline": "Clone Pipeline", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Run WP2-GITHUB"},
+    {"source_or_family": "Notion legacy", "phase": "Phase 1", "domain": "System", "connector_or_tool": "Notion API", "pipeline": "Notion-to-Git", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Run WP2-NOTION"},
+    {"source_or_family": "Mem0", "phase": "Phase 2", "domain": "Memory", "connector_or_tool": "Mem0 API", "pipeline": "Mem0 Sync", "readiness_status": "TESTED_WORKING", "blocker_or_risk": "None", "next_decision": "Run WP5"},
+    {"source_or_family": "Obsidian / vaults", "phase": "Phase 1", "domain": "System", "connector_or_tool": "Filesystem", "pipeline": "Vault Indexing", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Run WP3"},
+    {"source_or_family": "ChatGPT exports", "phase": "Phase 1", "domain": "AI History", "connector_or_tool": "File upload", "pipeline": "TBD", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Schedule sprint"},
+    {"source_or_family": "Claude exports", "phase": "Phase 1", "domain": "AI History", "connector_or_tool": "File upload", "pipeline": "TBD", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Schedule sprint"},
+    {"source_or_family": "Gemini", "phase": "Phase 1", "domain": "AI History", "connector_or_tool": "TBD", "pipeline": "TBD", "readiness_status": "DISABLED_BY_NON_USE", "blocker_or_risk": "Quality/usage too low", "next_decision": "Do not ingest"},
+    {"source_or_family": "Grok", "phase": "Phase 1", "domain": "AI History", "connector_or_tool": "TBD", "pipeline": "TBD", "readiness_status": "DISABLED_BY_NON_USE", "blocker_or_risk": "Quality/usage too low", "next_decision": "Do not ingest"},
+    {"source_or_family": "Perplexity", "phase": "Phase 1", "domain": "AI History", "connector_or_tool": "TBD", "pipeline": "TBD", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "API limits", "next_decision": "Schedule sprint"},
+    {"source_or_family": "local files / project folders", "phase": "Phase 1", "domain": "Projects", "connector_or_tool": "Filesystem", "pipeline": "TBD", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Schedule sprint"},
+    {"source_or_family": "project assets / logos / docs", "phase": "Phase 1", "domain": "Projects", "connector_or_tool": "Filesystem", "pipeline": "TBD", "readiness_status": "DESIGNED_READY_TO_TEST", "blocker_or_risk": "None", "next_decision": "Schedule sprint"},
+    {"source_or_family": "Readwise", "phase": "Phase 3", "domain": "YOUniverse", "connector_or_tool": "API", "pipeline": "TBD", "readiness_status": "DEFERRED_YOUNIVERSE", "blocker_or_risk": "None", "next_decision": "Defer to Phase 3"},
+    {"source_or_family": "YouTube playlists / favorites", "phase": "Phase 3", "domain": "YOUniverse", "connector_or_tool": "API", "pipeline": "TBD", "readiness_status": "DEFERRED_YOUNIVERSE", "blocker_or_risk": "None", "next_decision": "Defer to Phase 3"},
+    {"source_or_family": "emails / calendar", "phase": "Phase 3", "domain": "YOUniverse", "connector_or_tool": "Gmail/Cal API", "pipeline": "2-Phase Funnel", "readiness_status": "DEFERRED_YOUNIVERSE", "blocker_or_risk": "None", "next_decision": "Defer to Phase 3"},
+    {"source_or_family": "Home Assistant logs", "phase": "Phase 4", "domain": "Telemetry", "connector_or_tool": "API", "pipeline": "Telemetry Pipeline", "readiness_status": "DEFERRED_TELEMETRY", "blocker_or_risk": "None", "next_decision": "Defer to Phase 4"},
+    {"source_or_family": "sensors / monitoring streams", "phase": "Phase 4", "domain": "Telemetry", "connector_or_tool": "API", "pipeline": "Telemetry Pipeline", "readiness_status": "DEFERRED_TELEMETRY", "blocker_or_risk": "None", "next_decision": "Defer to Phase 4"},
+    {"source_or_family": "browser history", "phase": "Phase 1", "domain": "Telemetry", "connector_or_tool": "TBD", "pipeline": "TBD", "readiness_status": "EXCLUDED_BY_POLICY", "blocker_or_risk": "Privacy/Noise", "next_decision": "Exclude unless requested"},
+    {"source_or_family": "shell history", "phase": "Phase 1", "domain": "Telemetry", "connector_or_tool": "TBD", "pipeline": "TBD", "readiness_status": "EXCLUDED_BY_POLICY", "blocker_or_risk": "Privacy/Noise", "next_decision": "Exclude unless requested"},
+    {"source_or_family": "secrets / tokens", "phase": "Phase 1", "domain": "Security", "connector_or_tool": "None", "pipeline": "None", "readiness_status": "EXCLUDED_BY_POLICY", "blocker_or_risk": "Security", "next_decision": "Never ingest"}
+  ]
+}
