@@ -19,9 +19,9 @@ Track the synthesis status for each knowledge area. Indicates whether a Current 
 | GitHub Corpus | TL-007 | inventoried | NO | 2026-07-03 | LOW | GITHUB-SOURCE-ACQUISITION-GATE | 36 repos listed, no content extracted |
 | Other LLM Corpus | TL-008 | not_started | NO | — | NONE | LLM-EXPORT-GATE | No export mechanism identified |
 | Mem0 Memory | TL-009 | acquired | NO | 2026-07-03 | MEDIUM | — | All entries ACQUIRED — derivative source, no dedicated gate needed |
-| LLM Internal Memory | TL-010 | partially_captured | NO | — | LOW | LLM-INTERNAL-MEMORY-EXTRACTION-GATE | Extractable via PROMPT_EXTRACTION — gate to define |
-| Google Drive | TL-011 | out_of_scope | NO | — | NONE | — | YOUniverse pipeline only — no yOS content |
-| Web/Bookmarks | TL-012 | out_of_scope | NO | — | NONE | — | YOUniverse pipeline only — no yOS content |
+| LLM Internal Memory | TL-010 | deferred | NO | — | LOW | LLM-INTERNAL-MEMORY-EXTRACTION-GATE | DEFERRED — batch extraction after THOUGHT-LINE-SEEDING-GATE (taxonomy must be complete) |
+| Google Drive | TL-011 | phase_2 | NO | — | NONE | YOUNIVERSE-GDRIVE-GATE | Phase 2 (YOUniverse) — 360° personal profile |
+| Web/Bookmarks | TL-012 | phase_2 | NO | — | NONE | YOUNIVERSE-WEB-GATE | Phase 2 (YOUniverse) — 360° personal profile |
 | Persistence Principles | TL-013 | validated | NO | 2026-07-03 | VERY_HIGH | — | Enforced by all gates, no synthesis needed |
 | Evolutionary Merge | TL-014 | architecture_defined | NO | 2026-07-03 | HIGH | SOURCE-FRAGMENT-MODEL-GATE | Architecture complete, not yet operational |
 | Y-OS Infrastructure | TL-015 | fragments_scattered | NO | 2026-07-03 | LOW | THOUGHT-LINE-SEEDING-GATE | Across Manus, Notion, repos — no synthesis |
