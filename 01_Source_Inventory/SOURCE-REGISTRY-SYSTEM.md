@@ -1,50 +1,84 @@
 # Source Registry System
 
-> KAP Source Inventory — Modular Architecture for Knowledge Acquisition
+> KAP — Modular Knowledge Acquisition Engine
 
-## 1. Purpose
+## 1. Core Principle
 
-The Source Registry System is the core module managing all present and future knowledge sources for KAP. It defines a plug-and-play architecture where new sources (e.g., YouTube transcripts, web bookmarks, Excalidraw schemas) can be added, configured, and activated without altering the core synthesis engine.
+**One engine. Multiple scopes. One destination per fragment.**
 
-## 2. Source Lifecycle
+KAP is not a pipeline for yOS only. It is a universal knowledge acquisition engine that processes any source and routes each fragment to the correct destination based on its scope classification. The same engine logic — acquire → fragment → classify → route → synthesize — applies regardless of whether the source is a Manus session, a YouTube transcript, or a Google Calendar event.
 
-Every source in KAP follows a strict lifecycle:
+```
+Source → Connector → Source Fragment → Scope Classifier → Destination
+                                              │
+                              ┌───────────────┼───────────────┐
+                              ▼               ▼               ▼
+                           yOS KB        YOUniverse      Both (cross-scope)
+                        (architecture)   (360° profile)  (e.g., "I decided to
+                                                          use Notion for yOS")
+```
 
-1. **Discovered** — Identified as a potential knowledge source.
-2. **Catalogued** — Added to the `SOURCE-CATALOG.md` with its metadata.
-3. **Connector Designed** — An acquisition connector is designed (e.g., API script, scraper).
-4. **Configured** — Activation policy, frequency, and filters are defined.
-5. **Active** — Source is actively feeding the KAP Source Fragment Layer.
-6. **Paused** — Acquisition temporarily stopped.
-7. **Deprecated** — Source is no longer acquired (historical fragments remain).
+> **Key insight**: A fragment about "how Yannick thinks about AI" belongs to **both** yOS KB (cognitive architecture) and YOUniverse (personal profile). The engine does not force a binary choice — it tags fragments with one or more scope labels.
 
-## 3. Modular Components
+---
 
-### 3.1 The Catalog (`SOURCE-CATALOG.md`)
-The master list of all sources (active, planned, and future). Each entry defines:
-- **Source Type** (e.g., text, video, graph)
-- **Origin** (e.g., YouTube, Excalidraw, Notion)
-- **Format** (e.g., Markdown, JSON, SVG)
+## 2. Scope Model
 
-### 3.2 The Connectors (`02_Source_Acquisition/Connectors/`)
-Isolated scripts or APIs responsible for pulling data from a source and converting it into standard `source_fragment.schema.json` format. Connectors do not synthesize; they only acquire and format.
+| Scope | ID | Description | Destination | Current Phase |
+|---|---|---|---|---|
+| **yOS** | `scope:yos` | Y-OS architecture, decisions, tools, projects, intellectual threads | KAP synthesis → Obsidian yOS graph | **ACTIVE** |
+| **YOUniverse** | `scope:youniverse` | Personal facts, behaviors, preferences, life events, external world | YOUniverse synthesis → Obsidian YOUniverse graph | **FUTURE** |
+| **Cross-scope** | `scope:both` | Fragments that contain signal for both scopes | Both destinations | Classified at extraction time |
 
-### 3.3 The Activation Policy (`SOURCE-ACTIVATION-POLICY.md`)
-Defines *when* and *how* a source is acquired:
-- **Mode**: Auto (cron/webhook), Semi-Auto (human trigger), Manual (one-off)
-- **Status**: ON / OFF
-- **Filters**: What to include/exclude (e.g., "only YouTube videos with #KAP tag")
+Scopes are **tags on fragments**, not separate pipelines. The engine is identical.
 
-## 4. Future-Proofing
+---
 
-The system is designed to absorb any future source type:
-- **Visuals**: Excalidraw, Spline, Figma (converted to text descriptions + SVG fragments)
-- **Audio/Video**: YouTube, local voice memos (converted via Whisper to text fragments)
-- **Behavioral**: Browser history, app usage logs (converted to event fragments)
-- **External AI**: Outputs from specific specialized LLMs or tools
+## 3. Source Lifecycle
 
-## 5. Rules
+Every source follows the same lifecycle regardless of scope:
 
-1. **No direct injection**: A source cannot inject data directly into the synthesis layer. It must pass through a Connector and become a Source Fragment first.
-2. **State independence**: Pausing a source does not delete its historical fragments.
-3. **Traceability**: Every fragment must carry its Source ID and Connector Version.
+```
+discovered → catalogued → connector_designed → configured → testing → active → paused → deprecated
+```
+
+---
+
+## 4. Modular Components
+
+### 4.1 Source Catalog (`SOURCE-CATALOG.md`)
+Master list of all sources — active, planned, future — with scope classification.
+
+### 4.2 Connectors (`02_Source_Acquisition/Connectors/`)
+Isolated scripts that pull from a source and output standard `source_fragment.schema.json`. Connectors do not synthesize — they only acquire and format.
+
+### 4.3 Activation Policy (`SOURCE-ACTIVATION-POLICY.md`)
+Defines state (ON/OFF/DEFERRED…), mode (AUTO/MANUAL/PROMPT_EXTRACTION…), and filters per source.
+
+### 4.4 Scope Classifier
+A lightweight classification step applied to each fragment at acquisition time. Rules:
+- If fragment contains yOS architecture, decisions, tools, or projects → `scope:yos`
+- If fragment contains personal facts, behaviors, or life events → `scope:youniverse`
+- If both → `scope:both`
+- Classification can be manual (human tag), rule-based (keyword), or AI-assisted
+
+---
+
+## 5. Destination Routing
+
+| Scope Tag | Synthesis Target | Obsidian Graph | Current Status |
+|---|---|---|---|
+| `scope:yos` | KAP Thought Lines, Decision Threads, CBK | yOS graph | ACTIVE |
+| `scope:youniverse` | YOUniverse Profile, Life Timeline, Preferences | YOUniverse graph | FUTURE |
+| `scope:both` | Both synthesis targets | Both graphs | FUTURE |
+
+---
+
+## 6. Rules
+
+1. **One engine** — never fork the pipeline for different scopes. Add scope tags instead.
+2. **No direct injection** — every source passes through a Connector before entering the fragment layer.
+3. **State independence** — pausing a source does not delete its historical fragments.
+4. **Traceability** — every fragment carries its Source ID, Connector Version, and Scope Tags.
+5. **Noise control** — if >20% of fragments from a source are rejected, downgrade acquisition mode.
+6. **Phase discipline** — YOUniverse sources are catalogued now but connectors are not built until Phase 2 is formally opened.
