@@ -35,6 +35,9 @@ Track all recurring themes and evolving lines of thinking across the KAP corpus.
 | TL-023 | Voice & Vision Interfaces | interface | active | exploratory | NO | yos-voice-gateway, yos-voice-vision repos | YES | Multimodal interaction layer |
 | TL-024 | 3D Cognitive Visualization | interface | active | exploratory | NO | youniverse, one-galaxy repos | YES | 3D mind maps, spatial navigation |
 | TL-025 | Civilizational Awakening | philosophy | active | exploratory | NO | civilizational-awakening repo | YES | Societal transformation framework |
+| TL-026 | Future Source Integration | system_architecture | active | seed | NO | SOURCE-REGISTRY-SYSTEM | YES | Modular architecture for YouTube, Web, Excalidraw, etc. |
+| TL-027 | Visual Knowledge Representation | interface | active | seed | NO | Excalidraw, Spline, Figma | YES | How visual thought is captured and synthesized |
+| TL-028 | Behavioral & Passive Knowledge | source_corpus | active | seed | NO | Browsing history, Bookmarks | YES | Passive interest tracking for YOUniverse |
 
 ## Source Corpus Summary
 
@@ -50,6 +53,10 @@ Track all recurring themes and evolving lines of thinking across the KAP corpus.
 | 8 | LLM Internal Memory | non-exportable | PARTIALLY CAPTURED in skills/instructions | LOW |
 | 9 | Google Drive | unknown | NOT INVENTORIED | MEDIUM |
 | 10 | Web/Bookmarks | unknown | NOT INVENTORIED | LOW |
+| 11 | YouTube/Video | unknown | FUTURE | LOW |
+| 12 | Visuals (Excalidraw, Figma) | unknown | FUTURE | MEDIUM |
+| 13 | Behavioral (History) | unknown | FUTURE | LOW |
+| 14 | Specialized AI Tools | unknown | FUTURE | MEDIUM |
 
 ## Maturity Levels
 

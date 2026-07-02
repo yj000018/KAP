@@ -35,6 +35,9 @@ Track the synthesis status for each knowledge area. Indicates whether a Current 
 | Voice & Vision | TL-023 | fragments_scattered | NO | 2026-07-03 | LOW | THOUGHT-LINE-SEEDING-GATE | 2 repos, no synthesis |
 | 3D Visualization | TL-024 | fragments_scattered | NO | 2026-07-03 | LOW | THOUGHT-LINE-SEEDING-GATE | 2 repos, no synthesis |
 | Civilizational Awakening | TL-025 | fragments_scattered | NO | 2026-07-03 | LOW | THOUGHT-LINE-SEEDING-GATE | 1 repo, no synthesis |
+| Future Source Integration | TL-026 | architecture_defined | NO | 2026-07-03 | HIGH | SOURCE-REGISTRY-SYSTEM-GATE | Modular architecture defined |
+| Visual Knowledge | TL-027 | not_started | NO | — | NONE | VISUAL-SOURCE-GATE | Future integration |
+| Behavioral Knowledge | TL-028 | not_started | NO | — | NONE | BEHAVIORAL-SOURCE-GATE | Future integration |
 
 ## Synthesis Statuses
 
