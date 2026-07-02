@@ -17,6 +17,20 @@ Pour chaque session Manus non archivée :
 
 ---
 
+## ⚠️ RÈGLE CRITIQUE — My Browser Mac uniquement
+
+> **My Browser DOIT être utilisé depuis ton Mac (bureau ou laptop), jamais depuis iOS.**
+>
+> Raison : My Browser dans le sandbox Manus (machine virtuelle) ne maintient pas la session authentifiée — la page Manus se charge en mode non-connecté à chaque navigation. Seul ton navigateur Mac (Chrome/Safari) avec ta session Manus active permet de scroller la sidebar et récupérer tous les UIDs.
+>
+> **Processus correct :**
+> 1. Sur ton **Mac** → ouvre Manus dans Chrome
+> 2. Va dans Settings → Apps → My Browser → **Connect**
+> 3. Reviens dans cette session Manus et dis « My Browser connecté »
+> 4. Je prends le relais : je scrape la sidebar, collecte tous les UIDs, lance le pipeline
+
+---
+
 ## 2. Ce qui fonctionne — ce qui ne fonctionne pas
 
 ### ✅ Ce qui fonctionne
@@ -34,7 +48,9 @@ Pour chaque session Manus non archivée :
 
 | Méthode | Problème | Alternative |
 |---|---|---|
-| **API `task.list` pour corpus complet** | Retourne max 200 tâches, ~89% sont des "Wide Research Subtask", ne remonte pas avant juin 2026 | → My Browser pour scraper la liste complète |
+| **API `task.list` pour corpus complet** | Retourne max 200 tâches, ~89% sont des "Wide Research Subtask", ne remonte pas avant juin 2026 | → My Browser **Mac** pour scraper la liste complète |
+| **My Browser depuis iOS** | Session non maintenue, page Manus se charge en mode non-connecté | → Utiliser uniquement depuis Mac |
+| **My Browser dans sandbox VM** | Même problème — session perdue à chaque navigation | → Utiliser uniquement depuis Mac |
 | **MCP Manus natif** | N'existe pas dans les connecteurs disponibles | → My Browser ou API directe |
 | **Clé Anthropic directe** | Clé expirée/révoquée | → Utiliser le proxy sandbox OpenAI avec `client = OpenAI()` |
 | **Clé OpenAI directe** | Clé externe rejetée par le proxy sandbox | → Utiliser `client = OpenAI()` sans base_url (proxy auto-configuré) |
@@ -113,6 +129,13 @@ Le pipeline skip automatiquement une session si :
 ---
 
 ## 7. Ce que l'utilisateur doit faire manuellement
+
+> **Pour reprendre le pipeline là où on s'est arrêté :**
+> 1. Ouvre Manus sur ton **Mac** dans Chrome
+> 2. Settings → Apps → My Browser → Connect
+> 3. Dis à Manus : « My Browser connecté, reprends le scraping des sessions »
+> 4. Manus scrape la sidebar, collecte les UIDs, lance le pipeline automatiquement
+> 5. Résultat : fiches MD dans `/KAP/03_Archived_Sessions/YOS/` + titres `[✓]` dans Manus
 
 | Action | Quand | Comment |
 |---|---|---|
