@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Current Best Synthesis",
+  "description": "The most up-to-date validated understanding of a Thought Line",
+  "type": "object",
+  "required": ["cbk_id", "thought_line_id", "title", "current_position", "confidence", "last_validated"],
+  "properties": {
+    "cbk_id": {"type": "string", "pattern": "^CBK-[0-9]{3}$"},
+    "thought_line_id": {"type": "string"},
+    "title": {"type": "string"},
+    "domain": {"type": "string"},
+    "current_position": {
+      "type": "object",
+      "properties": {
+        "summary": {"type": "string"},
+        "detailed": {"type": "string"}
+      }
+    },
+    "confidence": {"type": "string", "enum": ["high", "medium", "low", "contested"]},
+    "last_validated": {"type": "string", "format": "date-time"},
+    "validated_by": {"type": "string", "enum": ["human", "gate", "implementation_evidence"]},
+    "key_decisions": {"type": "array", "items": {"type": "string"}},
+    "active_claims": {"type": "array", "items": {"type": "string"}},
+    "superseded_positions": {"type": "array", "items": {"type": "object", "properties": {"position": {"type": "string"}, "superseded_at": {"type": "string"}, "reason": {"type": "string"}}}},
+    "impasses": {"type": "array", "items": {"type": "string"}},
+    "open_questions": {"type": "array", "items": {"type": "string"}},
+    "sources": {"type": "array", "items": {"type": "object", "properties": {"fragment_id": {"type": "string"}, "source_type": {"type": "string"}, "date": {"type": "string"}, "relevance": {"type": "string", "enum": ["primary", "supporting", "historical"]}}}},
+    "review_triggers": {"type": "array", "items": {"type": "string"}},
+    "ai_summary": {"type": "string"},
+    "human_summary": {"type": "string"}
+  }
+}

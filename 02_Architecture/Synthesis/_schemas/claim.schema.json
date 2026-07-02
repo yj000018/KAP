@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Claim",
+  "description": "An atomic assertable statement extracted from source fragments",
+  "type": "object",
+  "required": ["claim_id", "text", "source_fragments", "domain"],
+  "properties": {
+    "claim_id": {"type": "string", "pattern": "^CLM-[A-Z0-9]{6}$"},
+    "text": {"type": "string", "description": "The claim statement"},
+    "domain": {"type": "string"},
+    "status": {"type": "string", "enum": ["candidate", "supported", "canonical", "superseded", "rejected", "contested"]},
+    "confidence": {"type": "string", "enum": ["high", "medium", "low", "contested"]},
+    "source_fragments": {"type": "array", "items": {"type": "string"}},
+    "first_seen_at": {"type": "string", "format": "date-time"},
+    "last_seen_at": {"type": "string", "format": "date-time"},
+    "thought_lines": {"type": "array", "items": {"type": "string"}},
+    "superseded_by": {"type": "string"},
+    "supersedes": {"type": "string"},
+    "contradicts": {"type": "array", "items": {"type": "string"}},
+    "supports": {"type": "array", "items": {"type": "string"}}
+  }
+}

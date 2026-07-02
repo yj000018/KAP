@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Thought Line",
+  "description": "A living intellectual thread grouping recurring themes across time and sources",
+  "type": "object",
+  "required": ["thought_line_id", "title", "domain", "maturity_level", "status"],
+  "properties": {
+    "thought_line_id": {"type": "string", "pattern": "^TL-[0-9]{3}$"},
+    "title": {"type": "string"},
+    "domain": {"type": "string"},
+    "description": {"type": "string"},
+    "current_best_understanding": {"type": "string"},
+    "maturity_level": {"type": "string", "enum": ["seed", "exploratory", "emerging_pattern", "candidate_architecture", "validated_architecture", "canonical", "deprecated"]},
+    "status": {"type": "string", "enum": ["active", "dormant", "deprecated", "under_review"]},
+    "source_fragments": {"type": "array", "items": {"type": "string"}},
+    "claims": {"type": "array", "items": {"type": "string"}},
+    "decisions": {"type": "array", "items": {"type": "string"}},
+    "impasses": {"type": "array", "items": {"type": "string"}},
+    "open_questions": {"type": "array", "items": {"type": "string"}},
+    "superseded_positions": {"type": "array", "items": {"type": "object", "properties": {"position": {"type": "string"}, "superseded_at": {"type": "string"}, "reason": {"type": "string"}}}},
+    "last_validated_at": {"type": "string", "format": "date-time"},
+    "next_review_gate": {"type": "string"},
+    "related_thought_lines": {"type": "array", "items": {"type": "string"}}
+  }
+}

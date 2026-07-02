@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Source Fragment",
+  "description": "An atomic unit of acquired content from any source",
+  "type": "object",
+  "required": ["fragment_id", "source_type", "title", "created_at", "acquired_at"],
+  "properties": {
+    "fragment_id": {"type": "string", "pattern": "^FRAG-[A-Z0-9]{6}$"},
+    "source_type": {"type": "string", "enum": ["manus", "notion", "chatgpt", "obsidian", "git", "web", "gdrive", "mem0"]},
+    "source_id": {"type": "string", "description": "Original ID in source system"},
+    "title": {"type": "string"},
+    "content_hash": {"type": "string", "description": "SHA-256 of content for dedup"},
+    "content_path": {"type": "string", "description": "Path to full content file"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "acquired_at": {"type": "string", "format": "date-time"},
+    "last_modified_at": {"type": "string", "format": "date-time"},
+    "word_count": {"type": "integer"},
+    "language": {"type": "string"},
+    "parent_fragment_id": {"type": "string", "description": "If this is a sub-fragment"},
+    "duplicate_of": {"type": "string", "description": "Fragment ID if this is a duplicate"},
+    "variant_of": {"type": "string", "description": "Fragment ID if this is a variant"},
+    "tags": {"type": "array", "items": {"type": "string"}},
+    "domains": {"type": "array", "items": {"type": "string"}},
+    "projects": {"type": "array", "items": {"type": "string"}},
+    "claims_extracted": {"type": "boolean", "default": false},
+    "normalization_status": {"type": "string", "enum": ["raw", "normalized", "reviewed"]}
+  }
+}

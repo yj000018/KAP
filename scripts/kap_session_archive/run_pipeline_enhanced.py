@@ -10,7 +10,7 @@ from pathlib import Path
 from openai import OpenAI
 
 # Config
-API_KEY = "sk-TEKENLb_4FM1xUD0skvl7Y5bxdg_ZwSBn93f4UyT3obza8szuxS1v4AFcs5iokvaLur6obq0SlG80yIIr-Zu_rKeVdze"
+API_KEY = os.environ.get("MANUS_API_KEY", "")
 BASE = "https://api.manus.im/v2"
 HEADERS = {"x-manus-api-key": API_KEY}
 KAP_DIR = Path("/home/ubuntu/KAP/03_Archived_Sessions/YOS")

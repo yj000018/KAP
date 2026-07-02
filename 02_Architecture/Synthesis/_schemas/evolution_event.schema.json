@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Evolution Event",
+  "description": "A recorded change in understanding or position on a Thought Line",
+  "type": "object",
+  "required": ["event_id", "thought_line_id", "event_date", "event_type"],
+  "properties": {
+    "event_id": {"type": "string", "pattern": "^EVO-[A-Z0-9]{6}$"},
+    "thought_line_id": {"type": "string"},
+    "event_date": {"type": "string", "format": "date-time"},
+    "event_type": {"type": "string", "enum": ["first_mention", "refinement", "validation", "reversal", "supersession", "deprecation", "maturity_upgrade", "contradiction_detected", "impasse_recorded"]},
+    "before_position": {"type": "string"},
+    "after_position": {"type": "string"},
+    "trigger": {"type": "string", "description": "What caused this evolution"},
+    "source_fragment": {"type": "string"},
+    "decision_id": {"type": "string"},
+    "notes": {"type": "string"}
+  }
+}
