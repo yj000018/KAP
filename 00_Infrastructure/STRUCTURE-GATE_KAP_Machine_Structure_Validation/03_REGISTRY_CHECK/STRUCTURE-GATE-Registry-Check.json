@@ -1,0 +1,21 @@
+{
+  "gate": "Registry Check",
+  "overall_status": "PASS_WITH_MINOR_GAPS",
+  "registries": [
+    { "registry": "Source State Registry", "expected_file_or_folder": "01_Source_Inventory/WP1-R_.../02_SOURCE_REGISTRY/", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "Freeze Map", "expected_file_or_folder": "01_Source_Inventory/WP1-R_.../03_FREEZE_MAP/", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "Connector Backlog", "expected_file_or_folder": "01_Source_Inventory/WP1-R_.../04_SOURCE_BRANCH_MAPPING/", "found": true, "status": "FOUND_NEEDS_PATCH", "issue": "Backlog mixed with branch mapping", "required_fix": "Separate backlog into dedicated file" },
+    { "registry": "Current Acquisition Scope", "expected_file_or_folder": "KAP-ARCH-1-PATCH.../04_PHASE1_SEED_PLAN/", "found": true, "status": "FOUND_USABLE", "issue": "Scope is planning-only, no active acquisition", "required_fix": "" },
+    { "registry": "Protocol Registry", "expected_file_or_folder": "00_Infrastructure/KAP-ARCH-1_.../02_PROTOCOL_REGISTRY/KAP-ARCH-1-Protocol-Registry.md", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "Pipeline Registry", "expected_file_or_folder": "00_Infrastructure/KAP-ARCH-1_.../03_PIPELINE_REGISTRY/KAP-ARCH-1-Pipeline-Registry.md", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "Connector Readiness Matrix", "expected_file_or_folder": "00_Infrastructure/KAP-ARCH-1_.../04_CONNECTOR_READINESS/KAP-ARCH-1-Connector-Pipeline-Readiness-Matrix.md", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "Agent Role Registry / Team OS agent folder", "expected_file_or_folder": "00_Infrastructure/Team_OS/Agents/CHATGPT-Guardian-Architect.md", "found": true, "status": "FOUND_NEEDS_PATCH", "issue": "Only Guardian Architect defined; other roles are in PATCH file only", "required_fix": "Create full Agent Role Registry MD in Team_OS/Agents/" },
+    { "registry": "Roadmap Reset", "expected_file_or_folder": "00_Infrastructure/KAP-ARCH-1_.../10_ROADMAP_RESET/", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "No Extraction Policy", "expected_file_or_folder": "KAP-ARCH-1-PATCH.../06_NO_EXTRACTION_POLICY/KAP-ARCH-1-PATCH-No-Extraction-Policy.md", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "Notion Decommission Plan", "expected_file_or_folder": "00_Infrastructure/KAP-ARCH-1_.../06_NOTION_DECOMMISSION_PLAN/KAP-ARCH-1-Notion-Decommission-Plan.md", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "Mem0 Positioning", "expected_file_or_folder": "00_Infrastructure/KAP-ARCH-1_.../07_MEM0_POSITIONING/KAP-ARCH-1-Mem0-Positioning.md", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "Project Knowledge Layer", "expected_file_or_folder": "00_Infrastructure/KAP-ARCH-1_.../08_PROJECT_KNOWLEDGE_LAYER/", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "YOUniverse Positioning", "expected_file_or_folder": "00_Infrastructure/KAP-ARCH-1_.../09_YOUNIVERSE_POSITIONING/", "found": true, "status": "FOUND_USABLE", "issue": "", "required_fix": "" },
+    { "registry": "Git Proof convention", "expected_file_or_folder": "00_Infrastructure/KAP-ARCH-1-PATCH.../08_GIT_PROOF/KAP-ARCH-1-PATCH-Git-Proof.md", "found": true, "status": "FOUND_USABLE", "issue": "Convention established in PATCH sprint", "required_fix": "" }
+  ]
+}

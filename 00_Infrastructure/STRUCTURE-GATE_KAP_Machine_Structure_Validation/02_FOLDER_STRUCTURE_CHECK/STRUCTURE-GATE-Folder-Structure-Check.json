@@ -1,0 +1,19 @@
+{
+  "gate": "Folder Structure Check",
+  "overall_status": "PASS_WITH_MINOR_GAPS",
+  "note": "Existing structure is coherent and usable. Missing folders are future-phase only and non-blocking.",
+  "folders": [
+    { "target_folder": "00_Infrastructure/", "purpose": "Architecture, protocols, registries, gates, Team OS", "exists_now": true, "current_path_if_exists": "/home/ubuntu/KAP/00_Infrastructure/", "status": "EXISTS_AND_USABLE", "required_action": "Add README/index" },
+    { "target_folder": "01_Source_Inventory/", "purpose": "Source registry, freeze map, WP1-R", "exists_now": true, "current_path_if_exists": "/home/ubuntu/KAP/01_Source_Inventory/", "status": "EXISTS_AND_USABLE", "required_action": "Add top-level README" },
+    { "target_folder": "02_Source_Acquisition/", "purpose": "Raw acquired content per source family", "exists_now": true, "current_path_if_exists": "/home/ubuntu/KAP/02_Source_Acquisition/", "status": "EXISTS_BUT_NEEDS_INDEX", "required_action": "Add per-source README" },
+    { "target_folder": "03_Normalized_Knowledge/", "purpose": "WP3 normalized output (future)", "exists_now": false, "current_path_if_exists": "", "status": "MISSING_CREATE_LATER", "required_action": "Create when WP3 starts" },
+    { "target_folder": "04_Distillation/", "purpose": "Distilled insights, Mem0 candidates (future)", "exists_now": false, "current_path_if_exists": "", "status": "MISSING_CREATE_LATER", "required_action": "Create when distillation starts" },
+    { "target_folder": "05_Project_Knowledge/", "purpose": "Dynamic project self-knowledge (Phase 2)", "exists_now": false, "current_path_if_exists": "", "status": "MISSING_CREATE_LATER", "required_action": "Create when Phase 2 starts" },
+    { "target_folder": "06_Memory_Candidates/", "purpose": "Pre-Mem0 distilled facts (future)", "exists_now": false, "current_path_if_exists": "", "status": "MISSING_CREATE_LATER", "required_action": "Create when distillation starts" },
+    { "target_folder": "07_Obsidian_Index/", "purpose": "Obsidian vault entry point / index files", "exists_now": false, "current_path_if_exists": "", "status": "MISSING_CREATE_LATER", "required_action": "Create when Obsidian vault is set up" },
+    { "target_folder": "08_Protocols/", "purpose": "Execution protocols", "exists_now": true, "current_path_if_exists": "00_Infrastructure/KAP-ARCH-1_.../02_PROTOCOL_REGISTRY/", "status": "SUPERSEDED_BY_EXISTING_STRUCTURE", "required_action": "Keep in 00_Infrastructure; add cross-link" },
+    { "target_folder": "09_Resources/", "purpose": "Shared assets, templates, schemas", "exists_now": true, "current_path_if_exists": "00_Infrastructure/WP0-CORE-1_.../03_SCHEMAS/", "status": "SUPERSEDED_BY_EXISTING_STRUCTURE", "required_action": "Keep in WP0; add cross-link" },
+    { "target_folder": "10_Roadmaps/", "purpose": "Roadmaps and gate decisions", "exists_now": true, "current_path_if_exists": "00_Infrastructure/KAP-ARCH-1_.../10_ROADMAP_RESET/", "status": "SUPERSEDED_BY_EXISTING_STRUCTURE", "required_action": "Keep in KAP-ARCH-1; add cross-link" },
+    { "target_folder": "99_Archive/", "purpose": "Archived sessions, legacy content", "exists_now": true, "current_path_if_exists": "/home/ubuntu/KAP/03_Archived_Sessions/", "status": "SUPERSEDED_BY_EXISTING_STRUCTURE", "required_action": "Keep as 03_Archived_Sessions/; rename not required" }
+  ]
+}

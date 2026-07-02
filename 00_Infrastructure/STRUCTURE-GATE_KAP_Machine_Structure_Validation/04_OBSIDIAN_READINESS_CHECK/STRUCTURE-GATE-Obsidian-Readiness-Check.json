@@ -1,0 +1,16 @@
+{
+  "gate": "Obsidian Readiness Check",
+  "overall_status": "READY_WITH_MINOR_GAPS",
+  "checks": [
+    { "check": "1. Core documents are Markdown", "expected_condition": "All key files are .md", "status": "READY", "evidence": "All registries, protocols, gates, factsheets are .md", "required_fix": "" },
+    { "check": "2. Folder names are stable and readable", "expected_condition": "No spaces, consistent naming", "status": "READY", "evidence": "All folders use _ separators, consistent naming", "required_fix": "" },
+    { "check": "3. Each major folder should have or need an index / README", "expected_condition": "Index files present or planned", "status": "NEEDS_INDEXING_PLAN", "evidence": "No README.md in root or major subfolders", "required_fix": "Create README.md per major folder (non-blocking)" },
+    { "check": "4. Project fact sheets can live in Git/MD", "expected_condition": "Factsheet format defined", "status": "READY", "evidence": "03_Archived_Sessions/YOS/{uid}_factsheet.md pattern established", "required_fix": "" },
+    { "check": "5. Protocols can be navigated in Git/MD", "expected_condition": "Protocol files are Markdown", "status": "READY", "evidence": "KAP-ARCH-1-Protocol-Registry.md exists", "required_fix": "" },
+    { "check": "6. Registries can be navigated in Git/MD", "expected_condition": "Registry files are Markdown", "status": "READY", "evidence": "All registries have .md versions", "required_fix": "" },
+    { "check": "7. Obsidian graph/backlinks can work without requiring proprietary data", "expected_condition": "No .obsidian/ required for core content", "status": "FUTURE_READY", "evidence": "No Obsidian-specific files yet; structure is compatible", "required_fix": "Add [[wikilinks]] in future indexing sprint" },
+    { "check": "8. No Obsidian-only source-of-truth features are required", "expected_condition": "All content readable without Obsidian", "status": "READY", "evidence": "Pure Markdown, no proprietary dependencies", "required_fix": "" },
+    { "check": "9. Notion is not required for navigation after migration", "expected_condition": "Notion frozen, all key docs in Git", "status": "READY", "evidence": "Notion Decommission Plan exists; Git/MD is primary", "required_fix": "" },
+    { "check": "10. Mem0 is not required for navigation", "expected_condition": "Mem0 is future semantic layer only", "status": "READY", "evidence": "Mem0 Positioning document confirms this", "required_fix": "" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "gate": "Structure Gaps",
+  "total_gaps": 9,
+  "blocking_gaps": 0,
+  "connector_design_gate_blockers": 0,
+  "gaps": [
+    { "gap_id": "G01", "gap": "No README.md in KAP root or major subfolders", "severity": "LOW", "blocks_CONNECTOR_DESIGN_GATE": false, "blocks_PHASE1_SEED_PLAN": false, "blocks_TARGETED_WP2": false, "blocks_WP3_N1": false, "recommended_fix": "Create README.md in root + 00_Infrastructure/, 01_Source_Inventory/, 02_Source_Acquisition/, 03_Archived_Sessions/" },
+    { "gap_id": "G02", "gap": "Agent Role Registry not consolidated in Team_OS/Agents/", "severity": "MEDIUM", "blocks_CONNECTOR_DESIGN_GATE": false, "blocks_PHASE1_SEED_PLAN": false, "blocks_TARGETED_WP2": false, "blocks_WP3_N1": false, "recommended_fix": "Create AGENT-ROLE-REGISTRY.md in Team_OS/Agents/ in CONNECTOR-DESIGN-GATE sprint" },
+    { "gap_id": "G03", "gap": "Connector Backlog not separated from Source Branch Mapping", "severity": "LOW", "blocks_CONNECTOR_DESIGN_GATE": false, "blocks_PHASE1_SEED_PLAN": false, "blocks_TARGETED_WP2": false, "blocks_WP3_N1": false, "recommended_fix": "Extract backlog into dedicated CONNECTOR-BACKLOG.md in WP1-R" },
+    { "gap_id": "G04", "gap": "No Obsidian [[wikilinks]] in existing Markdown files", "severity": "LOW", "blocks_CONNECTOR_DESIGN_GATE": false, "blocks_PHASE1_SEED_PLAN": false, "blocks_TARGETED_WP2": false, "blocks_WP3_N1": false, "recommended_fix": "Add wikilinks in future indexing sprint (not before vault activation)" },
+    { "gap_id": "G05", "gap": "02_Source_Acquisition/ has no per-source README", "severity": "LOW", "blocks_CONNECTOR_DESIGN_GATE": false, "blocks_PHASE1_SEED_PLAN": false, "blocks_TARGETED_WP2": false, "blocks_WP3_N1": false, "recommended_fix": "Add README per source family folder when acquisition starts" },
+    { "gap_id": "G06", "gap": "Future phase folders (03_Normalized_Knowledge/ through 07_Obsidian_Index/) do not exist", "severity": "INFO", "blocks_CONNECTOR_DESIGN_GATE": false, "blocks_PHASE1_SEED_PLAN": false, "blocks_TARGETED_WP2": false, "blocks_WP3_N1": false, "recommended_fix": "Create on demand as phases open" },
+    { "gap_id": "G07", "gap": "Manus Executor role not formally documented in Team_OS/Agents/", "severity": "MEDIUM", "blocks_CONNECTOR_DESIGN_GATE": false, "blocks_PHASE1_SEED_PLAN": false, "blocks_TARGETED_WP2": false, "blocks_WP3_N1": false, "recommended_fix": "Create MANUS-Executor.md in CONNECTOR-DESIGN-GATE sprint" },
+    { "gap_id": "G08", "gap": "11 sessions not found in API (beyond pagination limit)", "severity": "MEDIUM", "blocks_CONNECTOR_DESIGN_GATE": false, "blocks_PHASE1_SEED_PLAN": false, "blocks_TARGETED_WP2": true, "blocks_WP3_N1": false, "recommended_fix": "Retry after rate limit reset; or accept as unrecoverable" },
+    { "gap_id": "G09", "gap": "scripts/ folder in 00_Infrastructure/ — inconsistent location vs root", "severity": "LOW", "blocks_CONNECTOR_DESIGN_GATE": false, "blocks_PHASE1_SEED_PLAN": false, "blocks_TARGETED_WP2": false, "blocks_WP3_N1": false, "recommended_fix": "Architect decision: move scripts to root or keep in infra" }
+  ]
+}

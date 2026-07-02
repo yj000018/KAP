@@ -1,0 +1,10 @@
+{
+  "gate": "Next Gate Readiness",
+  "gates": [
+    { "gate": "CONNECTOR-DESIGN-GATE", "ready": true, "reason": "Structure validated, all canonical decisions pass, no blocking gaps", "blockers": "None", "required_before_start": "Architect approval of this STRUCTURE-GATE" },
+    { "gate": "AGENT-ROLE-GATE", "ready": true, "reason": "Guardian Architect role is canonical; other roles are planned", "blockers": "None", "required_before_start": "CONNECTOR-DESIGN-GATE completion" },
+    { "gate": "PHASE-1-SEED-PLAN", "ready": false, "reason": "Must wait for Connector Design Gate and Agent Role Gate", "blockers": "CONNECTOR-DESIGN-GATE, AGENT-ROLE-GATE", "required_before_start": "Both gates must pass" },
+    { "gate": "TARGETED-WP2-SOURCE-SPRINTS", "ready": false, "reason": "Must wait for Seed Plan approval", "blockers": "PHASE-1-SEED-PLAN approval", "required_before_start": "Architect approval of seed scope" },
+    { "gate": "WP3-N1", "ready": false, "reason": "Blocked — no normalized corpus, no approved seed, no distillation pipeline", "blockers": "All previous gates", "required_before_start": "All Phase 1 gates + Architect approval" }
+  ]
+}
