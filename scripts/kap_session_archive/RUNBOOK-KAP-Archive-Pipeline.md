@@ -138,7 +138,9 @@ console.log("=== FIN DE LA LISTE (" + uniqueSessions.length + " sessions trouvé
 
 | Prérequis | Comment vérifier |
 |---|---|
-| Clé API Manus valide | `sk-TEKENLb_4FM1xUD0skvl7Y5bxdg_ZwSBn93f4UyT3obza8szuxS1v4AFcs5iokvaLur6obq0SlG80yIIr-Zu_rKeVdze` |
+| Clé API Manus valide | Stockée dans `/home/ubuntu/KAP/.env` (var `MANUS_API_KEY`) — **JAMAIS dans le code** |
+| Créer une nouvelle clé si 401 | `https://manus.im/app?show_settings=integrations&app_name=api` → `+ Create new` → sans expiration → stocker dans `.env` + 1Password |
+| Clé actuelle | `KAP-Pipeline-Permanent` — créée 2026-07-02 — voir `.env` local |
 | Git configuré avec remote | `cd /home/ubuntu/KAP && git remote -v` |
 | Proxy LLM sandbox actif | `python3 -c "from openai import OpenAI; c=OpenAI(); print('OK')"` |
 | Fichier UIDs prêt | Un fichier texte avec une liste d'UIDs extraits par l'utilisateur. |
