@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "connectors": [
+    {
+      "connector_id": "CONN-MANUS-01",
+      "source_family": "SF-01",
+      "source_instance": "Manus Platform / API v2",
+      "connector_type": "API",
+      "current_status": "AVAILABLE_NOW",
+      "required_for_phase": "PHASE_1",
+      "priority": "HIGH",
+      "blocker": "None",
+      "next_action": "Maintain"
+    },
+    {
+      "connector_id": "CONN-NOTION-01",
+      "source_family": "SF-02",
+      "source_instance": "Notion / y-World workspace",
+      "connector_type": "API",
+      "current_status": "AVAILABLE_BUT_DISABLED",
+      "required_for_phase": "PHASE_1",
+      "priority": "HIGH",
+      "blocker": "Disabled in sandbox",
+      "next_action": "Enable connector"
+    },
+    {
+      "connector_id": "CONN-MEM0-01",
+      "source_family": "SF-02",
+      "source_instance": "Mem0 / user_id=yannick",
+      "connector_type": "API",
+      "current_status": "AVAILABLE_BUT_DISABLED",
+      "required_for_phase": "PHASE_1",
+      "priority": "HIGH",
+      "blocker": "Disabled in sandbox",
+      "next_action": "Enable connector"
+    },
+    {
+      "connector_id": "CONN-GITHUB-01",
+      "source_family": "SF-03",
+      "source_instance": "github.com/yj000018/YOS",
+      "connector_type": "GIT",
+      "current_status": "AVAILABLE_NOW",
+      "required_for_phase": "PHASE_1",
+      "priority": "HIGH",
+      "blocker": "None",
+      "next_action": "Clone repository"
+    },
+    {
+      "connector_id": "CONN-CHATGPT-01",
+      "source_family": "SF-01",
+      "source_instance": "OpenAI ChatGPT",
+      "connector_type": "EXPORT",
+      "current_status": "NEEDS_EXPORT",
+      "required_for_phase": "PHASE_1_OPTIONAL",
+      "priority": "LOW",
+      "blocker": "Manual export required",
+      "next_action": "User to provide export"
+    },
+    {
+      "connector_id": "CONN-CLAUDE-01",
+      "source_family": "SF-01",
+      "source_instance": "Anthropic Claude",
+      "connector_type": "EXPORT",
+      "current_status": "NEEDS_EXPORT",
+      "required_for_phase": "PHASE_1_OPTIONAL",
+      "priority": "LOW",
+      "blocker": "Manual export required",
+      "next_action": "User to provide export"
+    },
+    {
+      "connector_id": "CONN-HA-01",
+      "source_family": "SF-07",
+      "source_instance": "Home Assistant",
+      "connector_type": "WEBHOOK",
+      "current_status": "FUTURE_CONNECTOR",
+      "required_for_phase": "PHASE_4",
+      "priority": "LOW",
+      "blocker": "Not configured",
+      "next_action": "None"
+    }
+  ]
+}
