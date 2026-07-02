@@ -1,0 +1,77 @@
+{
+  "surfaces": [
+    {
+      "surface": "/home/ubuntu/KAP/",
+      "known_path_or_description": "KAP repository",
+      "current_evidence": "Git controlled",
+      "classification": "COVERED_ENOUGH_FOR_WP3",
+      "wp3_blocking": false,
+      "next_action": "None"
+    },
+    {
+      "surface": "/home/ubuntu/skills/",
+      "known_path_or_description": "Manus skills directory",
+      "current_evidence": "59/59 captured in WP2-E1",
+      "classification": "COVERED_ENOUGH_FOR_WP3",
+      "wp3_blocking": false,
+      "next_action": "None"
+    },
+    {
+      "surface": "/home/ubuntu/Downloads/",
+      "known_path_or_description": "Downloads directory",
+      "current_evidence": "Temporary files",
+      "classification": "DEFERRED_NON_BLOCKING",
+      "wp3_blocking": false,
+      "next_action": "None"
+    },
+    {
+      "surface": "local scripts used by KAP",
+      "known_path_or_description": "Scripts in KAP or skills",
+      "current_evidence": "Covered by KAP/skills",
+      "classification": "COVERED_ENOUGH_FOR_WP3",
+      "wp3_blocking": false,
+      "next_action": "None"
+    },
+    {
+      "surface": "deployed website source folders",
+      "known_path_or_description": "Various project folders",
+      "current_evidence": "Captured in WP2-E1",
+      "classification": "COVERED_ENOUGH_FOR_WP3",
+      "wp3_blocking": false,
+      "next_action": "None"
+    },
+    {
+      "surface": "generated artifacts outside KAP",
+      "known_path_or_description": "Unknown",
+      "current_evidence": "No evidence of critical missed artifacts",
+      "classification": "DEFERRED_NON_BLOCKING",
+      "wp3_blocking": false,
+      "next_action": "None"
+    },
+    {
+      "surface": "browser/shell history",
+      "known_path_or_description": ".bash_history, browser profiles",
+      "current_evidence": "Noise",
+      "classification": "EXCLUDED",
+      "wp3_blocking": false,
+      "next_action": "None"
+    },
+    {
+      "surface": "caches/temp files",
+      "known_path_or_description": "/tmp, ~/.cache",
+      "current_evidence": "Noise",
+      "classification": "EXCLUDED",
+      "wp3_blocking": false,
+      "next_action": "None"
+    },
+    {
+      "surface": "token/secret stores",
+      "known_path_or_description": "~/.manus/config, env vars",
+      "current_evidence": "Restricted",
+      "classification": "EXCLUDED",
+      "wp3_blocking": false,
+      "next_action": "None"
+    }
+  ],
+  "final_decision": "COVERED_ENOUGH_FOR_WP3"
+}

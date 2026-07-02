@@ -1,0 +1,32 @@
+{
+  "gates": [
+    {
+      "gate": "Gate 1 — Source Inventory Gate",
+      "status": "PASS",
+      "evidence": "All 15 branches have Source Registry entries",
+      "blocker": "None",
+      "required_fix": "None"
+    },
+    {
+      "gate": "Gate 2 — Freeze Map Gate",
+      "status": "PASS",
+      "evidence": "All 15 branches have a clear freeze map decision",
+      "blocker": "None",
+      "required_fix": "None"
+    },
+    {
+      "gate": "Gate 3 — WP2 Branch Mapping Gate",
+      "status": "PASS",
+      "evidence": "All 22 known source surfaces mapped to WP2 branches",
+      "blocker": "None",
+      "required_fix": "None"
+    },
+    {
+      "gate": "Gate 4 — WP3 Precondition Gate",
+      "status": "FAIL_BLOCKING",
+      "evidence": "High-value sources (Manus Sessions, Notion, Mem0, GitHub, Obsidian) are REOPEN_REQUIRED_BEFORE_WP3",
+      "blocker": "WP2-MANUS residuals, disabled connectors, missing clones",
+      "required_fix": "Execute WP2-MANUS-FINAL, enable connectors, clone repos"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "freeze_map": [
+    {
+      "source_id": "SRC-MANUS-01",
+      "source_name": "Manus Sessions API",
+      "wp2_branch": "WP2-MANUS",
+      "current_decision": "REOPEN_REQUIRED_BEFORE_WP3",
+      "reason": "M8C/M8D-PATCH residuals still pending",
+      "wp3_blocking": true,
+      "next_required_action": "Execute WP2-MANUS-FINAL"
+    },
+    {
+      "source_id": "SRC-CHATGPT-01",
+      "source_name": "ChatGPT History",
+      "wp2_branch": "WP2-CHATGPT",
+      "current_decision": "DEFER_AFTER_WP3",
+      "reason": "Not critical for baseline, manual export required",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    },
+    {
+      "source_id": "SRC-CLAUDE-01",
+      "source_name": "Claude History",
+      "wp2_branch": "WP2-CLAUDE",
+      "current_decision": "DEFER_AFTER_WP3",
+      "reason": "Not critical for baseline, manual export required",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    },
+    {
+      "source_id": "SRC-GEMINI-01",
+      "source_name": "Gemini History",
+      "wp2_branch": "WP2-GEMINI",
+      "current_decision": "DEFER_AFTER_WP3",
+      "reason": "Not critical for baseline, manual export required",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    },
+    {
+      "source_id": "SRC-GROK-01",
+      "source_name": "Grok History",
+      "wp2_branch": "WP2-GROK",
+      "current_decision": "DEFER_AFTER_WP3",
+      "reason": "Not critical for baseline, manual export required",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    },
+    {
+      "source_id": "SRC-PERPLEXITY-01",
+      "source_name": "Perplexity History",
+      "wp2_branch": "WP2-PERPLEXITY",
+      "current_decision": "DEFER_AFTER_WP3",
+      "reason": "Not critical for baseline, manual export required",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    },
+    {
+      "source_id": "SRC-NOTION-01",
+      "source_name": "Notion YOS Workspaces",
+      "wp2_branch": "WP2-NOTION",
+      "current_decision": "REOPEN_REQUIRED_BEFORE_WP3",
+      "reason": "Connector disabled, high-value source",
+      "wp3_blocking": true,
+      "next_required_action": "Enable connector, execute WP2-NOTION"
+    },
+    {
+      "source_id": "SRC-MEM0-01",
+      "source_name": "Mem0 Global Context",
+      "wp2_branch": "WP2-MEM0",
+      "current_decision": "REOPEN_REQUIRED_BEFORE_WP3",
+      "reason": "Connector disabled, high-value source",
+      "wp3_blocking": true,
+      "next_required_action": "Enable connector, execute WP2-MEM0"
+    },
+    {
+      "source_id": "SRC-GITHUB-01",
+      "source_name": "YOS Monorepo",
+      "wp2_branch": "WP2-GITHUB",
+      "current_decision": "REOPEN_REQUIRED_BEFORE_WP3",
+      "reason": "Needs clone and checksum, high-value source",
+      "wp3_blocking": true,
+      "next_required_action": "Execute WP2-GITHUB"
+    },
+    {
+      "source_id": "SRC-OBSIDIAN-01",
+      "source_name": "Y-WORLD Vault",
+      "wp2_branch": "WP2-OBSIDIAN",
+      "current_decision": "REOPEN_REQUIRED_BEFORE_WP3",
+      "reason": "Embedded in YOS repo, high-value source",
+      "wp3_blocking": true,
+      "next_required_action": "Execute WP2-OBSIDIAN"
+    },
+    {
+      "source_id": "SRC-LOCAL-FILES-01",
+      "source_name": "Manus Skills Directory",
+      "wp2_branch": "WP2-LOCAL-FILES",
+      "current_decision": "FREEZE_FOR_WP3",
+      "reason": "Baseline captured via WP2-E1",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    },
+    {
+      "source_id": "SRC-WEBSITES-01",
+      "source_name": "Deployed YOS Websites",
+      "wp2_branch": "WP2-WEBSITES",
+      "current_decision": "FREEZE_FOR_WP3",
+      "reason": "Baseline captured via WP2-E1",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    },
+    {
+      "source_id": "SRC-LOGS-TELEMETRY-01",
+      "source_name": "yOS Telemetry",
+      "wp2_branch": "WP2-LOGS-TELEMETRY",
+      "current_decision": "DEFER_AFTER_WP3",
+      "reason": "No central log sink yet",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    },
+    {
+      "source_id": "SRC-HOME-AUTOMATION-01",
+      "source_name": "Home Assistant Logs",
+      "wp2_branch": "WP2-HOME-AUTOMATION",
+      "current_decision": "DEFER_AFTER_WP3",
+      "reason": "Not configured",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    },
+    {
+      "source_id": "SRC-OTHER-01",
+      "source_name": "Emails and Calendar",
+      "wp2_branch": "WP2-OTHER",
+      "current_decision": "EXCLUDED",
+      "reason": "Out of scope",
+      "wp3_blocking": false,
+      "next_required_action": "None"
+    }
+  ]
+}
