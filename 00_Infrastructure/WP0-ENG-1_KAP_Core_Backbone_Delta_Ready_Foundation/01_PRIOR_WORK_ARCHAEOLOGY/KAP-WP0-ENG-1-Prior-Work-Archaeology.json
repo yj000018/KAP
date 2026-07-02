@@ -1,0 +1,102 @@
+{
+  "program": "KAP",
+  "sprint": "WP0-ENG-1",
+  "document_type": "Prior Work Archaeology",
+  "inventory": [
+    {
+      "prior_work_id": "PW-001",
+      "title_or_concept": "Source Manifests & Checksums",
+      "source_file_path": "WP2-M1_Complete_Manus_Harvest/.../manifest.json",
+      "sprint": "WP2-M1",
+      "extracted_principle": "Every acquisition must have a JSON manifest and SHA256 checksums to prove integrity.",
+      "reusable_for_backbone": "YES",
+      "confidence": "HIGH",
+      "action": "ADOPT_AS_CANON"
+    },
+    {
+      "prior_work_id": "PW-002",
+      "title_or_concept": "Persistence Gate",
+      "source_file_path": "WP2-M8D_.../07_PERSISTENCE_GATE/KAP-WP2-M8D-Persistence-Gate.md",
+      "sprint": "WP2-M8D",
+      "extracted_principle": "No task is complete until file existence, Git tracking, commit, and push are verified.",
+      "reusable_for_backbone": "YES",
+      "confidence": "HIGH",
+      "action": "ADOPT_AS_CANON"
+    },
+    {
+      "prior_work_id": "PW-003",
+      "title_or_concept": "Task vs Session Separation",
+      "source_file_path": "WP2-M8D_.../03_TASKS_VS_SESSIONS_PROOF/...",
+      "sprint": "WP2-M8D",
+      "extracted_principle": "API pagination artifacts and background subtasks must be filtered out. Human sessions are the true target.",
+      "reusable_for_backbone": "YES",
+      "confidence": "HIGH",
+      "action": "ADOPT_AS_CANON"
+    },
+    {
+      "prior_work_id": "PW-004",
+      "title_or_concept": "Manual Extraction Protocols",
+      "source_file_path": "WP2-M8_.../06_MANUAL_EXTRACTION_PROTOCOLS/...",
+      "sprint": "WP2-M8",
+      "extracted_principle": "Documented UI fallback steps when APIs fail or are rate-limited.",
+      "reusable_for_backbone": "YES",
+      "confidence": "HIGH",
+      "action": "ADOPT_WITH_REVISION"
+    },
+    {
+      "prior_work_id": "PW-005",
+      "title_or_concept": "ZIP Reconciliation",
+      "source_file_path": "WP2-INFRA-4B... & WP2-INFRA-4C...",
+      "sprint": "INFRA-4C",
+      "extracted_principle": "ZIP files are temporary transport. Their contents must be extracted, verified against Git, and the ZIP discarded as a source of truth.",
+      "reusable_for_backbone": "YES",
+      "confidence": "HIGH",
+      "action": "ADOPT_AS_CANON"
+    },
+    {
+      "prior_work_id": "PW-006",
+      "title_or_concept": "Source Cards",
+      "source_file_path": "WP2-E1_Easy_Source_Harvest/local_artifacts/_SOURCE_CARD.md",
+      "sprint": "WP2-E1",
+      "extracted_principle": "Metadata file accompanying raw data describing origin, date, and method.",
+      "reusable_for_backbone": "YES",
+      "confidence": "HIGH",
+      "action": "ADOPT_AS_CANON"
+    },
+    {
+      "prior_work_id": "PW-007",
+      "title_or_concept": "Notion as Primary Store",
+      "source_file_path": "yos-skills/memory-manager/SKILL.md",
+      "sprint": "yOS Skills",
+      "extracted_principle": "Notion is the hub for structured summaries and project contexts.",
+      "reusable_for_backbone": "YES",
+      "confidence": "HIGH",
+      "action": "ADOPT_WITH_REVISION"
+    },
+    {
+      "prior_work_id": "PW-008",
+      "title_or_concept": "Mem0 Sync Pipeline",
+      "source_file_path": "yos-skills/mem0-sync/SKILL.md",
+      "sprint": "yOS Skills",
+      "extracted_principle": "Bi-directional sync between Manus sessions, Notion, and Mem0.",
+      "reusable_for_backbone": "YES",
+      "confidence": "HIGH",
+      "action": "ADOPT_AS_CANON"
+    },
+    {
+      "prior_work_id": "PW-009",
+      "title_or_concept": "Session Synthesis",
+      "source_file_path": "yos-skills/session-synthesis/SKILL.md",
+      "sprint": "yOS Skills",
+      "extracted_principle": "Standardized JSON/MD card generation for archived sessions.",
+      "reusable_for_backbone": "YES",
+      "confidence": "HIGH",
+      "action": "ADOPT_AS_CANON"
+    }
+  ],
+  "missing_elements": [
+    "Formal State Registries for delta tracking",
+    "Reprocessing & Distillation Protocols",
+    "Automated yOS Loop Triggers"
+  ]
+}

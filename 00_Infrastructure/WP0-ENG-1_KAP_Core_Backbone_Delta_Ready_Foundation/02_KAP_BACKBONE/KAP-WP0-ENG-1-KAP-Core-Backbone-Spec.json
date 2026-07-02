@@ -1,0 +1,61 @@
+{
+  "program": "KAP",
+  "sprint": "WP0-ENG-1",
+  "document_type": "Core Backbone Specification",
+  "purpose": "KAP is the acquisition, preservation, normalization, distillation, and memory-instillation layer of yOS.",
+  "core_invariants": [
+    "No synthesis before acquisition proof",
+    "No canonization before normalization",
+    "Git/KAP is source of truth",
+    "ZIPs are transport only",
+    "Every item must have provenance",
+    "Every output must pass persistence gate",
+    "Source branches can advance independently",
+    "Deltas must compare against prior state",
+    "Mem0 is active distilled memory, not raw corpus",
+    "Notion is hub/navigation/archive, not sole source of truth",
+    "UI/manual fallbacks are valid but must be documented"
+  ],
+  "system_layers": [
+    {
+      "layer": "Source Layer",
+      "role": "The origin of the knowledge.",
+      "examples": ["Manus", "ChatGPT", "Notion", "GitHub", "Obsidian", "Local Files", "Websites", "Telemetry"]
+    },
+    {
+      "layer": "Acquisition Layer",
+      "role": "Fetching raw data from sources via API or UI fallback.",
+      "examples": ["sessions.json", "verbatim.md", "ZIP exports", "_SOURCE_CARD.md", "checksums"]
+    },
+    {
+      "layer": "Preservation Layer",
+      "role": "Storing raw data immutably in Git with provenance.",
+      "examples": ["git commit", "manifest.json", "SHA256_manifest.md"]
+    },
+    {
+      "layer": "Normalization Layer",
+      "role": "Converting raw, heterogeneous data into standard yOS schemas.",
+      "examples": ["session_card.json", "normalized_markdown.md", "deduplication logs"]
+    },
+    {
+      "layer": "Distillation Layer",
+      "role": "Extracting high-value concepts, decisions, and context.",
+      "examples": ["Executive summaries", "theme extraction", "entity recognition"]
+    },
+    {
+      "layer": "Active Memory Layer",
+      "role": "Pushing distilled knowledge to queryable vector/relational stores.",
+      "examples": ["Mem0 API calls", "Notion Database sync scripts"]
+    },
+    {
+      "layer": "Canonization Layer",
+      "role": "Merging validated knowledge into the Elysium Civilizational Ontology.",
+      "examples": ["Updates to Y-WORLD Obsidian vault", "ADRs", "concepts/"]
+    },
+    {
+      "layer": "Automation/yOS Loop",
+      "role": "Autonomous scheduling of the entire pipeline for future deltas.",
+      "examples": ["Cron jobs", "webhooks", "n8n workflows", "yOS telemetry triggers"]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "program": "KAP",
+  "sprint": "WP0-ENG-1",
+  "document_type": "Delta-Ready Process",
+  "workflow_steps": [
+    "Read State Registry",
+    "Fetch Delta Only",
+    "Local Deduplication Check",
+    "Acquire and Preserve",
+    "Update State Registry"
+  ],
+  "handling_rules": {
+    "append_only": "Fetch new IDs based on high-water mark.",
+    "mutable": "Check last_edited_time or modification dates. Overwrite raw file in Git.",
+    "deletions": "Mark local file as [DELETED] but preserve history in Git. Require periodic full-sync audits if webhooks unavailable."
+  }
+}

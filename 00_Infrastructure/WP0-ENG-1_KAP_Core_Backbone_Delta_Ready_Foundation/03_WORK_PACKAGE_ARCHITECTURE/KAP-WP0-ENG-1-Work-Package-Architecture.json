@@ -1,0 +1,57 @@
+{
+  "program": "KAP",
+  "sprint": "WP0-ENG-1",
+  "document_type": "Work Package Architecture",
+  "work_packages": [
+    {
+      "id": "WP0",
+      "name": "Infrastructure / Backbone / Protocols / Gates",
+      "description": "Defines the rules of the game. It holds the backbone specifications, the gate definitions, the source family models, and the delta-ready processes."
+    },
+    {
+      "id": "WP1",
+      "name": "Global Source Inventory / Source State Registry / Freeze Map",
+      "description": "The map of the territory. Updates the Global Source Inventory and logs the current sync state in the Source State Registry."
+    },
+    {
+      "id": "WP2",
+      "name": "Source Acquisition by Branch",
+      "description": "The fetching layer. Separated by branch so that failures do not block other acquisitions. Produces raw data, source cards, manifests, and checksums.",
+      "branches": [
+        "WP2-MANUS", "WP2-CHATGPT", "WP2-CLAUDE", "WP2-GEMINI", "WP2-GROK",
+        "WP2-PERPLEXITY", "WP2-NOTION", "WP2-MEM0", "WP2-GITHUB", "WP2-OBSIDIAN",
+        "WP2-LOCAL-FILES", "WP2-WEBSITES", "WP2-LOGS-TELEMETRY", "WP2-HOME-AUTOMATION", "WP2-OTHER"
+      ]
+    },
+    {
+      "id": "WP3",
+      "name": "Normalization / Structuring / Deduplication",
+      "description": "The standardization layer. Converts raw data into standard yOS schemas, removes noise, and deduplicates."
+    },
+    {
+      "id": "WP4",
+      "name": "Knowledge Distillation / Memory Candidates",
+      "description": "The synthesis layer. Extracts high-value concepts, decisions, and context."
+    },
+    {
+      "id": "WP5",
+      "name": "KAP-to-Mem0 Instillation",
+      "description": "The injection layer. Pushes distilled knowledge into Mem0 and Notion."
+    },
+    {
+      "id": "WP6",
+      "name": "Retrieval Tests / yOS Memory Validation",
+      "description": "The testing layer. Runs retrieval tests to ensure knowledge can be recalled by yOS agents."
+    },
+    {
+      "id": "WP7",
+      "name": "Canonization / Ontology / KOSMOS-yOS Integration",
+      "description": "The integration layer. Merges validated knowledge into the Elysium Civilizational Ontology."
+    },
+    {
+      "id": "WP8",
+      "name": "Autonomous yOS Knowledge Consolidation Loop",
+      "description": "The operational layer. Converts the pipeline into an autonomous loop triggered by cron jobs or telemetry."
+    }
+  ]
+}

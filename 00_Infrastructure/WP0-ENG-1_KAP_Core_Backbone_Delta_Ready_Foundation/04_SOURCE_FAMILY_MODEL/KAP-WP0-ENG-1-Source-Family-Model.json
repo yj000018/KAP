@@ -1,0 +1,63 @@
+{
+  "program": "KAP",
+  "sprint": "WP0-ENG-1",
+  "document_type": "Source Family Model",
+  "source_families": [
+    {
+      "id": "SF-01",
+      "name": "Conversational AI",
+      "characteristics": "Chronological dialogue, structured JSON/MD exports.",
+      "acquisition_method": "API pagination, bulk JSON export.",
+      "examples": ["Manus", "ChatGPT", "Claude", "Gemini"],
+      "delta_strategy": "Track by last_id or last_timestamp."
+    },
+    {
+      "id": "SF-02",
+      "name": "Structured Memory",
+      "characteristics": "Relational databases, vector stores, tagged entries.",
+      "acquisition_method": "API sync, full DB dump.",
+      "examples": ["Notion", "Mem0", "Airtable"],
+      "delta_strategy": "Track by last_edited_time property."
+    },
+    {
+      "id": "SF-03",
+      "name": "Versioned Repositories",
+      "characteristics": "Git-backed, folder structures, markdown/code.",
+      "acquisition_method": "git clone, git pull",
+      "examples": ["GitHub (YOS, Elysium)", "GitLab"],
+      "delta_strategy": "git log and git diff against last acquired commit hash."
+    },
+    {
+      "id": "SF-04",
+      "name": "Local File Systems",
+      "characteristics": "Unstructured or semi-structured local files, vaults.",
+      "acquisition_method": "File system traversal, rsync.",
+      "examples": ["Obsidian vaults", "local PDF archives"],
+      "delta_strategy": "Checksum comparison (SHA256) of all files."
+    },
+    {
+      "id": "SF-05",
+      "name": "Web & Ephemeral",
+      "characteristics": "HTML/DOM structures, unversioned pages.",
+      "acquisition_method": "Web scraping, Playwright.",
+      "examples": ["Websites", "blogs", "public wikis"],
+      "delta_strategy": "Periodic full snapshots or visual diffing."
+    },
+    {
+      "id": "SF-06",
+      "name": "Telemetry & Logs",
+      "characteristics": "High-volume, time-series data, system events.",
+      "acquisition_method": "Log shipping, API streaming.",
+      "examples": ["yOS telemetry", "server logs"],
+      "delta_strategy": "Time-windowed batch processing."
+    },
+    {
+      "id": "SF-07",
+      "name": "Physical & Ambient",
+      "characteristics": "Sensor data, voice transcripts, home state.",
+      "acquisition_method": "Webhooks, IoT APIs.",
+      "examples": ["Home automation", "voice memos"],
+      "delta_strategy": "Time-windowed batch processing."
+    }
+  ]
+}
