@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ManusSessionMetadata",
+  "description": "Metadata schema for a Manus session/task. Metadata only — no body ingestion.",
+  "type": "object",
+  "required": ["task_id","title","created_at","url"],
+  "properties": {
+    "task_id": {"type": "string", "description": "Unique Manus task identifier"},
+    "title": {"type": "string"},
+    "created_at": {"type": ["string","integer"]},
+    "updated_at": {"type": ["string","integer","null"]},
+    "status": {"type": "string", "enum": ["active","completed","archived","unknown"]},
+    "project": {"type": ["string","null"]},
+    "tags": {"type": "array", "items": {"type": "string"}},
+    "url": {"type": "string", "format": "uri"},
+    "has_attachments": {"type": "boolean"},
+    "is_noise": {"type": "boolean"},
+    "kap_relevance_score": {"type": "integer", "minimum": 0, "maximum": 5},
+    "notes": {"type": "string"}
+  }
+}

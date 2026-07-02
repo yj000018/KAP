@@ -1,0 +1,21 @@
+{
+  "connector_id": "CONN-MANUS-01",
+  "source": "Manus",
+  "api_base": "https://api.manus.im/v2",
+  "auth": {
+    "method": "header",
+    "header_name": "x-manus-api-key",
+    "env_var": "MANUS_API_KEY",
+    "note": "Set MANUS_API_KEY in environment. Never store key in this file."
+  },
+  "pagination": {
+    "type": "cursor",
+    "param": "last_id",
+    "page_size": 100
+  },
+  "dry_run_limit": 200,
+  "acquisition_auth": "NO",
+  "output_dir": "02_Source_Acquisition/Manus/_dry_runs/",
+  "noise_filter_patterns": ["Wide Research Subtask", "New task", "Parallel Research"],
+  "durable_keywords": ["KAP","yOS","ELYSIUM","pipeline","connector","architecture","gate"]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ChatGPTConversationMetadata",
+  "type": "object",
+  "required": ["id","title"],
+  "properties": {
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "created_at": {"type": ["string","number","null"]},
+    "updated_at": {"type": ["string","number","null"]},
+    "message_count": {"type": "integer"},
+    "has_attachments": {"type": "boolean"},
+    "project": {"type": ["string","null"]},
+    "tags": {"type": "array", "items": {"type": "string"}}
+  }
+}

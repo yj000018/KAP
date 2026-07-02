@@ -1,0 +1,46 @@
+{
+  "gate": "B",
+  "gate_name": "Internal Knowledge / Personalization",
+  "generated": "2026-07-02",
+  "sprint": "WP2-MANUS-FINAL",
+  "prior_sprint": "WP2-M8B",
+  "surfaces": [
+    {
+      "surface": "Manus Library",
+      "url": "https://manus.im/app/library",
+      "access_method": "Playwright + UI",
+      "access_status": "ACCESSIBLE",
+      "content_present": true,
+      "items": 41,
+      "unique_useful_content": false,
+      "extracted": true,
+      "limitation": "Library is a curated session gallery, not a knowledge base",
+      "closure_status": "INTERNAL_KNOWLEDGE_DUPLICATE_OF_KAP"
+    },
+    {
+      "surface": "Manus Skills",
+      "path": "/home/ubuntu/skills/",
+      "access_method": "Filesystem",
+      "access_status": "ACCESSIBLE",
+      "content_present": true,
+      "skills_total": 60,
+      "skills_committed_to_kap": 60,
+      "unique_useful_content": true,
+      "extracted": true,
+      "limitation": "None",
+      "closure_status": "INTERNAL_KNOWLEDGE_FULLY_EXTRACTED"
+    },
+    {
+      "surface": "Manus User Profile / Personalization",
+      "access_method": "API v2",
+      "access_status": "NOT_EXPOSED",
+      "content_present": false,
+      "unique_useful_content": false,
+      "extracted": false,
+      "limitation": "No personalization endpoint in Manus API v2",
+      "closure_status": "INTERNAL_KNOWLEDGE_METADATA_ONLY_NON_BLOCKING"
+    }
+  ],
+  "final_status": "INTERNAL_KNOWLEDGE_DUPLICATE_OF_KAP",
+  "wp3_blocker": false
+}
