@@ -89,4 +89,48 @@ Malgré leurs différences de surface, les deux projets partagent **3 fils rouge
 
 ---
 
-*Rapport généré par KAP Pipeline v3 — 2026-07-02*
+## 8. Implications des différences identifiées
+
+### 8.1 Langue de livraison : Français exclusif vs Trilingue simultané
+
+L'Aube produit tout en français — ce choix simplifie la production mais crée une **dépendance linguistique** : le projet ne peut pas toucher les audiences anglophone ou italophone sans un effort de traduction ultérieur. À l'inverse, la Bibliothèque Spirituelle a architecturé le trilingue dès le départ (FR/IT/EN simultané), ce qui multiplie la complexité de production par 3 mais garantit une **portée internationale native**.
+
+**Implication pour KAP :** les sessions de continuation de L'Aube devront décider explicitement si une traduction anglaise est prévue. Sans cette décision, le projet reste structurellement limité à l'audience francophone.
+
+### 8.2 Contenu rédigé vs Framework pur
+
+L'Aube a ~15 000 mots condensés + un chapitre complet (~12 000 mots) — soit ~10–15% du livre rédigé en profondeur. La Bibliothèque n'a aucun contenu rédigé : uniquement un framework de 12 documents.
+
+**Implication pour KAP :** ces deux projets sont à des stades de maturité radicalement différents. L'Aube est en phase de **production de contenu** (prochaine étape : écrire Ch.3–20). La Bibliothèque est en phase de **validation de concept** (prochaine étape : écrire les 3 premiers booklets pilotes). Le pipeline KAP devrait tracer ce stade de maturité (`content_maturity: draft|framework|complete`) pour prioriser les sessions de continuation.
+
+### 8.3 Dimension commerciale absente vs explicite
+
+L'Aube n'a aucune projection financière ni stratégie de distribution. La Bibliothèque a des projections (€15k–25k invest / €25k–40k rev. an 1) générées par Manus — non validées, mais présentes.
+
+**Implication pour KAP :** la Bibliothèque a une **pression de rentabilité implicite** qui va influencer les décisions éditoriales (choix des premiers booklets, pricing, canaux). L'Aube est un projet de passion sans contrainte commerciale déclarée — ce qui lui donne plus de liberté créative mais moins d'urgence d'exécution. Ces deux dynamiques produiront des rythmes de continuation très différents.
+
+### 8.4 Projet solo vs projet collaboratif (Yannick + Roberta)
+
+L'Aube est un projet de Yannick seul. La Bibliothèque implique Roberta, dont les rôles ne sont pas définis dans la session.
+
+**Implication pour KAP :** la Bibliothèque a un **risque de gouvernance** non résolu — si les rôles éditoriaux de Yannick et Roberta ne sont pas clarifiés rapidement, les sessions de continuation risquent de produire des livrables sans destinataire clair. Le pipeline devrait signaler ce type de dépendance humaine non résolue comme un bloquant de niveau 2.
+
+### 8.5 URLs éphémères (manus.space) vs URL inconnue
+
+L'Aube a 3 URLs `manus.space` documentées — éphémères par nature (les déploiements Manus ne sont pas permanents). La Bibliothèque a une URL de déploiement inconnue.
+
+**Implication pour KAP :** dans les deux cas, les sites web produits sont **à risque de disparition**. Le pipeline devrait automatiquement flaguer toute URL `*.manus.space` comme `[FRAGILE — sauvegarde requise]` et recommander une migration vers un hébergement permanent (GitHub Pages, Vercel, Netlify) dans les Next Steps.
+
+### 8.6 Synthèse des implications pour la stratégie KAP
+
+| Différence | Implication stratégique | Priorité |
+|---|---|---|
+| Langue FR seule vs trilingue | Décision de traduction à prendre pour L'Aube | MEDIUM |
+| Contenu 15% vs 0% | Stades de maturité différents → priorisation distincte | HIGH |
+| Sans vs avec projections financières | Rythme d'exécution et pression différents | MEDIUM |
+| Solo vs collaboratif | Risque de gouvernance Bibliothèque non résolu | HIGH |
+| URLs éphémères | Migration hébergement requise dans les deux cas | HIGH |
+
+---
+
+*Rapport enrichi le 2026-07-02 — Section 8 ajoutée | KAP Pipeline v3*
