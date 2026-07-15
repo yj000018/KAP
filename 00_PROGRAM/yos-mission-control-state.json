@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "component": {
+    "id": "Y-MC",
+    "name": "Y-OS Mission Control",
+    "type": "transversal_cognitive_control_surface",
+    "status": "foundational_component",
+    "created_at": "2026-07-15",
+    "canonical_location_status": "temporary_in_kap_pending_final_routing"
+  },
+  "operating_policy": {
+    "max_foreground_missions": 1,
+    "max_visible_next_actions": 1,
+    "evidence_required": true,
+    "irreversible_actions_from_overview": false,
+    "human_interrupt_policy": "strategic_forks_blockers_access_or_irreversible_only"
+  },
+  "now": {
+    "current_mission": "KAP State Reconciliation",
+    "why": "Restore one trustworthy program state before normalization and synthesis",
+    "state": "active",
+    "next_action": "Complete the evidence-backed KAP source coverage matrix",
+    "executor": "ChatGPT Architect and Guardian",
+    "blocker": null
+  },
+  "programs": [
+    {
+      "program_id": "KAP-KRE",
+      "name": "KAP / KRE",
+      "state": "active",
+      "attention": "foreground",
+      "current_mission": "State reconciliation",
+      "next_action": "Complete source coverage matrix"
+    },
+    {
+      "program_id": "YOS",
+      "name": "yOS Core",
+      "state": "active",
+      "attention": "supporting",
+      "current_mission": "Support KAP and canonical architecture",
+      "next_action": "Wait for KAP reconciliation outputs"
+    },
+    {
+      "program_id": "KOSMOS",
+      "name": "KOSMOS",
+      "state": "protected",
+      "attention": "background",
+      "current_mission": null,
+      "next_action": "Resume from seed Context Pack when explicitly activated"
+    },
+    {
+      "program_id": "Y-PIE",
+      "name": "Y-PIE",
+      "state": "waiting",
+      "attention": "background",
+      "current_mission": null,
+      "next_action": "Preserve architecture and define MVP sequence after activation"
+    },
+    {
+      "program_id": "CASATAO",
+      "name": "CasaTAO",
+      "state": "active",
+      "attention": "on_demand",
+      "current_mission": null,
+      "next_action": "Surface only operational priorities requiring attention"
+    }
+  ],
+  "waiting": [
+    "Manus quota renewal",
+    "Real Obsidian vault access",
+    "Complete ChatGPT export"
+  ],
+  "decisions_needed": [],
+  "source_of_truth": {
+    "human_view": "00_PROGRAM/Y-OS-MISSION-CONTROL.md",
+    "machine_view": "00_PROGRAM/yos-mission-control-state.json",
+    "module_cockpit": "00_PROGRAM/KAP-COCKPIT.md"
+  }
+}
